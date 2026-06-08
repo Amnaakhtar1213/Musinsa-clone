@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Head.css'
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="flex flex-col justify-between items-center fixed top-0 left-0 right-0 w-full py-3 shadow-md bg-white z-10">
       <div className="flex flex-row justify-between items-center">
@@ -33,10 +38,10 @@ const Header = () => {
       </div>
       
 
-<nav className="flex items-center px-3 py-3 ml-70 justify-start w-full">
+<nav className=" flex items-center px-3 py-3 ml-70 justify-start w-full">
        <ul className="flex items-end gap-8 text-sm font-bold justify-start">
 
-        <li className="flex flex-row gap-3 items-center">
+        <li className=" relative flex flex-row gap-3 items-center cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
           <i className="fa-solid fa-bars text-lg font-normal"></i>
            <h2>CATEGORY</h2>
         </li>
@@ -44,7 +49,7 @@ const Header = () => {
        <li className="px-4 ml-3">
         <div className="flex flex-col items-center">
           <span className="text-[#4EB0D4] text-xs  font-bold">MUSINSA EDITION</span>
-          <a href="#">#MUAHMUAH</a>
+          <Link to="/muahmuah">#MUAHMUAH</Link>
         </div>
        </li>
 
@@ -99,6 +104,100 @@ const Header = () => {
        </li>
 
        </ul>
+
+{isOpen && (
+  <div className="absolute left-0 top-25 bg-white shadow-md mt-2 p-4 w-full border-t border-gray-300">
+    <ul className="flex flex-row gap-15 text-xs px-32 py-6">
+      <div className="flex flex-col gap-4 ">
+      <h2 className="font-bold text-sm">CLOTHING</h2>
+      <li><a href="#" className="text-gray-700">Top</a></li>
+      <li><a href="#" className="text-gray-700">outerwear</a></li>
+      <li><a href="#" className="text-gray-700">pants</a></li>
+      <li><a href="#" className="text-gray-700">Dress & Skirts</a></li>
+      <li><a href="#" className="text-gray-700">Short sleeves</a></li>
+      <li><a href="#" className="text-gray-700">long-sleeves</a></li>
+      <li><a href="#" className="text-gray-700">Sweatshirts</a></li>
+      <li><a href="#" className="text-gray-700">hoodie jackets</a></li>
+      <li><a href="#" className="text-gray-700">Jeans</a></li>
+      <li><a href="#" className="text-gray-700">Shirts & Blouse</a></li>
+      <li><a href="#" className="text-gray-700">Track pants & Joggers</a></li>
+      </div>
+
+      <div className="flex flex-col gap-4">
+      <h2 className="font-bold text-sm">BAGS</h2>
+      <li><a href="#" className="text-gray-700">Shoulder Bags</a></li>
+      <li><a href="#" className="text-gray-700">Bagpacks</a></li>
+      <li><a href="#" className="text-gray-700">Canvas bags</a></li>
+      <li><a href="#" className="text-gray-700">Totes</a></li>
+      <li><a href="#" className="text-gray-700">Travel Bags</a></li>
+      <li><a href="#" className="text-gray-700">Belt Bags</a></li>
+      <li><a href="#" className="text-gray-700">Wallet cases</a></li>
+      <li><a href="#" className="text-gray-700">Pouches</a></li>
+      <li><a href="#" className="text-gray-700">Sport Bags</a></li>
+      <li><a href="#" className="text-gray-700">Clutches</a></li>
+      <li><a href="#" className="text-gray-700">Bags Accessories</a></li>
+      </div>
+
+      <div className="flex flex-col gap-4">
+      <h2 className="font-bold text-sm">ACCESSORIES</h2>
+      <li><a href="#" className="text-gray-700">Belt</a></li>
+      <li><a href="#" className="text-gray-700">Caps & Bags</a></li>
+      <li><a href="#" className="text-gray-700">Keyring & Key cases</a></li>
+      <li><a href="#" className="text-gray-700">Fashion Accessories</a></li>
+      <li><a href="#" className="text-gray-700">Necklace & pendants</a></li>
+      <li><a href="#" className="text-gray-700">Earring</a></li>
+      <li><a href="#" className="text-gray-700">Bracelets</a></li>
+      <li><a href="#" className="text-gray-700">Rings</a></li>
+      <li><a href="#" className="text-gray-700">Glasses</a></li>
+      <li><a href="#" className="text-gray-700">Tech & Life</a></li>
+      <li><a href="#" className="text-gray-700">Pets</a></li>
+      </div>
+
+      <div className="flex flex-col gap-4">
+      <h2 className="font-bold text-sm">SHOES</h2>
+      <li><a href="#" className="text-gray-700">Sneakers</a></li>
+      <li><a href="#" className="text-gray-700">Loafers</a></li>
+      <li><a href="#" className="text-gray-700">Boots</a></li>
+      <li><a href="#" className="text-gray-700">Scandals</a></li>
+      <li><a href="#" className="text-gray-700">Heels and pumps</a></li>
+      <li><a href="#" className="text-gray-700">Flat</a></li>
+      <li><a href="#" className="text-gray-700">Flip Flops</a></li>
+      <li><a href="#" className="text-gray-700">Sport shoes</a></li>
+      <li><a href="#" className="text-gray-700"></a></li>
+      <li><a href="#" className="text-gray-700">Shirts & Blouse</a></li>
+      <li><a href="#" className="text-gray-700">Track pants & Joggers</a></li>
+      </div>
+
+      <div className="flex flex-col gap-4">
+      <h2 className="font-bold text-sm">ACTIVE</h2>
+      <li><a href="#">Sport Tops</a></li>
+      <li><a href="#">Sport pants</a></li>
+      <li><a href="#">Sports outerwear</a></li>
+      <li><a href="#">Sport Skirts</a></li>
+      <li><a href="#">Sport Bags</a></li>
+      <li><a href="#">Sports Gears</a></li>
+      <li><a href="#">Sports Goods</a></li>
+      <li><a href="#">Sports cloth</a></li>
+      <li><a href="#">Sports Dress</a></li>
+      <li><a href="#">Sport Hat</a></li>
+      <li><a href="#"></a>Sport</li>
+      </div>
+
+      <div className="flex flex-col gap-4">
+      <h2 className="font-bold text-sm">BEAUTY</h2>
+      <li><a href="#">Skincare</a></li>
+      <li><a href="#">Facial Mask</a></li>
+      <li><a href="#">Bae makeup</a></li>
+      <li><a href="#">Eye makeup</a></li>
+      <li><a href="#">Haircare</a></li>
+      <li><a href="#">Cleanser</a></li>
+      <li><a href="#">Body care</a></li>
+      <li><a href="#">Beauty Devices & Tools</a></li>
+      </div>
+      
+    </ul>
+  </div>
+)}
 
     </nav>
     </header>
