@@ -12,6 +12,14 @@ import New from './pages/New.jsx'
 import Sale from './pages/Sale.jsx'
 import Snap from './pages/Snap.jsx'
 
+import Accessories from './pages/Accessories.jsx'
+import Bags from './pages/Bags.jsx'
+import Hoodies from './pages/Hoodies.jsx'
+import Pants from './pages/Pants.jsx'
+import Shirts from './pages/Shirts.jsx'
+import Shoes from './pages/Shoes.jsx'
+import Sports from './pages/Sports.jsx'
+
 
 function App() { 
    return (
@@ -27,6 +35,15 @@ function App() {
           <Route path="/new" element={<New />} />
           <Route path="/sale" element={<Sale />} />
           <Route path="/snap" element={<Snap />} />
+
+          <Route path="/shirts" element={<Shirts />} />
+          <Route path="/pants" element={<Pants />} />
+          <Route path="/hoodies" element={<Hoodies />} />
+          <Route path="/shoes" element={<Shoes />} />
+          <Route path="/bags" element={<Bags />} />
+          <Route path="/accessories" element={<Accessories />} />
+          <Route path="/sports" element={<Sports />} />
+
      </Routes>
     
     </Router>

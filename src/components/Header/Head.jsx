@@ -132,89 +132,88 @@ const Header = () => {
     <ul className="flex flex-row gap-15 text-xs px-32 py-6">
       <div className="flex flex-col gap-4 ">
       <h2 className="font-bold text-sm">CLOTHING</h2>
-      <li><a href="#" className="text-gray-700">Top</a></li>
-      <li><a href="#" className="text-gray-700">outerwear</a></li>
-      <li><a href="#" className="text-gray-700">pants</a></li>
-      <li><a href="#" className="text-gray-700">Dress & Skirts</a></li>
-      <li><a href="#" className="text-gray-700">Short sleeves</a></li>
-      <li><a href="#" className="text-gray-700">long-sleeves</a></li>
-      <li><a href="#" className="text-gray-700">Sweatshirts</a></li>
-      <li><a href="#" className="text-gray-700">hoodie jackets</a></li>
-      <li><a href="#" className="text-gray-700">Jeans</a></li>
-      <li><a href="#" className="text-gray-700">Shirts & Blouse</a></li>
-      <li><a href="#" className="text-gray-700">Track pants & Joggers</a></li>
+      <li><Link to="/shirts" className="text-gray-700">Top</Link></li>
+      <li><Link to="/shirts" className="text-gray-700">outerwear</Link></li>
+      <li><Link to="/pants" className="text-gray-700">pants</Link></li>
+      <li><Link to="/pants" className="text-gray-700">Dress & Skirts</Link></li>
+      <li><Link to="/shirts" className="text-gray-700">Short sleeves</Link></li>
+      <li><Link to="/shirts" className="text-gray-700">long-sleeves</Link></li>
+      <li><Link to="/shirts" className="text-gray-700">Sweatshirts</Link></li>
+      <li><Link to="/hoodies" className="text-gray-700">hoodie jackets</Link></li>
+      <li><Link to="/pants" className="text-gray-700">Jeans</Link></li>
+      <li><Link to="/shirts" className="text-gray-700">Shirts & Blouse</Link></li>
+      <li><Link to="/pants" className="text-gray-700">Track pants & Joggers</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">BAGS</h2>
-      <li><a href="#" className="text-gray-700">Shoulder Bags</a></li>
-      <li><a href="#" className="text-gray-700">Bagpacks</a></li>
-      <li><a href="#" className="text-gray-700">Canvas bags</a></li>
-      <li><a href="#" className="text-gray-700">Totes</a></li>
-      <li><a href="#" className="text-gray-700">Travel Bags</a></li>
-      <li><a href="#" className="text-gray-700">Belt Bags</a></li>
-      <li><a href="#" className="text-gray-700">Wallet cases</a></li>
-      <li><a href="#" className="text-gray-700">Pouches</a></li>
-      <li><a href="#" className="text-gray-700">Sport Bags</a></li>
-      <li><a href="#" className="text-gray-700">Clutches</a></li>
-      <li><a href="#" className="text-gray-700">Bags Accessories</a></li>
+      <li><Link to="/bags" className="text-gray-700">Shoulder Bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Bagpacks</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Canvas bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Totes</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Travel Bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Belt Bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Wallet cases</Link></li>
+      <li><Link to="/bags"className="text-gray-700">Pouches</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Sport Bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Clutches</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Bags Accessories</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">ACCESSORIES</h2>
-      <li><a href="#" className="text-gray-700">Belt</a></li>
-      <li><a href="#" className="text-gray-700">Caps & Bags</a></li>
-      <li><a href="#" className="text-gray-700">Keyring & Key cases</a></li>
-      <li><a href="#" className="text-gray-700">Fashion Accessories</a></li>
-      <li><a href="#" className="text-gray-700">Necklace & pendants</a></li>
-      <li><a href="#" className="text-gray-700">Earring</a></li>
-      <li><a href="#" className="text-gray-700">Bracelets</a></li>
-      <li><a href="#" className="text-gray-700">Rings</a></li>
-      <li><a href="#" className="text-gray-700">Glasses</a></li>
-      <li><a href="#" className="text-gray-700">Tech & Life</a></li>
-      <li><a href="#" className="text-gray-700">Pets</a></li>
+      <li><Link to="/accessories" className="text-gray-700">Belt</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Caps & Bags</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Keyring & Key cases</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Fashion Accessories</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Necklace & pendants</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Earring</Link></li>
+      <li><Link to="/accessories"className="text-gray-700">Bracelets</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Rings</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Glasses</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Tech & Life</Link></li>
+      <li><Link to="/accessories" className="text-gray-700">Pets</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">SHOES</h2>
-      <li><a href="#" className="text-gray-700">Sneakers</a></li>
-      <li><a href="#" className="text-gray-700">Loafers</a></li>
-      <li><a href="#" className="text-gray-700">Boots</a></li>
-      <li><a href="#" className="text-gray-700">Scandals</a></li>
-      <li><a href="#" className="text-gray-700">Heels and pumps</a></li>
-      <li><a href="#" className="text-gray-700">Flat</a></li>
-      <li><a href="#" className="text-gray-700">Flip Flops</a></li>
-      <li><a href="#" className="text-gray-700">Sport shoes</a></li>
-      <li><a href="#" className="text-gray-700"></a></li>
-      <li><a href="#" className="text-gray-700">Shirts & Blouse</a></li>
-      <li><a href="#" className="text-gray-700">Track pants & Joggers</a></li>
+      <li><Link to="/shoes" className="text-gray-700">Sneakers</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Loafers</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Boots</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Scandals</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Heels and pumps</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Flat</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Flip Flops</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Sport shoes</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Shirts & Blouse</Link></li>
+      <li><Link to="/shoes" className="text-gray-700">Track pants & Joggers</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">ACTIVE</h2>
-      <li><a href="#">Sport Tops</a></li>
-      <li><a href="#">Sport pants</a></li>
-      <li><a href="#">Sports outerwear</a></li>
-      <li><a href="#">Sport Skirts</a></li>
-      <li><a href="#">Sport Bags</a></li>
-      <li><a href="#">Sports Gears</a></li>
-      <li><a href="#">Sports Goods</a></li>
-      <li><a href="#">Sports cloth</a></li>
-      <li><a href="#">Sports Dress</a></li>
-      <li><a href="#">Sport Hat</a></li>
-      <li><a href="#"></a>Sport</li>
+      <li><Link to="/shirts" className="text-gray-700">Sport Tops</Link></li>
+      <li><Link to="/pants" className="text-gray-700">Sport pants</Link></li>
+      <li><Link to="/sports" className="text-gray-700">Sports outerwear</Link></li>
+      <li><Link to="/sports" className="text-gray-700">Sport Skirts</Link></li>
+      <li><Link to="/bags" className="text-gray-700">Sport Bags</Link></li>
+      <li><Link to="/sports" className="text-gray-700">Sports Gears</Link></li>
+      <li><Link to="/sports"  className="text-gray-700">Sports Goods</Link></li>
+      <li><Link to="/sports" className="text-gray-700">Sports cloth</Link></li>
+      <li><Link to="/sports" className="text-gray-700">Sports Dress</Link></li>
+      <li><Link to="/sports" className="text-gray-700">Sport Hat</Link></li>
+      <li><Link to="/sports" className="text-gray-700"></Link>Sport</li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">BEAUTY</h2>
-      <li><a href="#">Skincare</a></li>
-      <li><a href="#">Facial Mask</a></li>
-      <li><a href="#">Bae makeup</a></li>
-      <li><a href="#">Eye makeup</a></li>
-      <li><a href="#">Haircare</a></li>
-      <li><a href="#">Cleanser</a></li>
-      <li><a href="#">Body care</a></li>
-      <li><a href="#">Beauty Devices & Tools</a></li>
+      <li><Link to="/beauty" className="text-gray-700">Skincare</Link></li>
+      <li><Link to="/beauty" className="text-gray-700">Facial Mask</Link></li>
+      <li><Link to="/beauty" className="text-gray-700">Bae makeup</Link></li>
+      <li><Link to="/beauty" className="text-gray-700">Eye makeup</Link></li>
+      <li><Link to="/beauty" className="text-gray-700">Haircare</Link></li>
+      <li><Link to="/beauty" className="text-gray-700">Cleanser</Link></li>
+      <li><Link to="/beauty" className="text-gray-700">Body care</Link></li>
+      <li><Link to="/beauty" className="text-gray-700">Beauty Devices & Tools</Link></li>
       </div>
       
     </ul>
