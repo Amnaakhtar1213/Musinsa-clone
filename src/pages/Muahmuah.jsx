@@ -206,12 +206,38 @@ import img204 from "../assets/line17/q-18.webp";
 import img205 from "../assets/line11/r-1.webp";
 import img206 from "../assets/line11/r-2.webp";
 import img207 from "../assets/line11/r-3.webp";
+import img208 from "../assets/line18/t-1.webp";
 
 
 const Muahmuah = () => {
   return (
     <>
-    <div className="mx-30 mt-32">
+
+<div className="mt-32  bg-gray-100 p-3 text-center">
+  <span className="text-base">Official online store for leading korean brands</span>
+</div>
+
+
+<div className="flex flex-row gap-2 mx-30 mt-10 border-b pb-8 border-gray-200">
+
+<div>
+    <img src={img208} alt="muahmuah" className="w-110 h-110 object-contain"></img>
+  </div>
+
+  <div>
+    <h1 className="text-4xl font-bold mb-5">MUAHMUAH</h1>
+    <p className="text-sm w-150"><span>MUAHMUAH</span>, is inspired by the sound of kiss, delivers a collection that embodies romantic, joyous and bashfull feelings.</p>
+   </div>
+    <div>
+      <i className="fa-regular fa-heart text-4xl text-gray-600 px-8"></i>
+    </div>
+    
+</div>
+
+    <div className="mx-30 mt-10">
+      <div className="text-4xl font-bold text-center mb-10">
+        <h1>MUAHMUAH TOP SELLING ITEMS</h1>
+      </div>
       <div className="flex justify-center gap-4 mt-4">
             {/* <img src={img1} alt="img-1" className="w-1/4 h-auto"></img>
             <img src={img2} alt="img-1" className="w-1/4 h-auto"></img>
@@ -249,14 +275,10 @@ const Muahmuah = () => {
               </p>
             </div>
     
-         
-    
-          <button  className="absolute left-25 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 shadow-lg shadow-gray-500/50"><i class=" fa-solid fa-chevron-left"></i></button>
-          <button  className="absolute right-25 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 text-xl font-bold shadow-lg shadow-gray-500/50"><i class="fa-solid fa-chevron-right"></i></button>
           </div>
     </div>
           
-    <div className="mx-40 mt-5 flex flex-row gap-3 justify-center items-center">
+    {/* <div className="mx-40 mt-5 flex flex-row gap-3 justify-center items-center">
       <a href="#" className="relative">
        <div className="bg-fuchsia-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-regular fa-face-smile-wink ml-15 mt-3 text-fuchsia-500"></i></div>
         <span className="mt-2 absolute bottom-1 text-xs left-5 tracking-tighter">EXCLUSIVE BEAUTY</span>
@@ -322,12 +344,15 @@ const Muahmuah = () => {
         <span className="text-sm text-center">view all sales</span>
       </a>
     </div>
-  </div>
+  </div> */}
+
+
+
 
 
 <section className="mt-20 mx-30">
-  <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
-    <h1 className="mb-12">YOUR'S SUMMER DAILY ACTIVE EDITS: UP TO 18% OFF</h1>
+  <div className="mt-8 text-4xl font-bold text-center tracking-wider text-[#0a0f18]">
+    <h1 className="mb-8"># Trending now</h1>
   </div>
        <img src={img155} alt="SCALLYWANG"></img>
   <div>
@@ -340,7 +365,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">DAVIWEAR</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Women  yoga wear blur pilate banded wrap crop top</p>
            <span className="text-sm font-sm text-gray-600">18%</span>
             <span className="text-lg font-bold text-red-800">$22</span>
@@ -356,7 +381,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">DAVIWEAR</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Women  yoga wear blur pilate banded wrap crop top</p>
          <span className="text-sm font-sm text-gray-600">18%</span>
           <span className="text-lg font-bold text-red-800">$22</span>
@@ -370,7 +395,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">DAVIWEAR</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Women  yoga wear blur pilate banded wrap crop top</p>
          <span className="text-sm font-sm text-gray-600">18%</span>
           <span className="text-lg font-bold text-red-800">$86</span>
@@ -384,7 +409,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">DAVIWEAR</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">One sholder loose fit short sleeves t-shirt</p>
          <span className="text-sm font-sm text-gray-600">18%</span>
           <span className="text-lg font-bold text-red-800">$18</span>
@@ -402,7 +427,7 @@ const Muahmuah = () => {
 
 <section className="mt-20 mx-30">
   <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
-    <h1 className="mb-12">[BUAF] GLOBAL EXCLUSIVE: SUMMER 2026 T-SHIRTS</h1>
+    <h1 className="mb-12">[MUAHMUAH] GLOBAL EXCLUSIVE: SUMMER 2026 T-SHIRTS</h1>
   </div>
        <img src={img145} alt="SCALLYWANG"></img>
   <div>
@@ -415,7 +440,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">BUAF</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">house essiential long sleeve</p>
            <span className="text-sm font-sm text-gray-600">17%</span>
             <span className="text-lg font-bold text-red-800">$27</span>
@@ -431,7 +456,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">BUAF</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">red heart slim fit t-shirt</p>
           <span className="text-lg font-bold text-red-800">$30</span>
       </div>
@@ -444,7 +469,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">BUAF</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">running horse linger gray t-shirt</p>
           <span className="text-lg font-bold text-red-800">$18</span>
       </div>
@@ -457,7 +482,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">BUAF</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">A soft t-shirt gray strip</p>
           <span className="text-lg font-bold text-red-800">$38</span>
       </div>
@@ -487,7 +512,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">KHAKIPOINT</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Ribboned mini short black</p>
            <span className="text-sm font-sm text-gray-600">17%</span>
             <span className="text-lg font-bold text-red-800">$27</span>
@@ -503,7 +528,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">KHAKIPOINT</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Multi tank top white</p>
           <span className="text-lg font-bold text-red-800">$36</span>
       </div>
@@ -516,7 +541,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">KHAKIPOINT</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Nepolien jersey black</p>
           <span className="text-lg font-bold text-red-800">$36</span>
       </div>
@@ -529,7 +554,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">KHAKIPOINT</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Stcture high neck leather jacket</p>
           <span className="text-lg font-bold text-red-800">$35</span>
       </div>
@@ -561,7 +586,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Aran cable collar zip up</p>
            <span className="text-sm font-sm text-gray-600">29%</span>
             <span className="text-lg font-bold text-red-800">$53</span>
@@ -577,7 +602,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Pixel logo shirt half sleeves black</p>
          <span className="text-sm font-sm text-gray-600">10%</span>
           <span className="text-lg font-bold text-red-800">$18</span>
@@ -591,7 +616,7 @@ const Muahmuah = () => {
       </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Silver b over fit t-shirt</p>
          <span className="text-sm font-sm text-gray-600">10%</span>
           <span className="text-lg font-bold text-red-800">$36</span>
@@ -605,7 +630,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Super wide hidden elastic waist band medium-gray</p>
          <span className="text-sm font-sm text-gray-600">13%</span>
           <span className="text-lg font-bold text-red-800">$35</span>
@@ -637,7 +662,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">FILLUMINATE</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Damage washes denim pants</p>
            <span className="text-sm font-sm text-gray-600">10%</span>
             <span className="text-lg font-bold text-red-800">$20</span>
@@ -653,7 +678,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">DEMITRI BLACK</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Everyone banded curved slack</p>
          <span className="text-sm font-sm text-gray-600">10%</span>
           <span className="text-lg font-bold text-red-800">$18</span>
@@ -667,7 +692,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">DEMITRI BLACK</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Single curved slack sweat-pants</p>
          <span className="text-sm font-sm text-gray-600">10%</span>
           <span className="text-lg font-bold text-red-800">$39</span>
@@ -681,7 +706,7 @@ const Muahmuah = () => {
         </div>
       </div>
         <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">FORR</strong>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
         <p className="text-sm text-gray-900">Small logo curved sweat-pants</p>
          <span className="text-sm font-sm text-gray-600">10%</span>
           <span className="text-lg font-bold text-red-800">$35</span>
@@ -693,6 +718,27 @@ const Muahmuah = () => {
   <div className="text-center mt-10">
   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
 </div>
+</section>
+
+
+<section className="mt-35 mx-30">
+  <div className="items-center text-center">
+    <h1 className="text-5xl mb-15">MORE TO EXPLORE</h1>
+    <div className="flex flex-row gap-6">
+      <div>
+        <img src={img205} alt="musinsa" />
+        <p className="text-left mt-4 text-xl">DARISEL</p>
+      </div>
+      <div>
+        <img src={img206} alt="musinsa" />
+        <p className="text-left mt-4 text-base">Dresses and Sleeveless style chosen by HAN SO-HEE</p>
+      </div>
+      <div>
+        <img src={img207} alt="musinsa" />
+        <p className="text-left mt-4 text-xl">MUSINSA STANDARD</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 

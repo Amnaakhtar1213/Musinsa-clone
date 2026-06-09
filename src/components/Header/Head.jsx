@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Head.css'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -21,10 +21,9 @@ const Header = () => {
     <div  className="flex item-center gap-4 text-black">
       <div className="text-xl">
         <i className="fa-solid fa-globe"></i>
+        <span className="ml-2">Korea</span>
       </div>
-      <div>
-        <h4 className="text-normal">Korea</h4>
-      </div>
+
       <div  className="text-xl">
         <i className="fa-regular fa-heart"></i>
       </div>
@@ -41,65 +40,88 @@ const Header = () => {
 <nav className=" flex items-center px-3 py-3 ml-70 justify-start w-full">
        <ul className="flex items-end gap-8 text-sm font-bold justify-start">
 
-        <li className=" relative flex flex-row gap-3 items-center cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+<div>
+   <li className=" relative flex flex-row gap-3 items-center cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
           <i className="fa-solid fa-bars text-lg font-normal"></i>
            <h2>CATEGORY</h2>
         </li>
+</div>
        
-       <li className="px-4 ml-3">
+       
+        <li>
+        <div className="flex flex-col items-center ">
+        <NavLink 
+          to="/home" 
+          className={({ isActive }) =>
+           isActive ? "underline": "hover:underline"
+         }>HOME</NavLink>
+        </div>
+       </li>
+
+       <li>
         <div className="flex flex-col items-center">
           <span className="text-[#4EB0D4] text-xs  font-bold">MUSINSA EDITION</span>
-          <Link to="/muahmuah">#MUAHMUAH</Link>
+          <NavLink to="/muahmuah"  className={({ isActive }) =>
+           isActive ? "underline" : "hover:underline"
+         }>#MUAHMUAH</NavLink>
         </div>
        </li>
 
        <li>
          <div className="flex flex-col items-center">
           <span className="text-[12px] text-black font-[500] flex items-center">30% OFF</span>
-         <Link to="/members">NEW MEMBERS</Link>
+         <NavLink to="/members" className={({ isActive }) =>
+           isActive ? "underline" : "hover:underline"
+         }>NEW MEMBERS</NavLink>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-        <Link to="/fashion">FASHION</Link>
+        <NavLink to="/fashion" className={({ isActive }) =>
+           isActive ? "underline" : "hover:underline"
+         }>FASHION</NavLink>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-         <Link to="/beauty">BEAUTY</Link>
+         <NavLink to="/beauty" className={({ isActive }) =>
+           isActive ? "underline" : "hover:underline"
+         }>BEAUTY</NavLink>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-         <Link to="/sale">SALE</Link>
-        </div>
-       </li>
-
-       <li>
-        <div className="flex flex-col items-center">
-         <Link to="/new">NEW</Link>
+         <NavLink to="/new" className={({ isActive }) =>
+           isActive ? "underline" : "hover:underline"
+         }>NEW</NavLink>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
           <span className="text-[12px] text-red-600 font-[500] flex items-center">EXTRA 25% OFF</span>
-        <Link to="/musinsa">MUSINSA STANDARD</Link>
+        <NavLink to="/musinsa" className={({ isActive }) =>
+           isActive ? "underline" : "hover:underline"
+         }>MUSINSA STANDARD</NavLink>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-         <Link to="/sale">SALE</Link>
+         <NavLink to="/sale" className={({ isActive }) =>
+           isActive ? "underline" : "hover:underline"
+         }>SALE</NavLink>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-          <Link to="/snap">SNAP</Link>
+          <NavLink to="/snap" className={({ isActive }) =>
+           isActive ? "underline" : "hover:underline"
+         }>SNAP</NavLink>
         </div>
        </li>
 

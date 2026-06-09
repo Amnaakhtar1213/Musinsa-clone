@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Hero.css"
+
+
 import img1 from "../../assets/line1/u-1.webp";
 import img2 from "../../assets/line1/u-2.webp";
 import img3 from "../../assets/line1/u-3.webp";
@@ -267,7 +269,7 @@ const Hero = () => {
       </div>
 </div>
       
-<div className=" mx-40 mt-5 flex flex-row gap-4 justify-center items-center">
+{/* <div className=" mx-40 mt-5 flex flex-row gap-4 justify-center items-center">
   <a href="#" className="relative">
     
     <img src={img21} alt="GRAVER" className="w-[180px] h-auto mx-auto" />
@@ -301,8 +303,43 @@ const Hero = () => {
     <img src={img21} alt="GRAVER" className="w-[180px] h-auto mx-auto" />
     <span className="mt-2 text-xs absolute bottom-1 left-3 tracking-tighter">MUSINSA STANDARD</span>
   </a>
-</div>
+</div> */}
 
+<div className="mx-40 mt-5 flex flex-row gap-3 justify-center items-center">
+      <a href="#" className="relative">
+       <div className="bg-fuchsia-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-regular fa-face-smile-wink ml-15 mt-3 text-fuchsia-500"></i></div>
+        <span className="mt-2 absolute bottom-1 text-xs left-5 tracking-tighter">EXCLUSIVE BEAUTY</span>
+      </a>
+       <a href="#" className="relative">
+        <div className="bg-gray-300 w-[150px] h-[56px] rounded mx-auto"><i className="fa-solid fa-shirt ml-15 mt-3 text-gray-900 text-lg"></i></div>
+        <span className="mt-1 text-xs absolute bottom-1 left-12 tracking-tighter">GRAVER</span>
+      </a>
+       <a href="#" className="relative">
+       <div className="bg-blue-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-solid fa-bag-shopping ml-15 mt-3 text-blue-500 text-lg"></i></div>
+        <span className="mt-2 text-xs absolute bottom-1 left-6 tracking-tighter">TRENDING BAGS</span>
+      </a>
+       <a href="#" className="relative">
+       <div className="bg-cyan-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-regular fa-calendar-days ml-15 mt-3 text-cyan-700"></i></div>
+        <span className="mt-2 text-xs absolute bottom-1 left-8 tracking-tighter ">SEASON SALE</span>
+      </a>
+       <a href="#" className="relative">
+       <div className="bg-emerald-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-solid fa-person-dress ml-15 mt-3 text-emerald-500"></i></div>
+        <span className="mt-2 text-xs absolute bottom-1 left-8 tracking-tighter">MUAHMUAH</span>
+      </a>
+       <a href="#" className="relative">
+       <div className="bg-indigo-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-brands fa-redhat ml-15 mt-3 text-indigo-500"></i></div>
+        <span className="mt-2 text-xs absolute bottom-1 left-3 tracking-tighter">SUMMER ESSIANTIALS</span>
+      </a>
+       <a href="#" className="relative">
+       <div className="bg-pink-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-brands fa-black-tie ml-15 mt-3 text-pink-400"></i></div>
+        <span className="mt-2 text-xs absolute bottom-1 left-12 tracking-tighter">GRAVER</span>
+      </a>
+       <a href="#" className="relative">
+       <div className="bg-lime-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-solid fa-heart ml-15 mt-3 text-lime-600"></i></div>
+        <span className="mt-2 text-xs absolute bottom-1 left-3 tracking-tighter">MUSINSA STANDARD</span>
+      </a>
+    </div>
+    
 <div className=" flex flex-row gap-3 mx-30 justify-center item-center mt-8">
   <div className=" flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
   <a href="#" className="flex flex-row items-center ">
@@ -2962,7 +2999,6 @@ const Hero = () => {
 </section> 
 
 <section className="mt-8">
-
 <div className="mx-30 mt-8">
   <ul className="flex flex-row gap-4 ">
     <li>
