@@ -56,50 +56,50 @@ const Header = () => {
        <li>
          <div className="flex flex-col items-center">
           <span className="text-[12px] text-black font-[500] flex items-center">30% OFF</span>
-          <a href="#">NEW MEMBER</a>
+         <Link to="/members">NEW MEMBERS</Link>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-          <a href="#">FASHION</a>
+        <Link to="/fashion">FASHION</Link>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-          <a href="#">BEAUTY</a>
+         <Link to="/beauty">BEAUTY</Link>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-          <a href="#">SALE</a>
+         <Link to="/sale">SALE</Link>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-          <a href="#">BEST</a>
+         <Link to="/new">NEW</Link>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
           <span className="text-[12px] text-red-600 font-[500] flex items-center">EXTRA 25% OFF</span>
-          <a href="#">#FAMILY WEEK</a>
+        <Link to="/musinsa">MUSINSA STANDARD</Link>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-          <a href="#">SNAP</a>
+         <Link to="/sale">SALE</Link>
         </div>
        </li>
 
        <li>
         <div className="flex flex-col items-center">
-          <a href="#">NEW</a>
+          <Link to="/snap">SNAP</Link>
         </div>
        </li>
 

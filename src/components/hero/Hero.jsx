@@ -224,10 +224,10 @@ const Hero = () => {
 
 <div className="mx-30">
   <div className="flex justify-center gap-4 mt-4">
-        {/* <img src={img1} alt="img-1" className="w-1/4 h-auto"></img>
+     {/*<img src={img1} alt="img-1" className="w-1/4 h-auto"></img>
         <img src={img2} alt="img-1" className="w-1/4 h-auto"></img>
         <img src={img3} alt="img-1" className="w-1/4 h-auto"></img>
-         <img src={img4} alt="img-1" className="w-1/4 h-auto"></img>
+        <img src={img4} alt="img-1" className="w-1/4 h-auto"></img>
         <img src={img5} alt="img-1" className="w-1/4 h-auto"></img>
         <img src={img6} alt="img-1" className="w-1/4 h-auto"></img>
         <img src={img7} alt="img-1" className="w-1/4 h-auto"></img>

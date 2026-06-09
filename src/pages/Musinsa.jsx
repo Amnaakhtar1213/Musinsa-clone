@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Members = () => {
+const Family = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Members = () => {
   )
 }
 
-export default Members
+export default Family
