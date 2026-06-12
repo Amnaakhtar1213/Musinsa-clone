@@ -26,7 +26,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-          <Route path="/home" element={<Hero />} />
+          <Route path="/" element={<Hero />} />
           <Route path="/muahmuah" element={<Muahmuah />} />
           <Route path="/beauty" element={<Beauty />} />
           <Route path="/musinsa" element={<Musinsa />} />

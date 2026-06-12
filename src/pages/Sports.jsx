@@ -211,92 +211,113 @@ import img208 from "../assets/line18/t-1.webp";
 import img209 from "../assets/line18/v-1.webp";
 import img210 from "../assets/line18/v-2.webp";
 import img211 from "../assets/line18/v-3.webp";
+import img280 from "../assets/line22/v-21.webp";
+
+
+import img360 from "../assets/line8/k-20.webp";
+import img361 from "../assets/line8/k-21.webp";
+import img362 from "../assets/line8/k-22.webp";
+import img363 from "../assets/line8/k-24.webp";
+import img364 from "../assets/line8/k-25.webp";
+import img365 from "../assets/line8/k-26.webp";
+import img366 from "../assets/line8/k-27.webp";
+import img367 from "../assets/line8/k-28.webp";
+import img368 from "../assets/line8/k-29.webp";
+import img369 from "../assets/line8/k-30.webp";
+import img370 from "../assets/line8/k-31.webp";
+import img371 from "../assets/line8/k-32.webp";
+import img372 from "../assets/line8/k-33.webp";
+import img373 from "../assets/line8/k-34.webp";
+import img374 from "../assets/line8/k-35.webp";
+import img375 from "../assets/line8/k-36.webp";
+import img376 from "../assets/line8/k-37.webp";
+import img377 from "../assets/line8/k-38.webp";
+import img378 from "../assets/line8/k-39.webp";
+import img379 from "../assets/line8/k-40.webp";
+import img380 from "../assets/line8/k-41.webp";
+import img381 from "../assets/line8/k-42.webp";
+import img382 from "../assets/line8/k-43.webp";
+import img383 from "../assets/line8/k-44.webp";
+import img384 from "../assets/line8/k-45.webp";
+import img385 from "../assets/line8/k-46.webp";
+import img386 from "../assets/line8/k-47.webp";
+import img387 from "../assets/line8/k-48.webp";
+
 
 
 const Sports = () => {
   return (
     <div>
       
-<section className="mt-10">
-
+<section className="mt-35">
+<div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+  <h2>MUSINSA STANDARD SPORTS</h2>
+</div>
 <div className="mx-30 mt-8">
   <ul className="flex flex-row gap-4 mt-15 ">
     <li >
       <div className="relative">
-        <img src={img89} alt="SCALLYWANG"></img>
+        <img src={img360} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className="fa-regular fa-heart text-white font-bold"></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ELIZABETH STUART</strong>
-        <p className="text-sm text-gray-900">Biker bukle boots</p>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD </strong>
+        <p className="text-sm text-gray-600">Waffle oversize track jacket</p>
           <span className="text-lg font-bold text-red-600">$70</span>
       </div>
     </li>
     <li>
       <div className="relative">
-        <img src={img90} alt="SCALLYWANG"></img>
+        <img src={img361} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className="fa-regular fa-heart text-white font-bold"></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD</strong>
-        <p className="text-sm text-gray-900">Square chelsea boot - black</p>
-          <span className="text-lg font-bold text-red-600">$71</span>
+        <strong className="font-mrdium overflow-hidden text-ellipsis whitespace-nowrap w-53">DANP</strong>
+        <p className="text-sm text-gray-600">Sun mild motion crop zipup</p>
+          <span className="text-lg font-bold text-red-600">$61</span>
       </div>
     </li>
     <li>
       <div className="relative">
-        <img src={img91} alt="SCALLYWANG"></img>
+        <img src={img362} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className="fa-regular fa-heart text-white font-bold"></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">23.65</strong>
-        <p className="text-sm text-gray-900">Mori mountain shoes</p>
-          <span className="text-lg font-bold text-red-600">$39</span>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">WALTER EXPERIMENT</strong>
+        <p className="text-sm text-gray-600">Windbreaker jacket</p>
+          <span className="text-lg font-bold text-red-600">$139</span>
       </div>
     </li>
     <li>
       <div className="relative">
-        <img src={img92} alt="SCALLYWANG"></img>
+        <img src={img363} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className="fa-regular fa-heart text-white font-bold"></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">SALT AND CHOCLATE</strong>
-        <p className="text-sm text-gray-900">Duncan buckle boots</p>
-          <span className="text-lg font-bold text-red-600">$79</span>
+        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">WALTER EXPERIMENT</strong>
+        <p className="text-sm text-gray-600">Airback Windbreaker jacket</p>
+          <span className="text-lg font-bold text-red-600">$179</span>
       </div>
     </li>
     <li>
       <div className="relative">
-        <img src={img93} alt="SCALLYWANG"></img>
+        <img src={img364} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2 flex justify-between items-center">
           <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">SAPUN</strong>
-        <p className="text-sm text-gray-900">Ankle boots</p>
-          <span className="text-lg font-bold text-red-600">$44</span>
-      </div>
-    </li>
-    <li>
-      <div className="relative">
-        <img src={img94} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">CUSTOMADE</strong>
-        <p className="text-sm text-gray-900">Buddie suedie long over works boots</p>
-          <span className="text-lg font-bold text-red-600">$89</span>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">LAZYBEE</strong>
+        <p className="text-sm text-gray-600">Stretch tunning windbreaker jacket</p>
+          <span className="text-lg font-bold text-red-600">$84</span>
       </div>
     </li>
   </ul>
@@ -306,6 +327,381 @@ const Sports = () => {
   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
 </div>
 </section> 
+
+ <section className="mt-10">
+  <div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+  <h2># SPORT SKIRTS</h2>
+</div>
+ <div className="mx-30 mt-8">
+  <ul className="flex flex-row gap-4 mt-15 ">
+    <li >
+       <div className="relative">
+        <img src={img365} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>       
+        </div>
+       </div>
+       <div className="flex flex-col gap-1 mt-3">
+         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">PGR</strong>
+        <p className="text-sm text-gray-600">Women waistband skirt pants</p> 
+               <span className="text-lg font-bold text-red-600">$70</span>
+      </div>
+   </li>
+    <li>
+       <div className="relative">
+         <img src={img366} alt="SCALLYWANG"></img>
+         <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+         </div>
+       </div>
+       <div className="flex flex-col gap-1 mt-3">
+         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">DOWN BLOW</strong>
+         <p className="text-sm text-gray-600">Women golf wear skirt</p>
+           <span className="text-lg font-bold text-red-600">$31</span>
+       </div>
+     </li>
+     <li>
+       <div className="relative">
+         <img src={img367} alt="SCALLYWANG"></img>
+         <div className="absolute bottom-2 right-2  flex justify-between items-center">
+           <i className="fa-regular fa-heart text-white font-bold"></i>
+         </div>
+       </div>
+       <div className="flex flex-col gap-1 mt-3">
+         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">LORDLOR</strong>
+         <p className="text-sm text-gray-600">Women Airy inverted skirt</p>
+           <span className="text-lg font-bold text-red-600">$39</span>
+       </div>
+     </li>
+     <li>
+       <div className="relative">
+         <img src={img368} alt="SCALLYWANG"></img>
+         <div className="absolute bottom-2 right-2  flex justify-between items-center">
+           <i className="fa-regular fa-heart text-white font-bold"></i>
+         </div>
+       </div>
+       <div className="flex flex-col gap-1 mt-3">
+         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">SALT AND CHOCLATE</strong>
+         <p className="text-sm text-gray-600">High waist women sport skirt pants</p>
+           <span className="text-lg font-bold text-red-600">$79</span>
+       </div>
+     </li>
+     <li>
+       <div className="relative">
+         <img src={img369} alt="SCALLYWANG"></img>
+         <div className="absolute bottom-2 right-2 flex justify-between items-center">
+           <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+         </div>
+       </div>
+       <div className="flex flex-col gap-1 mt-3">
+         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">pgr</strong>
+         <p className="text-sm text-gray-600">Women waist banded skirt</p>
+           <span className="text-lg font-bold text-red-600">$44</span>
+       </div>
+     </li>
+    
+  </ul>
+ </div>
+
+ <div className="text-center mt-10">
+   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
+ </div>
+ </section> 
+
+<section className="mt-10">
+ <div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+  <h2># SPORT shoes</h2>
+</div>
+<div className="mx-30 mt-8">
+  <ul className="flex flex-row gap-4 mt-15 ">
+    <li >
+      <div className="relative">
+        <img src={img370} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">AKII CLASSIC</strong>
+        <p className="text-sm text-gray-600">Bumper trainer white set</p>
+          <span className="text-lg font-bold text-red-600">$62</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img371} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">NEPA</strong>
+        <p className="text-sm text-gray-600">Unisex traction shoes</p>
+          <span className="text-lg font-bold text-red-600">$51</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img372} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">AKKIII CLASSIC</strong>
+        <p className="text-sm text-gray-600">Training shoes</p>
+          <span className="text-lg font-bold text-red-600">$69</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img373} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">FITTEREST</strong>
+        <p className="text-sm text-gray-600">High miles halo shoes</p>
+          <span className="text-lg font-bold text-red-600">$79</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img374} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2 flex justify-between items-center">
+          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">HUMITO</strong>
+        <p className="text-sm text-gray-600">Mens running shoes</p>
+          <span className="text-lg font-bold text-red-600">$64</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div className="text-center mt-10">
+  <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
+</div>
+</section>  
+
+ <section className="mt-10">
+ <div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+  <h2># SPORT GOODS</h2>
+</div>
+<div className="mx-30 mt-8">
+  <ul className="flex flex-row gap-4 mt-15 ">
+    <li >
+      <div className="relative">
+        <img src={img375} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">PERSONNE</strong>
+        <p className="text-sm text-gray-600">Golf gloves</p>
+          <span className="text-lg font-bold text-red-600">$70</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img376} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MONOPATIN</strong>
+        <p className="text-sm text-gray-600">Skate desk</p>
+          <span className="text-lg font-bold text-red-600">$71</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img377} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">RENOMASWIM</strong>
+        <p className="text-sm text-gray-600">Children bear logo swim cap</p>
+          <span className="text-lg font-bold text-red-600">$30</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img378} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">AIONGI</strong>
+        <p className="text-sm text-gray-600">Race marathon number holder</p>
+          <span className="text-lg font-bold text-red-600">$79</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img379} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2 flex justify-between items-center">
+          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">TOOMDEAR</strong>
+        <p className="text-sm text-gray-600">Light weight cycle helmet</p>
+          <span className="text-lg font-bold text-red-600">$41</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div className="text-center mt-10">
+  <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
+</div>
+</section> 
+
+ <section className="mt-10">
+ <div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+  <h2># SPORT CAPS</h2>
+</div>
+<div className="mx-30 mt-8">
+  <ul className="flex flex-row gap-4 mt-15 ">
+    <li >
+      <div className="relative">
+        <img src={img380} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
+        <p className="text-sm text-gray-900">Running ripstone cap</p>
+          <span className="text-lg font-bold text-red-600">$34</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img381} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">WALTER EXPERIMENT</strong>
+        <p className="text-sm text-gray-600">Equinox wool beanie Black</p>
+          <span className="text-lg font-bold text-red-600">$61</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img382} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MACKY</strong>
+        <p className="text-sm text-gray-600">Buckle cap hat beanie</p>
+          <span className="text-lg font-bold text-red-600">$39</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img383} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+          <i className="fa-regular fa-heart text-white font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">VDR</strong>
+        <p className="text-sm text-gray-600">Off day cotton cap</p>
+          <span className="text-lg font-bold text-red-600">$19</span>
+      </div>
+    </li>
+    <li>
+      <div className="relative">
+        <img src={img384} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2 flex justify-between items-center">
+          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">KODAK</strong>
+        <p className="text-sm text-gray-600">Cotton soccer bucket hat</p>
+          <span className="text-lg font-bold text-red-600">$44</span>
+      </div>
+    </li>
+   
+  </ul>
+</div>
+
+<div className="text-center mt-10">
+  <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
+</div>
+</section>
+
+  <section className="mt-25 mx-30">
+    <div className="items-center text-center">
+      <h1 className="text-5xl mb-15">MORE TO EXPLORE</h1>
+      <div className="flex flex-row gap-6">
+        <div>
+          <img src={img385} alt="musinsa" />
+          <p className="text-left mt-4 text-2xl">MUSINSA STANDARD</p>
+        </div>
+        <div>
+          <img src={img386} alt="musinsa" />
+          <p className="text-left mt-4 text-2xl">RIETI</p>
+        </div>
+        <div>
+          <img src={img387} alt="musinsa" />
+          <p className="text-left mt-4 text-2xl">RAVER</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<footer className="mt-20 border-t-2 border-gray-200">
+  <div className="mx-30 mt-8">
+     <div className="flex flex-row gap-7 text-gray-500 text-sm">
+    <a href="#">About MUSINSA</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Privacy Policy</a>
+  </div>
+
+  <div className="flex flex-row gap-7 text-black font-bold mt-10">
+    <a href="#" className="border rounded border-black px-20 py-1">FAQ</a>
+    <a href="#" className="border rounded border-black px-20 py-1">NOTICS</a>
+  </div>
+
+  <div className="mt-15">
+    <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
+    <div className="flex flex-row gap-3 text-black font-bold mt-5">
+    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-apple text-2xl"></i> app store</a>
+    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-google-play text-2xl"></i> google play </a>
+  </div>
+  </div>
+
+ <div className="mt-15 flex items-center justify-center 
+                w-12 h-12 rounded-full 
+                border-4 border-[#010a2e] 
+                bg-[#010a2e]">
+  <i className="fa-brands fa-instagram text-white text-2xl"></i>
+</div>
+
+<div className="mt-15 mb-10">
+  <p className="text-gray-400 text-xs"><span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some product. In this case MUSINSA has limited liability for products, information and transactions.Please check the product detail on each product page.</p>
+</div>
+  </div>
+ 
+</footer>
+
 
 
     </div>

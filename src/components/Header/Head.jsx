@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Head.css'
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 
 const Header = () => {
@@ -185,8 +186,7 @@ const Header = () => {
       <li><Link to="/shoes" className="text-gray-700">Flat</Link></li>
       <li><Link to="/shoes" className="text-gray-700">Flip Flops</Link></li>
       <li><Link to="/shoes" className="text-gray-700">Sport shoes</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Shirts & Blouse</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Track pants & Joggers</Link></li>
+      <li><Link to="/pants" className="text-gray-700">Track pants & Joggers</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
@@ -195,7 +195,7 @@ const Header = () => {
       <li><Link to="/pants" className="text-gray-700">Sport pants</Link></li>
       <li><Link to="/sports" className="text-gray-700">Sports outerwear</Link></li>
       <li><Link to="/sports" className="text-gray-700">Sport Skirts</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Sport Bags</Link></li>
+      <li><Link to="/sports" className="text-gray-700">Sport Bags</Link></li>
       <li><Link to="/sports" className="text-gray-700">Sports Gears</Link></li>
       <li><Link to="/sports"  className="text-gray-700">Sports Goods</Link></li>
       <li><Link to="/sports" className="text-gray-700">Sports cloth</Link></li>

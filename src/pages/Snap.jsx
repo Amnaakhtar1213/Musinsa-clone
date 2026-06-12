@@ -37,6 +37,8 @@ import img238 from "../assets/line19/t-1.webp";
 
 const Snap = () => {
   return (
+
+
     <div>
       
  <div className="mt-31">
