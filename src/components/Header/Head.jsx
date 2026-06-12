@@ -51,11 +51,11 @@ const Header = () => {
        
         <li>
         <div className="flex flex-col items-center ">
-        <NavLink 
-          to="/home" 
+        <Link 
+          to="/" 
           className={({ isActive }) =>
            isActive ? "underline": "hover:underline"
-         }>HOME</NavLink>
+         }>HOME</Link>
         </div>
        </li>
 
@@ -129,91 +129,94 @@ const Header = () => {
        </ul>
 
 {isOpen && (
-  <div className="absolute left-0 top-25 bg-white shadow-md mt-2 p-4 w-full border-t border-gray-300">
+  <div  style={{ transitionDelay: "500ms" }}
+  className={`absolute left-0 top-25 bg-white shadow-md mt-2 p-4 w-full border-t border-gray-300
+              transition-all duration-300 ease-in-out
+              ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"}`}>
     <ul className="flex flex-row gap-15 text-xs px-32 py-6">
       <div className="flex flex-col gap-4 ">
       <h2 className="font-bold text-sm">CLOTHING</h2>
-      <li><Link to="/shirts" className="text-gray-700">Top</Link></li>
-      <li><Link to="/shirts" className="text-gray-700">outerwear</Link></li>
-      <li><Link to="/pants" className="text-gray-700">pants</Link></li>
-      <li><Link to="/pants" className="text-gray-700">Dress & Skirts</Link></li>
-      <li><Link to="/shirts" className="text-gray-700">Short sleeves</Link></li>
-      <li><Link to="/shirts" className="text-gray-700">long-sleeves</Link></li>
-      <li><Link to="/shirts" className="text-gray-700">Sweatshirts</Link></li>
-      <li><Link to="/hoodies" className="text-gray-700">hoodie jackets</Link></li>
-      <li><Link to="/pants" className="text-gray-700">Jeans</Link></li>
-      <li><Link to="/shirts" className="text-gray-700">Shirts & Blouse</Link></li>
-      <li><Link to="/pants" className="text-gray-700">Track pants & Joggers</Link></li>
+      <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >Top</Link></li>
+      <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >outerwear</Link></li>
+      <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >pants</Link></li>
+      <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Dress & Skirts</Link></li>
+      <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >Short sleeves</Link></li>
+      <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >long-sleeves</Link></li>
+      <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >Sweatshirts</Link></li>
+      <li><Link to="/hoodies" className="text-gray-700" onClick={() => setIsOpen(false)} >hoodie jackets</Link></li>
+      <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Jeans</Link></li>
+      <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >Shirts & Blouse</Link></li>
+      <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Track pants & Joggers</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">BAGS</h2>
-      <li><Link to="/bags" className="text-gray-700">Shoulder Bags</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Bagpacks</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Canvas bags</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Totes</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Travel Bags</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Belt Bags</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Wallet cases</Link></li>
-      <li><Link to="/bags"className="text-gray-700">Pouches</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Sport Bags</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Clutches</Link></li>
-      <li><Link to="/bags" className="text-gray-700">Bags Accessories</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Shoulder Bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Bagpacks</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Canvas bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Totes</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Travel Bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Belt Bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Wallet cases</Link></li>
+      <li><Link to="/bags"className="text-gray-700" onClick={() => setIsOpen(false)} >Pouches</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Bags</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Clutches</Link></li>
+      <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Bags Accessories</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">ACCESSORIES</h2>
-      <li><Link to="/accessories" className="text-gray-700">Belt</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Caps & Bags</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Keyring & Key cases</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Fashion Accessories</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Necklace & pendants</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Earring</Link></li>
-      <li><Link to="/accessories"className="text-gray-700">Bracelets</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Rings</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Glasses</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Tech & Life</Link></li>
-      <li><Link to="/accessories" className="text-gray-700">Pets</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Belt</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Caps & Bags</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Keyring & Key cases</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Fashion Accessories</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Necklace & pendants</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Earring</Link></li>
+      <li><Link to="/accessories"className="text-gray-700" onClick={() => setIsOpen(false)} >Bracelets</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Rings</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Glasses</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Tech & Life</Link></li>
+      <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Pets</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">SHOES</h2>
-      <li><Link to="/shoes" className="text-gray-700">Sneakers</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Loafers</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Boots</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Scandals</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Heels and pumps</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Flat</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Flip Flops</Link></li>
-      <li><Link to="/shoes" className="text-gray-700">Sport shoes</Link></li>
-      <li><Link to="/pants" className="text-gray-700">Track pants & Joggers</Link></li>
+      <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Sneakers</Link></li>
+      <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Loafers</Link></li>
+      <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Boots</Link></li>
+      <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Scandals</Link></li>
+      <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Heels and pumps</Link></li>
+      <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Flat</Link></li>
+      <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Flip Flops</Link></li>
+      <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport shoes</Link></li>
+      <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Track pants & Joggers</Link></li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">ACTIVE</h2>
-      <li><Link to="/shirts" className="text-gray-700">Sport Tops</Link></li>
-      <li><Link to="/pants" className="text-gray-700">Sport pants</Link></li>
-      <li><Link to="/sports" className="text-gray-700">Sports outerwear</Link></li>
-      <li><Link to="/sports" className="text-gray-700">Sport Skirts</Link></li>
-      <li><Link to="/sports" className="text-gray-700">Sport Bags</Link></li>
-      <li><Link to="/sports" className="text-gray-700">Sports Gears</Link></li>
-      <li><Link to="/sports"  className="text-gray-700">Sports Goods</Link></li>
-      <li><Link to="/sports" className="text-gray-700">Sports cloth</Link></li>
-      <li><Link to="/sports" className="text-gray-700">Sports Dress</Link></li>
-      <li><Link to="/sports" className="text-gray-700">Sport Hat</Link></li>
-      <li><Link to="/sports" className="text-gray-700"></Link>Sport</li>
+      <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Tops</Link></li>
+      <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport pants</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sports outerwear</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Skirts</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Bags</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sports Gears</Link></li>
+      <li><Link to="/sports"  className="text-gray-700" onClick={() => setIsOpen(false)} >Sports Goods</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sports cloth</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sports Dress</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Hat</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} ></Link>Sport</li>
       </div>
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">BEAUTY</h2>
-      <li><Link to="/beauty" className="text-gray-700">Skincare</Link></li>
-      <li><Link to="/beauty" className="text-gray-700">Facial Mask</Link></li>
-      <li><Link to="/beauty" className="text-gray-700">Bae makeup</Link></li>
-      <li><Link to="/beauty" className="text-gray-700">Eye makeup</Link></li>
-      <li><Link to="/beauty" className="text-gray-700">Haircare</Link></li>
-      <li><Link to="/beauty" className="text-gray-700">Cleanser</Link></li>
-      <li><Link to="/beauty" className="text-gray-700">Body care</Link></li>
-      <li><Link to="/beauty" className="text-gray-700">Beauty Devices & Tools</Link></li>
+      <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Skincare</Link></li>
+      <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Facial Mask</Link></li>
+      <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Bae makeup</Link></li>
+      <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Eye makeup</Link></li>
+      <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Haircare</Link></li>
+      <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Cleanser</Link></li>
+      <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Body care</Link></li>
+      <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Beauty Devices & Tools</Link></li>
       </div>
       
     </ul>
