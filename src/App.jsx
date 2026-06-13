@@ -1,5 +1,7 @@
  import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css'
+import React, { useState } from "react";
+
+ import './App.css'
 import Header from './components/Header/Head.jsx'
 import Hero from './components/Hero/Hero.jsx'
 import Muahmuah from './pages/Muahmuah.jsx'
@@ -22,27 +24,44 @@ import Sports from './pages/Sports.jsx'
 
 
 function App() { 
+
+const [favorite, setFavorite] = useState({});
+  const [favoriteCount, setFavoriteCount] = useState(0);
+
+  const toggleFavorite = (id) => {
+    setFavorite((prev) => {
+      const isFavorite = !prev[id];
+      const newFavorite = { ...prev, [id]: isFavorite };
+
+      // update count
+      setFavoriteCount(Object.values(newFavorite).filter(Boolean).length);
+
+      return newFavorite;
+    });
+  };
+
+
    return (
     <Router>
-      <Header />
+      <Header favoriteCount={favoriteCount} />
       <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/muahmuah" element={<Muahmuah />} />
-          <Route path="/beauty" element={<Beauty />} />
-          <Route path="/musinsa" element={<Musinsa />} />
-          <Route path="/fashion" element={<Fashion />} />
-          <Route path="/members" element={<Members />} />
-          <Route path="/new" element={<New />} />
-          <Route path="/sale" element={<Sale />} />
-          <Route path="/snap" element={<Snap />} />
+          <Route path="/" element={<Hero favorite={favorite} toggleFavorite={toggleFavorite} />} />
+          <Route path="/muahmuah" element={<Muahmuah favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/beauty" element={<Beauty favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/musinsa" element={<Musinsa favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/fashion" element={<Fashion favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/members" element={<Members favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/new" element={<New favorite={favorite} toggleFavorite={toggleFavorite}/>} /> 
+          <Route path="/sale" element={<Sale favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/snap" element={<Snap favorite={favorite} toggleFavorite={toggleFavorite}/>} />
 
-          <Route path="/shirts" element={<Shirts />} />
-          <Route path="/pants" element={<Pants />} />
-          <Route path="/hoodies" element={<Hoodies />} />
-          <Route path="/shoes" element={<Shoes />} />
-          <Route path="/bags" element={<Bags />} />
-          <Route path="/accessories" element={<Accessories />} />
-          <Route path="/sports" element={<Sports />} />
+          <Route path="/shirts" element={<Shirts favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/pants" element={<Pants favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/hoodies" element={<Hoodies favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/shoes" element={<Shoes favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/bags" element={<Bags favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/accessories" element={<Accessories favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/sports" element={<Sports favorite={favorite} toggleFavorite={toggleFavorite}/>} />
 
      </Routes>
     

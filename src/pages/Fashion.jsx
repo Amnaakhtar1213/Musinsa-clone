@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 import img1 from "../assets/line1/u-1.webp";
 import img2 from "../assets/line1/u-2.webp";
@@ -208,12 +208,12 @@ import img207 from "../assets/line11/r-3.webp";
 import img208 from "../assets/line18/t-1.webp";
 
 
-const Fashion = () => {
-  return (
-    <div>
+const Fashion = ({ favorite, toggleFavorite }) => {
 
-<div className="mx-30 mt-38">
-  <div className="flex justify-center gap-4 mt-4">
+  return (
+<div>
+   <div className="mx-30 mt-38">
+     <div className="flex justify-center gap-4 mt-4">
      {/*<img src={img1} alt="img-1" className="w-1/4 h-auto"></img>
         <img src={img2} alt="img-1" className="w-1/4 h-auto"></img>
         <img src={img3} alt="img-1" className="w-1/4 h-auto"></img>
@@ -266,7 +266,11 @@ const Fashion = () => {
         <img src={img83} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-green-800 px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[0] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(0)}
+          ></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -281,7 +285,10 @@ const Fashion = () => {
         <img src={img84} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-green-700 px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[1] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(1)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -296,7 +303,10 @@ const Fashion = () => {
         <img src={img85} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-white px-2text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[2] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(2)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -311,7 +321,10 @@ const Fashion = () => {
         <img src={img86} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-700 px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[3] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(3)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -326,7 +339,10 @@ const Fashion = () => {
         <img src={img87} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center">
           <span className="bg-black text-white px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[4] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(4)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -341,7 +357,10 @@ const Fashion = () => {
         <img src={img88} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-700 px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[5] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(5)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -371,7 +390,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img77} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center px-2">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[6] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(6)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -384,7 +406,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img78} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[7] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(7)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -397,7 +422,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img79} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[8] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(8)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -410,7 +438,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img80} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[9] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(9)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -423,7 +454,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img81} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[10] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(10)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -436,7 +470,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img82} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+       <i className={`cursor-pointer ${
+            favorite[11] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(11)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -460,7 +497,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img101} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+        <i className={`cursor-pointer ${
+            favorite[12] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(12)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -473,7 +513,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img102} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[13] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(13)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -486,7 +529,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img103} alt="SCALLYWANG"></img>
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[14] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(14)}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -499,7 +545,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img104} alt="SCALLYWANG"></img>
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[15] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(15)}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -512,7 +561,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img105} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[16] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(16)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -525,7 +577,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img106} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[17] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(17)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -552,7 +607,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img95} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[18] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(18)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -564,6 +622,12 @@ const Fashion = () => {
     <li>
       <div className="relative">
         <img src={img96} alt="SCALLYWANG"></img>
+        <div className="absolute bottom-2 right-2  flex justify-between items-center">
+         <i className={`cursor-pointer ${
+            favorite[19] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(19)}></i>
+        </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
@@ -575,7 +639,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img97} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[20] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(20)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -588,7 +655,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img98} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+        <i className={`cursor-pointer ${
+            favorite[21] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(21)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -601,7 +671,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img99} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2 flex justify-between items-center">
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[22] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(22)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -614,7 +687,10 @@ const Fashion = () => {
       <div className="relative">
         <img src={img100} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[23] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(23)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
