@@ -211,9 +211,9 @@ import img210 from "../assets/line18/v-2.webp";
 import img211 from "../assets/line18/v-3.webp";
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
-const Beauty = () => {
+const Beauty = ({ favorite, toggleFavorite}) => {
   return (
     <div>
       
@@ -274,13 +274,16 @@ const Beauty = () => {
         <img src={img53} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center ">
           <span className=" bg-black text-green-800 font-base px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[460] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(460)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Unseen Dew Glow Balm 9 Types</p>
-          <span className="text-lg font-bold text-red-600">$17</span>
+          <span className="text-sm font-bold text-red-800">$17</span>
       </div>
     </li>
     <li>
@@ -288,13 +291,16 @@ const Beauty = () => {
         <img src={img48} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-green-800 px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[461] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(461)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Tint Ribbon Keyring</p>
-          <span className="text-lg font-bold text-red-600">$7</span>
+          <span className="text-sm font-bold text-red-800">$7</span>
       </div>
     </li>
     <li>
@@ -302,13 +308,16 @@ const Beauty = () => {
         <img src={img58} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+            <i className={`cursor-pointer ${
+            favorite[462] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(462)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Skin Sync up Cushion 2 Types</p>
-          <span className="text-lg font-bold text-red-600">$11</span>
+          <span className="text-sm font-bold text-red-800">$11</span>
       </div>
     </li>
     <li>
@@ -316,13 +325,16 @@ const Beauty = () => {
         <img src={img56} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[463] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(463)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Oddtype Cat Keyring [black]</p>
-          <span className="text-lg font-bold text-red-600">$10</span>
+          <span className="text-sm font-bold text-red-800">$10</span>
       </div>
     </li>
     <li>
@@ -330,13 +342,16 @@ const Beauty = () => {
         <img src={img55} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+            <i className={`cursor-pointer ${
+            favorite[464] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(464)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Mirror Pounch [Silver]</p>
-          <span className="text-lg font-bold text-red-600">$9</span>
+          <span className="text-sm font-bold text-red-800">$9</span>
       </div>
     </li>
     <li>
@@ -344,13 +359,16 @@ const Beauty = () => {
         <img src={img57} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+            <i className={`cursor-pointer ${
+            favorite[465] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(465)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Unveil skin Highlighter 2 colors</p>
-          <span className="text-lg font-bold text-red-600">$16</span>
+          <span className="text-sm font-bold text-red-800">$16</span>
       </div>
     </li>
   </ul>
@@ -367,13 +385,16 @@ const Beauty = () => {
         <img src={img59} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center ">
           <span className=" bg-black text-green-800 font-base px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+            <i className={`cursor-pointer ${
+            favorite[466] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(466)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Unlimited Curl lift Mascara [New]</p>
-          <span className="text-lg font-bold text-red-600">$10</span>
+          <span className="text-sm font-bold text-red-800">$10</span>
       </div>
     </li>
     <li>
@@ -381,13 +402,16 @@ const Beauty = () => {
         <img src={img60} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-green-800 px-2">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[467] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(467)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">[Lip Tattoo Pack] Peel off Lip Stain</p>
-          <span className="text-lg font-bold text-red-600">$7</span>
+          <span className="text-sm font-bold text-red-800">$7</span>
       </div>
     </li>
     <li>
@@ -395,13 +419,16 @@ const Beauty = () => {
         <img src={img61} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+            <i className={`cursor-pointer ${
+            favorite[468] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(468)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Unseen blur Tint [14 Type]</p>
-          <span className="text-lg font-bold text-red-600">$11</span>
+          <span className="text-sm font-bold text-red-800">$11</span>
       </div>
     </li>
     <li>
@@ -409,13 +436,16 @@ const Beauty = () => {
         <img src={img62} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[469] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(469)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Unseen Mirror Tint [10 Type]</p>
-          <span className="text-lg font-bold text-red-600">$10</span>
+          <span className="text-sm font-bold text-red-800">$10</span>
       </div>
     </li>
     <li>
@@ -423,13 +453,16 @@ const Beauty = () => {
         <img src={img63} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+            <i className={`cursor-pointer ${
+            favorite[470] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(470)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Ballon Tint X Heart Pocket T-Shirt</p>
-          <span className="text-lg font-bold text-red-600">$20</span>
+          <span className="text-sm font-bold text-red-800">$20</span>
       </div>
     </li>
     <li>
@@ -437,13 +470,16 @@ const Beauty = () => {
         <img src={img64} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
-          <i className="fa-regular fa-heart text-gray-500 font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[471] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(471)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ODDTYPE</strong>
         <p className="text-sm text-gray-900">Sync Up over Spreader</p>
-          <span className="text-lg font-bold text-red-600">$9</span>
+          <span className="text-sm font-bold text-red-800">$9</span>
       </div>
     </li>
   </ul>
@@ -467,78 +503,96 @@ const Beauty = () => {
       <div className="relative">
         <img src={img107} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[472] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(472)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">LUMMIR</strong>
         <p className="text-sm text-gray-900">Light on eye shadow palatte</p>
-        <span className="text-lg font-bold text-red-600">$28</span>
+        <span className="text-sm font-bold text-red-800">$28</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img108} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[473] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(473)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">NOBEV</strong>
         <p className="text-sm text-gray-900">Noveb under eye mood aegyo sal palette</p>
-        <span className="text-lg font-bold text-red-600">$19</span>
+        <span className="text-sm font-bold text-red-800">$19</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img109} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[474] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(474)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">KIRSH BLENDING</strong>
         <p className="text-sm text-gray-900">Waterproof mascara</p>
-        <span className="text-lg font-bold text-red-600">$18</span>
+        <span className="text-sm font-bold text-red-800">$18</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img110} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[475] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(475)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">I'M MEME</strong>
         <p className="text-sm text-gray-900">I am stick shadow</p>
-        <span className="text-lg font-bold text-red-600">$3</span>
+        <span className="text-sm font-bold text-red-800">$3</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img111} alt="SCALLYWANG"></img>
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[476] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(476)}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">KEYBO</strong>
         <p className="text-sm text-gray-900">Falling in love eye shadow palette</p>
-        <span className="text-lg font-bold text-red-600">$17</span>
+        <span className="text-sm font-bold text-red-800">$17</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img112} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[477] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(477)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">PRO8</strong>
         <p className="text-sm text-gray-900">Stay on gel eyeliner duo set</p>
-        <span className="text-lg font-bold text-red-600">$34</span>
+        <span className="text-sm font-bold text-red-800">$34</span>
       </div>
     </li>
   </ul>
@@ -554,78 +608,96 @@ const Beauty = () => {
       <div className="relative">
         <img src={img113} alt="SCALLYWANG"></img>
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[478] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(478)}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">SKINFOOED</strong>
         <p className="text-sm text-gray-900">Choco eyebrow cake powder</p>
-        <span className="text-lg font-bold text-red-600">$12</span>
+        <span className="text-sm font-bold text-red-800">$12</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img114} alt="SCALLYWANG"></img>
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[479] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(479)}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ANDEAR</strong>
         <p className="text-sm text-gray-900">Single basic multiple blush</p>
-        <span className="text-lg font-bold text-red-600">$12</span>
+        <span className="text-sm font-bold text-red-800">$12</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img115} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[480] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(480)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">BAREN</strong>
         <p className="text-sm text-gray-900">Hand cuticle essiential oil</p>
-        <span className="text-lg font-bold text-red-600">$7</span>
+        <span className="text-sm font-bold text-red-800">$7</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img116} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+           <i className={`cursor-pointer ${
+            favorite[481] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(481)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">HANSKIN</strong>
         <p className="text-sm text-gray-900">Super light touch BB-Cream + concealer</p>
-        <span className="text-lg font-bold text-red-600">$37</span>
+        <span className="text-sm font-bold text-red-800">$37</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img117} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[482] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(482)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">Dinto</strong>
         <p className="text-sm text-gray-900">Soft Glow liquid cheek 8-type</p>
-        <span className="text-lg font-bold text-red-600">$15</span>
+        <span className="text-sm font-bold text-red-800">$15</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img118} alt="SCALLYWANG"></img>
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[483] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(483)}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">DINTO</strong>
         <p className="text-sm text-gray-900">Mid-night liquid contour</p>
-        <span className="text-lg font-bold text-red-600">$15</span>
+        <span className="text-sm font-bold text-red-800">$15</span>
       </div>
     </li>
   </ul>
@@ -640,78 +712,96 @@ const Beauty = () => {
       <div className="relative">
         <img src={img119} alt="SCALLYWANG"></img>
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[484] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(484)}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">I'M MEME</strong>
         <p className="text-sm text-gray-900">I'm shadow multi stick</p>
-        <span className="text-lg font-bold text-red-600">$12</span>
+        <span className="text-sm font-bold text-red-800">$12</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img120} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[485] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(485)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">DUEYTREE</strong>
         <p className="text-sm text-gray-900">Pick and quick morning depaffing face mask-sheet</p>
-        <span className="text-lg font-bold text-red-600">$16</span>
+        <span className="text-sm font-bold text-red-800">$16</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img121} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[486] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(486)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MARY&MAY</strong>
         <p className="text-sm text-gray-900">Blackberry complex glow face-wash pack</p>
-        <span className="text-lg font-bold text-red-600">$22</span>
+        <span className="text-sm font-bold text-red-800">$22</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img122} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[487] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(487)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">HANSKIN</strong>
         <p className="text-sm text-gray-900">Pure vita C toning serum</p>
-        <span className="text-lg font-bold text-red-600">$13</span>
+        <span className="text-sm font-bold text-red-800">$13</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img123} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+          <i className={`cursor-pointer ${
+            favorite[488] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(488)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MIZON</strong>
         <p className="text-sm text-gray-900">Rice tone glow tonner</p>
-        <span className="text-lg font-bold text-red-600">$12</span>
+        <span className="text-sm font-bold text-red-800">$12</span>
       </div>
     </li>
     <li >
       <div className="relative">
         <img src={img124} alt="SCALLYWANG"></img> 
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
-          <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[489] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(489)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">SOMEBLOSSEM</strong>
         <p className="text-sm text-gray-900">Cica care body-wash + body-lotion + body-mist</p>
-        <span className="text-lg font-bold text-red-600">$44</span>
+        <span className="text-sm font-bold text-red-800">$44</span>
       </div>
     </li>
   </ul>
