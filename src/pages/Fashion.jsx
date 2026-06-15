@@ -274,10 +274,10 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">AMOU</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">AMOU</strong>
         <p className="text-sm text-gray-900">Molly Hooded zip up Navy</p>
-        <span className="text-black-800 font-bold">20% OFF</span>
-          <span className="text-lg font-bold text-red-600">$43</span>
+        <span className="text-gray-600">20% OFF</span>
+          <span className="text-sm font-bold text-red-800">$43</span>
       </div>
     </li>
     <li>
@@ -292,10 +292,10 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">LEMAIN SECOND</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">LEMAIN SECOND</strong>
         <p className="text-sm text-gray-900">Vintage Pigment 2way oversize hoodie zip up [charcoal]</p>
-         <span className="text-black-800 font-bold">20% OFF</span>
-          <span className="text-lg font-bold text-red-600">$31</span>
+         <span className="text-gray-600">20% OFF</span>
+          <span className="text-xm font-bold text-red-800">$31</span>
       </div>
     </li>
     <li>
@@ -310,10 +310,10 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">MUGON</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUGON</strong>
         <p className="text-sm text-gray-900">Curved line zip up hoodie gray</p>
-          <span className="text-black-800 font-bold">20% OFF</span>
-          <span className="text-lg font-bold text-red-600">$39</span>
+          <span className="text-gray-600">20% OFF</span>
+          <span className="text-sm font-bold text-red-800">$39</span>
       </div>
     </li>
     <li>
@@ -328,10 +328,10 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">CARMID</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">CARMID</strong>
         <p className="text-sm text-gray-900">Glory lettering crop top hoodie</p>
-         <span className="text-black-800 font-bold">40% OFF</span>
-          <span className="text-lg font-bold text-red-600">$79</span>
+         <span className="text-gray-600">40% OFF</span>
+          <span className="text-sm font-bold text-red-800">$79</span>
       </div>
     </li>
     <li>
@@ -346,10 +346,10 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">RRANDOMOFF</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">RRANDOMOFF</strong>
         <p className="text-sm text-gray-900">Overway fit up zip up Hoodie</p>
-          <span className="text-black-800 font-bold">20% OFF</span>
-          <span className="text-lg font-bold text-red-600">$30</span>
+          <span className="text-gray-600">20% OFF</span>
+          <span className="text-sm font-bold text-red-800">$30</span>
       </div>
     </li>
     <li>
@@ -364,10 +364,10 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">TRAVEL</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">TRAVEL</strong>
         <p className="text-sm text-gray-900">Logo printed zip up Hoodie [gray]</p>
-          <span className="text-black-800 font-bold">20% OFF</span>
-          <span className="text-lg font-bold text-red-600">$39</span>
+          <span className="text-gray-600">20% OFF</span>
+          <span className="text-sm font-bold text-red-800">$39</span>
       </div>
     </li>
   </ul>
@@ -397,9 +397,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">BROWNBREATH KIDS</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">BROWNBREATH KIDS</strong>
         <p className="text-sm text-gray-900">Classic kids Radogram bagpack</p>
-          <span className="text-lg font-bold text-black-600">$137</span>
+          <span className="text-sm font-bold text-black-800">$137</span>
       </div>
     </li>
     <li>
@@ -413,9 +413,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ROANJANE</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">ROANJANE</strong>
         <p className="text-sm text-gray-900">Bunny Bunny Bagpack</p>
-          <span className="text-lg font-bold text-black-600">$42</span>
+          <span className="text-sm font-bold text-red-800">$42</span>
       </div>
     </li>
     <li>
@@ -429,9 +429,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">LIFEWORK KIDS</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">LIFEWORK KIDS</strong>
         <p className="text-sm text-gray-900">New Classic Bagpack</p>
-          <span className="text-lg font-bold text-black-600">$72</span>
+          <span className="text-sm font-bold text-red-800">$72</span>
       </div>
     </li>
     <li>
@@ -445,9 +445,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ROANJANE</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">ROANJANE</strong>
         <p className="text-sm text-gray-900">Brown bear Dumble Backpack</p>
-          <span className="text-lg font-bold text-black-600">$40</span>
+          <span className="text-sm font-bold text-red-800">$40</span>
       </div>
     </li>
     <li>
@@ -461,9 +461,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">BROWNNREATH KIDS</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">BROWNNREATH KIDS</strong>
         <p className="text-sm text-gray-900">kids Big Tag Backpack</p>
-          <span className="text-lg font-bold text-black-600">$68</span>
+          <span className="text-sm font-bold text-red-800">$68</span>
       </div>
     </li>
     <li>
@@ -477,9 +477,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">BROWNBREATH KIDS</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">BROWNBREATH KIDS</strong>
         <p className="text-sm text-gray-900">Daily kids bagpack [khaki]</p>
-          <span className="text-lg font-bold text-black-600">$16</span>
+          <span className="text-sm font-bold text-red-800">$16</span>
       </div>
     </li>
   </ul>
@@ -504,9 +504,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">SAPUN</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">SAPUN</strong>
         <p className="text-sm text-gray-900">Verity pump heels</p>
-        <span className="text-lg font-bold text-red-600">$42</span>
+        <span className="text-sm font-bold text-red-800">$42</span>
       </div>
     </li>
     <li >
@@ -520,9 +520,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
         <p className="text-sm text-gray-900">SOREL MID HEELS</p>
-        <span className="text-lg font-bold text-red-600">$21</span>
+        <span className="text-sm font-bold text-red-800">$21</span>
       </div>
     </li>
     <li >
@@ -536,9 +536,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">CUSTOMMADEWOMEN</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">CUSTOMMADEWOMEN</strong>
         <p className="text-sm text-gray-900">Mary jane pumps scarlets</p>
-        <span className="text-lg font-bold text-red-600">$27</span>
+        <span className="text-sm font-bold text-red-800">$27</span>
       </div>
     </li>
     <li >
@@ -552,9 +552,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">ROLLONTHECLOUDS</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">ROLLONTHECLOUDS</strong>
         <p className="text-sm text-gray-900">Poetic pumps heels</p>
-        <span className="text-lg font-bold text-red-600">$37</span>
+        <span className="text-sm font-bold text-red-800">$37</span>
       </div>
     </li>
     <li >
@@ -568,9 +568,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
         <p className="text-sm text-gray-900">Lace up plateform sandals</p>
-        <span className="text-lg font-bold text-red-600">$27</span>
+        <span className="text-sm font-bold text-red-800">$27</span>
       </div>
     </li>
     <li >
@@ -584,9 +584,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">SAPPUN</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">SAPPUN</strong>
         <p className="text-sm text-gray-900">Basic pump heels black</p>
-        <span className="text-lg font-bold text-red-600">$20</span>
+        <span className="text-sm font-bold text-red-800">$20</span>
       </div>
     </li>
   </ul>
@@ -614,9 +614,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
         <p className="text-sm text-gray-900">MIA fUR line winter boots</p>
-          <span className="text-lg font-bold text-red-800">$23</span>
+          <span className="text-sm font-bold text-red-800">$23</span>
       </div>
     </li>
     <li>
@@ -630,9 +630,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">CHAAKAN</strong>
         <p className="text-sm text-gray-900">Winter collection fur boots</p>
-          <span className="text-lg font-bold text-red-800">$25</span>
+          <span className="text-sm font-bold text-red-800">$25</span>
       </div>
     </li>
     <li>
@@ -646,9 +646,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">FORR</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">FORR</strong>
         <p className="text-sm text-gray-900">Strap fun long boots - chestnut</p>
-          <span className="text-lg font-bold text-red-800">$39</span>
+          <span className="text-sm font-bold text-red-800">$39</span>
       </div>
     </li>
     <li>
@@ -662,9 +662,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">NUARAT STUDIO</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">NUARAT STUDIO</strong>
         <p className="text-sm text-gray-900">Classic fur short mini boots [5-colors]</p>
-          <span className="text-lg font-bold text-red-800">$23</span>
+          <span className="text-sm font-bold text-red-800">$23</span>
       </div>
     </li>
     <li>
@@ -678,9 +678,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">AKKI CLASSIC</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">AKKI CLASSIC</strong>
         <p className="text-sm text-gray-900">Iceline recovery classic boots Dark Espresso</p>
-          <span className="text-lg font-bold text-red-800">$50</span>
+          <span className="text-sm font-bold text-red-800">$50</span>
       </div>
     </li>
     <li>
@@ -694,9 +694,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">FORR</strong>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">FORR</strong>
         <p className="text-sm text-gray-900">3 Button long boots - chestnuts</p>
-          <span className="text-lg font-bold text-red-800">$39</span>
+          <span className="text-sm font-bold text-red-800">$39</span>
       </div>
     </li>
   </ul>

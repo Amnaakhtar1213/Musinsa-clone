@@ -26,13 +26,13 @@ const Header = ({ favoriteCount }) => {
       </div>
 
       <div  className="text-xl relative">
-        <i 
-        className="fa-regular fa-heart"
-      ></i>
+        <Link to="/wishlist">
+         <i className="fa-regular fa-heart"></i>
         {favoriteCount > 0 && (
         <span className="absolute -top-0.3 -right-1 bg-red-600 rounded-full w-1 h-1">
         </span>
         )}
+        </Link>
       </div>
 
       <div  className="text-xl">
@@ -202,7 +202,7 @@ const Header = ({ favoriteCount }) => {
 
       <div className="flex flex-col gap-4">
       <h2 className="font-bold text-sm">ACTIVE</h2>
-      <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Tops</Link></li>
+      <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Tops</Link></li>
       <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport pants</Link></li>
       <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sports outerwear</Link></li>
       <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Skirts</Link></li>

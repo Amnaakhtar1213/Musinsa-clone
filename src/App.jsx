@@ -22,13 +22,16 @@ import Shirts from './pages/Shirts.jsx'
 import Shoes from './pages/Shoes.jsx'
 import Sports from './pages/Sports.jsx'
 
+import Wishlist from './pages/Wishlist.jsx'
 
 function App() { 
 
-const [favorite, setFavorite] = useState({});
+  const [favorite, setFavorite] = useState({});
   const [favoriteCount, setFavoriteCount] = useState(0);
 
-  const toggleFavorite = (id) => {
+  const [wishlist, setWishlist] = useState([])
+
+  const toggleFavorite = (id, product) => {
     setFavorite((prev) => {
       const isFavorite = !prev[id];
       const newFavorite = { ...prev, [id]: isFavorite };
@@ -36,9 +39,25 @@ const [favorite, setFavorite] = useState({});
       // update count
       setFavoriteCount(Object.values(newFavorite).filter(Boolean).length);
 
+      if(isFavorite) {
+        setWishlist((prevWishlist) => {
+          if (!prevWishlist.find((item) => item.id === product.id)) {
+             return [...prevWishlist, product]
+          }
+          return prevWishlist;
+        })
+      } else {
+        setWishlist((prevWishlist) => 
+        prevWishlist.filter((item) => item.id !== product.id)
+      )
+      }
+
       return newFavorite;
     });
   };
+
+
+
 
 
    return (
@@ -62,7 +81,8 @@ const [favorite, setFavorite] = useState({});
           <Route path="/bags" element={<Bags favorite={favorite} toggleFavorite={toggleFavorite}/>} />
           <Route path="/accessories" element={<Accessories favorite={favorite} toggleFavorite={toggleFavorite}/>} />
           <Route path="/sports" element={<Sports favorite={favorite} toggleFavorite={toggleFavorite}/>} />
-
+          
+          <Route path="/Wishlist" element={<Wishlist wishlist={wishlist} favorite={favorite} toggleFavorite={toggleFavorite} />} />
      </Routes>
     
     </Router>

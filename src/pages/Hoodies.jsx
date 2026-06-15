@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 
@@ -233,7 +233,7 @@ import img228 from "../assets/line20/w-21.webp";
 
 
 
-const Hoodies = () => {
+const Hoodies = ({ favorite, toggleFavorite }) => {
   return (
     <div>
         <div className="text-4xl font-bold text-center mt-40 text-gray-900">
@@ -247,14 +247,17 @@ const Hoodies = () => {
              <img src={img199} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
                <span className=" bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+               <i className={`cursor-pointer ${
+            favorite[490] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(490)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">CPGN STUDIO</strong>
+             <strong className="font-medium">CPGN STUDIO</strong>
              <p className="text-sm text-gray-900">Full star pigment hoodie zip up</p>
              <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$43</span>
+               <span className="text-sm font-bold text-red-800">$43</span>
            </div>
          </li>
          <li>
@@ -262,28 +265,34 @@ const Hoodies = () => {
              <img src={img200} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
                <span className=" bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[491] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(491)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FANSHOW</strong>
+             <strong className="font-medium">FANSHOW</strong>
              <p className="text-sm text-gray-900">Six color ninteen geometry pants</p>
               <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$58</span>
+               <span className="text-sm font-bold text-red-800">$58</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img201} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[492] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(492)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FLAREUP</strong>
+             <strong className="font-medium">FLAREUP</strong>
              <p className="text-sm text-gray-900">Half sleeve layer busten t-shirt</p>
                <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$47</span>
+               <span className="text-sm font-bold text-red-800">$47</span>
            </div>
          </li>
          <li>
@@ -291,42 +300,51 @@ const Hoodies = () => {
              <img src={img202} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-2">
                <span className="bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[493] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(493)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">AGOD</strong>
+             <strong className="font-medium">AGOD</strong>
              <p className="text-sm text-gray-900">Wide denim pant</p>
               <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$22</span>
+               <span className="text-sm font-bold text-red-800">$22</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img203} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[494] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(494)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FILLUMINATE</strong>
+             <strong className="font-medium">FILLUMINATE</strong>
              <p className="text-sm text-gray-900">Damage washeable denim pant</p>
                 <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$33</span>
+               <span className="text-sm font-bold text-red-800">$33</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img204} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+         <i className={`cursor-pointer ${
+            favorite[495] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(495)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">DEMITRI BLACK</strong>
+             <strong className="font-medium">DEMITRI BLACK</strong>
              <p className="text-sm text-gray-900">Women curved track sweat pant</p>
              <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="font-bold text-red-600">$32</span>
+               <span className="font-bold text-sm text-red-800">$32</span>
            </div>
          </li>
        </ul>
@@ -341,14 +359,17 @@ const Hoodies = () => {
              <img src={img220} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
                <span className=" bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+               <i className={`cursor-pointer ${
+            favorite[496] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(496)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">DIMITRI BLACK</strong>
+             <strong className="font-medium">DIMITRI BLACK</strong>
              <p className="text-sm text-gray-900">Black hoodie zip up</p>
              <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$24</span>
+               <span className="text-sm font-bold text-red-800">$24</span>
            </div>
          </li>
          <li>
@@ -356,28 +377,34 @@ const Hoodies = () => {
              <img src={img221} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
                <span className=" bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+               <i className={`cursor-pointer ${
+            favorite[497] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(497)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">MUSINSA STANDARD</strong>
+             <strong className="font-medium">MUSINSA STANDARD</strong>
              <p className="text-sm text-gray-900">Full hoodie set</p>
               <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$58</span>
+               <span className="text-sm font-bold text-red-800">$58</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img222} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[498] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(498)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FLAREUP</strong>
+             <strong className="font-medium">FLAREUP</strong>
              <p className="text-sm text-gray-900">High neck leather jacket</p>
                <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$56</span>
+               <span className="text-sm font-bold text-red-800">$56</span>
            </div>
          </li>
          <li>
@@ -385,42 +412,51 @@ const Hoodies = () => {
              <img src={img223} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-2">
                <span className="bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[499] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(499)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">MUSINSA STANDARD</strong>
+             <strong className="font-medium">MUSINSA STANDARD</strong>
              <p className="text-sm text-gray-900">Leather jacket</p>
               <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$62</span>
+               <span className="text-sm font-bold text-red-800">$62</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img224} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[500] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(500)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">AGOD</strong>
+             <strong className="font-medium">AGOD</strong>
              <p className="text-sm text-gray-900">Choclate brown lather jacket</p>
                 <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$63</span>
+               <span className="text-sm font-bold text-red-800">$63</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img225} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+               <i className={`cursor-pointer ${
+            favorite[501] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(501)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">DEMITRI BLACK</strong>
+             <strong className="font-medium">DEMITRI BLACK</strong>
              <p className="text-sm text-gray-900">Best washable brown jacket</p>
              <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="font-bold text-red-600">$32</span>
+               <span className="font-bold text-sm text-red-800">$32</span>
            </div>
          </li>
        </ul>
@@ -436,14 +472,17 @@ const Hoodies = () => {
              <img src={img208} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
                <span className=" bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[502] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(502)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">MUAHMUAH</strong>
+             <strong className="text-medium">MUAHMUAH</strong>
              <p className="text-sm text-gray-900">Four seasonal essiantial hoodie zip up (gray)</p>
              <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$23</span>
+               <span className="text-sm font-bold text-red-800">$23</span>
            </div>
          </li>
          <li>
@@ -451,28 +490,34 @@ const Hoodies = () => {
              <img src={img209} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center (blue)">
                <span className=" bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+               <i className={`cursor-pointer ${
+            favorite[503] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(503)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FANSHOW</strong>
+             <strong className="text-medium">FANSHOW</strong>
              <p className="text-sm text-gray-900">Four seasonal essiantial hoodie zip up (blue)</p>
               <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$58</span>
+               <span className="text-sm font-bold text-red-800">$58</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img210} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[504] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(504)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FLAREUP</strong>
+             <strong className="text-medium">FLAREUP</strong>
              <p className="text-sm text-gray-900">Four seasonal essiantial hoodie zip up (charcoal)</p>
                <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$47</span>
+               <span className="text-sm font-bold text-red-800">$47</span>
            </div>
          </li>
          <li>
@@ -480,42 +525,51 @@ const Hoodies = () => {
              <img src={img211} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-2">
                <span className="bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[505] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(505)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">MUAHMUAH</strong>
+             <strong className="text-medium">MUAHMUAH</strong>
              <p className="text-sm text-gray-900">Anime printed black strip hoodie</p>
               <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$22</span>
+               <span className="text-sm font-bold text-red-800">$22</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img212} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[506] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(506)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FILLUMINATE</strong>
+             <strong className="text-medium">FILLUMINATE</strong>
              <p className="text-sm text-gray-900">Logo printed hoodie</p>
                 <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$33</span>
-           </div>
+               <span className="text-sm font-bold text-red-800">$20</span>
+               </div>
          </li>
          <li>
            <div className="relative">
              <img src={img213} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+               <i className={`cursor-pointer ${
+            favorite[507] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(507)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">BUAF</strong>
+             <strong className="text-medium">BUAF</strong>
              <p className="text-sm text-gray-900">Gray cloud printed design hoodie zip up</p>
              <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="font-bold text-red-600">$32</span>
+               <span className="text-sm font-bold text-red-800">$32</span>
            </div>
          </li>
        </ul>
@@ -531,14 +585,17 @@ const Hoodies = () => {
              <img src={img214} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
                <span className=" bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[508] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(508)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">CPGN STUDIO</strong>
+             <strong className="text-medium">CPGN STUDIO</strong>
              <p className="text-sm text-gray-900">Buttons hoodie zip up</p>
              <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$43</span>
+               <span className="text-sm font-bold text-red-800">$43</span>
            </div>
          </li>
          <li>
@@ -546,28 +603,34 @@ const Hoodies = () => {
              <img src={img215} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
                <span className=" bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+               <i className={`cursor-pointer ${
+            favorite[509] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(509)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FANSHOW</strong>
+             <strong className="text-medium">FANSHOW</strong>
              <p className="text-sm text-gray-900"> ninteen geometry hoodie</p>
               <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$38</span>
+               <span className="text-sm font-bold text-red-800">$38</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img216} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[510] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(510)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">FLAREUP</strong>
+             <strong className="text-medium">FLAREUP</strong>
              <p className="text-sm text-gray-900">Gray plan hoodie</p>
                <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$47</span>
+               <span className="text-sm font-bold text-red-800">$47</span>
            </div>
          </li>
          <li>
@@ -575,42 +638,51 @@ const Hoodies = () => {
              <img src={img217} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-2">
                <span className="bg-black text-white px-2">Extra 10% OFF</span>
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+               <i className={`cursor-pointer ${
+            favorite[511] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(511)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">AGOD</strong>
+             <strong className="text-medium">AGOD</strong>
              <p className="text-sm text-gray-900">Net knit hoodie zip up</p>
               <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$52</span>
+               <span className="text-sm font-bold text-red-800">$52</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img218} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[512] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(512)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">BUAF</strong>
+             <strong className="text-medium">BUAF</strong>
              <p className="text-sm text-gray-900">Big logo printed hoodie zip up</p>
                 <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="text-lg font-bold text-red-600">$33</span>
+               <span className="text-sm font-bold text-red-800">$33</span>
            </div>
          </li>
          <li>
            <div className="relative">
              <img src={img219} alt="SCALLYWANG"></img>
              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-               <i className="fa-regular fa-heart text-white font-bold"></i>
+                <i className={`cursor-pointer ${
+            favorite[513] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+          }`}
+          onClick={() => toggleFavorite(513)}></i>
              </div>
            </div>
            <div className="flex flex-col gap-1 mt-3">
-             <strong className="text-bold">DEMITRI BLACK</strong>
+             <strong className="text-medium">DEMITRI BLACK</strong>
              <p className="text-sm text-gray-900">Lovely hip hoodie zip up</p>
              <span className="text-gray-600 text-sm font-normal">10% OFF</span>
-               <span className="font-bold text-red-600">$32</span>
+               <span className="text-sm font-bold text-red-800">$32</span>
            </div>
          </li>
        </ul>
@@ -624,7 +696,7 @@ const Hoodies = () => {
 
 <section className="mt-10 mx-30">
   <div className="items-center text-center">
-    <h1 className="text-5xl mb-15">MORE TO EXPLORE</h1>
+    <h1 className="text-5xl mb-10">MORE TO EXPLORE</h1>
     <div className="flex flex-row gap-6">
       <div>
         <img src={img226} alt="musinsa" />
