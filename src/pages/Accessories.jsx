@@ -471,7 +471,7 @@ const Accessories = ({ favorite, toggleFavorite }) => {
                 <i className={`cursor-pointer ${
             favorite[354] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
-          onClick={() => toggleFavorite(354, AcceProductMap[355])}></i>
+          onClick={() => toggleFavorite(354, AcceProductMap[354])}></i>
               </div>
             </div>
             <div className="flex flex-col gap-1 mt-3">
@@ -485,7 +485,7 @@ const Accessories = ({ favorite, toggleFavorite }) => {
               <img src={img214} alt="SCALLYWANG"></img>
               <div className="absolute bottom-2 right-2  flex justify-between items-center">
                 <i className={`cursor-pointer ${
-            favorite[355] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[355] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
           }`}
           onClick={() => toggleFavorite(355)}></i>
               </div>

@@ -1,4 +1,3 @@
-
 import img1 from "../assets/line1/u-1.webp";
 import img2 from "../assets/line1/u-2.webp";
 import img3 from "../assets/line1/u-3.webp";
@@ -205,324 +204,277 @@ import img205 from "../assets/line11/r-1.webp";
 import img206 from "../assets/line11/r-2.webp";
 import img207 from "../assets/line11/r-3.webp";
 import img208 from "../assets/line18/t-1.webp";
+import img209 from "../assets/line18/v-1.webp";
+import img210 from "../assets/line18/v-2.webp";
+import img211 from "../assets/line18/v-3.webp";
 
-export const MusinsaProduct = {
-  552: {
-  id: 552,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Washable double front-button curved neck shirt",
-  price: 20,
-  discount: "10% OFF",
-  image: img131,
-},
-553: {
-  id: 553,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Musinsa special white zip up crop top hoodie",
-  price: 38,
-  discount: "10% OFF",
-  image: img132,
-},
-554: {
-  id: 554,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Single curved black pants for women",
-  price: 20,
-  discount: "10% OFF",
-  image: img133,
-},
-555: {
-  id: 555,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Long sleeves full dotted summer shirt",
-  price: 35,
-  discount: "10% OFF",
-  image: img134,
-},
-556: {
-  id: 556,
-  name: "PLEASENOFOLLOW",
-  description: "Women Slim Crew Neck T-Shirt (5 colors)",
-  price: 13,
-  discount: "23% OFF",
-  image: img47,
-},
-557: {
-  id: 557,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Women Cotton Curved Pants (3 colors)",
-  price: 34,
-  discount: "10% OFF",
-  image: img48,
-},
-558: {
-  id: 558,
-  name: "PLEASENOFOLLOW",
-  description: "Women Wide Cargo Pants [Black]",
-  price: 33,
-  discount: "29% OFF",
-  image: img50,
-},
-559: {
-  id: 559,
-  name: "PLEASENOFOLLOW",
-  description: "Women Ribbed Slim Scoop Neck Layered Jersey",
-  price: 18,
-  discount: "40% OFF",
-  image: img51,
-},
-560: {
-  id: 560,
-  name: "GLACK",
-  description: "Women Polka Long Sleeves T-Shirt",
-  price: 20,
-  discount: "20% OFF",
-  image: img52,
-},
-561: {
-  id: 561,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Women Low Rise Flare Slacks [Black]",
-  price: 29,
-  discount: "25% OFF",
-  image: img46,
-},
-562: {
-  id: 562,
-  name: "YEOMIM",
-  description: "Molly Hooded zip up Navy",
-  price: 43,
-  discount: "20% OFF",
-  image: img83,
-},
-563: {
-  id: 563,
-  name: "YEOMIM",
-  description: "Vintage Pigment 2way Oversize Hoodie Zip Up [Charcoal]",
-  price: 31,
-  discount: "20% OFF",
-  image: img84,
-},
-564: {
-  id: 564,
-  name: "GLACKS",
-  description: "Curved Line Zip Up Hoodie Gray",
-  price: 39,
-  discount: "20% OFF",
-  image: img85,
-},
-565: {
-  id: 565,
-  name: "Unknown Brand",
-  description: "Glory Lettering Crop Top Hoodie",
-  price: 79,
-  discount: "40% OFF",
-  image: img86,
-},
-566: {
-  id: 566,
-  name: "CHARMY",
-  description: "Overway Fit Zip Up Hoodie",
-  price: 30,
-  discount: "20% OFF",
-  image: img87,
-},
-567: {
-  id: 567,
-  name: "FANCY CLUB",
-  description: "Logo Printed Zip Up Hoodie [Gray]",
-  price: 39,
-  discount: "20% OFF",
-  image: img88,
-},
-568: {
-  id: 568,
-  name: "SCALLYWAG",
+import img340 from "../assets/line9/d5.webp";
+import img341 from "../assets/line9/d6.webp";
+import img342 from "../assets/line9/d-11.webp";
+import img343 from "../assets/line9/d-12.webp";
+import img344 from "../assets/line9/d-14.webp";
+import img345 from "../assets/line9/d-21.webp";
+import img346 from "../assets/line9/d-22.webp";
+import img347 from "../assets/line9/d-23.webp";
+import img348 from "../assets/line9/d-24.webp";
+import img349 from "../assets/line9/d-25.webp";
+import img350 from "../assets/line9/d-26.webp";
+import img351 from "../assets/line9/d-27.webp";
+import img352 from "../assets/line9/d-28.webp";
+import img353 from "../assets/line9/d-29.webp";
+import img354 from "../assets/line9/d-30.webp";
+import img355 from "../assets/line9/d-16.webp";
+import img356 from "../assets/line9/d-17.webp";
+import img357 from "../assets/line9/d-18.webp";
+import img358 from "../assets/line9/d-19.webp";
+import img359 from "../assets/line9/d-20.webp";
+
+
+export const ShoesMap = {
+738: {
+  id: 738,
+  name: "CHAAKAN",
   description: "MIA Fur Line Winter Boots",
   price: 23,
   image: img95,
 },
-569: {
-  id: 569,
-  name: "YEOMIM",
+739: {
+  id: 739,
+  name: "CHAAKAN",
   description: "Winter Collection Fur Boots",
   price: 25,
   image: img96,
 },
-570: {
-  id: 570,
-  name: "SCALLYWAG",
+740: {
+  id: 740,
+  name: "FORR",
   description: "Strap Fun Long Boots - Chestnut",
   price: 39,
   image: img97,
 },
-571: {
-  id: 571,
-  name: "CHARMY",
-  description: "Classic Fur Short Mini Boots [5 colors]",
+741: {
+  id: 741,
+  name: "NUARAT STUDIO",
+  description: "Classic Fur Short Mini Boots [5 Colors]",
   price: 23,
   image: img98,
 },
-572: {
-  id: 572,
-  name: "MUSINSA STANDARD",
+742: {
+  id: 742,
+  name: "AKKI CLASSIC",
   description: "Iceline Recovery Classic Boots Dark Espresso",
   price: 50,
   image: img99,
 },
-573: {
-  id: 573,
-  name: "HS COLLECTION",
+743: {
+  id: 743,
+  name: "FORR",
   description: "3 Button Long Boots - Chestnuts",
   price: 39,
   image: img100,
 },
-574: {
-  id: 574,
+744: {
+  id: 744,
   name: "MUSINSA STANDARD",
-  description: "Biker buckle boots",
+  description: "Winter Platform Short Boots",
+  price: 73,
+  image: img350,
+},
+745: {
+  id: 745,
+  name: "FORR",
+  description: "Platform Fur Slipper",
+  price: 45,
+  image: img351,
+},
+746: {
+  id: 746,
+  name: "FORR",
+  description: "Furline Chelsea Boots",
+  price: 39,
+  image: img352,
+},
+747: {
+  id: 747,
+  name: "NSWE",
+  description: "Wool Knit Padding Mid Boots",
+  price: 73,
+  image: img353,
+},
+748: {
+  id: 748,
+  name: "ELIZABETH STUART",
+  description: "Biker Buckle Boots",
   price: 70,
   image: img89,
 },
-575: {
-  id: 575,
+749: {
+  id: 749,
   name: "MUSINSA STANDARD",
   description: "Square Chelsea Boot - Black",
   price: 71,
   image: img90,
 },
-576: {
-  id: 576,
-  name: "MUSINSA STANDARD",
+750: {
+  id: 750,
+  name: "23.65",
   description: "Mori Mountain Shoes",
   price: 39,
   image: img91,
 },
-577: {
-  id: 577,
-  name: "MUSINSA STANDARD",
+751: {
+  id: 751,
+  name: "SALT AND CHOCOLATE",
   description: "Duncan Buckle Boots",
   price: 79,
   image: img92,
 },
-578: {
-  id: 578,
-  name: "MUSINSA STANDARD",
+752: {
+  id: 752,
+  name: "SAPUN",
   description: "Ankle Boots",
   price: 44,
   image: img93,
 },
-579: {
-  id: 579,
-  name: "MUSINSA STANDARD",
+753: {
+  id: 753,
+  name: "CUSTOMADE",
   description: "Buddie Suede Long Over Works Boots",
   price: 89,
   image: img94,
 },
-580: {
-  id: 580,
+754: {
+  id: 754,
+  name: "SAPPUN",
+  description: "Buckle Long Boots",
+  price: 70,
+  image: img355,
+},
+755: {
+  id: 755,
   name: "MUSINSA STANDARD",
+  description: "Commando Basic Walker",
+  price: 71,
+  image: img356,
+},
+756: {
+  id: 756,
+  name: "IHCNIK",
+  description: "Matt Buckle Strap Boots",
+  price: 89,
+  image: img357,
+},
+757: {
+  id: 757,
+  name: "MUSINSA STANDARD",
+  description: "Square Chelsea Boots",
+  price: 79,
+  image: img358,
+},
+758: {
+  id: 758,
+  name: "CHAAKAN",
+  description: "Long Platform Biker Boots",
+  price: 94,
+  image: img359,
+},
+759: {
+  id: 759,
+  name: "SAPUN",
   description: "Verity Pump Heels",
   price: 42,
   image: img101,
 },
-581: {
-  id: 581,
-  name: "MUSINSA STANDARD",
+760: {
+  id: 760,
+  name: "CHAAKAN",
   description: "SOREL Mid Heels",
   price: 21,
   image: img102,
 },
-582: {
-  id: 582,
-  name: "MUSINSA STANDARD",
+761: {
+  id: 761,
+  name: "CUSTOMMADE WOMEN",
   description: "Mary Jane Pumps Scarlets",
   price: 27,
   image: img103,
 },
-583: {
-  id: 583,
-  name: "MUSINSA STANDARD",
+762: {
+  id: 762,
+  name: "ROLLONTHECLOUDS",
   description: "Poetic Pumps Heels",
   price: 37,
   image: img104,
 },
-584: {
-  id: 584,
-  name: "MUSINSA STANDARD",
+763: {
+  id: 763,
+  name: "CHAAKAN",
   description: "Lace Up Platform Sandals",
   price: 27,
   image: img105,
 },
-585: {
-  id: 585,
-  name: "MUSINSA STANDARD",
+764: {
+  id: 764,
+  name: "SAPUN",
   description: "Basic Pump Heels Black",
   price: 20,
   image: img106,
 },
-586: {
-  id: 586,
+765: {
+  id: 765,
+  name: "SALT & CHOCOLATE",
+  description: "Round Toe Rider Buckle Boots",
+  price: 69,
+  discount: "20% OFF",
+  image: img151,
+},
+766: {
+  id: 766,
+  name: "SALT & CHOCOLATE",
+  description: "Wrinkle Cover Long Boots",
+  price: 87,
+  image: img152,
+},
+767: {
+  id: 767,
+  name: "SALT & CHOCOLATE",
+  description: "Wide Long Boots",
+  price: 86,
+  image: img153,
+},
+768: {
+  id: 768,
+  name: "SALT & CHOCOLATE",
+  description: "Soft Foam Slim Curved Strap Sandals",
+  price: 38,
+  image: img154,
+},
+769: {
+  id: 769,
   name: "MUSINSA STANDARD",
-  description: "One Pleat Bermuda Sweat Pant [Light Gray]",
+  description: "Casual White Shoes",
   price: 30,
-  discount: "11% OFF",
   image: img161,
 },
-587: {
-  id: 587,
+770: {
+  id: 770,
   name: "MUSINSA STANDARD",
-  description: "Big Brush Long Bermuda Denim Pant [Blue]",
+  description: "Custom Black Shoes",
   price: 38,
-  discount: "9% OFF",
   image: img162,
 },
-588: {
-  id: 588,
+771: {
+  id: 771,
   name: "MUSINSA STANDARD",
-  description: "One Pleat Bermuda Denim Pant [Blue]",
-  price: 25,
-  discount: "8% OFF",
+  description: "Black Joggers",
+  price: 35,
   image: img163,
 },
-589: {
-  id: 589,
+772: {
+  id: 772,
   name: "MUSINSA STANDARD",
-  description: "One Tuck Long Bermuda Sweat Pant",
-  price: 38,
-  discount: "11% OFF",
+  description: "High-Top Brown Sneakers",
+  price: 48,
   image: img164,
-},
-590: {
-  id: 590,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Women Belted Shoulder Bag",
-  price: 73,
-  discount: "9% OFF",
-  image: img176,
-},
-591: {
-  id: 591,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Women Nylon Shoulder Bag",
-  price: 63,
-  discount: "9% OFF",
-  image: img177,
-},
-592: {
-  id: 592,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Women Slouch Shoulder Bag",
-  price: 63,
-  discount: "10% OFF",
-  image: img178,
-},
-593: {
-  id: 593,
-  name: "MUSINSA STANDARD WOMEN",
-  description: "Women Nylon Slouch Shoulder Bag",
-  price: 60,
-  discount: "20% OFF",
-  image: img186,
 },
 }

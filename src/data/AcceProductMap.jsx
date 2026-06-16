@@ -260,7 +260,6 @@ import img262 from "../assets/line21/x-51.webp";
 
 
 export const AcceProductMap = {
-  // 👜 Kids Bags
   347: {
     id: 347,
     name: "BROWNBREATH KIDS",

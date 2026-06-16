@@ -399,6 +399,7 @@ import img386 from "../../assets/line8/k-47.webp";
 import img387 from "../../assets/line8/k-48.webp";
 
 
+import { HomeMap } from '../data/HomeMap.jsx'
 
 
 
@@ -587,7 +588,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <span className="text-gray-600 text-sm">30% OFF</span>
           <span className="text-sm font-bold text-red-800">$12</span>
       </div>
-      <button className="text-white bg-blue-950 w-full mt-3">ADD TO BAG</button>
+      
     </li>
     <li>
       <div className="relative">
@@ -606,7 +607,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
          <span className="text-gray-600 text-sm">30% OFF</span>
           <span className="text-sm font-bold text-red-800">$10</span>
       </div>
-      <button className="text-white bg-blue-950 w-full mt-2">ADD TO BAG</button>
+      
     </li>
     <li>
       <div className="relative">
@@ -625,7 +626,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
           <span className="text-gray-600 text-sm">30% OFF</span>
           <span className="text-sm font-bold text-red-800">$7</span>
       </div>
-      <button className="text-white bg-blue-950 w-full mt-2">ADD TO BAG</button>
+     
     </li>
     <li>
       <div className="relative">
@@ -644,7 +645,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
          <span className="text-gray-600 text-sm">30% OFF</span>
           <span className="text-sm font-bold text-red-800">$17</span>
       </div>
-      <button className="text-white bg-blue-950 w-full mt-2">ADD TO BAG</button>
+     
     </li>
     <li>
       <div className="relative">
@@ -663,7 +664,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
           <span className="text-gray-600 text-sm">30% OFF</span>
           <span className="text-sm font-bold text-red-800">$22</span>
       </div>
-      <button className="text-white bg-blue-950 w-full mt-2">ADD TO BAG</button>
+      
     </li>
     <li>
       <div className="relative">
@@ -682,7 +683,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
           <span className="text-gray-600 text-sm">30% OFF</span>
           <span className="text-sm font-bold text-red-800">$15</span>
       </div>
-      <button className="text-white bg-blue-950 w-full mt-2">ADD TO BAG</button>
+    
     </li>
   </ul>
 </div>
@@ -706,7 +707,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Weekly Deals</span>
           <i className={`cursor-pointer ${
-            favorite[30] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[30] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
           onClick={() => toggleFavorite(30)}></i>
         </div>
@@ -742,7 +743,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-white px-2">Weekly Deals</span>
          <i className={`cursor-pointer ${
-            favorite[32] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[32] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
           onClick={() => toggleFavorite(32)}></i>
         </div>
@@ -869,14 +870,14 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-white px-2">Extra 20% OFF</span>
          <i className={`cursor-pointer ${
-            favorite[38] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[38] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
           onClick={() => toggleFavorite(38)}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium"></strong>
-        <p className="text-sm text-black">B Logo Dot Slim Fit T-shirt</p>
+        <p className="text-sm text-black">D Logo Dot Slippers</p>
           <span className="text-gray-600 text-sm">20% OFF</span>
           <span className="text-sm font-bold text-red-800">$29</span>
       </div>
@@ -936,7 +937,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
               <img src={img213} alt="SCALLYWANG" className="w-64 h-65 object-cover"></img>
               <div className="absolute bottom-2 right-2  flex justify-between items-center">
                <i className={`cursor-pointer ${
-            favorite[41] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[41] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
           }`}
           onClick={() => toggleFavorite(41)}></i>
               </div>
@@ -1726,7 +1727,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
           <i className={`cursor-pointer ${
-            favorite[80] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[80] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
           }`}
           onClick={() => toggleFavorite(80)}></i>
         </div>
@@ -1743,7 +1744,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
          <i className={`cursor-pointer ${
-            favorite[81] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[81] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
           }`}
           onClick={() => toggleFavorite(81)}></i>
         </div>
@@ -1760,7 +1761,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
          <i className={`cursor-pointer ${
-            favorite[82] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[82] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
           }`}
           onClick={() => toggleFavorite(82)}></i>
         </div>
@@ -2769,7 +2770,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
               <img src={img239} alt="SCALLYWANG"></img>
               <div className="absolute bottom-2 right-2  flex justify-between items-center">
                 <i className={`cursor-pointer ${
-            favorite[131] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[131] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
           onClick={() => toggleFavorite(131)}></i>
               </div>
@@ -4865,7 +4866,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <img src={img158} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
-            favorite[318] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
+            favorite[318] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
           }`}
           onClick={() => toggleFavorite(318)}></i>
         </div>
@@ -5204,7 +5205,7 @@ const Hero = ({ favorite, toggleFavorite }) => {
         <img src={img177} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2 flex justify-between items-center">
           <i className={`cursor-pointer ${
-            favorite[322] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[322] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
           }`}
           onClick={() => toggleFavorite(322)}></i>
         </div>

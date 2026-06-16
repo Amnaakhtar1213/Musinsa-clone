@@ -210,6 +210,7 @@ import img209 from "../assets/line18/v-1.webp";
 import img210 from "../assets/line18/v-2.webp";
 import img211 from "../assets/line18/v-3.webp";
 
+import { BeautyProductMap } from "../data/BeautyProductMap.jsx";
 
 import React, { useState } from 'react'
 
@@ -277,7 +278,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[460] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(460)}></i>
+          onClick={() => toggleFavorite(460, BeautyProductMap[460])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -294,7 +295,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[461] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(461)}></i>
+          onClick={() => toggleFavorite(461, BeautyProductMap[461])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -311,7 +312,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
             <i className={`cursor-pointer ${
             favorite[462] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(462)}></i>
+          onClick={() => toggleFavorite(462, BeautyProductMap[462])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -326,9 +327,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
            <i className={`cursor-pointer ${
-            favorite[463] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[463] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
-          onClick={() => toggleFavorite(463)}></i>
+          onClick={() => toggleFavorite(463, BeautyProductMap[463])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -343,9 +344,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
             <i className={`cursor-pointer ${
-            favorite[464] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[464] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
-          onClick={() => toggleFavorite(464)}></i>
+          onClick={() => toggleFavorite(464, BeautyProductMap[464])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -360,9 +361,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
             <i className={`cursor-pointer ${
-            favorite[465] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+            favorite[465] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
-          onClick={() => toggleFavorite(465)}></i>
+          onClick={() => toggleFavorite(465, BeautyProductMap[465])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -388,7 +389,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
             <i className={`cursor-pointer ${
             favorite[466] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(466)}></i>
+          onClick={() => toggleFavorite(466, BeautyProductMap[466])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -405,7 +406,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[467] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(467)}></i>
+          onClick={() => toggleFavorite(467, BeautyProductMap[467])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -422,7 +423,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
             <i className={`cursor-pointer ${
             favorite[468] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(468)}></i>
+          onClick={() => toggleFavorite(468, BeautyProductMap[468])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -439,7 +440,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[469] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(469)}></i>
+          onClick={() => toggleFavorite(469, BeautyProductMap[469])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -456,7 +457,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
             <i className={`cursor-pointer ${
             favorite[470] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(470)}></i>
+          onClick={() => toggleFavorite(470, BeautyProductMap[470])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -473,7 +474,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[471] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(471)}></i>
+          onClick={() => toggleFavorite(471, BeautyProductMap[471])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -506,7 +507,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[472] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(472)}></i>
+          onClick={() => toggleFavorite(472, BeautyProductMap[472])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -522,7 +523,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[473] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(473)}></i>
+          onClick={() => toggleFavorite(473, BeautyProductMap[473])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -538,7 +539,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[474] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(474)}></i>
+          onClick={() => toggleFavorite(474, BeautyProductMap[474])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -554,7 +555,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[475] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(475)}></i>
+          onClick={() => toggleFavorite(475, BeautyProductMap[475])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -570,7 +571,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[476] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(476)}></i>
+          onClick={() => toggleFavorite(476, BeautyProductMap[476])}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -586,7 +587,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[477] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(477)}></i>
+          onClick={() => toggleFavorite(477, BeautyProductMap[477])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -611,7 +612,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[478] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(478)}></i>
+          onClick={() => toggleFavorite(478, BeautyProductMap[478])}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -627,7 +628,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[479] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(479)}></i>
+          onClick={() => toggleFavorite(479, BeautyProductMap[479])}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -643,7 +644,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[480] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(480)}></i>
+          onClick={() => toggleFavorite(480, BeautyProductMap[480])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -659,7 +660,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
            <i className={`cursor-pointer ${
             favorite[481] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(481)}></i>
+          onClick={() => toggleFavorite(481, BeautyProductMap[481])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -675,7 +676,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[482] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(482)}></i>
+          onClick={() => toggleFavorite(482, BeautyProductMap[482])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -691,7 +692,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[483] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(483)}></i>
+          onClick={() => toggleFavorite(483, BeautyProductMap[483])}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -715,7 +716,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[484] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(484)}></i>
+          onClick={() => toggleFavorite(484, BeautyProductMap[484])}></i>
         </div> 
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -731,7 +732,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[485] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(485)}></i>
+          onClick={() => toggleFavorite(485, BeautyProductMap[485])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -747,7 +748,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[486] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(486)}></i>
+          onClick={() => toggleFavorite(486, BeautyProductMap[486])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -763,7 +764,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
          <i className={`cursor-pointer ${
             favorite[487] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(487)}></i>
+          onClick={() => toggleFavorite(487, BeautyProductMap[487])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -779,7 +780,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <i className={`cursor-pointer ${
             favorite[488] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(488)}></i>
+          onClick={() => toggleFavorite(488, BeautyProductMap[488])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
@@ -795,7 +796,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
          <i className={`cursor-pointer ${
             favorite[489] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
-          onClick={() => toggleFavorite(489)}></i>
+          onClick={() => toggleFavorite(489, BeautyProductMap[489])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
