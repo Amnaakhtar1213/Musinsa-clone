@@ -48,10 +48,20 @@
 
 
 
-
+ import { useNavigate } from "react-router-dom";
 import React from "react";
 
-const Wishlist = ({ wishlist, favorite, toggleFavorite }) => {
+const Wishlist = ({ wishlist, favorite, toggleFavorite, addToCart }) => {
+
+   const navigate = useNavigate();
+
+  const handleAddToBag = (product) => {
+    addToCart(product);       // add item to cart
+    navigate("/cart");     // redirect to cart page
+  };
+
+
+
   return (
     <section className="mt-35">
       <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18] text-center">
@@ -64,7 +74,7 @@ const Wishlist = ({ wishlist, favorite, toggleFavorite }) => {
         {wishlist.length === 0 ? (
           <p className="text-gray-500 mt-12 text-center">No Items in Wishlist</p>
         ) : (
-          <ul className="flex flex-row flex-wrap gap-2 mx-30 ">
+          <ul className="grid grid-cols-5 gap-8 mx-30 ">
             {wishlist.map((product) => (
               <li key={product.id} className="w-[300px]">
                 <div className="relative">
@@ -93,7 +103,7 @@ const Wishlist = ({ wishlist, favorite, toggleFavorite }) => {
                     ${product.price}
                   </span>
                   <button
-                    onClick={() => console.log("Add to cart:", product)}
+                    onClick={() => handleAddToBag(product)}
                     className="mt-2 py-2 w-60 bg-blue-900 text-white rounded hover:bg-blue-950"
                   >
                     Add to Bag

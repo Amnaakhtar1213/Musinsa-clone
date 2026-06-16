@@ -22,13 +22,14 @@ import Shirts from './pages/Shirts.jsx'
 import Shoes from './pages/Shoes.jsx'
 import Sports from './pages/Sports.jsx'
 
+import Cart from './pages/Cart.jsx'
 import Wishlist from './pages/Wishlist.jsx'
 
 function App() { 
 
   const [favorite, setFavorite] = useState({});
   const [favoriteCount, setFavoriteCount] = useState(0);
-
+  const [cart, setCart] = useState([])
   const [wishlist, setWishlist] = useState([])
 
   const toggleFavorite = (id, product) => {
@@ -56,13 +57,18 @@ function App() {
     });
   };
 
+  const addToCart = (product) => {
+    setCart((prevCart) => [...prevCart, product]);
+  }
 
-
+const removeFromCart = (id) => {
+  setCart((prevCart) => prevCart.filter((product) => product.id !== id));
+};
 
 
    return (
     <Router>
-      <Header favoriteCount={favoriteCount} />
+      <Header favoriteCount={favoriteCount} cart={cart} />
       <Routes>
           <Route path="/" element={<Hero favorite={favorite} toggleFavorite={toggleFavorite} />} />
           <Route path="/muahmuah" element={<Muahmuah favorite={favorite} toggleFavorite={toggleFavorite}/>} />
@@ -81,8 +87,8 @@ function App() {
           <Route path="/bags" element={<Bags favorite={favorite} toggleFavorite={toggleFavorite}/>} />
           <Route path="/accessories" element={<Accessories favorite={favorite} toggleFavorite={toggleFavorite}/>} />
           <Route path="/sports" element={<Sports favorite={favorite} toggleFavorite={toggleFavorite}/>} />
-          
-          <Route path="/Wishlist" element={<Wishlist wishlist={wishlist} favorite={favorite} toggleFavorite={toggleFavorite} />} />
+           <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
+          <Route path="/Wishlist" element={<Wishlist wishlist={wishlist} favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} />} />
      </Routes>
     
     </Router>

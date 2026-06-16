@@ -1,399 +1,399 @@
 
-import img1 from "../../assets/line1/u-1.webp";
-import img2 from "../../assets/line1/u-2.webp";
-import img3 from "../../assets/line1/u-3.webp";
-import img4 from "../../assets/line1/u-4.webp";
-import img5 from "../../assets/line1/u-5.webp";
-import img6 from "../../assets/line1/u-6.webp";
-import img7 from "../../assets/line1/u-7.webp";
-import img8 from "../../assets/line1/u-8.webp";
-import img9 from "../../assets/line1/u-9.webp";
-import img10 from "../../assets/line1/u-10.webp";
-import img11 from "../../assets/line1/u-11.webp";
-import img12 from "../../assets/line1/u-12.webp";
-import img13 from "../../assets/line1/u-13.webp";
-import img14 from "../../assets/line1/s-1.webp";
-import img15 from "../../assets/line1/s-2.webp";
-import img16 from "../../assets/line1/m-6.webp";
-import img17 from "../../assets/line1/m-7.webp";
-import img18 from "../../assets/line1/m-8.webp";
-import img19 from "../../assets/line1/s-3.jpg";
-import img20 from "../../assets/line1/m-10.webp";
-import img21 from "../../assets/line1/sti-9.png";
-import img22 from "../../assets/line1/h-1.jpg";
-import img23 from "../../assets/line1/h-2.jpg";
-import img24 from "../../assets/line1/h-3.jpg";
-import img25 from "../../assets/line1/h-4.jpg";
-import img26 from "../../assets/line1/b-2.jpg";
-import img27 from "../../assets/hero/a-1.webp";
-import img28 from "../../assets/hero/a-2.webp";
-import img29 from "../../assets/hero/a-3.webp";
-import img30 from "../../assets/hero/a-4.webp";
-import img31 from "../../assets/hero/a-5.webp";
-import img32 from "../../assets/hero/a-6.webp";
-import img33 from "../../assets/line2/d-1.webp";
-import img34 from "../../assets/line2/d-2.webp";
-import img35 from "../../assets/line2/d-3.webp";
-import img36 from "../../assets/line2/d-4.webp";
-import img37 from "../../assets/line3/e-1.webp";
-import img38 from "../../assets/line3/e-2.webp";
-import img39 from "../../assets/line3/e-3.webp";
-import img40 from "../../assets/line3/e-4.webp";
-import img41 from "../../assets/line3/e-5.webp";
-import img42 from "../../assets/line3/e-6.webp";
-import img43 from "../../assets/line4/f-1.webp";
-import img44 from "../../assets/line4/f-2.webp";
-import img45 from "../../assets/line4/f-3.jpg";
-import img46 from "../../assets/line4/g-1.webp";
-import img47 from "../../assets/line4/g-2.webp";
-import img48 from "../../assets/line4/g-3.webp";
-import img49 from "../../assets/line4/g-4.webp";
-import img50 from "../../assets/line4/g-5.webp";
-import img51 from "../../assets/line4/g-6.webp";
-import img52 from "../../assets/line4/g-7.webp";
-import img53 from "../../assets/line5/h-1.webp";
-import img54 from "../../assets/line5/h-2.webp";
-import img55 from "../../assets/line5/h-3.webp";
-import img56 from "../../assets/line5/h-4.webp";
-import img57 from "../../assets/line5/h-5.webp";
-import img58 from "../../assets/line5/h-6.webp";
-import img59 from "../../assets/line5/h-7.webp";
-import img60 from "../../assets/line5/h-8.webp";
-import img61 from "../../assets/line5/h-9.webp";
-import img62 from "../../assets/line5/h-10.webp";
-import img63 from "../../assets/line5/h-11.webp";
-import img64 from "../../assets/line5/h-12.webp";
-import img65 from "../../assets/line6/J-1.webp";
-import img66 from "../../assets/line6/J-2.webp";
-import img67 from "../../assets/line6/J-3.webp";
-import img68 from "../../assets/line6/J-4.webp";
-import img69 from "../../assets/line6/J-5.webp";
-import img70 from "../../assets/line6/J-6.webp";
-import img71 from "../../assets/line6/J-7.webp";
-import img72 from "../../assets/line6/J-9.webp";
-import img73 from "../../assets/line6/J-10.webp";
-import img74 from "../../assets/line7/D-5.webp"
-import img75 from "../../assets/line7/D-6.webp";
-import img76 from "../../assets/line7/D-7.webp";
-import img77 from "../../assets/line8/k-1.webp";
-import img78 from "../../assets/line8/k-2.webp";
-import img79 from "../../assets/line8/k-3.webp";
-import img80 from "../../assets/line8/k-4.webp";
-import img81 from "../../assets/line8/k-5.webp";
-import img82 from "../../assets/line8/k-6.webp";
-import img83 from "../../assets/line9/k-7.webp";
-import img84 from "../../assets/line9/k-8.webp";
-import img85 from "../../assets/line9/k-9.webp";
-import img86 from "../../assets/line9/k-10.webp";
-import img87 from "../../assets/line9/k-11.webp";
-import img88 from "../../assets/line9/k-12.webp";
-import img89 from "../../assets/line10/b1.webp";
-import img90 from "../../assets/line10/b2.webp";
-import img91 from "../../assets/line10/b3.webp";
-import img92 from "../../assets/line10/b4.webp";
-import img93 from "../../assets/line10/b5.webp";
-import img94 from "../../assets/line10/b6.webp";
-import img95 from "../../assets/line10/b7.webp";
-import img96 from "../../assets/line10/b8.webp";
-import img97 from "../../assets/line10/b9.webp";
-import img98 from "../../assets/line10/b10.webp";
-import img99 from "../../assets/line10/b11.webp";
-import img100 from "../../assets/line10/b12.webp";
-import img101 from "../../assets/line11/a1.webp";
-import img102 from "../../assets/line11/a2.webp";
-import img103 from "../../assets/line11/a3.webp";
-import img104 from "../../assets/line11/a4.webp";
-import img105 from "../../assets/line11/a5.webp";
-import img106 from "../../assets/line11/a6.webp";
-import img107 from "../../assets/line12/d7.webp";
-import img108 from "../../assets/line12/d8.webp";
-import img109 from "../../assets/line12/d9.webp";
-import img110 from "../../assets/line12/d10.webp";
-import img111 from "../../assets/line12/d11.webp";
-import img112 from "../../assets/line12/d12.webp";
-import img113 from "../../assets/line12/d13.webp";
-import img114 from "../../assets/line12/d14.webp";
-import img115 from "../../assets/line12/d15.webp";
-import img116 from "../../assets/line12/d16.webp";
-import img117 from "../../assets/line12/d17.webp";
-import img118 from "../../assets/line12/d18.webp";
-import img119 from "../../assets/line12/d19.webp";
-import img120 from "../../assets/line12/d20.webp";
-import img121 from "../../assets/line12/d21.webp";
-import img122 from "../../assets/line12/d22.webp";
-import img123 from "../../assets/line12/d23.webp";
-import img124 from "../../assets/line12/d24.webp";
-import img125 from "../../assets/line13/c-1.webp";
-import img126 from "../../assets/line13/c-2.webp";
-import img127 from "../../assets/line13/c-3.webp";
-import img128 from "../../assets/line13/c-4.webp";
-import img129 from "../../assets/line13/c-5.webp";
-import img130 from "../../assets/line13/c-6.webp";
-import img131 from "../../assets/line13/c-7.webp";
-import img132 from "../../assets/line13/c-8.webp";
-import img133 from "../../assets/line13/c-9.webp";
-import img134 from "../../assets/line13/c-10.webp";
-import img135 from "../../assets/line14/c-11.webp";
-import img136 from "../../assets/line14/c-12.webp";
-import img137 from "../../assets/line14/c-13.webp";
-import img138 from "../../assets/line14/c-14.webp";
-import img139 from "../../assets/line14/c-15.webp";
-import img140 from "../../assets/line14/g-8.webp";
-import img141 from "../../assets/line14/g-9.webp";
-import img142 from "../../assets/line14/g-10.webp";
-import img143 from "../../assets/line14/g-11.webp";
-import img144 from "../../assets/line14/g-12.webp";
-import img145 from "../../assets/line15/a7.webp";
-import img146 from "../../assets/line15/a8.webp";
-import img147 from "../../assets/line15/a9.webp";
-import img148 from "../../assets/line15/a10.webp";
-import img149 from "../../assets/line15/a11.webp";
-import img150 from "../../assets/line15/n-1.webp";
-import img151 from "../../assets/line15/n-2.webp";
-import img152 from "../../assets/line15/n-3.webp";
-import img153 from "../../assets/line15/n-4.webp";
-import img154 from "../../assets/line15/n-5.webp";
-import img155 from "../../assets/line15/n-6.webp";
-import img156 from "../../assets/line15/n-7.webp";
-import img157 from "../../assets/line15/n-8.webp";
-import img158 from "../../assets/line15/n-9.webp";
-import img159 from "../../assets/line15/n-10.webp";
-import img160 from "../../assets/line15/n-11.webp";
-import img161 from "../../assets/line15/n-12.webp";
-import img162 from "../../assets/line15/n-13.webp";
-import img163 from "../../assets/line15/n-14.webp";
-import img164 from "../../assets/line15/n-15.webp";
-import img165 from "../../assets/line15/n-16.webp";
-import img166 from "../../assets/line15/n-17.webp";
-import img167 from "../../assets/line15/n-18.webp";
-import img168 from "../../assets/line15/n-19.webp";
-import img169 from "../../assets/line15/n-20.webp";
-import img170 from "../../assets/line16/p-1.webp";
-import img171 from "../../assets/line16/p-2.webp";
-import img172 from "../../assets/line16/p-3.webp";
-import img173 from "../../assets/line16/p-4.webp";
-import img174 from "../../assets/line16/p-5.webp";
-import img175 from "../../assets/line16/p-6.webp";
-import img176 from "../../assets/line16/p-7.webp";
-import img177 from "../../assets/line16/p-8.webp";
-import img178 from "../../assets/line16/p-9.webp";
-import img179 from "../../assets/line16/p-10.webp";
-import img180 from "../../assets/line16/p-11.webp";
-import img181 from "../../assets/line16/p-12.webp";
-import img182 from "../../assets/line16/p-13.webp";
-import img183 from "../../assets/line16/p-14.webp";
-import img184 from "../../assets/line16/p-15.webp";
-import img185 from "../../assets/line16/p-16.webp";
-import img186 from "../../assets/line16/p-17.webp";
-import img187 from "../../assets/line17/q-1.webp";
-import img188 from "../../assets/line17/q-2.webp";
-import img189 from "../../assets/line17/q-3.webp";
-import img190 from "../../assets/line17/q-4.webp";
-import img191 from "../../assets/line17/q-5.webp";
-import img192 from "../../assets/line17/q-6.webp";
-import img193 from "../../assets/line17/q-7.webp";
-import img194 from "../../assets/line17/q-8.webp";
-import img195 from "../../assets/line17/q-9.webp";
-import img196 from "../../assets/line17/q-10.webp";
-import img197 from "../../assets/line17/q-11.webp";
-import img198 from "../../assets/line17/q-12.webp";
-import img199 from "../../assets/line17/q-13.webp";
-import img200 from "../../assets/line17/q-14.webp";
-import img201 from "../../assets/line17/q-15.webp";
-import img202 from "../../assets/line17/q-16.webp";
-import img203 from "../../assets/line17/q-17.webp";
-import img204 from "../../assets/line17/q-18.webp";
-import img205 from "../../assets/line11/r-1.webp";
-import img206 from "../../assets/line11/r-2.webp";
-import img207 from "../../assets/line11/r-3.webp";
+import img1 from "../assets/line1/u-1.webp";
+import img2 from "../assets/line1/u-2.webp";
+import img3 from "../assets/line1/u-3.webp";
+import img4 from "../assets/line1/u-4.webp";
+import img5 from "../assets/line1/u-5.webp";
+import img6 from "../assets/line1/u-6.webp";
+import img7 from "../assets/line1/u-7.webp";
+import img8 from "../assets/line1/u-8.webp";
+import img9 from "../assets/line1/u-9.webp";
+import img10 from "../assets/line1/u-10.webp";
+import img11 from "../assets/line1/u-11.webp";
+import img12 from "../assets/line1/u-12.webp";
+import img13 from "../assets/line1/u-13.webp";
+import img14 from "../assets/line1/s-1.webp";
+import img15 from "../assets/line1/s-2.webp";
+import img16 from "../assets/line1/m-6.webp";
+import img17 from "../assets/line1/m-7.webp";
+import img18 from "../assets/line1/m-8.webp";
+import img19 from "../assets/line1/s-3.jpg";
+import img20 from "../assets/line1/m-10.webp";
+import img21 from "../assets/line1/sti-9.png";
+import img22 from "../assets/line1/h-1.jpg";
+import img23 from "../assets/line1/h-2.jpg";
+import img24 from "../assets/line1/h-3.jpg";
+import img25 from "../assets/line1/h-4.jpg";
+import img26 from "../assets/line1/b-2.jpg";
+import img27 from "../assets/hero/a-1.webp";
+import img28 from "../assets/hero/a-2.webp";
+import img29 from "../assets/hero/a-3.webp";
+import img30 from "../assets/hero/a-4.webp";
+import img31 from "../assets/hero/a-5.webp";
+import img32 from "../assets/hero/a-6.webp";
+import img33 from "../assets/line2/d-1.webp";
+import img34 from "../assets/line2/d-2.webp";
+import img35 from "../assets/line2/d-3.webp";
+import img36 from "../assets/line2/d-4.webp";
+import img37 from "../assets/line3/e-1.webp";
+import img38 from "../assets/line3/e-2.webp";
+import img39 from "../assets/line3/e-3.webp";
+import img40 from "../assets/line3/e-4.webp";
+import img41 from "../assets/line3/e-5.webp";
+import img42 from "../assets/line3/e-6.webp";
+import img43 from "../assets/line4/f-1.webp";
+import img44 from "../assets/line4/f-2.webp";
+import img45 from "../assets/line4/f-3.jpg";
+import img46 from "../assets/line4/g-1.webp";
+import img47 from "../assets/line4/g-2.webp";
+import img48 from "../assets/line4/g-3.webp";
+import img49 from "../assets/line4/g-4.webp";
+import img50 from "../assets/line4/g-5.webp";
+import img51 from "../assets/line4/g-6.webp";
+import img52 from "../assets/line4/g-7.webp";
+import img53 from "../assets/line5/h-1.webp";
+import img54 from "../assets/line5/h-2.webp";
+import img55 from "../assets/line5/h-3.webp";
+import img56 from "../assets/line5/h-4.webp";
+import img57 from "../assets/line5/h-5.webp";
+import img58 from "../assets/line5/h-6.webp";
+import img59 from "../assets/line5/h-7.webp";
+import img60 from "../assets/line5/h-8.webp";
+import img61 from "../assets/line5/h-9.webp";
+import img62 from "../assets/line5/h-10.webp";
+import img63 from "../assets/line5/h-11.webp";
+import img64 from "../assets/line5/h-12.webp";
+import img65 from "../assets/line6/J-1.webp";
+import img66 from "../assets/line6/J-2.webp";
+import img67 from "../assets/line6/J-3.webp";
+import img68 from "../assets/line6/J-4.webp";
+import img69 from "../assets/line6/J-5.webp";
+import img70 from "../assets/line6/J-6.webp";
+import img71 from "../assets/line6/J-7.webp";
+import img72 from "../assets/line6/J-9.webp";
+import img73 from "../assets/line6/J-10.webp";
+import img74 from "../assets/line7/D-5.webp"
+import img75 from "../assets/line7/D-6.webp";
+import img76 from "../assets/line7/D-7.webp";
+import img77 from "../assets/line8/k-1.webp";
+import img78 from "../assets/line8/k-2.webp";
+import img79 from "../assets/line8/k-3.webp";
+import img80 from "../assets/line8/k-4.webp";
+import img81 from "../assets/line8/k-5.webp";
+import img82 from "../assets/line8/k-6.webp";
+import img83 from "../assets/line9/k-7.webp";
+import img84 from "../assets/line9/k-8.webp";
+import img85 from "../assets/line9/k-9.webp";
+import img86 from "../assets/line9/k-10.webp";
+import img87 from "../assets/line9/k-11.webp";
+import img88 from "../assets/line9/k-12.webp";
+import img89 from "../assets/line10/b1.webp";
+import img90 from "../assets/line10/b2.webp";
+import img91 from "../assets/line10/b3.webp";
+import img92 from "../assets/line10/b4.webp";
+import img93 from "../assets/line10/b5.webp";
+import img94 from "../assets/line10/b6.webp";
+import img95 from "../assets/line10/b7.webp";
+import img96 from "../assets/line10/b8.webp";
+import img97 from "../assets/line10/b9.webp";
+import img98 from "../assets/line10/b10.webp";
+import img99 from "../assets/line10/b11.webp";
+import img100 from "../assets/line10/b12.webp";
+import img101 from "../assets/line11/a1.webp";
+import img102 from "../assets/line11/a2.webp";
+import img103 from "../assets/line11/a3.webp";
+import img104 from "../assets/line11/a4.webp";
+import img105 from "../assets/line11/a5.webp";
+import img106 from "../assets/line11/a6.webp";
+import img107 from "../assets/line12/d7.webp";
+import img108 from "../assets/line12/d8.webp";
+import img109 from "../assets/line12/d9.webp";
+import img110 from "../assets/line12/d10.webp";
+import img111 from "../assets/line12/d11.webp";
+import img112 from "../assets/line12/d12.webp";
+import img113 from "../assets/line12/d13.webp";
+import img114 from "../assets/line12/d14.webp";
+import img115 from "../assets/line12/d15.webp";
+import img116 from "../assets/line12/d16.webp";
+import img117 from "../assets/line12/d17.webp";
+import img118 from "../assets/line12/d18.webp";
+import img119 from "../assets/line12/d19.webp";
+import img120 from "../assets/line12/d20.webp";
+import img121 from "../assets/line12/d21.webp";
+import img122 from "../assets/line12/d22.webp";
+import img123 from "../assets/line12/d23.webp";
+import img124 from "../assets/line12/d24.webp";
+import img125 from "../assets/line13/c-1.webp";
+import img126 from "../assets/line13/c-2.webp";
+import img127 from "../assets/line13/c-3.webp";
+import img128 from "../assets/line13/c-4.webp";
+import img129 from "../assets/line13/c-5.webp";
+import img130 from "../assets/line13/c-6.webp";
+import img131 from "../assets/line13/c-7.webp";
+import img132 from "../assets/line13/c-8.webp";
+import img133 from "../assets/line13/c-9.webp";
+import img134 from "../assets/line13/c-10.webp";
+import img135 from "../assets/line14/c-11.webp";
+import img136 from "../assets/line14/c-12.webp";
+import img137 from "../assets/line14/c-13.webp";
+import img138 from "../assets/line14/c-14.webp";
+import img139 from "../assets/line14/c-15.webp";
+import img140 from "../assets/line14/g-8.webp";
+import img141 from "../assets/line14/g-9.webp";
+import img142 from "../assets/line14/g-10.webp";
+import img143 from "../assets/line14/g-11.webp";
+import img144 from "../assets/line14/g-12.webp";
+import img145 from "../assets/line15/a7.webp";
+import img146 from "../assets/line15/a8.webp";
+import img147 from "../assets/line15/a9.webp";
+import img148 from "../assets/line15/a10.webp";
+import img149 from "../assets/line15/a11.webp";
+import img150 from "../assets/line15/n-1.webp";
+import img151 from "../assets/line15/n-2.webp";
+import img152 from "../assets/line15/n-3.webp";
+import img153 from "../assets/line15/n-4.webp";
+import img154 from "../assets/line15/n-5.webp";
+import img155 from "../assets/line15/n-6.webp";
+import img156 from "../assets/line15/n-7.webp";
+import img157 from "../assets/line15/n-8.webp";
+import img158 from "../assets/line15/n-9.webp";
+import img159 from "../assets/line15/n-10.webp";
+import img160 from "../assets/line15/n-11.webp";
+import img161 from "../assets/line15/n-12.webp";
+import img162 from "../assets/line15/n-13.webp";
+import img163 from "../assets/line15/n-14.webp";
+import img164 from "../assets/line15/n-15.webp";
+import img165 from "../assets/line15/n-16.webp";
+import img166 from "../assets/line15/n-17.webp";
+import img167 from "../assets/line15/n-18.webp";
+import img168 from "../assets/line15/n-19.webp";
+import img169 from "../assets/line15/n-20.webp";
+import img170 from "../assets/line16/p-1.webp";
+import img171 from "../assets/line16/p-2.webp";
+import img172 from "../assets/line16/p-3.webp";
+import img173 from "../assets/line16/p-4.webp";
+import img174 from "../assets/line16/p-5.webp";
+import img175 from "../assets/line16/p-6.webp";
+import img176 from "../assets/line16/p-7.webp";
+import img177 from "../assets/line16/p-8.webp";
+import img178 from "../assets/line16/p-9.webp";
+import img179 from "../assets/line16/p-10.webp";
+import img180 from "../assets/line16/p-11.webp";
+import img181 from "../assets/line16/p-12.webp";
+import img182 from "../assets/line16/p-13.webp";
+import img183 from "../assets/line16/p-14.webp";
+import img184 from "../assets/line16/p-15.webp";
+import img185 from "../assets/line16/p-16.webp";
+import img186 from "../assets/line16/p-17.webp";
+import img187 from "../assets/line17/q-1.webp";
+import img188 from "../assets/line17/q-2.webp";
+import img189 from "../assets/line17/q-3.webp";
+import img190 from "../assets/line17/q-4.webp";
+import img191 from "../assets/line17/q-5.webp";
+import img192 from "../assets/line17/q-6.webp";
+import img193 from "../assets/line17/q-7.webp";
+import img194 from "../assets/line17/q-8.webp";
+import img195 from "../assets/line17/q-9.webp";
+import img196 from "../assets/line17/q-10.webp";
+import img197 from "../assets/line17/q-11.webp";
+import img198 from "../assets/line17/q-12.webp";
+import img199 from "../assets/line17/q-13.webp";
+import img200 from "../assets/line17/q-14.webp";
+import img201 from "../assets/line17/q-15.webp";
+import img202 from "../assets/line17/q-16.webp";
+import img203 from "../assets/line17/q-17.webp";
+import img204 from "../assets/line17/q-18.webp";
+import img205 from "../assets/line11/r-1.webp";
+import img206 from "../assets/line11/r-2.webp";
+import img207 from "../assets/line11/r-3.webp";
 
-import img208 from "../../assets/line18/t-1.webp";
-import img209 from "../../assets/line18/v-1.webp";
-import img210 from "../../assets/line18/v-2.webp";
-import img211 from "../../assets/line18/v-3.webp";
-
-
-import img212 from "../../assets/line21/x-1.webp";
-import img213 from "../../assets/line21/x-2.webp";
-import img214 from "../../assets/line21/x-3.webp";
-import img215 from "../../assets/line21/x-4.webp";
-import img216 from "../../assets/line21/x-5.webp";
-import img217 from "../../assets/line21/x-6.webp";
-import img218 from "../../assets/line21/x-7.webp";
-import img219 from "../../assets/line21/x-8.webp";
-import img220 from "../../assets/line21/x-9.webp";
-import img221 from "../../assets/line21/x-10.webp";
-import img222 from "../../assets/line21/x-11.webp";
-import img223 from "../../assets/line21/x-12.webp";
-import img224 from "../../assets/line21/x-13.webp";
-import img225 from "../../assets/line21/x-14.webp";
-import img226 from "../../assets/line21/x-15.webp";
-import img227 from "../../assets/line21/x-16.webp";
-import img228 from "../../assets/line21/x-17.webp";
-import img229 from "../../assets/line21/x-18.webp";
-import img230 from "../../assets/line21/x-19.webp";
-import img231 from "../../assets/line21/x-20.webp";
-import img232 from "../../assets/line21/x-21.webp";
-import img233 from "../../assets/line21/x-22.webp";
-import img234 from "../../assets/line21/x-23.webp";
-import img235 from "../../assets/line21/x-24.webp";
-import img236 from "../../assets/line21/x-25.webp";
-import img237 from "../../assets/line21/x-26.webp";
-import img238 from "../../assets/line21/x-27.webp";
-import img239 from "../../assets/line21/x-28.webp";
-import img240 from "../../assets/line21/x-29.webp";
-import img241 from "../../assets/line21/x-30.webp";
-import img242 from "../../assets/line21/x-31.webp";
-import img243 from "../../assets/line21/x-32.webp";
-import img244 from "../../assets/line21/x-33.webp";
-import img245 from "../../assets/line21/x-34.webp";
-import img246 from "../../assets/line21/x-35.webp";
-import img247 from "../../assets/line21/x-36.webp";
-import img248 from "../../assets/line21/x-37.webp";
-import img249 from "../../assets/line21/x-38.webp";
-import img250 from "../../assets/line21/x-39.webp";
-import img251 from "../../assets/line21/x-40.webp";
-import img252 from "../../assets/line21/x-41.webp";
-import img253 from "../../assets/line21/x-42.webp";
-import img254 from "../../assets/line21/x-43.webp";
-import img255 from "../../assets/line21/x-44.webp";
-import img256 from "../../assets/line21/x-45.webp";
-import img257 from "../../assets/line21/x-46.webp";
-import img258 from "../../assets/line21/x-47.webp";
-import img259 from "../../assets/line21/x-48.webp";
-import img260 from "../../assets/line21/x-49.webp";
-import img261 from "../../assets/line21/x-50.webp";
-import img262 from "../../assets/line21/x-51.webp";
-
-import img263 from "../../assets/line22/v-4.webp";
-import img264 from "../../assets/line22/v-5.webp";
-import img265 from "../../assets/line22/v-6.webp";
-import img266 from "../../assets/line22/v-7.webp";
-import img267 from "../../assets/line22/v-8.webp";
-import img268 from "../../assets/line22/v-9.webp";
-import img269 from "../../assets/line22/v-10.webp";
-import img270 from "../../assets/line22/v-11.webp";
-import img271 from "../../assets/line22/v-12.webp";
-import img272 from "../../assets/line22/v-13.webp";
-import img273 from "../../assets/line22/v-14.webp";
-import img274 from "../../assets/line22/v-15.webp";
-import img275 from "../../assets/line22/v-16.webp";
-import img276 from "../../assets/line22/v-17.webp";
-import img277 from "../../assets/line22/v-18.webp";
-import img278 from "../../assets/line22/v-19.webp";
-import img279 from "../../assets/line22/v-20.webp";
-import img280 from "../../assets/line22/v-21.webp";
-import img281 from "../../assets/line22/v-24.webp";
-import img282 from "../../assets/line22/v-25.webp";
-import img283 from "../../assets/line22/v-26.webp";
-import img284 from "../../assets/line22/v-27.webp";
-import img285 from "../../assets/line22/v-28.webp";
-import img286 from "../../assets/line22/v-29.webp";
-import img287 from "../../assets/line22/v-30.webp";
-import img288 from "../../assets/line22/v-31.webp";
-import img289 from "../../assets/line22/v-32.webp";
-import img290 from "../../assets/line22/v-33.webp";
-import img291 from "../../assets/line22/v-34.webp";
-import img292 from "../../assets/line22/v-35.webp";
-import img293 from "../../assets/line22/v-36.webp";
-import img294 from "../../assets/line22/v-37.webp";
-import img295 from "../../assets/line22/v-38.webp";
-import img296 from "../../assets/line22/v-39.webp";
-import img297 from "../../assets/line22/v-40.webp";
-import img298 from "../../assets/line22/v-41.webp";
-import img299 from "../../assets/line22/v-42.webp";
-import img300 from "../../assets/line22/v-43.webp";
-import img301 from "../../assets/line22/v-44.webp";
-import img302 from "../../assets/line22/v-45.webp";
-import img303 from "../../assets/line22/v-46.webp";
-import img304 from "../../assets/line22/v-47.webp";
-import img305 from "../../assets/line22/v-48.webp";
-import img306 from "../../assets/line22/v-49.webp";
-import img307 from "../../assets/line22/v-50.webp";
-import img308 from "../../assets/line22/v-52.webp";
-import img309 from "../../assets/line22/v-53.webp";
-import img310 from "../../assets/line22/v-54.webp";
-import img311 from "../../assets/line22/v-55.webp";
-import img312 from "../../assets/line22/v-56.webp";
+import img208 from "../assets/line18/t-1.webp";
+import img209 from "../assets/line18/v-1.webp";
+import img210 from "../assets/line18/v-2.webp";
+import img211 from "../assets/line18/v-3.webp";
 
 
-import img313 from "../../assets/line18/s-6.webp";
-import img314 from "../../assets/line18/s-7.webp";
-import img315 from "../../assets/line18/s-8.webp";
-import img316 from "../../assets/line18/s-9.webp";
-import img317 from "../../assets/line18/s-10.webp";
-import img318 from "../../assets/line18/s-11.webp";
-import img319 from "../../assets/line18/s-12.webp";
-import img320 from "../../assets/line18/s-13.webp";
-import img321 from "../../assets/line18/s-14.webp";
-import img322 from "../../assets/line18/s-15.webp";
-import img323 from "../../assets/line18/s-16.webp";
-import img324 from "../../assets/line18/s-17.webp";
-import img325 from "../../assets/line18/s-18.webp";
-import img326 from "../../assets/line18/s-19.webp";
-import img327 from "../../assets/line18/s-20.webp";
-import img328 from "../../assets/line18/s-21.webp";
-import img329 from "../../assets/line18/s-22.webp";
-import img330 from "../../assets/line18/s-23.webp";
-import img331 from "../../assets/line18/s-24.webp";
-import img332 from "../../assets/line18/s-25.webp";
-import img333 from "../../assets/line18/S-27.webp";
-import img334 from "../../assets/line18/s-28.webp";
-import img335 from "../../assets/line18/S-30.webp";
-import img336 from "../../assets/line18/S-31.webp";
-import img337 from "../../assets/line18/S-32.webp";
-import img338 from "../../assets/line18/S-33.webp";
-import img339 from "../../assets/line18/S-34.webp";
+import img212 from "../assets/line21/x-1.webp";
+import img213 from "../assets/line21/x-2.webp";
+import img214 from "../assets/line21/x-3.webp";
+import img215 from "../assets/line21/x-4.webp";
+import img216 from "../assets/line21/x-5.webp";
+import img217 from "../assets/line21/x-6.webp";
+import img218 from "../assets/line21/x-7.webp";
+import img219 from "../assets/line21/x-8.webp";
+import img220 from "../assets/line21/x-9.webp";
+import img221 from "../assets/line21/x-10.webp";
+import img222 from "../assets/line21/x-11.webp";
+import img223 from "../assets/line21/x-12.webp";
+import img224 from "../assets/line21/x-13.webp";
+import img225 from "../assets/line21/x-14.webp";
+import img226 from "../assets/line21/x-15.webp";
+import img227 from "../assets/line21/x-16.webp";
+import img228 from "../assets/line21/x-17.webp";
+import img229 from "../assets/line21/x-18.webp";
+import img230 from "../assets/line21/x-19.webp";
+import img231 from "../assets/line21/x-20.webp";
+import img232 from "../assets/line21/x-21.webp";
+import img233 from "../assets/line21/x-22.webp";
+import img234 from "../assets/line21/x-23.webp";
+import img235 from "../assets/line21/x-24.webp";
+import img236 from "../assets/line21/x-25.webp";
+import img237 from "../assets/line21/x-26.webp";
+import img238 from "../assets/line21/x-27.webp";
+import img239 from "../assets/line21/x-28.webp";
+import img240 from "../assets/line21/x-29.webp";
+import img241 from "../assets/line21/x-30.webp";
+import img242 from "../assets/line21/x-31.webp";
+import img243 from "../assets/line21/x-32.webp";
+import img244 from "../assets/line21/x-33.webp";
+import img245 from "../assets/line21/x-34.webp";
+import img246 from "../assets/line21/x-35.webp";
+import img247 from "../assets/line21/x-36.webp";
+import img248 from "../assets/line21/x-37.webp";
+import img249 from "../assets/line21/x-38.webp";
+import img250 from "../assets/line21/x-39.webp";
+import img251 from "../assets/line21/x-40.webp";
+import img252 from "../assets/line21/x-41.webp";
+import img253 from "../assets/line21/x-42.webp";
+import img254 from "../assets/line21/x-43.webp";
+import img255 from "../assets/line21/x-44.webp";
+import img256 from "../assets/line21/x-45.webp";
+import img257 from "../assets/line21/x-46.webp";
+import img258 from "../assets/line21/x-47.webp";
+import img259 from "../assets/line21/x-48.webp";
+import img260 from "../assets/line21/x-49.webp";
+import img261 from "../assets/line21/x-50.webp";
+import img262 from "../assets/line21/x-51.webp";
 
-import img340 from "../../assets/line9/d5.webp";
-import img341 from "../../assets/line9/d6.webp";
-import img342 from "../../assets/line9/d-11.webp";
-import img343 from "../../assets/line9/d-12.webp";
-import img344 from "../../assets/line9/d-14.webp";
-import img345 from "../../assets/line9/d-21.webp";
-import img346 from "../../assets/line9/d-22.webp";
-import img347 from "../../assets/line9/d-23.webp";
-import img348 from "../../assets/line9/d-24.webp";
-import img349 from "../../assets/line9/d-25.webp";
-import img350 from "../../assets/line9/d-26.webp";
-import img351 from "../../assets/line9/d-27.webp";
-import img352 from "../../assets/line9/d-28.webp";
-import img353 from "../../assets/line9/d-29.webp";
-import img354 from "../../assets/line9/d-30.webp";
-import img355 from "../../assets/line9/d-16.webp";
-import img356 from "../../assets/line9/d-17.webp";
-import img357 from "../../assets/line9/d-18.webp";
-import img358 from "../../assets/line9/d-19.webp";
-import img359 from "../../assets/line9/d-20.webp";
+import img263 from "../assets/line22/v-4.webp";
+import img264 from "../assets/line22/v-5.webp";
+import img265 from "../assets/line22/v-6.webp";
+import img266 from "../assets/line22/v-7.webp";
+import img267 from "../assets/line22/v-8.webp";
+import img268 from "../assets/line22/v-9.webp";
+import img269 from "../assets/line22/v-10.webp";
+import img270 from "../assets/line22/v-11.webp";
+import img271 from "../assets/line22/v-12.webp";
+import img272 from "../assets/line22/v-13.webp";
+import img273 from "../assets/line22/v-14.webp";
+import img274 from "../assets/line22/v-15.webp";
+import img275 from "../assets/line22/v-16.webp";
+import img276 from "../assets/line22/v-17.webp";
+import img277 from "../assets/line22/v-18.webp";
+import img278 from "../assets/line22/v-19.webp";
+import img279 from "../assets/line22/v-20.webp";
+import img280 from "../assets/line22/v-21.webp";
+import img281 from "../assets/line22/v-24.webp";
+import img282 from "../assets/line22/v-25.webp";
+import img283 from "../assets/line22/v-26.webp";
+import img284 from "../assets/line22/v-27.webp";
+import img285 from "../assets/line22/v-28.webp";
+import img286 from "../assets/line22/v-29.webp";
+import img287 from "../assets/line22/v-30.webp";
+import img288 from "../assets/line22/v-31.webp";
+import img289 from "../assets/line22/v-32.webp";
+import img290 from "../assets/line22/v-33.webp";
+import img291 from "../assets/line22/v-34.webp";
+import img292 from "../assets/line22/v-35.webp";
+import img293 from "../assets/line22/v-36.webp";
+import img294 from "../assets/line22/v-37.webp";
+import img295 from "../assets/line22/v-38.webp";
+import img296 from "../assets/line22/v-39.webp";
+import img297 from "../assets/line22/v-40.webp";
+import img298 from "../assets/line22/v-41.webp";
+import img299 from "../assets/line22/v-42.webp";
+import img300 from "../assets/line22/v-43.webp";
+import img301 from "../assets/line22/v-44.webp";
+import img302 from "../assets/line22/v-45.webp";
+import img303 from "../assets/line22/v-46.webp";
+import img304 from "../assets/line22/v-47.webp";
+import img305 from "../assets/line22/v-48.webp";
+import img306 from "../assets/line22/v-49.webp";
+import img307 from "../assets/line22/v-50.webp";
+import img308 from "../assets/line22/v-52.webp";
+import img309 from "../assets/line22/v-53.webp";
+import img310 from "../assets/line22/v-54.webp";
+import img311 from "../assets/line22/v-55.webp";
+import img312 from "../assets/line22/v-56.webp";
 
-import img360 from "../../assets/line8/k-20.webp";
-import img361 from "../../assets/line8/k-21.webp";
-import img362 from "../../assets/line8/k-22.webp";
-import img363 from "../../assets/line8/k-24.webp";
-import img364 from "../../assets/line8/k-25.webp";
-import img365 from "../../assets/line8/k-26.webp";
-import img366 from "../../assets/line8/k-27.webp";
-import img367 from "../../assets/line8/k-28.webp";
-import img368 from "../../assets/line8/k-29.webp";
-import img369 from "../../assets/line8/k-30.webp";
-import img370 from "../../assets/line8/k-31.webp";
-import img371 from "../../assets/line8/k-32.webp";
-import img372 from "../../assets/line8/k-33.webp";
-import img373 from "../../assets/line8/k-34.webp";
-import img374 from "../../assets/line8/k-35.webp";
-import img375 from "../../assets/line8/k-36.webp";
-import img376 from "../../assets/line8/k-37.webp";
-import img377 from "../../assets/line8/k-38.webp";
-import img378 from "../../assets/line8/k-39.webp";
-import img379 from "../../assets/line8/k-40.webp";
-import img380 from "../../assets/line8/k-41.webp";
-import img381 from "../../assets/line8/k-42.webp";
-import img382 from "../../assets/line8/k-43.webp";
-import img383 from "../../assets/line8/k-44.webp";
-import img384 from "../../assets/line8/k-45.webp";
-import img385 from "../../assets/line8/k-46.webp";
-import img386 from "../../assets/line8/k-47.webp";
-import img387 from "../../assets/line8/k-48.webp";
+
+import img313 from "../assets/line18/s-6.webp";
+import img314 from "../assets/line18/s-7.webp";
+import img315 from "../assets/line18/s-8.webp";
+import img316 from "../assets/line18/s-9.webp";
+import img317 from "../assets/line18/s-10.webp";
+import img318 from "../assets/line18/s-11.webp";
+import img319 from "../assets/line18/s-12.webp";
+import img320 from "../assets/line18/s-13.webp";
+import img321 from "../assets/line18/s-14.webp";
+import img322 from "../assets/line18/s-15.webp";
+import img323 from "../assets/line18/s-16.webp";
+import img324 from "../assets/line18/s-17.webp";
+import img325 from "../assets/line18/s-18.webp";
+import img326 from "../assets/line18/s-19.webp";
+import img327 from "../assets/line18/s-20.webp";
+import img328 from "../assets/line18/s-21.webp";
+import img329 from "../assets/line18/s-22.webp";
+import img330 from "../assets/line18/s-23.webp";
+import img331 from "../assets/line18/s-24.webp";
+import img332 from "../assets/line18/s-25.webp";
+import img333 from "../assets/line18/S-27.webp";
+import img334 from "../assets/line18/s-28.webp";
+import img335 from "../assets/line18/S-30.webp";
+import img336 from "../assets/line18/S-31.webp";
+import img337 from "../assets/line18/S-32.webp";
+import img338 from "../assets/line18/S-33.webp";
+import img339 from "../assets/line18/S-34.webp";
+
+import img340 from "../assets/line9/d5.webp";
+import img341 from "../assets/line9/d6.webp";
+import img342 from "../assets/line9/d-11.webp";
+import img343 from "../assets/line9/d-12.webp";
+import img344 from "../assets/line9/d-14.webp";
+import img345 from "../assets/line9/d-21.webp";
+import img346 from "../assets/line9/d-22.webp";
+import img347 from "../assets/line9/d-23.webp";
+import img348 from "../assets/line9/d-24.webp";
+import img349 from "../assets/line9/d-25.webp";
+import img350 from "../assets/line9/d-26.webp";
+import img351 from "../assets/line9/d-27.webp";
+import img352 from "../assets/line9/d-28.webp";
+import img353 from "../assets/line9/d-29.webp";
+import img354 from "../assets/line9/d-30.webp";
+import img355 from "../assets/line9/d-16.webp";
+import img356 from "../assets/line9/d-17.webp";
+import img357 from "../assets/line9/d-18.webp";
+import img358 from "../assets/line9/d-19.webp";
+import img359 from "../assets/line9/d-20.webp";
+
+import img360 from "../assets/line8/k-20.webp";
+import img361 from "../assets/line8/k-21.webp";
+import img362 from "../assets/line8/k-22.webp";
+import img363 from "../assets/line8/k-24.webp";
+import img364 from "../assets/line8/k-25.webp";
+import img365 from "../assets/line8/k-26.webp";
+import img366 from "../assets/line8/k-27.webp";
+import img367 from "../assets/line8/k-28.webp";
+import img368 from "../assets/line8/k-29.webp";
+import img369 from "../assets/line8/k-30.webp";
+import img370 from "../assets/line8/k-31.webp";
+import img371 from "../assets/line8/k-32.webp";
+import img372 from "../assets/line8/k-33.webp";
+import img373 from "../assets/line8/k-34.webp";
+import img374 from "../assets/line8/k-35.webp";
+import img375 from "../assets/line8/k-36.webp";
+import img376 from "../assets/line8/k-37.webp";
+import img377 from "../assets/line8/k-38.webp";
+import img378 from "../assets/line8/k-39.webp";
+import img379 from "../assets/line8/k-40.webp";
+import img380 from "../assets/line8/k-41.webp";
+import img381 from "../assets/line8/k-42.webp";
+import img382 from "../assets/line8/k-43.webp";
+import img383 from "../assets/line8/k-44.webp";
+import img384 from "../assets/line8/k-45.webp";
+import img385 from "../assets/line8/k-46.webp";
+import img386 from "../assets/line8/k-47.webp";
+import img387 from "../assets/line8/k-48.webp";
 
 
 export const HomeMap = {
@@ -1139,5 +1139,1180 @@ export const HomeMap = {
   price: 68,
   image: img307,
 },
-
+122: {
+  id: 122,
+  name: "BROWNBREATH KIDS",
+  description: "Classic Kids Radogram Backpack",
+  price: 137,
+  image: img77,
+},
+123: {
+  id: 123,
+  name: "ROANJANE",
+  description: "Bunny Bunny Backpack",
+  price: 42,
+  image: img78,
+},
+124: {
+  id: 124,
+  name: "LIFEWORK KIDS",
+  description: "New Classic Backpack",
+  price: 72,
+  image: img79,
+},
+125: {
+  id: 125,
+  name: "ROANJANE",
+  description: "Brown Bear Dumble Backpack",
+  price: 40,
+  image: img80,
+},
+126: {
+  id: 126,
+  name: "BROWNBREATH KIDS",
+  description: "Kids Big Tag Backpack",
+  price: 68,
+  image: img81,
+},
+127: {
+  id: 127,
+  name: "BROWNBREATH KIDS",
+  description: "Daily Kids Backpack [Khaki]",
+  price: 16,
+  image: img82,
+},
+128: {
+  id: 128,
+  name: "ANDBLACK",
+  description: "Daycare Backpack",
+  price: 37,
+  image: img236,
+},
+129: {
+  id: 129,
+  name: "BAILEY",
+  description: "Warmer for Dogs",
+  price: 42,
+  image: img237,
+},
+130: {
+  id: 130,
+  name: "YALLEY",
+  description: "Dog Rain Coat",
+  price: 22,
+  image: img238,
+},
+131: {
+  id: 131,
+  name: "ICANDOR",
+  description: "Dog Strap Collar",
+  price: 20,
+  image: img239,
+},
+132: {
+  id: 132,
+  name: "MU LITTLE DOG",
+  description: "Heart Pop Cool Sun Cap",
+  price: 8,
+  image: img240,
+},
+133: {
+  id: 133,
+  name: "MEANING LESS",
+  description: "Dog Woolen Cap",
+  price: 16,
+  image: img241,
+},
+134: {
+  id: 134,
+  name: "AMOU",
+  description: "Molly Hooded Zip Up Navy",
+  price: 43,
+  discount: "20% OFF",
+  image: img83,
+},
+135: {
+  id: 135,
+  name: "LEMAIN SECOND",
+  description: "Vintage Pigment 2-Way Oversize Hoodie Zip Up [Charcoal]",
+  price: 31,
+  discount: "20% OFF",
+  image: img84,
+},
+136: {
+  id: 136,
+  name: "MUGON",
+  description: "Curved Line Zip Up Hoodie Gray",
+  price: 39,
+  discount: "20% OFF",
+  image: img85,
+},
+137: {
+  id: 137,
+  name: "CARMID",
+  description: "Glory Lettering Crop Top Hoodie",
+  price: 79,
+  discount: "40% OFF",
+  image: img86,
+},
+138: {
+  id: 138,
+  name: "RRANDOMOFF",
+  description: "Overway Fit Zip Up Hoodie",
+  price: 30,
+  discount: "20% OFF",
+  image: img87,
+},
+139: {
+  id: 139,
+  name: "TRAVEL",
+  description: "Logo Printed Zip Up Hoodie [Gray]",
+  price: 39,
+  discount: "20% OFF",
+  image: img88,
+},
+140: {
+  id: 140,
+  name: "CHAAKAN",
+  description: "MIA Fur Line Winter Boots",
+  price: 23,
+  image: img95,
+},
+141: {
+  id: 141,
+  name: "CHAAKAN",
+  description: "Winter Collection Fur Boots",
+  price: 25,
+  image: img96,
+},
+142: {
+  id: 142,
+  name: "FORR",
+  description: "Strap Fun Long Boots - Chestnut",
+  price: 39,
+  image: img97,
+},
+143: {
+  id: 143,
+  name: "NUARAT STUDIO",
+  description: "Classic Fur Short Mini Boots [5 Colors]",
+  price: 23,
+  image: img98,
+},
+144: {
+  id: 144,
+  name: "AKKI CLASSIC",
+  description: "Iceline Recovery Classic Boots Dark Espresso",
+  price: 50,
+  image: img99,
+},
+145: {
+  id: 145,
+  name: "FORR",
+  description: "3 Button Long Boots - Chestnuts",
+  price: 39,
+  image: img100,
+},
+146: {
+  id: 146,
+  name: "ELIZABETH STUART",
+  description: "Biker Buckle Boots",
+  price: 70,
+  image: img89,
+},
+147: {
+  id: 147,
+  name: "MUSINSA STANDARD",
+  description: "Square Chelsea Boot - Black",
+  price: 71,
+  image: img90,
+},
+148: {
+  id: 148,
+  name: "23.65",
+  description: "Mori Mountain Shoes",
+  price: 39,
+  image: img91,
+},
+149: {
+  id: 149,
+  name: "SALT AND CHOCOLATE",
+  description: "Duncan Buckle Boots",
+  price: 79,
+  image: img92,
+},
+150: {
+  id: 150,
+  name: "SAPUN",
+  description: "Ankle Boots",
+  price: 44,
+  image: img93,
+},
+151: {
+  id: 151,
+  name: "CUSTOMADE",
+  description: "Buddie Suede Long Over Works Boots",
+  price: 89,
+  image: img94,
+},
+152: {
+  id: 152,
+  name: "MUSINSA STANDARD",
+  description: "Winter Platform Short Boots",
+  price: 73,
+  image: img350,
+},
+153: {
+  id: 153,
+  name: "FORR",
+  description: "Platform Fur Slipper",
+  price: 45,
+  image: img351,
+},
+154: {
+  id: 154,
+  name: "FORR",
+  description: "Furline Chelsea Boots",
+  price: 39,
+  image: img352,
+},
+155: {
+  id: 155,
+  name: "NSWE",
+  description: "Wool Knit Padding Mid Boots",
+  price: 73,
+  image: img353,
+},
+156: {
+  id: 156,
+  name: "ANGEL SOCKS",
+  description: "2 Tone Cotton Ribbon Socks",
+  price: 8,
+  image: img248,
+},
+157: {
+  id: 157,
+  name: "I HATE MONDAY",
+  description: "Black Stripe Socks",
+  price: 2,
+  image: img249,
+},
+158: {
+  id: 158,
+  name: "HALDEN",
+  description: "From Knee Socks",
+  price: 7,
+  image: img250,
+},
+159: {
+  id: 159,
+  name: "FLAREUP",
+  description: "Washable Black Custom Tight",
+  price: 10,
+  image: img251,
+},
+160: {
+  id: 160,
+  name: "MOON WALK",
+  description: "Laces Tie Knee Socks",
+  price: 8,
+  image: img252,
+},
+161: {
+  id: 161,
+  name: "FRANSERVICS",
+  description: "Sheer Knee High Socks",
+  price: 16,
+  image: img253,
+},
+162: {
+  id: 162,
+  name: "MUSINSA STANDARD",
+  description: "Saffiano Synthetic Leather Belt",
+  price: 13,
+  image: img242,
+},
+163: {
+  id: 163,
+  name: "PEPPERSEASONING",
+  description: "Tactical Webbing Nylon Belt Black",
+  price: 7,
+  image: img243,
+},
+164: {
+  id: 164,
+  name: "BELIER",
+  description: "City Bokeh Slim Belt",
+  price: 12,
+  image: img244,
+},
+165: {
+  id: 165,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Synthetic Dot Leather Belt",
+  price: 40,
+  image: img245,
+},
+166: {
+  id: 166,
+  name: "MILLO ARXHIVE",
+  description: "Washable Leather Belt",
+  price: 68,
+  image: img246,
+},
+167: {
+  id: 167,
+  name: "PIMADWIN",
+  description: "Dia Belt",
+  price: 16,
+  image: img247,
+},
+168: {
+  id: 168,
+  name: "SAPUN",
+  description: "Verity Pump Heels",
+  price: null, // No price shown in JSX
+  image: img101,
+},
+169: {
+  id: 169,
+  name: "CHAAKAN",
+  description: "Sorel Mid Heels",
+  price: 21,
+  image: img102,
+},
+170: {
+  id: 170,
+  name: "CUSTOMMADEWOMEN",
+  description: "Mary Jane Pumps Scarlets",
+  price: 27,
+  image: img103,
+},
+171: {
+  id: 171,
+  name: "ROLLONTHECLOUDS",
+  description: "Poetic Pumps Heels",
+  price: 37,
+  image: img104,
+},
+172: {
+  id: 172,
+  name: "CHAAKAN",
+  description: "Lace Up Platform Sandals",
+  price: 27,
+  image: img105,
+},
+173: {
+  id: 173,
+  name: "SAPPUN",
+  description: "Basic Pump Heels Black",
+  price: 20,
+  image: img106,
+},
+174: {
+  id: 174,
+  name: "EARDEN",
+  description: "Apple Watch Look Strap Buckle Watch",
+  price: 20,
+  image: img254,
+},
+175: {
+  id: 175,
+  name: "MINOC",
+  description: "Roe Basic Watch Strap",
+  price: 4,
+  image: img255,
+},
+176: {
+  id: 176,
+  name: "EARDEN",
+  description: "Apple Watch Classic Strap Black Watch",
+  price: 72,
+  image: img256,
+},
+178: {
+  id: 178,
+  name: "CRONOUS",
+  description: "Apple Watch Strap Premium Leather Watch",
+  price: 40,
+  image: img258,
+},
+179: {
+  id: 179,
+  name: "SILVER TAG",
+  description: "Apple Watch Steel Strap Heavy Watch",
+  price: 68,
+  image: img257,
+},
+180: {
+  id: 180,
+  name: "LORENIO",
+  description: "Basic Leather Strap Watch",
+  price: 36,
+  image: img259,
+},
+260: {
+  id: 260,
+  name: "LUMMIR",
+  description: "Light On Eye Shadow Palette",
+  price: 28,
+  image: img107,
+},
+261: {
+  id: 261,
+  name: "NOBEV",
+  description: "Noveb Under Eye Mood Aegyo Sal Palette",
+  price: 19,
+  image: img108,
+},
+262: {
+  id: 262,
+  name: "KIRSH BLENDING",
+  description: "Waterproof Mascara",
+  price: 18,
+  image: img109,
+},
+263: {
+  id: 263,
+  name: "I'M MEME",
+  description: "I Am Stick Shadow",
+  price: 3,
+  image: img110,
+},
+264: {
+  id: 264,
+  name: "KEYBO",
+  description: "Falling In Love Eye Shadow Palette",
+  price: 17,
+  image: img111,
+},
+265: {
+  id: 265,
+  name: "PRO8",
+  description: "Stay On Gel Eyeliner Duo Set",
+  price: 34,
+  image: img112,
+},
+266: {
+  id: 266,
+  name: "SKINFOOD",
+  description: "Choco Eyebrow Cake Powder",
+  price: 12,
+  image: img113,
+},
+267: {
+  id: 267,
+  name: "ANDEAR",
+  description: "Single Basic Multiple Blush",
+  price: 12,
+  image: img114,
+},
+268: {
+  id: 268,
+  name: "BAREN",
+  description: "Hand Cuticle Essential Oil",
+  price: 7,
+  image: img115,
+},
+269: {
+  id: 269,
+  name: "HANSKIN",
+  description: "Super Light Touch BB-Cream + Concealer",
+  price: 37,
+  image: img116,
+},
+270: {
+  id: 270,
+  name: "DINTO",
+  description: "Soft Glow Liquid Cheek (8 Types)",
+  price: 15,
+  image: img117,
+},
+271: {
+  id: 271,
+  name: "DINTO",
+  description: "Mid-Night Liquid Contour",
+  price: 15,
+  image: img118,
+},
+272: {
+  id: 272,
+  name: "I'M MEME",
+  description: "I'm Shadow Multi Stick",
+  price: 12,
+  image: img119,
+},
+273: {
+  id: 273,
+  name: "DUEYTREE",
+  description: "Pick and Quick Morning Depuffing Face Mask-Sheet",
+  price: 16,
+  image: img120,
+},
+274: {
+  id: 274,
+  name: "MARY&MAY",
+  description: "Blackberry Complex Glow Face-Wash Pack",
+  price: 22,
+  image: img121,
+},
+275: {
+  id: 275,
+  name: "HANSKIN",
+  description: "Pure Vita C Toning Serum",
+  price: 13,
+  image: img122,
+},
+276: {
+  id: 276,
+  name: "MIZON",
+  description: "Rice Tone Glow Toner",
+  price: 12,
+  image: img123,
+},
+277: {
+  id: 277,
+  name: "SOMEBLOSSOM",
+  description: "Cica Care Body-Wash + Body-Lotion + Body-Mist",
+  price: 44,
+  image: img124,
+},
+278: {
+  id: 278,
+  name: "PGR",
+  description: "Women Waistband Skirt Pants",
+  price: 70,
+  image: img365,
+},
+279: {
+  id: 279,
+  name: "DOWN BLOW",
+  description: "Women Golf Wear Skirt",
+  price: 31,
+  image: img366,
+},
+280: {
+  id: 280,
+  name: "LORDLOR",
+  description: "Women Airy Inverted Skirt",
+  price: 39,
+  image: img367,
+},
+281: {
+  id: 281,
+  name: "SALT AND CHOCOLATE",
+  description: "High Waist Women Sport Skirt Pants",
+  price: 79,
+  image: img368,
+},
+282: {
+  id: 282,
+  name: "PGR",
+  description: "Women Waist Banded Skirt",
+  price: 44,
+  image: img369,
+},
+283: {
+  id: 283,
+  name: "FILLUMINATE",
+  description: "Damage Washes Denim Pants",
+  price: 20,
+  discount: "10% OFF",
+  image: img126,
+},
+284: {
+  id: 284,
+  name: "DEMITRI BLACK",
+  description: "Everyone Banded Curved Slack",
+  price: 18,
+  discount: "10% OFF",
+  image: img127,
+},
+285: {
+  id: 285,
+  name: "DEMITRI BLACK",
+  description: "Single Curved Slack Sweat-Pants",
+  price: 39,
+  discount: "10% OFF",
+  image: img128,
+},
+286: {
+  id: 286,
+  name: "FORR",
+  description: "Small Logo Curved Sweat-Pants",
+  price: 35,
+  discount: "10% OFF",
+  image: img129,
+},
+287: {
+  id: 287,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Washable Double Front-Button Curved Neck Shirt",
+  price: 20,
+  discount: "10% OFF",
+  image: img131,
+},
+288: {
+  id: 288,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Musinsa Special White Zip Up Crop Top Hoodie",
+  price: 38,
+  discount: "10% OFF",
+  image: img132,
+},
+289: {
+  id: 289,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Single Curved Black Pants for Women",
+  price: 20,
+  discount: "10% OFF",
+  image: img133,
+},
+390: {
+  id: 390,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Long Sleeves Full Dotted Summer Shirt",
+  price: 35,
+  discount: "10% OFF",
+  image: img134,
+},
+291: {
+  id: 291,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Aran Cable Collar Zip Up",
+  price: 53,
+  discount: "29% OFF",
+  image: img136,
+},
+292: {
+  id: 292,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Pixel Logo Shirt Half Sleeves Black",
+  price: 18,
+  discount: "10% OFF",
+  image: img137,
+},
+293: {
+  id: 293,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Silver B Over Fit T-Shirt",
+  price: 36,
+  discount: "10% OFF",
+  image: img138,
+},
+294: {
+  id: 294,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Super Wide Hidden Elastic Waist Band Medium-Gray",
+  price: 35,
+  discount: "13% OFF",
+  image: img139,
+},
+295: {
+  id: 295,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Running Ripstone Cap",
+  price: 34,
+  image: img380,
+},
+296: {
+  id: 296,
+  name: "WALTER EXPERIMENT",
+  description: "Equinox Wool Beanie Black",
+  price: null, // Price not shown in JSX
+  image: img381,
+},
+297: {
+  id: 297,
+  name: "MACKY",
+  description: "Buckle Cap Hat Beanie",
+  price: 39,
+  image: img382,
+},
+298: {
+  id: 298,
+  name: "VDR",
+  description: "Off Day Cotton Cap",
+  price: 19,
+  image: img383,
+},
+299: {
+  id: 299,
+  name: "KODAK",
+  description: "Cotton Soccer Bucket Hat",
+  price: 44,
+  image: img384,
+},
+300: {
+  id: 300,
+  name: "KHAKIPOINT",
+  description: "Ribboned Mini Short Black",
+  price: 27,
+  discount: "17% OFF",
+  image: img141,
+},
+301: {
+  id: 301,
+  name: "KHAKIPOINT",
+  description: "Multi Tank Top White",
+  price: 36,
+  discount: null, // No discount shown in JSX
+  image: img142,
+},
+302: {
+  id: 302,
+  name: "KHAKIPOINT",
+  description: "Nepolien Jersey Black",
+  price: 36,
+  discount: null, // No discount shown in JSX
+  image: img143,
+},
+303: {
+  id: 303,
+  name: "KHAKIPOINT",
+  description: "Structure High Neck Leather Jacket",
+  price: 35,
+  discount: null, // No discount shown in JSX
+  image: img144,
+},
+304: {
+  id: 304,
+  name: "BUAF",
+  description: "House Essential Long Sleeve",
+  price: 27,
+  discount: "17% OFF",
+  image: img146,
+},
+305: {
+  id: 305,
+  name: "BUAF",
+  description: "Red Heart Slim Fit T-Shirt",
+  price: 30,
+  discount: null, // No discount shown in JSX
+  image: img147,
+},
+306: {
+  id: 306,
+  name: "BUAF",
+  description: "Running Horse Linger Gray T-Shirt",
+  price: 18,
+  discount: null, // No discount shown in JSX
+  image: img148,
+},
+307: {
+  id: 307,
+  name: "BUAF",
+  description: "A Soft T-Shirt Gray Strip",
+  price: 38,
+  discount: null, // No discount shown in JSX
+  image: img149,
+},
+308: {
+  id: 308,
+  name: "SALT & CHOCOLATE",
+  description: "Round Toe Rider Buckle Boots",
+  price: 69,
+  discount: "20% OFF",
+  image: img151,
+},
+309: {
+  id: 309,
+  name: "SALT & CHOCOLATE",
+  description: "Wrinkle Cover Long Boots",
+  price: 87,
+  discount: null, // No discount shown in JSX
+  image: img152,
+},
+310: {
+  id: 310,
+  name: "SALT & CHOCOLATE",
+  description: "Wide Long Boots",
+  price: 86,
+  discount: null, // No discount shown in JSX
+  image: img153,
+},
+311: {
+  id: 311,
+  name: "SALT & CHOCOLATE",
+  description: "Soft Foam Slim Curved Strap Sandals",
+  price: 38,
+  discount: null, // No discount shown in JSX
+  image: img154,
+},
+312: {
+  id: 312,
+  name: "MUSINSA STANDARD SPORTS",
+  description: "Sports Backpack",
+  price: 44,
+  discount: "14% OFF",
+  image: img308,
+},
+313: {
+  id: 313,
+  name: "HDEX",
+  description: "Glossy Nylon Duffel Bag",
+  price: 42,
+  discount: null, // No discount shown in JSX
+  image: img309,
+},
+314: {
+  id: 314,
+  name: "KODAK",
+  description: "Large Cross Body Bag",
+  price: 72,
+  discount: null, // No discount shown in JSX
+  image: img310,
+},
+315: {
+  id: 315,
+  name: "DREEMYDEAR",
+  description: "Logo Sports Duffel Bag",
+  price: 27,
+  discount: null, // No discount shown in JSX
+  image: img311,
+},
+316: {
+  id: 316,
+  name: "BARBELLWORK",
+  description: "Gym Boston Bag",
+  price: 48,
+  discount: "42% OFF",
+  image: img312,
+},
+317: {
+  id: 317,
+  name: "DAVIWEAR",
+  description: "Women Yoga Wear Blur Pilate Banded Wrap Crop Top",
+  price: 22,
+  discount: "18% OFF",
+  image: img156,
+},
+318: {
+  id: 318,
+  name: "DAVIWEAR",
+  description: "Women Yoga Wear Blur Pilate Banded Wrap Crop Top",
+  price: 22,
+  discount: "18% OFF",
+  image: img157,
+},
+319: {
+  id: 319,
+  name: "DAVIWEAR",
+  description: "Women Yoga Wear Blur Pilate Banded Wrap Crop Top",
+  price: 86,
+  discount: "18% OFF",
+  image: img158,
+},
+320: {
+  id: 320,
+  name: "DAVIWEAR",
+  description: "One Shoulder Loose Fit Short Sleeves T-Shirt",
+  price: 18,
+  discount: "18% OFF",
+  image: img159,
+},
+321: {
+  id: 321,
+  name: "MUSINSA STANDARD",
+  description: "One Pleat Bermuda Sweat Pant [Light Gray]",
+  price: 30,
+  discount: "11% OFF",
+  image: img161,
+},
+322: {
+  id: 322,
+  name: "MUSINSA STANDARD",
+  description: "Big Brush Long Bermuda Denim Pant [Blue]",
+  price: 38,
+  discount: "9% OFF",
+  image: img162,
+},
+323: {
+  id: 323,
+  name: "MUSINSA STANDARD",
+  description: "One Pleat Bermuda Denim Pant [Blue]",
+  price: 25,
+  discount: "8% OFF",
+  image: img163,
+},
+324: {
+  id: 324,
+  name: "MUSINSA STANDARD",
+  description: "One Tuck Long Bermuda Sweat Pant",
+  price: 38,
+  discount: "11% OFF",
+  image: img164,
+},
+325: {
+  id: 325,
+  name: "YEOMIM",
+  description: "Mini Sloty Bag [Mint]",
+  price: 123,
+  discount: null, // No discount shown in JSX
+  image: img166,
+},
+326: {
+  id: 326,
+  name: "YEOMIM",
+  description: "Sloty Bag [Soda]",
+  price: 138,
+  discount: "9% OFF",
+  image: img167,
+},
+327: {
+  id: 327,
+  name: "YEOMIM",
+  description: "Ribbon Gym Sack Blue Check",
+  price: 43,
+  discount: null, // No discount shown in JSX
+  image: img168,
+},
+328: {
+  id: 328,
+  name: "YEOMIM",
+  description: "Mini Pumpkin Bag - Butter Cream",
+  price: 45,
+  discount: "11% OFF",
+  image: img169,
+},
+329: {
+  id: 329,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Lightweight Banded Denim Pant",
+  price: 13,
+  discount: null, // No discount shown in JSX
+  image: img171,
+},
+330: {
+  id: 330,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Loose Strap Banded Denim Pant [Indigo]",
+  price: 13,
+  discount: "9% OFF",
+  image: img172,
+},
+331: {
+  id: 331,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Lightweight Denim Pant",
+  price: 13,
+  discount: "9% OFF",
+  image: img173,
+},
+332: {
+  id: 332,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Lightweight Banded Denim Pant",
+  price: 17,
+  discount: "59% OFF",
+  image: img174,
+},
+333: {
+  id: 333,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Belted Shoulder Bag",
+  price: 73,
+  discount: "9% OFF",
+  image: img176,
+},
+334: {
+  id: 334,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Nylon Shoulder Bag",
+  price: 63,
+  discount: "9% OFF",
+  image: img177,
+},
+335: {
+  id: 335,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Slouch Shoulder Bag",
+  price: 63,
+  discount: "10% OFF",
+  image: img178,
+},
+336: {
+  id: 336,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Nylon Slouch Shoulder Bag",
+  price: 60,
+  discount: "20% OFF",
+  image: img186,
+},
+337: {
+  id: 337,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Women Wrinkle Check Shirt [2 Colors]",
+  price: 23,
+  discount: null, // No discount shown in JSX
+  image: img180,
+},
+338: {
+  id: 338,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "One Side Folding Collar Charcoal",
+  price: 51,
+  discount: "9% OFF",
+  image: img181,
+},
+339: {
+  id: 339,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Butterfly Print Slim Fit Short Sleeves T-Shirt",
+  price: 26,
+  discount: "29% OFF",
+  image: img182,
+},
+340: {
+  id: 340,
+  name: "MUSINSA STANDARD WOMEN",
+  description: "Backpoint Studio Short Sleeve Oversize T-Shirt",
+  price: 15,
+  discount: "21% OFF",
+  image: img183,
+},
+341: {
+  id: 341,
+  name: "MUAHMUAH",
+  description: "Block Cardigan Sleeveless",
+  price: 36,
+  discount: null, // No discount shown
+  image: img187,
+},
+342: {
+  id: 342,
+  name: "MUSINSA STANDARD",
+  description: "Summer Half Sleeve Plain T-Shirt",
+  price: 19,
+  discount: "30% OFF",
+  image: img188,
+},
+343: {
+  id: 343,
+  name: "SUARE",
+  description: "Cool Cotton Half Sleeve Washable T-Shirt",
+  price: 7,
+  discount: "30% OFF",
+  image: img189,
+},
+344: {
+  id: 344,
+  name: "UNDEROFF",
+  description: "Rollup Sleeve Cropped Short Sleeve T-Shirt",
+  price: 20,
+  discount: "30% OFF",
+  image: img190,
+},
+345: {
+  id: 345,
+  name: "TRAVEL",
+  description: "Saint Pigment Half Sleeves T-Shirt",
+  price: 22,
+  discount: "30% OFF",
+  image: img191,
+},
+346: {
+  id: 346,
+  name: "DIMITRI BLACK",
+  description: "ASI 4-Season Essential Hoodie Zip Up Gray",
+  price: 40,
+  discount: "30% OFF",
+  image: img192,
+},
+347: {
+  id: 347,
+  name: "LEIRI",
+  description: "Muscle Fit Short Sleeve T-Shirt Knit",
+  price: 12,
+  discount: "20% OFF",
+  image: img193,
+},
+348: {
+  id: 348,
+  name: "FLAREUP",
+  description: "Layer Bustler T-Shirt",
+  price: 45,
+  discount: "20% OFF",
+  image: img194,
+},
+349: {
+  id: 349,
+  name: "CHASIN RABBIT'S",
+  description: "All About Glow Cover Cream",
+  price: 14,
+  discount: "20% OFF",
+  image: img195,
+},
+350: {
+  id: 350,
+  name: "DASHU",
+  description: "Daily Volume Picks Front Hair Root Volume",
+  price: 17,
+  discount: "50% OFF",
+  image: img196,
+},
+351: {
+  id: 351,
+  name: "FITGLOW",
+  description: "Angel Wing Hoodie Zip Up",
+  price: 34,
+  discount: "20% OFF",
+  image: img197,
+},
+352: {
+  id: 352,
+  name: "P.IN.O",
+  description: "Cotton Crop Short Sleeve T-Shirt Muscle-Fit",
+  price: 20,
+  discount: "20% OFF",
+  image: img198,
+},
+353: {
+  id: 353,
+  name: "CPGN STUDIO",
+  description: "Full Star Pigment Hoodie Zip Up",
+  price: 43,
+  discount: "10% OFF",
+  image: img199,
+},
+354: {
+  id: 354,
+  name: "FANSHOW",
+  description: "Six Color Nineteen Geometry Pants",
+  price: 58,
+  discount: "10% OFF",
+  image: img200,
+},
+355: {
+  id: 355,
+  name: "FLAREUP",
+  description: "Half Sleeve Layer Busten T-Shirt",
+  price: 47,
+  discount: "10% OFF",
+  image: img201,
+},
+356: {
+  id: 356,
+  name: "AGOD",
+  description: "Wide Denim Pant",
+  price: 22,
+  discount: "10% OFF",
+  image: img202,
+},
+357: {
+  id: 357,
+  name: "FILLUMINATE",
+  description: "Damage Washable Denim Pant",
+  price: 33,
+  discount: "10% OFF",
+  image: img203,
+},
+358: {
+  id: 358,
+  name: "DEMITRI BLACK",
+  description: "Women Curved Track Sweat Pant",
+  price: 32,
+  discount: "10% OFF",
+  image: img204,
+},
 }

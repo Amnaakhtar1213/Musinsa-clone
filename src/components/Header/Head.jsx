@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom"
 
 
-const Header = ({ favoriteCount }) => {
+const Header = ({ favoriteCount, cart }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,8 +35,13 @@ const Header = ({ favoriteCount }) => {
         </Link>
       </div>
 
-      <div  className="text-xl">
-        <i class="fa-brands fa-opencart"></i>
+      <div  className="relative text-xl">
+        <i className="fa-brands fa-opencart"></i>
+        {cart.length > 0 && (
+          <span className="absolute -bottom-1 -right-2 bg-black text-white text-xs rounded-full h-4.5 w-4.5 flex items-center justify-center">
+            {cart.length}
+          </span>
+        )}
       </div>
 
       <div  className="text-xl">
