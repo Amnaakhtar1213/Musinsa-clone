@@ -225,7 +225,10 @@ const Fashion = ({ favorite, toggleFavorite }) => {
       caption: "New Brand Edits"
     },
     {src: img214,
-      caption: "Trending Globally"
+      caption: "Tending Now"
+    },
+    {src: img18,
+      caption: "Trending Spotlight"
     },
     {src: img215,
       caption: "Famous Collaboration with K-POP"
