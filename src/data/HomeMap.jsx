@@ -1768,8 +1768,8 @@ export const HomeMap = {
   discount: "10% OFF",
   image: img133,
 },
-390: {
-  id: 390,
+290: {
+  id: 290,
   name: "MUSINSA STANDARD WOMEN",
   description: "Long Sleeves Full Dotted Summer Shirt",
   price: 35,

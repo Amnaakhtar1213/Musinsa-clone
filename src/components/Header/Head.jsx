@@ -1,12 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Head.css'
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 
-const Header = ({ favoriteCount, cart }) => {
+const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
+  const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isUserOpen, setIsUserOpen] = useState(false);  
+
+  useEffect(() => {
+    const savedUser = localStorage.getItem("user");
+    if(savedUser) SetUser(JSON.parse(savedUser));
+  }, []);
+
+  useEffect(() => {
+    if(user) {
+      localStorage.setItem("user", JSON.stringify(user));
+    } else {
+      localStorage.removeItem("user");
+    }
+  }, [user]);
+
+  const handleSignout = () => {
+    setUser(null)
+  }
 
   return (
     <header className="flex flex-col justify-between items-center fixed top-0 left-0 right-0 w-full py-3 shadow-md bg-white z-10">
@@ -44,9 +64,76 @@ const Header = ({ favoriteCount, cart }) => {
         )}
       </div>
 
-      <div  className="text-xl">
-        <i className="fa-regular fa-user"></i>
-      </div>
+      
+<div className="relative">
+  <div
+    className="text-xl cursor-pointer"
+    onClick={() => setIsUserOpen(!isUserOpen)}
+  >
+    <i className="fa-regular fa-user"></i>
+  </div>
+
+{isUserOpen && (
+  <div className="absolute top-full right-0 mt-2 w-72 bg-white shadow-lg rounded p-4 z-50">
+    {!user ? (
+      // SIGN IN BUTTON
+      <button
+        onClick={() => {
+          setUser({ name: "Amna", email: "amnabinterasheed@gmail.com" });
+          // keep dropdown open so it switches immediately
+        }}
+        className="w-full text-left py-2 px-3 hover:bg-gray-100 rounded"
+      >
+        Sign in with Gmail
+      </button>
+    ) : (
+      <>
+       <div className="border-b pb-3 mb-3">
+          <p className="font-semibold text-gray-500">{user.name}</p>
+          <p className="text-sm text-gray-400">{user.email}</p>
+        </div>
+        {/* Menu Options */}
+        <ul className="space-y-2 text-gray-700">
+          <li className="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded cursor-pointer">
+            <i className="fa-regular fa-id-card"></i>
+            My Profile
+          </li>
+          <li className="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded cursor-pointer">
+             <i className="fa-solid fa-box"></i> Orders
+          </li>
+          <li className="hover:bg-gray-100 px-3 flex items-center gap-2 py-2 rounded cursor-pointer">
+            <i className="fa-regular fa-heart"></i> Wishlist
+          </li>
+          <li className="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded cursor-pointer">
+             <i className="fa-solid fa-gear"></i> Settings
+          </li>
+        </ul>
+
+        {/* Divider */}
+        <hr className="my-3 border-gray-200" />
+
+        {/* SIGN OUT BUTTON */}
+        <button
+          onClick={() => {
+            setUser(null);
+            setIsUserOpen(false); // close after sign out
+          }}
+          className="w-full text-left py-2 px-3 hover:bg-gray-100 text-red-600 rounded"
+        >
+          Sign out
+        </button>
+      </>
+    )}
+  </div>
+)}
+
+
+</div>
+
+
+
+
+
     </div>
       </div>
       

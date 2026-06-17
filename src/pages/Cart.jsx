@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header/Head.jsx";  
+import confetti from "canvas-confetti";
 
 const Cart = ({ cart, removeFromCart }) => {
   const [orderConfirmed, setOrderConfirmed] = useState(false);
@@ -8,30 +9,60 @@ const Cart = ({ cart, removeFromCart }) => {
 
   const handleConfirmOrder = () => {
     setOrderConfirmed(true);
-    setTimeout(() => setOrderConfirmed(false), 3000);
+    setTimeout(() => setOrderConfirmed(false), 6000);
   };
+
+  useEffect(() => {
+  if (orderConfirmed) {
+    const duration = 2 * 1000;
+    const end = Date.now() + duration;
+
+    const frame = () => {
+      confetti({
+        particleCount: 5,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 }
+      });
+      confetti({
+        particleCount: 5,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 }
+      });
+
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    };
+    frame();
+  }
+}, [orderConfirmed]);
+
+
+
 
   return (
 <>
  <Header cart={cart} />
-    <section className="mt-20 mx-30">
-      <h2 className="text-3xl font-bold text-center mb-8">My Cart 🛒</h2>
+    <section className="mt-40 mx-40">
+      <h2 className="text-4xl font-bold text-center">My Shopping Bag 🛒</h2>
 
       {cart.length === 0 ? (
         <p className="text-gray-400 font-bold mt-50 text-center text-3xl ">Your cart is empty</p>
       ) : (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-4 mt-15">
           {cart.map((item) => (
             <div key={item.id} className="flex gap-10 border-b pb-8 items-start">
               {/* Left: Big Product Image */}
               <img
                 src={item.image}
                 alt={item.name}
-                className="h-[300px] w-[300px] object-contain"
+                className="h-[450px] w-[450px] object-contain"
               />
 
               {/* Right: Product Details */}
-              <div className="flex flex-col gap-4 w-full">
+              <div className="flex flex-col gap-4 w-full ml-40 mt-10">
                 <strong className="text-xl">{item.name}</strong>
                 <p className="text-gray-700">{item.description}</p>
                 <span className="text-red-800 font-bold text-lg">
@@ -58,7 +89,7 @@ const Cart = ({ cart, removeFromCart }) => {
           ))}
 
           {/* Total + Confirm Button */}
-          <div className="text-right mt-6">
+          <div className="text-right mr-10">
             <p className="text-lg font-semibold">
               Total: <span className="text-red-800">${totalPrice}</span>
             </p>
@@ -74,12 +105,13 @@ const Cart = ({ cart, removeFromCart }) => {
 
       {/* Order Confirmation Popup */}
       {orderConfirmed && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40">
-          <div className="bg-white p-6 rounded shadow-lg text-center">
-            <h3 className="text-xl font-bold text-green-700">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50  backdrop-blur-md">
+          <div className="bg-white p-6 rounded shadow-lg text-center w-100 h-50">
+            <h3 className="text-xl font-bold text-green-70 mt-5">
               ✅ Your order is confirmed!
             </h3>
-            <p className="text-gray-700 mt-2">
+            <p className="mt-2">🎉🎉🎉</p>
+            <p className="text-gray-700 mt-5">
               Just wait a little bit while we process it.
             </p>
           </div>

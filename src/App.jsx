@@ -1,5 +1,5 @@
  import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
  import './App.css'
 import Header from './components/Header/Head.jsx'
@@ -26,11 +26,53 @@ import Cart from './pages/Cart.jsx'
 import Wishlist from './pages/Wishlist.jsx'
 
 function App() { 
+  const [user, setUser] = useState(null);
+  const [open, setOpen] = useState(false);
 
-  const [favorite, setFavorite] = useState({});
-  const [favoriteCount, setFavoriteCount] = useState(0);
-  const [cart, setCart] = useState([])
-  const [wishlist, setWishlist] = useState([])
+useEffect(() => {
+  const savedUser = localStorage.getItem("user");
+  if(savedUser) setUser(JSON.parse(savedUser));
+}, []);
+
+useEffect(() => {
+  if(user) {
+    localStorage.setItem("user", JSON.stringify(user));
+  } else {
+    localStorage.removeItem("user")
+  }
+}, [user]);
+
+  const [favorite, setFavorite] = useState(() => {
+    const savedFavorite = localStorage.getItem("favorite");
+    return savedFavorite ? JSON.parse(savedFavorite) : {}
+  });
+
+  const [favoriteCount, setFavoriteCount] = useState(
+    Object.values(favorite).filter(Boolean).length
+  );
+  useEffect(() => {
+    localStorage.setItem("favorite", JSON.stringify(favorite));
+    setFavoriteCount(Object.values(favorite).filter(Boolean).length);
+  }, [favorite])
+
+
+  const [wishlist, setWishlist] = useState(() => {
+    const savedWishlist = localStorage.getItem("wishlist");
+    return savedWishlist ? JSON.parse(savedWishlist) : []
+  })
+  useEffect(() => {
+    localStorage.setItem("wishlist", JSON.stringify(wishlist))
+  }, [wishlist]);
+
+
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("cart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  })
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
 
   const toggleFavorite = (id, product) => {
     setFavorite((prev) => {
@@ -38,7 +80,7 @@ function App() {
       const newFavorite = { ...prev, [id]: isFavorite };
 
       // update count
-      setFavoriteCount(Object.values(newFavorite).filter(Boolean).length);
+      // setFavoriteCount(Object.values(newFavorite).filter(Boolean).length);
 
       if(isFavorite) {
         setWishlist((prevWishlist) => {
@@ -66,9 +108,10 @@ const removeFromCart = (id) => {
 };
 
 
+
    return (
     <Router>
-      <Header favoriteCount={favoriteCount} cart={cart} />
+      <Header favoriteCount={favoriteCount} cart={cart} wishlist={wishlist} user={user} setUser={setUser} open={open} setOpen={setOpen} />
       <Routes>
           <Route path="/" element={<Hero favorite={favorite} toggleFavorite={toggleFavorite} />} />
           <Route path="/muahmuah" element={<Muahmuah favorite={favorite} toggleFavorite={toggleFavorite}/>} />
