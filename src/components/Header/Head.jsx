@@ -56,12 +56,15 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
       </div>
 
       <div  className="relative text-xl">
-        <i className="fa-brands fa-opencart"></i>
+        <Link to="/cart">
+          <i className="fa-brands fa-opencart"></i>
         {cart.length > 0 && (
           <span className="absolute -bottom-1 -right-2 bg-black text-white text-xs rounded-full h-4.5 w-4.5 flex items-center justify-center">
             {cart.length}
           </span>
         )}
+        </Link>
+        
       </div>
 
       
