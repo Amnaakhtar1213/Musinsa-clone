@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
 
 import img1 from "../assets/line1/u-1.webp";
 import img2 from "../assets/line1/u-2.webp";
@@ -206,57 +207,89 @@ import img205 from "../assets/line11/r-1.webp";
 import img206 from "../assets/line11/r-2.webp";
 import img207 from "../assets/line11/r-3.webp";
 import img208 from "../assets/line18/t-1.webp";
+import img209 from "../assets/line2/z-1.webp";import img210 from "../assets/line2/z-2.webp";import img211 from "../assets/line2/z-3.webp";
 
 import { MemProduct } from '../data/MemProductMap.jsx'
 
 
 const Members = ({ favorite, toggleFavorite }) => {
+  
+const images = [
+  {src: img3,
+    caption: " Up to 30% off for new members"
+  },
+  {src: img6,
+    caption:"Summer essiantial ___ LIMITED EDITION"
+  },
+  {src: img11,
+    caption: "TRENDING NOW"
+  },
+  {src: img209,
+    caption: "Selected by K-Celeb HAN SO-HEE"
+  },
+  {src: img210,
+    caption: "Deleivery All around the World"
+  },
+  {src: img211,
+    caption: "MUSINSA User-Guide"
+  }
+]
+
+const [currentIndex, setCurrentIndex] = useState(0);
+const itemPerPage = 3;
+
+const nextSlide = () => {
+  if (currentIndex + itemPerPage < images.length){
+    setCurrentIndex(currentIndex + itemPerPage)
+  } else {
+    setCurrentIndex(0)
+  }
+}
+
+const prevSlide = () => {
+  if(currentIndex - itemPerPage >= 0){
+    setCurrentIndex(currentIndex - itemPerPage)
+  }
+} 
+ useEffect(() => {
+  const interval = setInterval(nextSlide, 3000);
+  return () => clearInterval(interval)
+}, [currentIndex])
+
   return (
     <div>
 
-<div className="mx-30 mt-35">
-  <div className="flex justify-center gap-4 mt-4">
-     {/*<img src={img1} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img2} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img3} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img4} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img5} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img6} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img7} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img8} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img9} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img10} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img11} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img12} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img13} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img14} alt="img-1" className="w-1/4 h-auto"></img>
-        <img src={img15} alt="img-1" className="w-1/4 h-auto"></img> */}
-       <div className="relative w-[420px] ">
-         <img src={img3} alt="img-1" className="w-full h-auto" />
-          <p className="absolute bottom-0 left-0 right-0  text-white text-xl tracking-wide font-[600] italic text-center py-10">
-           Up to 30% off for new members
-          </p>
-        </div>
-        
-       <div className="relative w-[420px] bg-red-500">
-         <img src={img6} alt="img-1" className="w-full h-auto" />
-          <p className="absolute bottom-0 left-0 right-0  text-white text-xl tracking-wide font-[600] italic text-center py-10">
-           "Summer essiantial"<br></br>
-           <span className="text-sm font-bold">LIMITED EDITION</span>
-          </p>
-        </div>
-        <div className="relative w-[420px]">
-         <img src={img11} alt="img-1" className="w-full h-auto" />
-          <p className="absolute bottom-0 left-0 right-0  text-white text-xl tracking-wide font-[600] italic text-center py-10">
-           "TRENDING NOW"
-          </p>
-        </div>
-</div>
-     
-
-      <button  className="absolute left-25 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 shadow-lg shadow-gray-500/50"><i class=" fa-solid fa-chevron-left"></i></button>
-      <button  className="absolute right-25 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 text-xl font-bold shadow-lg shadow-gray-500/50"><i class="fa-solid fa-chevron-right"></i></button>
+<div className="mx-30 relative mt-40">
+      <div className="flex justify-center gap-4 mt-4">
+        {images.slice(currentIndex, currentIndex + itemPerPage).map((item, idx) => (
+          <div key={idx} className="relative w-[420px]">
+            <img src={item.src} alt={`img-${idx}`} className="w-full h-auto" />
+            <p className="absolute bottom-0 left-0 right-0 text-white text-xl tracking-wide font-[600] italic text-center py-10">
+              {item.caption}
+            </p>
+          </div>
+        ))}
       </div>
+
+      {/* Navigation buttons */}
+      <button
+        onClick={prevSlide}
+        disabled={currentIndex === 0}
+        className="absolute -left-5 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 shadow-lg shadow-gray-500/50"
+      >
+        <i className="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button
+        onClick={nextSlide}
+        disabled={currentIndex + itemPerPage >= images.length}
+        className="absolute -right-5 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 text-xl font-bold shadow-lg shadow-gray-500/50"
+      >
+        <i className="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+
 
 <div className=" flex flex-row gap-3 mx-30 justify-center item-center mt-8">
   <div className=" flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
