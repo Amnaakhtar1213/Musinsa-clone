@@ -435,4 +435,22 @@ export const BeautyProductMap = {
   price: 44,
   image: img124,
 },
+// 798: {
+//   id: 798,
+//   name: "JUNGSAEMMOOL",
+//   description: "Essiantial Skin nuder Global cushion",
+//   image: img403,
+// },
+// 799: {
+//   id: 799,
+//   name: "JUNGSAEMMOOL",
+//   description: "New Classic Matte Lipstick",
+//   image: img404,
+// },
+// 800: {
+//   id: 800,
+//   name: "JUNGSAEMMOOL",
+//   description: "Essiantial Skin nuder cushion",
+//   image: img405,
+// }
 }

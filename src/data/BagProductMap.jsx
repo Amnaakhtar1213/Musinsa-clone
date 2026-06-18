@@ -721,6 +721,7 @@ export const BagProductMap = {
   description: "Belting washing leather bag",
   image: img264,
 },
+
 }
 
 
