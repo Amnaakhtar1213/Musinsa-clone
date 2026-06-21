@@ -24,6 +24,7 @@ import Sports from './pages/Sports.jsx'
 
 import Cart from './pages/Cart.jsx'
 import Wishlist from './pages/Wishlist.jsx'
+import Search from './pages/Search.jsx'
 
 function App() { 
   const [user, setUser] = useState(null);
@@ -132,6 +133,7 @@ const removeFromCart = (id) => {
           <Route path="/sports" element={<Sports favorite={favorite} toggleFavorite={toggleFavorite}/>} />
            <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
           <Route path="/Wishlist" element={<Wishlist wishlist={wishlist} favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} />} />
+          <Route path="/search" element={<Search favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} /> }/>
      </Routes>
     
     </Router>

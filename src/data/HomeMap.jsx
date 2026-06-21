@@ -448,7 +448,7 @@ export const HomeMap = {
 30: {
   id: 30,
   name: "ESCAPEFROM",
-  description: "Start Denim ESCF Logo College Print Slim Fit",
+  description: "Start Denim ESCF Logo College Print Slim Fit shirt",
   price: 24,
   discount: "75% OFF",
   image: img33,
@@ -456,7 +456,7 @@ export const HomeMap = {
 31: {
   id: 31,
   name: "MAISON MINED",
-  description: "Doodle Heart Half T White Greyish Blue",
+  description: "Doodle Heart Half T White Greyish Blue shirt",
   price: 32,
   discount: "75% OFF",
   image: img34,
@@ -464,7 +464,7 @@ export const HomeMap = {
 32: {
   id: 32,
   name: "ESCAPEFROM",
-  description: "Strawberry Dot EDCF Logo Collage Print Oversize",
+  description: "Strawberry Dot EDCF Logo Collage Print Oversize shirt",
   price: 26,
   discount: "70% OFF",
   image: img35,
@@ -480,7 +480,7 @@ export const HomeMap = {
 34: {
   id: 34,
   name: "MUSINSA STANDARD",
-  description: "Real Wide Hidden Banding Slacks [Black]",
+  description: "Real Wide Hidden Banding Slacks pant [Black]",
   price: 27,
   discount: "30% OFF",
   image: img37,
@@ -535,7 +535,7 @@ export const HomeMap = {
 41: {
   id: 41,
   name: "ALLINCOMPLETE",
-  description: "Logo Jacquard Beanie",
+  description: "Logo Jacquard Beanie cap",
   price: 40,
   image: img213,
 },
@@ -549,21 +549,21 @@ export const HomeMap = {
 43: {
   id: 43,
   name: "CHARMY",
-  description: "Mandy Bucket Hat",
+  description: "Mandy Bucket [Hat] cap",
   price: 26,
   image: img215,
 },
 44: {
   id: 44,
   name: "SLEEPY SLIP",
-  description: "Paros Sun Visor",
+  description: "Paros Sun Visor cap",
   price: 50,
   image: img216,
 },
 45: {
   id: 45,
   name: "LIFEWORK",
-  description: "Pigment-Washed Bucket Hat",
+  description: "Pigment-Washed Bucket [Hat] cap",
   price: 26,
   image: img217,
 },
@@ -594,7 +594,7 @@ export const HomeMap = {
 49: {
   id: 49,
   name: "SQUARELINE",
-  description: "Nox Black",
+  description: "Nox Black bag",
   price: 97,
   image: img267,
 },
@@ -703,7 +703,7 @@ export const HomeMap = {
 64: {
   id: 64,
   name: "PERMANENT ARCHIVE",
-  description: "Brush Long Knit Scarf",
+  description: "Brush Long Knit Scarf muffler",
   price: 68,
   image: img222,
 },
@@ -717,7 +717,7 @@ export const HomeMap = {
 66: {
   id: 66,
   name: "MUSINSA STANDARD WOMEN",
-  description: "Women Nylon Mini Bag",
+  description: "Women Nylon Mini Bagpack",
   price: 72,
   image: img268,
 },
@@ -732,7 +732,7 @@ export const HomeMap = {
 68: {
   id: 68,
   name: "MUSINSA STANDARD WOMEN",
-  description: "Women Polka Dot Flap Mini Bag",
+  description: "Women Polka Dot Flap Mini Bagpack",
   price: 80,
   image: img270,
 },
@@ -794,7 +794,7 @@ export const HomeMap = {
 76: {
   id: 76,
   name: "MUSINSA STANDARD WOMEN",
-  description: "Women Low Rise Flare Slacks [Black]",
+  description: "Women Low Rise Flare Slacks pants [Black]",
   price: 29,
   discount: "25% OFF",
   image: img46,
@@ -972,7 +972,7 @@ export const HomeMap = {
 99: {
   id: 99,
   name: "PASSMEBY",
-  description: "Florven V2",
+  description: "Florven V2 ring",
   price: 166,
   image: img229,
 },
@@ -1017,7 +1017,7 @@ export const HomeMap = {
 105: {
   id: 105,
   name: "PLEASENOFOLLOW",
-  description: "Long Sleeves Top",
+  description: "Long Sleeves shirt",
   price: 34,
   discount: "4% OFF",
   image: img68,
@@ -1025,7 +1025,7 @@ export const HomeMap = {
 106: {
   id: 106,
   name: "EYEER",
-  description: "02 Logo Bolero Set-Up Black",
+  description: "02 Logo Bolero Set-Up Black top",
   price: 64,
   discount: "1% OFF",
   image: img69,
@@ -1041,7 +1041,7 @@ export const HomeMap = {
 108: {
   id: 108,
   name: "YEOMIM",
-  description: "Stud Shrink Band Beanie [Black]",
+  description: "Stud Shrink Band Beanie [Black] cap",
   price: 45,
   discount: "10% OFF",
   image: img71,
@@ -1057,7 +1057,7 @@ export const HomeMap = {
 110: {
   id: 110,
   name: "SLEEKGLOW",
-  description: "Summer Drop Arrive [50% Off]",
+  description: "Summer Drop Arrive [50% Off] top",
   price: 20,
   discount: "5% OFF",
   image: img73,
@@ -1065,42 +1065,42 @@ export const HomeMap = {
 111: {
   id: 111,
   name: "2cube",
-  description: "1007 (Gray, Purple)",
+  description: "1007 sunglasses (Gray, Purple)",
   price: 37,
   image: img230,
 },
 112: {
   id: 112,
   name: "RIETO",
-  description: "Celvin C1 Black",
+  description: "Celvin C1 Black sunglasses",
   price: 42,
   image: img231,
 },
 113: {
   id: 113,
   name: "RIETO",
-  description: "Cario Ice Blue",
+  description: "Cario Ice Blue sunglasses",
   price: 72,
   image: img232,
 },
 114: {
   id: 114,
   name: "RIETO",
-  description: "C1 Black",
+  description: "C1 Black sunglasses",
   price: 40,
   image: img233,
 },
 115: {
   id: 115,
   name: "RIETI",
-  description: "Aldo C2 Black",
+  description: "Aldo C2 Black sunglasses",
   price: 68,
   image: img234,
 },
 116: {
   id: 116,
   name: "ONE BRILLOENT",
-  description: "Ambrio Black Brown",
+  description: "Ambrio Black Brownsunglasses",
   price: 46,
   image: img235,
 },
@@ -1226,7 +1226,7 @@ export const HomeMap = {
 134: {
   id: 134,
   name: "AMOU",
-  description: "Molly Hooded Zip Up Navy",
+  description: "Molly Hoodie Zip Up Navy",
   price: 43,
   discount: "20% OFF",
   image: img83,
@@ -1723,7 +1723,7 @@ export const HomeMap = {
 284: {
   id: 284,
   name: "DEMITRI BLACK",
-  description: "Everyone Banded Curved Slack",
+  description: "Everyone Banded Curved Slack pants",
   price: 18,
   discount: "10% OFF",
   image: img127,
@@ -1779,7 +1779,7 @@ export const HomeMap = {
 291: {
   id: 291,
   name: "MUSINSA STANDARD WOMEN",
-  description: "Aran Cable Collar Zip Up",
+  description: "Aran Cable Collar Zip Up shirt",
   price: 53,
   discount: "29% OFF",
   image: img136,
@@ -1787,7 +1787,7 @@ export const HomeMap = {
 292: {
   id: 292,
   name: "MUSINSA STANDARD WOMEN",
-  description: "Pixel Logo Shirt Half Sleeves Black",
+  description: "Pixel Logo Shirt Half Sleeves shirt Black",
   price: 18,
   discount: "10% OFF",
   image: img137,
@@ -1803,7 +1803,7 @@ export const HomeMap = {
 294: {
   id: 294,
   name: "MUSINSA STANDARD WOMEN",
-  description: "Super Wide Hidden Elastic Waist Band Medium-Gray",
+  description: "Super Wide Hidden Elastic Waist Band Medium-Gray pants",
   price: 35,
   discount: "13% OFF",
   image: img139,
@@ -1818,14 +1818,14 @@ export const HomeMap = {
 296: {
   id: 296,
   name: "WALTER EXPERIMENT",
-  description: "Equinox Wool Beanie Black",
+  description: "Equinox Wool Beanie Black cap",
   price: null, // Price not shown in JSX
   image: img381,
 },
 297: {
   id: 297,
   name: "MACKY",
-  description: "Buckle Cap Hat Beanie",
+  description: "Buckle Cap Hat Beanie cap",
   price: 39,
   image: img382,
 },
@@ -1839,14 +1839,14 @@ export const HomeMap = {
 299: {
   id: 299,
   name: "KODAK",
-  description: "Cotton Soccer Bucket Hat",
+  description: "Cotton Soccer Bucket cap [Hat]",
   price: 44,
   image: img384,
 },
 300: {
   id: 300,
   name: "KHAKIPOINT",
-  description: "Ribboned Mini Short Black",
+  description: "Ribboned Mini Shorts [pants] Black",
   price: 27,
   discount: "17% OFF",
   image: img141,
@@ -1862,7 +1862,7 @@ export const HomeMap = {
 302: {
   id: 302,
   name: "KHAKIPOINT",
-  description: "Nepolien Jersey Black",
+  description: "Nepolien Black jacket",
   price: 36,
   discount: null, // No discount shown in JSX
   image: img143,
@@ -1878,7 +1878,7 @@ export const HomeMap = {
 304: {
   id: 304,
   name: "BUAF",
-  description: "House Essential Long Sleeve",
+  description: "House Essential Long Sleeve shirt",
   price: 27,
   discount: "17% OFF",
   image: img146,
@@ -2062,7 +2062,7 @@ export const HomeMap = {
 327: {
   id: 327,
   name: "YEOMIM",
-  description: "Ribbon Gym Sack Blue Check",
+  description: "Ribbon Gym Sack Blue Check bag",
   price: 43,
   discount: null, // No discount shown in JSX
   image: img168,
@@ -2150,7 +2150,7 @@ export const HomeMap = {
 338: {
   id: 338,
   name: "MUSINSA STANDARD WOMEN",
-  description: "One Side Folding Collar Charcoal",
+  description: "One Side Folding Collar shirt Charcoal",
   price: 51,
   discount: "9% OFF",
   image: img181,
@@ -2174,7 +2174,7 @@ export const HomeMap = {
 341: {
   id: 341,
   name: "MUAHMUAH",
-  description: "Block Cardigan Sleeveless",
+  description: "Block Cardigan Sleeveless shirt",
   price: 36,
   discount: null, // No discount shown
   image: img187,

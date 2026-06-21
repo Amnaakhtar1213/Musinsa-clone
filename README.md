@@ -1,3 +1,13 @@
 ## MUSINSA (e-commerce clone)
 
 This website is clone-base website. I clone it not just like a *MUSINSA*, A Famous e-commerce K-Website.I built it with *REACT*  and *Tailwind*. I make a header section which has a navbar and its dropdown.Its has seprate pages like fashion, beauty, sale and member discount.I also add heart icon which we save it in our wishlist, and its has a cart page where we go and order it and it also has a success msg and confitte celebration.
+
+
+
+
+
+
+
+
+### LIVE DEMO 
+ - [Click here for try yourself](https://amnaakhtar1213.github.io/musinsa/)

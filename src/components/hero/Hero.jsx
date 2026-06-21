@@ -483,7 +483,9 @@ const prevSlide = () => {
   const interval = setInterval(nextSlide, 3000);
   return () => clearInterval(interval)
  }, [currentIndex])
+
     
+
    return (
     <div>
 
@@ -521,8 +523,6 @@ const prevSlide = () => {
       </button>
     </div>
 
-
-      
 
 
 <div className="mx-40 mt-5 flex flex-row gap-3 justify-center items-center">
@@ -599,9 +599,10 @@ const prevSlide = () => {
   <h2>24H ONLY: EXTRA 30% OFF </h2>
 </div>
 
-<div className="mx-30 mt-10  bg-gray-100 p-4 text-center">
-  <span>End in: <strong>01:30:20</strong></span>
+<div className="mx-30 mt-10 bg-gray-100 p-4 text-center">
+     <span><strong>00:00:00:00</strong></span>
 </div>
+    
 
 <div className="mx-30 mt-8">
   <ul className="flex flex-row gap-4 ">
@@ -748,7 +749,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium">ESCAPEFROM</strong>
-        <p className="text-sm text-black">Start denim escf logo college print slim fit</p>
+        <p className="text-sm text-black">Start denim escf logo college print slim fit shirt</p>
         <span className="text-gray-600 text-sm">75% OFF</span>
           <span className="text-sm font-bold text-red-800">$24</span>
       </div>
@@ -766,7 +767,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium">MAISON MINED</strong>
-        <p className="text-sm text-black">Dooodle heart half t white greyish blue</p>
+        <p className="text-sm text-black">Dooodle heart half t white greyish blue shirt</p>
          <span className="text-gray-600 text-sm">75% OFF</span>
           <span className="text-sm font-bold text-red-800">$32</span>
       </div>
@@ -784,7 +785,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-bold">ESCAPEFROM</strong>
-        <p className="text-sm text-black">Stawberry dot edcf logo collage print oversize</p>
+        <p className="text-sm text-black">Stawberry dot edcf logo collage print oversize shirt</p>
           <span className="text-gray-600 text-sm">70% OFF</span>
           <span className="text-sm font-bold text-red-800">$26</span>
       </div>
@@ -839,7 +840,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium">MUSINSA STANDARD</strong>
-        <p className="text-sm text-black">Real Wide Hidden Banding Slacks [Black]</p>
+        <p className="text-sm text-black">Real Wide Hidden Banding Slacks pant [Black]</p>
         <span className="text-gray-600 text-sm">30% OFF</span>
           <span className="text-sm font-bold text-red-800">$27</span>
       </div>
@@ -978,7 +979,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">ALLINCOMPLETE</strong>
-              <p className="text-sm text-black">Logo jackquard beanie</p>
+              <p className="text-sm text-black">Logo jackquard beanie cap</p>
                 <span className="text-sm font-bold text-red-800">$40</span>
             </div>
           </li>
@@ -1010,7 +1011,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">CHARMY</strong>
-              <p className="text-sm text-black">Mandy bucket hat</p>
+              <p className="text-sm text-black">Mandy bucket [hat] cap</p>
                 <span className="text-sm font-bold text-red-800">$26</span>
             </div>
           </li>
@@ -1026,7 +1027,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">SLEEPY SLIP</strong>
-              <p className="text-sm text-black">Paros Sun visior</p>
+              <p className="text-sm text-black">Paros Sun visior cap</p>
                 <span className="text-sm font-bold text-red-800">$50</span>
             </div>
           </li>
@@ -1042,7 +1043,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">LIFEWORK</strong>
-              <p className="text-sm text-black">Pigment-washed bucket hat</p>
+              <p className="text-sm text-black">Pigment-washed bucket ][hat] cap</p>
                 <span className="text-sm font-bold text-red-800">$26</span>
             </div>
           </li>
@@ -1121,7 +1122,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">SQUARELINE</strong>
-        <p className="text-sm text-black">Nox __ black</p>
+        <p className="text-sm text-black">Nox __ black bag</p>
           <span className="text-sm font-bold text-red-800">$97</span>
       </div>
     </li>
@@ -1150,7 +1151,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium">SCALLYWANG</strong>
-        <p className="text-sm text-black">Small logo multi tuck sweatpant</p>
+        <p className="text-sm text-black">Small logo multi tuck sweat pant</p>
         <span className="text-gray-600 text-sm">30% OFF</span>
           <span className="text-sm font-bold text-red-800">$12</span>
       </div>
@@ -1453,7 +1454,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">PERMANENT ARCHIEVE</strong>
-              <p className="text-sm text-black">Brush long knit scarf</p>
+              <p className="text-sm text-black">Brush long knit scarf muffler</p>
                 <span className="text-sm font-bold text-red-800">$68</span>
             </div>
           </li>
@@ -1497,7 +1498,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
-        <p className="text-sm text-black">Women nylon mini bag</p>
+        <p className="text-sm text-black">Women nylon mini bagpack</p>
           <span className="text-sm font-bold text-red-800">$72</span>
       </div>
     </li>
@@ -1530,7 +1531,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
-        <p className="text-sm text-black">Women polka dot flapp mini bag</p>
+        <p className="text-sm text-black">Women polka dot flapp mini bagpack</p>
           <span className="text-sm font-bold text-red-800">$80</span>
       </div>
     </li>
@@ -1683,7 +1684,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
-        <p className="text-sm text-black">Women low rise Flare Slacks [Black]</p>
+        <p className="text-sm text-black">Women low rise Flare Slacks pants [Black]</p>
           <span className="text-gray-600">25% OFF</span>
           <span className="text-sm font-bold text-red-800">$29</span>
       </div>
@@ -2125,7 +2126,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">PASSMEBY</strong>
-              <p className="text-sm text-black">FLORVEN V2</p>
+              <p className="text-sm text-black">FLORVEN V2 ring</p>
                 <span className="text-sm font-bold text-red-800">$166</span>
             </div>
           </li>
@@ -2295,7 +2296,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">PLEASENOFOLLOW</strong>
-        <p className="text-sm text-black">Long Sleeves Top</p>
+        <p className="text-sm text-black">Long Sleeves top</p>
         <span className="text-gray-600">4% OFF</span>
           <span className="text-sm font-bold text-red-800">$34</span>
       </div>
@@ -2312,7 +2313,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">EYEER</strong>
-        <p className="text-sm text-black">02 Logo Bolero set-up black</p>
+        <p className="text-sm text-black">02 Logo Bolero set-up black top</p>
          <span className="text-gray-600">1% OFF</span>
           <span className="text-sm font-bold text-red-800">$64</span>
       </div>
@@ -2346,7 +2347,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">YEOMIM</strong>
-        <p className="text-sm text-black">Stud Shriing band beanie [black]</p>
+        <p className="text-sm text-black">Stud Shriing band beanie [black] cap</p>
          <span className="text-gray-600">10% OFF</span>
           <span className="text-sm font-bold text-red-800">$45</span>
       </div>
@@ -2380,7 +2381,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">SLEEKGLOW</strong>
-        <p className="text-sm text-black">Summer Drop Arrive [50% off]</p>
+        <p className="text-sm text-black">Summer Drop Arrive [50% off] top</p>
           <span className="text-gray-600">5% OFF</span>
           <span className="text-sm font-bold text-red-800">$20</span>
       </div>
@@ -2413,7 +2414,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">2cube</strong>
-              <p className="text-sm text-black">1007 (gray, purple)</p>
+              <p className="text-sm text-black">1007 sunglasses (gray, purple)</p>
                 <span className="text-sm font-bold text-red-800">$37</span>
             </div>
           </li>
@@ -2429,7 +2430,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">RIETO</strong>
-              <p className="text-sm text-black">CELVIN c1 black</p>
+              <p className="text-sm text-black">CELVIN c1 black sunglasses</p>
                 <span className="text-sm font-bold text-red-800">$42</span>
             </div>
           </li>
@@ -2445,7 +2446,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">RIETO</strong>
-              <p className="text-sm text-black">Cario ice blue</p>
+              <p className="text-sm text-black">Cario ice blue sunglasses</p>
                 <span className="text-sm font-bold text-red-800">$72</span>
             </div>
           </li>
@@ -2461,7 +2462,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">RIETO</strong>
-              <p className="text-sm text-black">C1 BLACK</p>
+              <p className="text-sm text-black">C1 BLACK sunglasses</p>
                 <span className="text-sm font-bold text-red-800">$40</span>
             </div>
           </li>
@@ -2477,7 +2478,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">RIETI</strong>
-              <p className="text-sm text-black">Aldo c2 black</p>
+              <p className="text-sm text-black">Aldo c2 black sunglasses</p>
                 <span className="text-sm font-bold text-red-800">$68</span>
             </div>
           </li>
@@ -2493,7 +2494,7 @@ const prevSlide = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">ONE BRILLOENT</strong>
-              <p className="text-sm text-black">Ambrio black brown</p>
+              <p className="text-sm text-black">Ambrio black brown sunglassses</p>
                 <span className="text-sm font-bold text-red-800">$46</span>
             </div>
           </li>
@@ -2875,7 +2876,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">AMOU</strong>
-        <p className="text-sm text-black">Molly Hooded zip up Navy</p>
+        <p className="text-sm text-black">Molly Hoodie zip up Navy</p>
         <span className="text-gray-600">20% OFF</span>
           <span className="text-sm font-bold text-red-800">$43</span>
       </div>
@@ -4192,7 +4193,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">DEMITRI BLACK</strong>
-        <p className="text-sm text-black">Everyone banded curved slack</p>
+        <p className="text-sm text-black">Everyone banded curved slack pants</p>
          <span className="text-sm text-gray-600">10%</span>
           <span className="text-sm font-bold text-red-800">$18</span>
       </div>
@@ -4349,7 +4350,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
-        <p className="text-sm text-black">Aran cable collar zip up</p>
+        <p className="text-sm text-black">Aran cable collar zip up shirt</p>
            <span className="text-sm text-gray-600">29%</span>
             <span className="text-sm font-bold text-red-800">$53</span>
           
@@ -4368,7 +4369,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
-        <p className="text-sm text-black">Pixel logo shirt half sleeves black</p>
+        <p className="text-sm text-black">Pixel logo shirt half sleeves shirt black</p>
          <span className="text-sm text-gray-600">10%</span>
           <span className="text-sm font-bold text-red-800">$18</span>
       </div>
@@ -4402,7 +4403,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
-        <p className="text-sm text-black">Super wide hidden elastic waist band medium-gray</p>
+        <p className="text-sm text-black">Super wide hidden elastic waist band medium-gray pants</p>
          <span className="text-sm text-gray-600">13%</span>
           <span className="text-sm font-bold text-red-800">$35</span>
       </div>
@@ -4449,7 +4450,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">WALTER EXPERIMENT</strong>
-        <p className="text-sm text-black">Equinox wool beanie Black</p>
+        <p className="text-sm text-black">Equinox wool beanie Black cap</p>
           <span className="text-sm font-bold text-red-68"></span>
       </div>
     </li>
@@ -4465,7 +4466,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MACKY</strong>
-        <p className="text-sm text-black">Buckle cap hat beanie</p>
+        <p className="text-sm text-black">Buckle cap hat beanie cap</p>
           <span className="text-sm font-bold text-red-800">$39</span>
       </div>
     </li>
@@ -4497,7 +4498,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">KODAK</strong>
-        <p className="text-sm text-black">Cotton soccer bucket hat</p>
+        <p className="text-sm text-black">Cotton soccer bucket cap [hat]</p>
           <span className="text-sm font-bold text-red-800">$44</span>
       </div>
     </li>
@@ -4529,7 +4530,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">KHAKIPOINT</strong>
-        <p className="text-sm text-black">Ribboned mini short black</p>
+        <p className="text-sm text-black">Ribboned mini shorts [pants] black</p>
            <span className="text-sm text-gray-600">17%</span>
             <span className="text-sm font-bold text-red-800">$27</span>
           
@@ -4564,7 +4565,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">KHAKIPOINT</strong>
-        <p className="text-sm text-black">Nepolien jersey black</p>
+        <p className="text-sm text-black">Nepolien black jacket</p>
           <span className="text-sm font-bold text-red-800">$36</span>
       </div>
       </li>
@@ -4612,7 +4613,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">BUAF</strong>
-        <p className="text-sm text-black">house essiential long sleeve</p>
+        <p className="text-sm text-black">house essiential long sleeve shirt</p>
            <span className="text-sm text-gray-600">17%</span>
             <span className="text-sm font-bold text-red-800">$27</span>
           
@@ -5076,7 +5077,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">YEOMIM</strong>
-        <p className="text-sm text-black">Ribbon gym sack blue check</p>
+        <p className="text-sm text-black">Ribbon gym sack blue check bag</p>
           <span className="text-sm font-bold text-red-800">$43</span>
       </div>
       </li>
@@ -5332,7 +5333,7 @@ const prevSlide = () => {
       </div>
         <div className="flex flex-col gap-1 mt-3">
         <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUSINSA STANDARD WOMEN</strong>
-        <p className="text-sm text-black">One side folding collar charcoal</p>
+        <p className="text-sm text-black">One side folding collar shirt charcoal </p>
          <span className="text-sm text-gray-600">9%</span>
           <span className="text-sm font-bold text-red-800">$51</span>
       </div>
@@ -5401,7 +5402,7 @@ const prevSlide = () => {
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <strong className="text-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">MUAHMUAH</strong>
-        <p className="text-sm text-black">Block cardigan sleeveless</p>
+        <p className="text-sm text-black">Block cardigan sleeveless shirt</p>
           <span className="text-sm font-bold text-red-800">$36</span>
       </div>
     </li>
@@ -5806,8 +5807,7 @@ const prevSlide = () => {
 
 </div>
 
-
-
 )
 }
+
 export default Hero
