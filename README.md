@@ -30,55 +30,6 @@ This project demonstrates dynamic product rendering, interactive favorites and c
 - **Data**: JSON product files for categories
 - **Icons**: Font Awesome
 
----
-
-##  Project Structure 📂
-
-musinsa-clone/
-├── src/
-│   ├── components/
-│   │   ├── Header |--- Head.jsx
-│   │   ├── Hero   |--- Hero.jsx
-│   │    
-│   ├── pages/
-│   │   ├── Fashion.jsx
-│   │   ├── Beauty.jsx
-│   │   ├── New.jsx
-│   │   ├── Snap.jsx
-│   │   ├── Bag.jsx
-│   │   ├── Cart.jsx
-│   │   ├── Hoodies.jsx
-│   │   ├── Member.jsx
-│   │   ├── Muahmuah.jsx
-│   │   ├── Musinsa.jsx
-│   │   ├── Pant.jsx
-│   │   ├── Sale.jsx
-│   │   ├── Shirts.jsx
-│   │   ├── Shoes.jsx
-│   │   ├── Sports.jsx
-│   │   ├── Snap.jsx
-│   │   ├── Accessories.jsx
-│   │   └── Home.jsx
-│   ├── data/
-│   │   ├── BeautyProductMap.jsx
-│   │   ├── BagProductMap.jsx
-│   │   ├── FashionProductMap.jsx
-│   │   ├── HoodieProductMap.jsx
-│   │   ├── MemProductMap.jsx
-│   │   ├── NewProductMap.jsx
-│   │   ├── MuahProductMap.jsx
-│   │   ├── MusinsaProductMap.jsx
-│   │   ├── PantMap.jsx
-│   │   ├── SaleProductMap.jsx
-│   │   ├── ShirtMap.jsx
-│   │   ├── ShoesMap.jsx
-│   │   ├── SportMap.jsx
-│   │   ├── AcceProductMap.jsx
-│   │   └── HomeMap.jsx
-│   ├── App.jsx
-│   └── index.js
-└── README.md
-
 ------------------------
 
 ## How to Run ✨
@@ -87,10 +38,10 @@ musinsa-clone/
 
 ## SCREENSHOTS 📸
 
-- [Click here for *musinsa navbar dropdown* page screenshot](ss-1.png)
-- [Click here for *musinsa home* page screenshot](ss-2.png)
-- [Click here for *musinsa wishlist* page screenshot](ss-3.png)
-- [Click here for *musinsa cart* page screenshot](ss-4.png)
+- [Click here for *musinsa navbar dropdown* page screenshot](./src/assets/hero/ss-4.png)
+- [Click here for *musinsa home* page screenshot](./src/assets/hero/ss-2.png)
+- [Click here for *musinsa wishlist* page screenshot](./src/assets/hero/ss-3.png)
+- [Click here for *musinsa cart* page screenshot](./src/assets/hero/ss-1.png)
 
 -------------
 
