@@ -210,10 +210,35 @@ import img208 from "../assets/line18/t-1.webp";
 import { MuahProduct } from "../data/MuahProductMap.jsx";
 
 
-const Muahmuah = ({ favorite, toggleFavorite }) => {
+const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
+  const [pageFavorite, setPageFavorite] = useState(false);
+
+  const togglePageFavorite = () => {
+    setPageFavorite((prev) => {
+      const newValue = !prev;
+
+      if (newValue) {
+        // ✅ mark all products as favorite
+        const updatedFavorite = {};
+        Object.keys(MuahProduct).forEach((id) => {
+          updatedFavorite[id] = true;
+        });
+        setFavorite(updatedFavorite);
+      } else {
+        // ✅ clear all favorites when unliking the page
+        const clearedFavorite = {};
+        Object.keys(MuahProduct).forEach((id) => {
+          clearedFavorite[id] = false;
+        });
+        setFavorite(clearedFavorite);
+      }
+
+      return newValue;
+    });
+  };
+
   return (
     <>
-
 <div className="mt-32  bg-gray-100 p-3 text-center">
   <span className="text-base">Official online store for leading korean brands</span>
 </div>
@@ -230,15 +255,12 @@ const Muahmuah = ({ favorite, toggleFavorite }) => {
     <p className="text-sm w-150"><span>MUAHMUAH</span>, is inspired by the sound of kiss, delivers a collection that embodies romantic, joyous and bashfull feelings.</p>
    </div>
     <div>
-       <i className="fa-heart fa-regular text-gray-600 cursor-pointer text-4xl ml-12"></i>
-        {/* <i
-        className={`cursor-pointer text-4xl ml-15 ${
-          favorite[531]
-            ? "fa-solid fa-heart text-red-600"
-            : "fa-regular fa-heart text-gray-300"
-        }`}
-        onClick={() => toggleFavorite(531)}
-      ></i> */}
+       <i
+  className={`cursor-pointer text-4xl ml-12 ${
+    pageFavorite ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
+  }`}
+  onClick={togglePageFavorite}
+></i>
     </div>
     
 </div>
@@ -247,120 +269,10 @@ const Muahmuah = ({ favorite, toggleFavorite }) => {
       <div className="text-4xl font-bold text-center mb-10">
         <h1>MUAHMUAH TOP SELLING ITEMS</h1>
       </div>
-      <div className="flex justify-center gap-4 mt-4">
-            {/* <img src={img1} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img2} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img3} alt="img-1" className="w-1/4 h-auto"></img>
-             <img src={img4} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img5} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img6} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img7} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img8} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img9} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img10} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img11} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img12} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img13} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img14} alt="img-1" className="w-1/4 h-auto"></img>
-            <img src={img15} alt="img-1" className="w-1/4 h-auto"></img> */}
-           <div className="relative w-[420px] ">
-             <img src={img5} alt="img-1" className="w-full h-auto" />
-              <p className="absolute bottom-0 left-0 right-0  text-white text-xl tracking-wide font-[600] italic text-center py-10">
-               STYLING "SEOUL STYLE, DELIVERED"
-              </p>
-            </div>
-            
-           <div className="relative w-[420px]">
-             <img src={img2} alt="img-1" className="w-full h-auto" />
-              <p className="absolute bottom-0 left-0 right-0  text-white text-xl tracking-wide font-[600] italic text-center py-10">
-               "AMAZING COLLABORATION"<br></br>
-               <span className="text-sm font-bold">LIMITED EDITION</span>
-              </p>
-            </div>
-            <div className="relative w-[420px]">
-             <img src={img13} alt="img-1" className="w-full h-auto" />
-              <p className="absolute bottom-0 left-0 right-0  text-white text-xl tracking-wide font-[600] italic text-center py-10">
-               "TRENDING NOW"
-              </p>
-            </div>
-    
           </div>
-    </div>
-          
-    {/* <div className="mx-40 mt-5 flex flex-row gap-3 justify-center items-center">
-      <a href="#" className="relative">
-       <div className="bg-fuchsia-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-regular fa-face-smile-wink ml-15 mt-3 text-fuchsia-500"></i></div>
-        <span className="mt-2 absolute bottom-1 text-xs left-5 tracking-tighter">EXCLUSIVE BEAUTY</span>
-      </a>
-       <a href="#" className="relative">
-        <div className="bg-gray-300 w-[150px] h-[56px] rounded mx-auto"><i className="fa-solid fa-shirt ml-15 mt-3 text-gray-900 text-lg"></i></div>
-        <span className="mt-1 text-xs absolute bottom-1 left-12 tracking-tighter">GRAVER</span>
-      </a>
-       <a href="#" className="relative">
-       <div className="bg-blue-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-solid fa-bag-shopping ml-15 mt-3 text-blue-500 text-lg"></i></div>
-        <span className="mt-2 text-xs absolute bottom-1 left-6 tracking-tighter">TRENDING BAGS</span>
-      </a>
-       <a href="#" className="relative">
-       <div className="bg-cyan-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-regular fa-calendar-days ml-15 mt-3 text-cyan-700"></i></div>
-        <span className="mt-2 text-xs absolute bottom-1 left-8 tracking-tighter ">SEASON SALE</span>
-      </a>
-       <a href="#" className="relative">
-       <div className="bg-emerald-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-solid fa-person-dress ml-15 mt-3 text-emerald-500"></i></div>
-        <span className="mt-2 text-xs absolute bottom-1 left-8 tracking-tighter">MUAHMUAH</span>
-      </a>
-       <a href="#" className="relative">
-       <div className="bg-indigo-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-brands fa-redhat ml-15 mt-3 text-indigo-500"></i></div>
-        <span className="mt-2 text-xs absolute bottom-1 left-3 tracking-tighter">SUMMER ESSIANTIALS</span>
-      </a>
-       <a href="#" className="relative">
-       <div className="bg-pink-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-brands fa-black-tie ml-15 mt-3 text-pink-400"></i></div>
-        <span className="mt-2 text-xs absolute bottom-1 left-12 tracking-tighter">GRAVER</span>
-      </a>
-       <a href="#" className="relative">
-       <div className="bg-lime-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-solid fa-heart ml-15 mt-3 text-lime-600"></i></div>
-        <span className="mt-2 text-xs absolute bottom-1 left-3 tracking-tighter">MUSINSA STANDARD</span>
-      </a>
-    </div>
-    
-    <div className=" flex flex-row gap-3 mx-30 justify-center item-center mt-8">
-      <div className=" flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-      <a href="#" className="flex flex-row items-center ">
-      <img src={img22} alt="brand" className="w-[40px] h-auto" />
-        <span className="text-sm text-center">Best 20 brands</span>
-      </a>
-    </div>
-     <div className="flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-      <a href="#" className="flex flex-row items-center">
-        <img src={img23} alt="brand" className="w-[40px] h-auto" />
-        <span className="text-sm text-center">up to 70% OFF</span>
-      </a>
-    </div>
-     <div className="flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-      <a href="#" className="flex flex-row items-center ">
-        <img src="https://image.msscdn.net/global/images/2026/06/04/557cbdcbb2bf4c378918a847504a6d6e.png" alt="Daily Check-in" className="w-[40px] h-auto"></img>
-        <span className="text-sm text-center">Daily check-in</span>
-      </a>
-    </div>
-     <div className="flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-      <a href="#" className="flex flex-row items-center ">
-       <img src={img24} alt="brand" className="w-[40px] h-auto" />
-        <span className="text-sm text-center">K-celeb picks</span>
-      </a>
-    </div>
-     <div className="flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-      <a href="#" className="flex flex-row items-center ">
-        <img src={img25} alt="brand" className="w-[40px] h-auto" />
-        <span className="text-sm text-center">view all sales</span>
-      </a>
-    </div>
-  </div> */}
 
-
-
-
-
-<section className="mt-20 mx-30">
-  <div className="mt-8 text-4xl font-bold text-center tracking-wider text-[#0a0f18]">
+<section className="mt-15 mx-30">
+  <div className="text-4xl font-bold text-center tracking-wider text-[#0a0f18]">
     <h1 className="mb-8"># Trending now</h1>
   </div>
        <img src={img155} alt="SCALLYWANG"></img>
@@ -811,7 +723,6 @@ const Muahmuah = ({ favorite, toggleFavorite }) => {
 </section>
 
 
-
 <footer className="mt-20 border-t-2 border-gray-200">
   <div className="mx-30 mt-8">
      <div className="flex flex-row gap-7 text-gray-500 text-sm">
@@ -846,17 +757,6 @@ const Muahmuah = ({ favorite, toggleFavorite }) => {
   </div>
  
 </footer>
-
-
-
-
-
-
-
-
-
-
-
 
     </>
   );

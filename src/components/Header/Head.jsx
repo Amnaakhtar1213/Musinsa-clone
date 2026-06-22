@@ -10,7 +10,21 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [isUserOpen, setIsUserOpen] = useState(false); 
-  const [searchTerm, setSearchTerm] = useState("") 
+  const [searchTerm, setSearchTerm] = useState("")
+  const [language, setLanguage] = useState("Korea");
+  const [langOpen, setLangOpen] = useState(false);
+
+  const languages = ["Korea", "Japanese", "Chinese", "English", 
+    ]
+
+    useEffect(() => {
+      const savedLang = localStorage.getItem("language");
+      if(savedLang) setLanguage(savedLang)
+    }, [])
+
+    useEffect(() => {
+      localStorage.setItem("language", language)
+    }, [language])
 
   useEffect(() => {
     const savedUser = localStorage.getItem("user");
@@ -58,10 +72,32 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
     </div>
 
     <div  className="flex item-center gap-4 text-black">
-      <div className="text-xl">
-        <i className="fa-solid fa-globe"></i>
-        <span className="ml-2">Korea</span>
-      </div>
+     <div className="relative text-xl">
+            <div
+              className="flex items-center gap-2 cursor-pointer"
+              onClick={() => setLangOpen(!langOpen)}
+            >
+              <i className="fa-solid fa-globe"></i>
+              <span className="ml-2">{language}</span>
+              <i className="fa-solid fa-chevron-down ml-1 text-sm"></i>
+            </div>
+            {langOpen && (
+              <ul className="absolute mt-2 bg-white border rounded shadow-lg w-32">
+                {languages.map((lang) => (
+                  <li
+                    key={lang}
+                    className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+                    onClick={() => {
+                      setLanguage(lang);
+                      setLangOpen(false);
+                    }}
+                  >
+                    {lang}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
 
       <div  className="text-xl relative">
         <Link to="/wishlist">
@@ -82,7 +118,6 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
           </span>
         )}
         </Link>
-        
       </div>
 
       
@@ -147,14 +182,7 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
     )}
   </div>
 )}
-
-
 </div>
-
-
-
-
-
     </div>
       </div>
       

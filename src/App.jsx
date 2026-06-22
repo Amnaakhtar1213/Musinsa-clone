@@ -115,7 +115,7 @@ const removeFromCart = (id) => {
       <Header favoriteCount={favoriteCount} cart={cart} wishlist={wishlist} user={user} setUser={setUser} open={open} setOpen={setOpen} />
       <Routes>
           <Route path="/" element={<Hero favorite={favorite} toggleFavorite={toggleFavorite} />} />
-          <Route path="/muahmuah" element={<Muahmuah favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+          <Route path="/muahmuah" element={<Muahmuah favorite={favorite} toggleFavorite={toggleFavorite} setFavorite={setFavorite} />} />
           <Route path="/beauty" element={<Beauty favorite={favorite} toggleFavorite={toggleFavorite}/>} />
           <Route path="/musinsa" element={<Musinsa favorite={favorite} toggleFavorite={toggleFavorite}/>} />
           <Route path="/fashion" element={<Fashion favorite={favorite} toggleFavorite={toggleFavorite}/>} />

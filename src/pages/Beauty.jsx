@@ -238,6 +238,7 @@ import { BeautyProductMap } from "../data/BeautyProductMap.jsx";
 import React, { useState, useEffect } from 'react'
 
 const Beauty = ({ favorite, toggleFavorite}) => {
+
   const images = [
     {src: img209,
       caption: "Ultimate Cleanser Edits"
@@ -262,7 +263,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
   const itemPerPage = 3;
 
   const nextSlide = () => {
-    if(currentIndex + iemPerPage < images.length){
+    if(currentIndex + itemPerPage < images.length){
      setCurrentIndex(currentIndex + itemPerPage)
     } else {
       setCurrentIndex(0)

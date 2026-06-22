@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header/Head.jsx";  
 import confetti from "canvas-confetti";
 
-const Cart = ({ cart, removeFromCart }) => {
+const Cart = ({ cart, removeFromCart, favorite, toggleFavorite }) => {
   const [orderConfirmed, setOrderConfirmed] = useState(false);
 
   const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
@@ -44,7 +44,7 @@ const Cart = ({ cart, removeFromCart }) => {
 
   return (
 <>
- <Header cart={cart} />
+ {/* <Header cart={cart} /> */}
     <section className="mt-40 mx-40">
       <h2 className="text-4xl font-bold text-center">My Shopping Bag 🛒</h2>
 
