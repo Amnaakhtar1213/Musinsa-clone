@@ -268,7 +268,7 @@ import { BagProductMap } from '../data/BagProductMap.jsx'
 const Bags = ({ favorite, toggleFavorite }) => {
   return (
     <div>
-      <div className="text-4xl font-bold text-center mt-35 text-gray-900">
+      <div className="text-4xl font-bold text-center mt-36 text-gray-900 sm:mt-40 ">
         <h1><i class="fa-regular fa-heart"></i> MUSINSA STANDARD BAGS <i class="fa-regular fa-heart"></i></h1>
       </div>
 
@@ -278,7 +278,7 @@ const Bags = ({ favorite, toggleFavorite }) => {
   </div> */}
        <img src={img165} alt="SCALLYWANG"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
       <li>
         <div className="relative">
         <img src={img166} alt="SCALLYWANG"></img>
