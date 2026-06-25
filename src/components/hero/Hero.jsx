@@ -1412,7 +1412,7 @@ useEffect(() => {
   lg:grid lg:grid-cols-3 lg:gap-6">
     <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div>
-        <img src={img43} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[350px] md:h-[570px] lg:h-[300px] object-cover rounded"/>
+        <img src={img43} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"/>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <p className="text-xs sm:text-[14px] md:text-[18px] lg:text-sm text-black">Cool Later and Sun Shade</p>
@@ -1421,7 +1421,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img45} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[350px] md:h-[570px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img45} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <p className="text-xs sm:text-[14px] md:text-[18px] lg:text-sm text-black">The Packable Collection</p>
@@ -1431,7 +1431,7 @@ useEffect(() => {
 
     <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img44} alt="SCALLYWANG"  className="w-full h-[230px] sm:h-[350px] md:h-[570px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img44} alt="SCALLYWANG"  className="w-full h-auto object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <p className="text-xs sm:text-[14px] md:text-[18px] lg:text-sm text-black">Extra 30% off Best Seller</p>
@@ -4422,10 +4422,9 @@ useEffect(() => {
         <p className="text-sm text-black">Damage washes denim pants</p>
            <span className="text-sm font-sm text-gray-600">10%</span>
             <span className="text-sm font-bold text-red-800">$20</span>
-          
-      </div>
-         
+      </div>    
       </li>
+
       <li>
         <div className="relative">
         <img src={img127} alt="SCALLYWANG"></img>
@@ -4772,26 +4771,26 @@ useEffect(() => {
   <ul className=" flex snap-x snap-mandatory gap-6
   sm:flex-nowrap md:flex-nowrap
   lg:grid lg:grid-cols-3 lg:gap-6">
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-[300px] lg:w-[420px] snap-center">
       <div>
-        <img src={img322} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>
+        <img src={img322} alt="SCALLYWANG" className="w-full h-[600px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"/>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <span className="font-medium md:text-lg sm:text-lg">MUSINSA STARDARD WOMEN</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-[300px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img333} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img333} alt="SCALLYWANG" className="w-full h-[600px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <span className="font-medium md:text-lg sm:text-lg">FANCY CLUB</span>
       </div>
     </li>
 
-    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li  className="flex-shrink-0 w-full sm:w-full md:w-[300px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img334} alt="SCALLYWANG"  className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img334} alt="SCALLYWANG"  className="w-full h-[600px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
           <span className="font-medium md:text-lg sm:text-lg">OPOSTROP COMMA</span>
@@ -5794,7 +5793,7 @@ useEffect(() => {
   <ul className="flex flex-row gap-4 ">
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img187} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img187} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img> 
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[341] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"

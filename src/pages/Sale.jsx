@@ -214,211 +214,297 @@ const Sale = ({ favorite, toggleFavorite }) => {
   return (
     <div>
       
-<section className="mt-35">
-  <div className="mx-30 mt-8 text-4xl text-center font-bold tracking-wider text-[#0a0f18]">
-  <h2>24H ONLY: EXTRA 30% OFF </h2>
-</div>
+<section className="mt-40">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+    <h2><span className="text-red-800">LIMITED TIME OFFER:</span>  #48 Hours Left</h2>
+  </div>   
 
-<div className="mx-30 mt-10  bg-gray-100 p-4 text-center">
-  <span>End in: <strong>01:30:20</strong></span>
-</div>
+<div className="lg:mx-30 mx-10 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4 md:gap-2 sm:gap-1">
+   <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
+  <div className="relative">
+    <img 
+      src={img27} 
+      alt="SCALLYWANG" 
+      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" 
+    />
+    <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+      <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
+        Extra 30% OFF
+      </span>
+      <i
+        className={`cursor-pointer text-xs md:text-sm lg:text-base ${
+          favorite[658] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+        }`}
+        onClick={() => toggleFavorite(658, SaleMap[658])}
+      ></i>
+    </div>
+  </div>
+  <div className="flex flex-col gap-1 mt-2">
+    <strong className="font-medium text-sm md:text-xs sm:text-[11px] lg:text-base">SCALLYWANG</strong>
+    <p className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm text-black">
+      Denim pants with back side cross
+    </p>
+    <span className="text-gray-600 text-xs md:text-[11px] sm:text-[10px] lg:text-sm">30% OFF</span>
+    <span className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm font-bold text-red-800">$12</span>
+  </div>
+</li>
 
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 ">
-    <li>
-      <div className="relative">
-        <img src={img27} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className=" bg-black text-white px-2">Extra 30% OFF</span>
-           <i className={`cursor-pointer ${
-            favorite[658] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-          }`}
-          onClick={() => toggleFavorite(658, SaleMap[658])}></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">SCALLYWANG</strong>
-        <p className="text-sm text-gray-900">Denim pants with back side cross</p>
-        <span className="text-gray-600 text-sm">30% OFF</span>
-          <span className="text-sm font-bold text-red-800">$12</span>
-      </div>
-    </li>
-    <li>
-      <div className="relative">
-        <img src={img28} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className=" bg-black text-white px-2">Extra 30% OFF</span>
-         <i className={`cursor-pointer ${
-            favorite[659] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-          }`}
-          onClick={() => toggleFavorite(659, SaleMap[659])}></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">SCALLYWANG</strong>
-        <p className="text-sm text-gray-900">Summer half-sleeves yellow shirt</p>
-         <span className="text-gray-600 text-sm">30% OFF</span>
-          <span className="text-sm font-bold text-red-800">$10</span>
-      </div>
-    </li>
-    <li>
-      <div className="relative">
-        <img src={img29} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Extra 30% OFF</span>
-           <i className={`cursor-pointer ${
-            favorite[660] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-          }`}
-          onClick={() => toggleFavorite(660, SaleMap[660])}></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">SCALLYWANG</strong>
-        <p className="text-sm text-gray-900">Denim cap with adjustable strap [blue]</p>
-          <span className="text-gray-600 text-sm">30% OFF</span>
-          <span className="text-am font-bold text-red-800">$7</span>
-      </div>
-    </li>
-    <li>
-      <div className="relative">
-        <img src={img30} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-2">
-          <span className="bg-black text-white px-2">Extra 30% OFF</span>
-          <i className={`cursor-pointer ${
-            favorite[661] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-          }`}
-          onClick={() => toggleFavorite(661, SaleMap[661])}></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">SCALLYWANG</strong>
-        <p className="text-sm text-gray-900">Grese letter printing on plan black shirt</p>
-         <span className="text-gray-600 text-sm">30% OFF</span>
-          <span className="text-sm font-bold text-red-800">$17</span>
-      </div>
-    </li>
-    <li>
-      <div className="relative">
-        <img src={img31} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Extra 30% OFF</span>
-           <i className={`cursor-pointer ${
-            favorite[662] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-          }`}
-          onClick={() => toggleFavorite(662, SaleMap[662])}></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">SCALLYWANG</strong>
-        <p className="text-sm text-gray-900">Grese letter slim t-shirt best summer outfit</p>
-          <span className="text-gray-600 text-sm">30% OFF</span>
-          <span className="text-sm font-bold text-red-800">$22</span>
-      </div>
-    </li>
-    <li>
-      <div className="relative">
-        <img src={img32} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Extra 30% OFF</span>
-           <i className={`cursor-pointer ${
-            favorite[663] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-          }`}
-          onClick={() => toggleFavorite(663, SaleMap[663])}></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">SCALLYWANG</strong>
-        <p className="text-sm text-gray-900">Women slim T-shirt best for summers (5 colors)</p>
-          <span className="text-gray-600 text-sm">30% OFF</span>
-          <span className="text-sm font-bold text-red-800">$15</span>
-      </div>
-    </li>
+   <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[220px]">
+  <div className="relative">
+    <img 
+      src={img28} 
+      alt="SCALLYWANG" 
+      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" 
+    />
+    <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+      <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
+        Extra 30% OFF
+      </span>
+      <i
+        className={`cursor-pointer text-xs md:text-sm lg:text-base ${
+          favorite[659] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+        }`}
+        onClick={() => toggleFavorite(659, SaleMap[659])}
+      ></i>
+    </div>
+  </div>
+  <div className="flex flex-col gap-1 mt-2">
+    <strong className="font-medium text-sm md:text-xs sm:text-[11px] lg:text-base">SCALLYWANG</strong>
+    <p className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm text-black">
+      Summer half-sleeves yellow shirt
+    </p>
+    <span className="text-gray-600 text-xs md:text-[11px] sm:text-[10px] lg:text-sm">30% OFF</span>
+    <span className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm font-bold text-red-800">$10</span>
+  </div>
+  </li>
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[220px]">
+  <div className="relative">
+    <img 
+      src={img29} 
+      alt="SCALLYWANG" 
+      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" 
+    />
+    <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+      <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
+        Extra 30% OFF
+      </span>
+      <i
+        className={`cursor-pointer text-xs md:text-sm lg:text-base ${
+          favorite[660] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+        }`}
+        onClick={() => toggleFavorite(660, SaleMap[660])}
+      ></i>
+    </div>
+  </div>
+  <div className="flex flex-col gap-1 mt-2">
+    <strong className="font-medium text-sm md:text-xs sm:text-[11px] lg:text-base">SCALLYWANG</strong>
+    <p className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm text-black">
+      Denim cap with adjustable strap [blue]
+    </p>
+    <span className="text-gray-600 text-xs md:text-[11px] sm:text-[10px] lg:text-sm">30% OFF</span>
+    <span className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm font-bold text-red-800">$7</span>
+  </div>
+  </li>
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+  <div className="relative">
+    <img 
+      src={img30} 
+      alt="SCALLYWANG" 
+      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded" 
+    />
+    <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+      <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
+        Extra 30% OFF
+      </span>
+      <i
+        className={`cursor-pointer text-xs md:text-sm lg:text-base ${
+          favorite[661] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+        }`}
+        onClick={() => toggleFavorite(661, SaleMap[661])}
+      ></i>
+    </div>
+  </div>
+  <div className="flex flex-col gap-1 mt-2">
+    <strong className="font-medium text-sm md:text-xs sm:text-[11px] lg:text-base">SCALLYWANG</strong>
+    <p className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm text-black">
+      Grese letter printing on plain black shirt
+    </p>
+    <span className="text-gray-600 text-xs md:text-[11px] sm:text-[10px] lg:text-sm">30% OFF</span>
+    <span className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm font-bold text-red-800">$17</span>
+  </div>
+</li>
+
+   <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+  <div className="relative">
+    <img 
+      src={img31} 
+      alt="SCALLYWANG" 
+      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded" 
+    />
+    <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+      <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
+        Extra 30% OFF
+      </span>
+      <i
+        className={`cursor-pointer text-xs md:text-sm lg:text-base ${
+          favorite[662] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+        }`}
+        onClick={() => toggleFavorite(662, SaleMap[662])}
+      ></i>
+    </div>
+  </div>
+  <div className="flex flex-col gap-1 mt-2">
+    <strong className="font-medium text-sm md:text-xs sm:text-[11px] lg:text-base">SCALLYWANG</strong>
+    <p className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm text-black">
+      Grese letter slim t-shirt best summer outfit
+    </p>
+    <span className="text-gray-600 text-xs md:text-[11px] sm:text-[10px] lg:text-sm">30% OFF</span>
+    <span className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm font-bold text-red-800">$22</span>
+  </div>
+  </li>
+
+   <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+  <div className="relative">
+    <img 
+      src={img32} 
+      alt="SCALLYWANG" 
+      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded" 
+    />
+    <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+      <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
+        Extra 30% OFF
+      </span>
+      <i
+        className={`cursor-pointer text-xs md:text-sm lg:text-base ${
+          favorite[663] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+        }`}
+        onClick={() => toggleFavorite(663, SaleMap[663])}
+      ></i>
+    </div>
+  </div>
+  <div className="flex flex-col gap-1 mt-2">
+    <strong className="font-medium text-sm md:text-xs sm:text-[11px] lg:text-base">SCALLYWANG</strong>
+    <p className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm text-black">
+      Women slim T-shirt best for summers (5 colors)
+    </p>
+    <span className="text-gray-600 text-xs md:text-[11px] sm:text-[10px] lg:text-sm">30% OFF</span>
+    <span className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm font-bold text-red-800">$15</span>
+  </div>
+</li>
   </ul>
 </div>
 
 <div className="text-center mt-10">
   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
 </div>
-</section> 
+</section>
 
 
 <section className="mt-20">
-  <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                font-bold tracking-wider text-[#0a0f18]">
   <h2>Short-sleeve Weekly #1: Up to 75% OFF</h2>
 </div>
 
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 ">
-    <li>
+<div className="mx-6 md:mx-20 lg:mx-30 mt-8">
+  <ul className="flex flex-row gap-6 lg:gap-8 md:gap-2 sm:gap-1">
+   <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
+  <div className="relative">
+    <img 
+      src={img33} 
+      alt="SCALLYWANG" 
+        className="w-full h-[220px] sm:h-[140px] md:h-[180px] lg:h-[300px] object-cover rounded"/>
+    <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+      <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">
+        Weekly Deal
+      </span>
+      <i
+        className={`cursor-pointer text-xs sm:text-[10px] md:text-sm lg:text-base ${
+          favorite[664] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+        }`}
+        onClick={() => toggleFavorite(664, SaleMap[664])}
+      ></i>
+    </div>
+  </div>
+  <div className="flex flex-col gap-1 mt-2">
+    <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">
+      MuahMuah
+    </strong>
+    <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">
+      Mrt vivid slim short sleeve summer season t shirt
+    </p>
+    <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">
+      30% OFF
+    </span>
+    <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">
+      $27
+    </span>
+  </div>
+</li>
+
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
-        <img src={img33} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className=" bg-black text-white px-2">Weekly Deals</span>
-           <i className={`cursor-pointer ${
-            favorite[664] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
-          }`}
-          onClick={() => toggleFavorite(664, SaleMap[664])}></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">ESCAPEFROM</strong>
-        <p className="text-sm text-gray-900">Start denim escf logo college print slim fit</p>
-        <span className="text-gray-600 text-sm">75% OFF</span>
-          <span className="text-sm font-bold text-red-800">$24</span>
-      </div>
-    </li>
-    <li>
-      <div className="relative">
-        <img src={img34} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className=" bg-black text-white px-2">Weekly Deals</span>
-          <i className={`cursor-pointer ${
+        <img src={img34} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+          <span className=" bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deals</span>
+         <i className={`cursor-pointer ${
             favorite[665] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
           onClick={() => toggleFavorite(665, SaleMap[665])}></i>
         </div>
       </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">MAISON MINED</strong>
-        <p className="text-sm text-gray-900">Dooodle heart half t white greyish blue</p>
+      <div className="flex flex-col gap-1 mt-2">
+        <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">MAISON MINED</strong>
+        <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Dooodle heart half t white greyish blue shirt</p>
          <span className="text-gray-600 text-sm">75% OFF</span>
-          <span className="text-sm font-bold text-red-800">$32</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$32</span>
       </div>
     </li>
-    <li>
+
+
+    <li  className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
-        <img src={img35} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Weekly Deals</span>
-           <i className={`cursor-pointer ${
+        <img src={img35} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
+          <span className="bg-black text-white px-1 text-sm sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deals</span>
+         <i className={`cursor-pointer ${
             favorite[666] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
           onClick={() => toggleFavorite(666, SaleMap[666])}></i>
         </div>
       </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">ESCAPEFROM</strong>
-        <p className="text-sm text-gray-900">Stawberry dot edcf logo collage print oversize</p>
+      <div className="flex flex-col gap-1 mt-2">
+        <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">ESCAPEFROM</strong>
+        <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Stawberry dot edcf logo collage print oversize shirt</p>
           <span className="text-gray-600 text-sm">70% OFF</span>
-          <span className="text-sm font-bold text-red-800">$26</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$26</span>
       </div>
     </li>
-    <li>
+
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
-        <img src={img36} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Weekly Deals</span>
-          <i className={`cursor-pointer ${
+        <img src={img36} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
+          <span className="bg-black text-white px-1 text-sm sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deals</span>
+         <i className={`cursor-pointer ${
             favorite[667] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
           onClick={() => toggleFavorite(667, SaleMap[667])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">VENHIT</strong>
-        <p className="text-sm text-gray-900">Mrt vivid slim short sleeve summer season t shirt </p>
+        <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">VENHIT</strong>
+        <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Mrt vivid slim short sleeve summer season t shirt </p>
          <span className="text-gray-600 text-sm">30% OFF</span>
-          <span className="text-sm font-bold text-red-800">$17</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$17</span>
       </div>
     </li>
    </ul>
@@ -430,122 +516,145 @@ const Sale = ({ favorite, toggleFavorite }) => {
 
 
 <section className="mt-20">
-  <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                font-bold tracking-wider text-[#0a0f18]">
   <h2>5 Days Only: Extra 20% off Selected Items</h2>
 </div>
 
-<div className="mx-30 mt-10  bg-gray-100 p-4 text-center">
-  <span>End in: <strong>52:30:20</strong></span>
-</div>
-
-<div className="mx-30 mt-8">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 ">
-    <li>
+<li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+  <div className="relative">
+    <img 
+      src={img37} 
+      alt="SCALLYWANG" 
+      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded" 
+    />
+    <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+      <span className="bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">
+        Extra 30% OFF
+      </span>
+      <i
+        className={`cursor-pointer text-xs sm:text-[10px] md:text-sm lg:text-base ${
+          favorite[668] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
+        }`}
+        onClick={() => toggleFavorite(668, SaleMap[668])}
+      ></i>
+    </div>
+  </div>
+  <div className="flex flex-col gap-1 mt-2">
+    <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">
+      MUSINSA STANDARD
+    </strong>
+    <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">
+      Real Wide Hidden Banding Slacks pant [Black]
+    </p>
+    <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">
+      30% OFF
+    </span>
+    <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">
+      $27
+    </span>
+  </div>
+</li>
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img37} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className=" bg-black text-yellow-500 px-2">Extra 30% OFF</span>
-          <i className={`cursor-pointer ${
-            favorite[668] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-          }`}
-          onClick={() => toggleFavorite(668, SaleMap[668])}></i>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">MUSINSA STANDARD</strong>
-        <p className="text-sm text-gray-900">Real Wide Hidden Banding Slacks [Black]</p>
-        <span className="text-gray-600 text-sm">30% OFF</span>
-          <span className="text-sm font-bold text-red-800">$27</span>
-      </div>
-    </li>
-    <li>
-      <div className="relative">
-        <img src={img38} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className=" bg-black text-white px-2">Weekly Deals</span>
-          <i className={`cursor-pointer ${
+        <img src={img38} alt="SCALLYWANG"  className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
+          <span className=" bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deals</span>
+         <i className={`cursor-pointer ${
             favorite[669] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
           onClick={() => toggleFavorite(669, SaleMap[669])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">BAUF</strong>
-        <p className="text-sm text-gray-900">3 Logo Dot Slim Fit T-shirt [Red]</p>
-         <span className="text-gray-600 text-sm">19% OFF</span>
-          <span className="text-sm font-bold text-red-800">$29</span>
+        <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">BAUF</strong>
+        <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">3 Logo Dot Slim Fit T-shirt [Red]</p>
+         <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">19% OFF</span>
+        <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$29</span>
       </div>
     </li>
-    <li>
+
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img39} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Extra 20% OFF</span>
-           <i className={`cursor-pointer ${
+        <img src={img39} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
+          <span className=" bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Extra 20% OFF</span>
+          <i className={`cursor-pointer ${
             favorite[670] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
           onClick={() => toggleFavorite(670, SaleMap[670])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">ILLUMINATE</strong>
-        <p className="text-sm text-gray-900">Damage Washed Denim Pants Medium Blue</p>
-          <span className="text-gray-600 text-sm">25% OFF</span>
-          <span className="text-sm font-bold text-red-800">$29</span>
+        <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">ILLUMINATE</strong>
+        <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Damage Washed Denim Pants Medium Blue</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">25% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$29</span>
       </div>
     </li>
-    <li>
+
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img40} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Extra 20% OFF</span>
-           <i className={`cursor-pointer ${
+        <img src={img40} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
+          <span className="bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Extra 20% OFF</span>
+         <i className={`cursor-pointer ${
             favorite[671] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
           onClick={() => toggleFavorite(671, SaleMap[671])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium">BAUF</strong>
-        <p className="text-sm text-gray-900">Grese letter printing on plan black shirt</p>
-         <span className="text-gray-600 text-sm">25% OFF</span>
-          <span className="text-sm font-bold text-red-800">$29</span>
+        <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">BAUF</strong>
+        <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Grese letter printing on plan black shirt</p>
+         <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">25% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$29</span>
       </div>
     </li>
-    <li>
+
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img41} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Extra 20% OFF</span>
-          <i className={`cursor-pointer ${
+        <img src={img41} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
+          <span className="bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Extra 20% OFF</span>
+         <i className={`cursor-pointer ${
             favorite[672] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
           }`}
           onClick={() => toggleFavorite(672, SaleMap[672])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="text-bold"></strong>
-        <p className="text-sm text-gray-900">B Logo Dot Slim Fit T-shirt</p>
-          <span className="text-gray-600 text-sm">20% OFF</span>
-          <span className="text-sm font-bold text-red-800">$29</span>
+        <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base"></strong>
+        <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">D Logo Dot Slippers</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">20% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$29</span>
       </div>
     </li>
-    <li>
+
+
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img42} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
-          <span className="bg-black text-white px-2">Extra 30% OFF</span>
-           <i className={`cursor-pointer ${
+        <img src={img42} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
+          <span className="bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Extra 30% OFF</span>
+          <i className={`cursor-pointer ${
             favorite[673] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
           }`}
           onClick={() => toggleFavorite(673, SaleMap[673])}></i>
         </div>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <strong className="text-medium">COVERNET</strong>
-        <p className="text-sm text-gray-900">gray's slim fit t-shirt sleeve half</p>
-          <span className="text-gray-600 text-sm">35% OFF</span>
-          <span className="text-sm font-bold text-red-800">$24</span>
+        <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">COVERNET</strong>
+        <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">gray's slim fit t-shirt sleeve half</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">35% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$24</span>
       </div>
     </li>
   </ul>
@@ -554,16 +663,18 @@ const Sale = ({ favorite, toggleFavorite }) => {
 <div className="text-center mt-10">
   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
 </div>
-</section> 
+</section>
 
 
  <section className="mt-20">
-  <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
   <h2>MUSINSA STANDARD WOMEN: TOP SELLERS</h2>
 </div>
 
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4 ">
     <li >
       <div className="relative">
         <img src={img47} alt="SCALLYWANG"></img>
@@ -681,11 +792,13 @@ const Sale = ({ favorite, toggleFavorite }) => {
 </section>
 
  <section className="mt-20">
-  <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
   <h2>Your Favorite Brands</h2>
 </div>
 
-<div className="mx-30 mt-8">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 mt-15 ">
     <li >
       <div className="relative">
@@ -794,9 +907,9 @@ const Sale = ({ favorite, toggleFavorite }) => {
 </section>  
 
 
-<section className="mt-12">
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<section className="mt-8">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4 ">
     <li >
       <div className="relative">
         <img src={img59} alt="SCALLYWANG"></img>
@@ -908,12 +1021,14 @@ const Sale = ({ favorite, toggleFavorite }) => {
 </section>  
 
 
- <section className="mt-20">
-  <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+ <section className="mx-6 lg:mx-30 md:mx-20 mt-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
   <h2>MUSINSA SPECIAL: Exclusive to MUSINSA</h2>
 </div>
 
-<div className="mx-30 mt-8">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 mt-15 ">
     <li >
       <div className="relative">
@@ -1026,9 +1141,11 @@ const Sale = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
- <section className="mt-20 mx-30">
-  <div className=" text-4xl font-bold tracking-wider text-[#0a0f18]">
-    <h1 className="mb-12">UP-TO 83% OFF VOCATION-READY PICKS</h1>
+ <section className="mx-6 lg:mx-30 md:mx-20 mt-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
+    <h1 className="mb-10">UP-TO 83% OFF VOCATION-READY PICKS</h1>
   </div>
   <div>
     <img src={img125} alt="pants"></img>
@@ -1116,60 +1233,91 @@ const Sale = ({ favorite, toggleFavorite }) => {
 
 
 
-<section className="mt-35 mx-30">
-  <div className="items-center text-center">
-    <h1 className="text-5xl mb-15">MORE TO EXPLORE</h1>
-    <div className="flex flex-row gap-6">
+<section className="mt-10">
+    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+  <h2 className="text-center">MORE TO EXPLORE</h2>
+</div>
+<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
+  <ul className=" flex snap-x snap-mandatory gap-6
+  sm:flex-nowrap md:flex-nowrap
+  lg:grid lg:grid-cols-3 lg:gap-6">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div>
-        <img src={img205} alt="musinsa" />
-        <p className="text-left mt-4 text-xl">DARISEL</p>
+        <img src={img205} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>
       </div>
-      <div>
-        <img src={img206} alt="musinsa" />
-        <p className="text-left mt-4 text-base">Dresses and Sleeveless style chosen by HAN SO-HEE</p>
+      <div className="flex flex-col gap-1 mt-3">
+        <span className="font-medium md:text-lg sm:text-lg">DARISAL</span>
       </div>
-      <div>
-        <img src={img207} alt="musinsa" />
-        <p className="text-left mt-4 text-xl">MUSINSA STANDARD</p>
+    </li>
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+      <div className="relative">
+        <img src={img206} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
       </div>
-    </div>
-  </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <span className="font-medium md:text-lg sm:text-lg">DRESSES CHOSSEN BY HAN SO-HEE</span>
+      </div>
+    </li>
+
+    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+      <div className="relative">
+        <img src={img207} alt="SCALLYWANG"  className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+          <span className="font-medium md:text-lg sm:text-lg">MUSINSA STANDARD</span>
+      </div>
+    </li>
+  </ul>
+</div>
+   
 </section>
 
 
+
 <footer className="mt-20 border-t-2 border-gray-200">
-  <div className="mx-30 mt-8">
-     <div className="flex flex-row gap-7 text-gray-500 text-sm">
-    <a href="#">About MUSINSA</a>
-    <a href="#">Terms & Conditions</a>
-    <a href="#">Privacy Policy</a>
-  </div>
+  <div className="mx-6 md:mx-10 lg:mx-30 mt-8 space-y-10">
+    
+    {/* Top links */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-gray-500 text-sm">
+      <a href="#">About MUSINSA</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
 
-  <div className="flex flex-row gap-7 text-black font-bold mt-10">
-    <a href="#" className="border rounded border-black px-20 py-1">FAQ</a>
-    <a href="#" className="border rounded border-black px-20 py-1">NOTICS</a>
-  </div>
+    {/* FAQ / Notices */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-black font-bold">
+      <a href="#" className="border rounded border-black px-10 py-2 text-center">FAQ</a>
+      <a href="#" className="border rounded border-black px-10 py-2 text-center">NOTICES</a>
+    </div>
 
-  <div className="mt-15">
-    <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
-    <div className="flex flex-row gap-3 text-black font-bold mt-5">
-    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-apple text-2xl"></i> app store</a>
-    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-google-play text-2xl"></i> google play </a>
-  </div>
-  </div>
+    {/* App download */}
+    <div>
+      <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
+      <div className="flex flex-col sm:flex-row gap-3 text-black font-bold mt-5">
+        <a href="#" className="border rounded border-black px-6 py-2 flex items-center justify-center">
+          <i className="fa-brands fa-apple text-2xl mr-2"></i> App Store
+        </a>
+        <a href="#" className="border rounded border-black px-6 py-2 flex items-center justify-center">
+          <i className="fa-brands fa-google-play text-2xl mr-2"></i> Google Play
+        </a>
+      </div>
+    </div>
 
- <div className="mt-15 flex items-center justify-center 
-                w-12 h-12 rounded-full 
-                border-4 border-[#010a2e] 
-                bg-[#010a2e]">
-  <i className="fa-brands fa-instagram text-white text-2xl"></i>
-</div>
+    {/* Social icon */}
+    <div className="flex justify-centerlg:justify-start">
+      <div className="w-12 h-12 rounded-full border-4 border-[#010a2e] bg-[#010a2e] flex items-center justify-center">
+        <i className="fa-brands fa-instagram text-white text-2xl"></i>
+      </div>
+    </div>
 
-<div className="mt-15 mb-10">
-  <p className="text-gray-400 text-xs"><span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some product. In this case MUSINSA has limited liability for products, information and transactions.Please check the product detail on each product page.</p>
-</div>
+    {/* Disclaimer */}
+    <div className="mb-10">
+      <p className="text-gray-400 text-xs">
+        <span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some products. In this case MUSINSA has limited liability for products, information and transactions. Please check the product detail on each product page.
+      </p>
+    </div>
   </div>
- 
 </footer>
 
 

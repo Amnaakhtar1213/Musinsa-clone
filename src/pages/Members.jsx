@@ -236,7 +236,23 @@ const images = [
 ]
 
 const [currentIndex, setCurrentIndex] = useState(0);
-const itemPerPage = 3;
+const [itemPerPage, setItemPerPage] = useState(3);
+
+useEffect(() => {
+  const handleResize = () => {
+    if(window.innerWidth < 768){
+      setItemPerPage(1)
+    } else if (window.innerWidth < 1024) {
+      setItemPerPage(1); // md → 1 image (larger)
+    } else {
+      setItemPerPage(3); // lg → 3 images
+    }
+  }
+  handleResize(); // run once on mount
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
 
 const nextSlide = () => {
   if (currentIndex + itemPerPage < images.length){
@@ -259,11 +275,11 @@ const prevSlide = () => {
   return (
     <div>
 
-<div className="mx-30 relative mt-40">
-      <div className="flex justify-center gap-4 mt-4">
+<div className="mx-3 md:mx-10 relative">
+      <div className="flex justify-center gap-4 mt-40">
         {images.slice(currentIndex, currentIndex + itemPerPage).map((item, idx) => (
-          <div key={idx} className="relative w-[420px]">
-            <img src={item.src} alt={`img-${idx}`} className="w-full h-auto" />
+          <div key={idx} className="relative w-full sm:w-full md:w-full lg:w-[420px]">
+            <img src={item.src} alt={`img-${idx}`} className="object-cover lg:w-[420px] lg:h-auto sm:h-screen md:h-[500px] md:object-cover md:w-[800px]" />
             <p className="absolute bottom-0 left-0 right-0 text-white text-xl tracking-wide font-[600] italic text-center py-10">
               {item.caption}
             </p>
@@ -275,7 +291,11 @@ const prevSlide = () => {
       <button
         onClick={prevSlide}
         disabled={currentIndex === 0}
-        className="absolute -left-5 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 shadow-lg shadow-gray-500/50"
+        className="absolute top-1/2 -translate-y-1/2 z-50
+      left-2 sm:-left-6 md:-left-6 lg:left-10
+      text-gray-600 text-lg rounded-full bg-white
+      px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2
+      shadow-lg shadow-gray-500/50"
       >
         <i className="fa-solid fa-chevron-left"></i>
       </button>
@@ -283,7 +303,11 @@ const prevSlide = () => {
       <button
         onClick={nextSlide}
         disabled={currentIndex + itemPerPage >= images.length}
-        className="absolute -right-5 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 text-xl font-bold shadow-lg shadow-gray-500/50"
+        className="absolute top-1/2 -translate-y-1/2 z-50
+      right-2 sm:-right-6 md:-right-6 lg:right-10
+      text-gray-600 text-lg rounded-full bg-white
+      px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2
+      shadow-lg shadow-gray-500/50"
       >
         <i className="fa-solid fa-chevron-right"></i>
       </button>
@@ -291,33 +315,35 @@ const prevSlide = () => {
 
 
 
-<div className=" flex flex-row gap-3 mx-30 justify-center item-center mt-8">
-  <div className=" flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-  <a href="#" className="flex flex-row items-center ">
+<div className="mx-10 mt-8 flex flex-row gap-3 
+                lg:justify-center lg:flex-wrap 
+                md:justify-start sm:justify-start">
+  <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+  <a href="#" className="flex flex-row items-center w-full">
     <img src={img22} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">Best 20 brands</span>
   </a>
 </div>
- <div className="flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
+ <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
   <a href="#" className="flex flex-row items-center">
     <img src={img23} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">up to 70% OFF</span>
   </a>
 </div>
  <div className="flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-  <a href="#" className="flex flex-row items-center ">
+  <a href="#" className="flex flex-row items-center w-full">
     <img src="https://image.msscdn.net/global/images/2026/06/04/557cbdcbb2bf4c378918a847504a6d6e.png" alt="Daily Check-in" className="w-[40px] h-auto"></img>
     <span className="text-sm text-center">Daily check-in</span>
   </a>
 </div>
- <div className="flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-  <a href="#" className="flex flex-row items-center ">
+ <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+  <a href="#" className="flex flex-row items-center w-full">
    <img src={img24} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">K-celeb picks</span>
   </a>
 </div>
- <div className="flex flex-row items-center border border-gray-300 rounded-md p-2 width-[200px] h-[50px]">
-  <a href="#" className="flex flex-row items-center ">
+ <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+  <a href="#" className="flex flex-row items-center w-full">
     <img src={img25} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">view all sales</span>
   </a>
@@ -328,15 +354,17 @@ const prevSlide = () => {
 
 
 <section className="mt-10">
-  <div className="mx-30 mt-8 text-4xl text-center font-bold tracking-wider text-[#0a0f18]">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
   <h2>TOP SELLING IN YOUR COUNTRY </h2>
 </div>
 
-<div className="mx-30 mt-15">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 ">
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img187} alt="SCALLYWANG" className="h-[230px] w-[400px]"></img>
+        <img src={img187} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[514] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
@@ -350,9 +378,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$36</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img188} alt="SCALLYWANG" className="h-[230px] w-[400px]"></img>
+        <img src={img188} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 30% OFF</span>
          <i className={`cursor-pointer ${
@@ -368,9 +396,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$19</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img189} alt="SCALLYWANG"></img>
+        <img src={img189} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[516] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
@@ -385,9 +413,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$7</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img190} alt="SCALLYWANG"></img>
+        <img src={img190} alt="SCALLYWANG"  className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-0 flex justify-between items-center px-2">
           <span className="bg-black text-green-700 px-2">Extra 30% OFF</span>
           <i className={`cursor-pointer ${
@@ -403,9 +431,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$20</span>
       </div>
     </li>
-    <li>
+    <li  className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img191} alt="SCALLYWANG"></img>
+        <img src={img191} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[518] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
@@ -420,9 +448,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$22</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img192} alt="SCALLYWANG"></img>
+        <img src={img192} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-white px-2">Extra 30% OFF</span>
           <i className={`cursor-pointer ${
@@ -444,11 +472,11 @@ const prevSlide = () => {
 
 <section className="mt-8">
 
-<div className="mx-30 mt-8">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 ">
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img193} alt="SCALLYWANG"></img>
+        <img src={img193} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 20% OFF</span>
           <i className={`cursor-pointer ${
@@ -464,9 +492,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$12</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img194} alt="SCALLYWANG"></img>
+        <img src={img194} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[521] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -481,9 +509,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$45</span>
       </div>
     </li>
-    <li>
+    <li  className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img195} alt="SCALLYWANG"></img>
+        <img src={img195} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[522] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -498,9 +526,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$14</span>
       </div>
     </li>
-    <li>
+    <li  className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img196} alt="SCALLYWANG" className="h-[230px] w-[400px]"></img>
+        <img src={img196} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2 flex justify-between items-center px-2">
          <i className={`cursor-pointer ${
             favorite[523] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -515,9 +543,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$17</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img197} alt="SCALLYWANG" className="h-[230px] w-[400px]"></img>
+        <img src={img197} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[524] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -532,9 +560,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$34</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img198} alt="SCALLYWANG"></img>
+        <img src={img198} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[525] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -555,11 +583,11 @@ const prevSlide = () => {
 </section> 
 
 <section className="mt-8">
-<div className="mx-30 mt-8">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 ">
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img199} alt="SCALLYWANG"></img>
+        <img src={img199} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 10% OFF</span>
           <i className={`cursor-pointer ${
@@ -575,9 +603,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$43</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img200} alt="SCALLYWANG"></img>
+        <img src={img200} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 10% OFF</span>
           <i className={`cursor-pointer ${
@@ -593,9 +621,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$58</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img201} alt="SCALLYWANG"></img>
+        <img src={img201} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[528] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -610,9 +638,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$47</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img202} alt="SCALLYWANG"></img>
+        <img src={img202} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-2">
           <span className="bg-black text-white px-2">Extra 10% OFF</span>
          <i className={`cursor-pointer ${
@@ -628,9 +656,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$22</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img203} alt="SCALLYWANG"></img>
+        <img src={img203} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[530] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -645,9 +673,9 @@ const prevSlide = () => {
           <span className="text-sm font-bold text-red-800">$33</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img204} alt="SCALLYWANG"></img>
+        <img src={img204} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[531] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -671,24 +699,44 @@ const prevSlide = () => {
 </section> 
 
 
-<section className="mt-35 mx-30">
-  <div className="items-center text-center">
-    <h1 className="text-5xl mb-15">MORE TO EXPLORE</h1>
-    <div className="flex flex-row gap-6">
+<section className="mt-10">
+    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+  <h2 className="text-center">MORE TO EXPLORE</h2>
+</div>
+<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
+  <ul className=" flex snap-x snap-mandatory gap-6
+  sm:flex-nowrap md:flex-nowrap
+  lg:grid lg:grid-cols-3 lg:gap-6">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div>
-        <img src={img205} alt="musinsa" />
-        <p className="text-left mt-4 text-xl">DARISEL</p>
+        <img src={img205} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>
       </div>
-      <div>
-        <img src={img206} alt="musinsa" />
-        <p className="text-left mt-4 text-base">Dresses and Sleeveless style chosen by HAN SO-HEE</p>
+      <div className="flex flex-col gap-1 mt-3">
+        <span className="font-medium md:text-lg sm:text-lg">DARISAL</span>
       </div>
-      <div>
-        <img src={img207} alt="musinsa" />
-        <p className="text-left mt-4 text-xl">MUSINSA STANDARD</p>
+    </li>
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+      <div className="relative">
+        <img src={img206} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
       </div>
-    </div>
-  </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <span className="font-medium md:text-lg sm:text-lg">DRESSES CHOSSEN BY HAN SO-HEE</span>
+      </div>
+    </li>
+
+    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+      <div className="relative">
+        <img src={img207} alt="SCALLYWANG"  className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+          <span className="font-medium md:text-lg sm:text-lg">MUSINSA STANDARD</span>
+      </div>
+    </li>
+  </ul>
+</div>
+   
 </section>
 
 

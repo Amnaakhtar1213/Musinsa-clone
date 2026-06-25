@@ -260,7 +260,24 @@ const Beauty = ({ favorite, toggleFavorite}) => {
     }
   ]
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemPerPage = 3;
+  const [itemPerPage, setItemPerPage] = useState(3); // start with 3 for large screens
+  
+  // ✅ Responsive itemPerPage
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setItemPerPage(1); // sm → 1 image
+      } else if (window.innerWidth < 1024) {
+        setItemPerPage(1); // md → 1 image (larger)
+      } else {
+        setItemPerPage(3); // lg → 3 images
+      }
+    };
+  
+    handleResize(); // run once on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const nextSlide = () => {
     if(currentIndex + itemPerPage < images.length){
@@ -281,14 +298,19 @@ const Beauty = ({ favorite, toggleFavorite}) => {
   }, [currentIndex])
 
   return (
-    <div>
-      <h1 className="mt-40 text-4xl font-bold text-black text-center"><i class="fa-regular fa-heart"></i> MUSINSA BEAUTY STANDARD <i class="fa-regular fa-heart"></i></h1>
+    <div className="mt-40">
+      <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-center text-[#0a0f18]">
+        <h1><i class="fa-regular fa-heart"></i> MUSINSA BEAUTY STANDARD <i class="fa-regular fa-heart"></i></h1>
+      </div>
+      
 
-<div className="mx-30 relative mt-10">
+<div className="mx-3 md:mx-10 relative">
       <div className="flex justify-center gap-4 mt-4">
         {images.slice(currentIndex, currentIndex + itemPerPage).map((item, idx) => (
-          <div key={idx} className="relative w-[420px]">
-            <img src={item.src} alt={`img-${idx}`} className="w-full h-auto" />
+          <div key={idx} className="relative w-full sm:w-full md:w-full lg:w-[420px] ">
+            <img src={item.src} alt={`img-${idx}`} className="object-cover lg:w-[420px] lg:h-auto sm:h-screen md:h-[500px] md:object-cover md:w-[800px]"/>
             <p className="absolute bottom-0 left-0 right-0 text-white text-xl tracking-wide font-[600] italic text-center py-10">
               {item.caption}
             </p>
@@ -300,7 +322,11 @@ const Beauty = ({ favorite, toggleFavorite}) => {
       <button
         onClick={prevSlide}
         disabled={currentIndex === 0}
-        className="absolute -left-5 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 shadow-lg shadow-gray-500/50"
+        className="absolute top-1/2 -translate-y-1/2 z-50
+      left-2 sm:-left-6 md:-left-6 lg:left-10
+      text-gray-600 text-lg rounded-full bg-white
+      px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2
+      shadow-lg shadow-gray-500/50"
       >
         <i className="fa-solid fa-chevron-left"></i>
       </button>
@@ -308,24 +334,30 @@ const Beauty = ({ favorite, toggleFavorite}) => {
       <button
         onClick={nextSlide}
         disabled={currentIndex + itemPerPage >= images.length}
-        className="absolute -right-5 top-1/2 text-gray-600 rounded-full bg-white px-3 py-2 text-xl font-bold shadow-lg shadow-gray-500/50"
+        className="absolute top-1/2 -translate-y-1/2 z-50
+      right-2 sm:-right-6 md:-right-6 lg:right-10
+      text-gray-600 text-lg rounded-full bg-white
+      px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2
+      shadow-lg shadow-gray-500/50"
       >
         <i className="fa-solid fa-chevron-right"></i>
       </button>
     </div>
 
 
-
-<section>
-  <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+ 
+<section  className="mt-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
   <h2>MUSINSA: BEST SELLING BRANDS</h2>
 </div>
 
-<div className="mx-30 mt-8">
+<div className="lg:mx-30 mx-10 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 mt-6">
-    <li >
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img53} alt="SCALLYWANG"></img>
+        <img src={img53} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center ">
           <span className=" bg-black text-green-800 font-base px-2">Extra 20% OFF</span>
           <i className={`cursor-pointer ${
@@ -340,9 +372,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$17</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img48} alt="SCALLYWANG"></img>
+        <img src={img48} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" ></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-green-800 px-2">Extra 20% OFF</span>
            <i className={`cursor-pointer ${
@@ -357,9 +389,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$7</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img58} alt="SCALLYWANG"></img>
+        <img src={img58} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" ></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
             <i className={`cursor-pointer ${
@@ -374,9 +406,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$11</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img56} alt="SCALLYWANG"></img>
+        <img src={img56} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
            <i className={`cursor-pointer ${
@@ -391,9 +423,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$10</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img55} alt="SCALLYWANG"></img>
+        <img src={img55} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
             <i className={`cursor-pointer ${
@@ -408,9 +440,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$9</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img57} alt="SCALLYWANG"></img>
+        <img src={img57} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
             <i className={`cursor-pointer ${
@@ -431,12 +463,12 @@ const Beauty = ({ favorite, toggleFavorite}) => {
 
 <section className="mt-12">
 
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
-    <li >
+<div className="lg:mx-30 mx-10 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4 md:gap-2 sm:gap-1">
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img59} alt="SCALLYWANG"></img>
-        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center ">
+        <img src={img59} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded"></img>
+        <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
           <span className=" bg-black text-green-800 font-base px-2">Extra 20% OFF</span>
             <i className={`cursor-pointer ${
             favorite[466] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -450,9 +482,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$10</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img60} alt="SCALLYWANG"></img>
+        <img src={img60} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-green-800 px-2">Extra 20% OFF</span>
            <i className={`cursor-pointer ${
@@ -467,9 +499,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$7</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img61} alt="SCALLYWANG"></img>
+        <img src={img61} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
             <i className={`cursor-pointer ${
@@ -484,9 +516,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$11</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img62} alt="SCALLYWANG"></img>
+        <img src={img62} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" ></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
            <i className={`cursor-pointer ${
@@ -501,9 +533,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$10</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img63} alt="SCALLYWANG"></img>
+        <img src={img63} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" ></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
             <i className={`cursor-pointer ${
@@ -518,9 +550,9 @@ const Beauty = ({ favorite, toggleFavorite}) => {
           <span className="text-sm font-bold text-red-800">$20</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
       <div className="relative">
-        <img src={img64} alt="SCALLYWANG"></img>
+        <img src={img64} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" ></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-green-800 px-2 text-base">Extra 20% OFF</span>
           <i className={`cursor-pointer ${
@@ -543,9 +575,11 @@ const Beauty = ({ favorite, toggleFavorite}) => {
 </div>
 </section> 
 
-<section className="mt-10 mx-30">
-  <div className="items-center text-center">
-    <h1 className="text-5xl mb-15">FEATURED BRANDS</h1>
+{/* <section className="mt-10">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-2xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+    <h1 className="mb-15">FEATURED BRANDS</h1>
     <div className="flex flex-row gap-6">
       <div>
         <img src={img393} alt="musinsa" />
@@ -564,16 +598,70 @@ const Beauty = ({ favorite, toggleFavorite}) => {
       </div>
     </div>
   </div>
+</section> */}
+
+<section className="mt-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-2xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-black">
+    <h1 className="mb-12 text-center">FEATURED BRANDS</h1>
+
+    {/* Responsive container */}
+    <div className="
+      flex snap-x snap-mandatory gap-6
+      sm:flex-nowrap md:flex-nowrap
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible
+    ">
+      {/* Item 1 */}
+      <div className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
+        <img 
+          src={img393} 
+          alt="musinsa" 
+          className="w-full max-h-[350px] md:max-h-[450px] lg:h-[550px] 
+                     object-contain lg:object-cover rounded" 
+        />
+        <p className="font-medium text-center mt-4 text-xl">WHINZZY</p>
+        <p className="text-sm text-center text-gray-800 mt-1">Healthy makeup look, made easy</p>
+      </div>
+
+      {/* Item 2 */}
+      <div className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-auto snap-center">
+        <img 
+          src={img395} 
+          alt="musinsa" 
+          className="w-full max-h-[350px] md:max-h-[450px] lg:h-[550px] 
+                     object-contain lg:object-cover rounded" 
+        />
+        <p className="font-medium text-center mt-4 text-base">ODDTYPE</p>
+        <p className="text-sm text-center text-gray-800 mt-1">Summer Makeup Hacks</p>
+      </div>
+
+      {/* Item 3 */}
+      <div className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-auto snap-center">
+        <img 
+          src={img394} 
+          alt="musinsa" 
+          className="w-full max-h-[350px] md:max-h-[450px] lg:h-[550px] 
+                     object-contain lg:object-cover rounded" 
+        />
+        <p className="font-medium text-center mt-4 text-xl">MUSINSA STANDARD BEAUTY</p>
+        <p className="text-sm text-center text-gray-800 mt-1">Effective Skincare, Honest Price</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 
+
 <section className="mt-20">
-  <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD: SKINCARE & MAKEUP</h2>
 </div>
 
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
+  <ul className="flex flex-row gap-4 ">
     <li >
       <div className="relative">
         <img src={img107} alt="SCALLYWANG"></img> 
@@ -676,7 +764,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
 
 <section className="mt-5">
 
-<div className="mx-30 mt-1">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
   <ul className="flex flex-row gap-4">
     <li >
       <div className="relative">
@@ -780,7 +868,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
 
 <section className="mt-5">
 
-<div className="mx-30 mt-1">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
   <ul className="flex flex-row gap-4">
     <li >
       <div className="relative">
@@ -886,24 +974,35 @@ const Beauty = ({ favorite, toggleFavorite}) => {
 </div>
 </section> 
 
-<section className="mt-10 mx-30">
-  <div className="font-medium">
-    <h1 className="text-5xl mb-15">EDITOR'S PICKS</h1>
-    <div className="flex flex-row gap-6">
-      <div>
-        <img src={img396} alt="musinsa" />
-        <p className="font-sm text-left mt-4 text-xl">HEART PERSON</p>
-         <p className="text-xm text-left text-gray-800 mt-1">MONSTER SALE Up to 34% Off</p>
+<section className="mt-10">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-2xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
+    <h1 className="mb-10">EDITOR'S PICKS</h1>
+    <div className="
+      flex snap-x snap-mandatory gap-6
+      sm:flex-nowrap md:flex-nowrap
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-visible
+    ">
+      <div className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
+        <img src={img396} alt="musinsa"  className="w-full max-h-[350px] md:max-h-[450px] lg:h-[550px] 
+                     object-contain lg:object-cover rounded" />
+        <p className="font-medium text-center mt-4 text-xl">HEART PERSON</p>
+         <p className="text-sm text-center text-gray-800 mt-1">MONSTER SALE Up to 34% Off</p>
       </div>
-      <div>
-        <img src={img397} alt="musinsa" />
-        <p className="font-sm text-left mt-4 text-base">PLEUVIOR</p>
-         <p className="text-xm text-left text-gray-800 mt-1">MONSTER SALE Up to 10% Off</p>
+
+      <div className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
+        <img src={img397} alt="musinsa" className="w-full max-h-[350px] md:max-h-[450px] lg:h-[550px] 
+                     object-contain lg:object-cover rounded"/>
+        <p className="font-medium text-center mt-4 text-xl">PLEUVIOR</p>
+         <p className="text-sm text-center text-gray-800 mt-1">MONSTER SALE Up to 10% Off</p>
       </div>
-      <div>
-        <img src={img398} alt="musinsa" />
-        <p className="font-sm text-left mt-4 text-xl">ATHANBE</p>
-         <p className="text-xm text-left text-gray-800 mt-1">MONSTER SALE Up to 25% Off</p>
+
+      <div className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
+        <img src={img398} alt="musinsa" className="w-full max-h-[350px] md:max-h-[450px] lg:h-[550px] 
+                     object-contain lg:object-cover rounded"/>
+        <p className="font-medium text-center mt-4 text-xl">ATHANBE</p>
+         <p className="text-sm text-center text-gray-800 mt-1">MONSTER SALE Up to 25% Off</p>
       </div>
     </div>
   </div>
@@ -912,7 +1011,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
 </div>
 </section>
 
-<section className="mt-40 mx-30">
+{/* <section className="mt-40 mx-30">
     <div className="flex flex-row gap-10">
       <div className="w-170 h-170">
         <img src={img399} alt="musinsa" className="w-[170] h-[170] object-contain" />
@@ -927,137 +1026,255 @@ const Beauty = ({ favorite, toggleFavorite}) => {
 
     </div>
     </div>
-</section>
+</section> */}
 
-<section className="mt-40 mx-30">
-    <div className="flex flex-row gap-10">
-      <div className="w-170 h-170">
-        <img src={img400} alt="musinsa" className="w-[170] h-[170] object-contain" />
+<section className="mt-40 mx-6 md:mx-20 lg:mx-30">
+  <div className="flex flex-col lg:flex-row gap-10">
+    
+    {/* Image full on lg */}
+    <div className="w-full lg:w-1/2">
+      <img 
+        src={img399} 
+        alt="musinsa" 
+        className="w-full h-auto object-contain lg:object-cover rounded" 
+      />
+    </div>
+    
+    {/* Info */}
+    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+      <p className="font-medium text-left text-3xl md:text-4xl lg:text-5xl leading-tight">
+        JUNGSAEMMOOL LAUNCH <br /> WEEK
+      </p>
+      <p className="text-lg text-left text-black mt-6 md:mt-8">
+        21% Off Brand New Launch
+      </p>
+
+      <div className="text-start mt-10">
+        <button className="border border-black rounded text-lg px-5 py-2 text-black">
+          SHOP NOW
+        </button>
       </div>
-     <div>
-       <p className="mt-20 font-medium text-left mt-4 text-4xl leading-12">DASHU</p>
-         <p className="text-lg text-left text-black mt-8">MONSTER SALE Up to 68% Off</p>
-
-          <div className="text-start mt-15">
-  <button className="border border-black rounded text-lg px-5 py-2 text-black">SHOP NOW</button>
-</div>
-
     </div>
-    </div>
+    
+  </div>
 </section>
 
-<section className="mt-40 mx-30">
-    <div className="flex flex-row gap-10">
-      <div className="w-170 h-170">
-        <img src={img401} alt="musinsa" className="w-[170] h-[170] object-contain" />
+<section className="mt-40 mx-6 md:mx-20 lg:mx-30">
+  <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-start">
+    
+    {/* Image */}
+    <div className="w-full lg:w-1/2">
+      <img 
+        src={img400} 
+        alt="musinsa" 
+        className="w-full h-auto lg:h-[600px] object-contain lg:object-cover rounded" 
+      />
+    </div>
+    
+    {/* Info */}
+    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+      <p className="font-medium text-left text-3xl md:text-4xl lg:text-5xl leading-tight">
+        DASHU
+      </p>
+      <p className="text-lg text-left text-black mt-6 md:mt-8">
+        MONSTER SALE Up to 68% Off
+      </p>
+
+      <div className="text-start mt-10">
+        <button className="border border-black rounded text-lg px-5 py-2 text-black">
+          SHOP NOW
+        </button>
       </div>
-     <div>
-       <p className="mt-20 font-medium text-left mt-4 text-4xl leading-12">ODDTYPE</p>
-         <p className="text-lg text-left text-black mt-8">MONSTER SALE Up to 68% Off</p>
-
-          <div className="text-start mt-15">
-  <button className="border border-black rounded text-lg px-5 py-2 text-black">SHOP NOW</button>
-</div>
-
     </div>
-    </div>
+    
+  </div>
 </section>
 
-<section className="mx-30">
-   <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mt-40 mx-6 md:mx-20 lg:mx-30">
+  <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-start">
+    
+    {/* Image */}
+    <div className="w-full lg:w-1/2">
+      <img 
+        src={img401} 
+        alt="musinsa" 
+        className="w-full h-auto lg:h-[600px] object-contain lg:object-cover rounded" 
+      />
+    </div>
+    
+    {/* Info */}
+    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+      <p className="font-medium text-left text-3xl md:text-4xl lg:text-5xl leading-tight">
+        ODDTYPE
+      </p>
+      <p className="text-lg text-left text-black mt-6 md:mt-8">
+        MONSTER SALE Up to 68% Off
+      </p>
+
+      <div className="text-start mt-10">
+        <button className="border border-black rounded text-lg px-5 py-2 text-black">
+          SHOP NOW
+        </button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+{/* <section className="mx-6 lg:mx-30 md:mx-20 mt-20">
+   <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-12">JUNGSAEMMOOL LAUNCH WEEK</h1>
-    <img src={img402} alt="musinsa"></img>
+    </div>
     <div>
-      <ul className="flex flex-row gap-5 mt-10">
+    <img src={img402} alt="musinsa"></img>
+    </div>
+    <div>
+      <ul className="flex flex-row gap-5 mt-6">
         <li>
           <div className="relative">
             <img src={img403} alt="musinsa"></img>
           <div className="absolute bottom-2 right-2 flex justify-between item-center">
-            {/* <i className={`cursor-pointer ${
-                        favorite[798] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-                      }`}
-                      onClick={() => toggleFavorite(798, NewProduct[798])}></i> */}
           </div>
           </div>
           <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium text-lg">JUNGSAEMMOOL</strong>
-        <p className="text-xs font-sm text-gray-600">Essiantial Skin nuder Global cushion</p>
-           <span className="text-sm text-gray-600">18%</span>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">JUNGSAEMMOOL</strong>
+        <p className="text-xs font-normal text-gray-900">Essiantial Skin nuder Global cushion</p>
+           <span className="text-sm font-normal text-gray-600">18%</span>
             <span className="text-sm font-sm text-red-800">$26</span>
-          
       </div>
         </li>
+
         <li>
           <div className="relative">
             <img src={img404} alt="musinsa"></img>
           <div className="absolute bottom-2 right-2 flex justify-between item-center">
-           {/* <i className={`cursor-pointer ${
-                        favorite[799] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-                      }`}
-                      onClick={() => toggleFavorite(799, NewProduct[799])}></i> */}
-
           </div>
           </div>
           <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium text-sm mt-20">JUNGSAEMMOOL</strong>
-        <p className="text-sm font-sm text-gray-600">New Classic Matte Lipstick</p>
-           <span className="text-sm text-gray-600">20%</span>
-            <span className="text-sm font-bold text-red-800">$24</span>
-          
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">JUNGSAEMMOOL</strong>
+        <p className="text-sm font-normal text-gray-900">New Classic Matte Lipstick</p>
+           <span className="text-sm font-normal text-gray-600">20%</span>
+            <span className="text-sm  font-bold text-red-800">$24</span>  
       </div>
         </li>
+
         <li>
           <div className="relative">
             <img src={img405} alt="musinsa"></img>
           <div className="absolute bottom-2 right-2 flex justify-between item-center">
-            {/* <i className={`cursor-pointer ${
-                        favorite[800] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-                      }`}
-                      onClick={() => toggleFavorite(800, NewProduct[800])}></i> */}
           </div>
           </div>
           <div className="flex flex-col gap-1 mt-3">
-        <strong className="font-medium text-sm">JUNGSAEMMOOL</strong>
-        <p className="text-sm font-sm text-gray-600">Essiantial Skin nuder cushion</p>
+        <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap w-53">JUNGSAEMMOOL</strong>
+        <p className="text-sm font-normal text-gray-900">Essiantial Skin nuder cushion</p>
            <span className="text-sm text-gray-600">18%</span>
-            <span className="text-sm font-bold text-red-800">$26</span>
-          
+            <span className="text-sm font-normal text-red-800">$26</span>  
       </div>
         </li>
-      
       </ul>
     </div>
-    </div>
-</section>
+</section> */}
 
-<section className="mx-30">
-   <div className="mt-15 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mx-6 md:mx-20 lg:mx-30 mt-20">
+  {/* Heading */}
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
+    <h1 className="mb-12 text-center">JUNGSAEMMOOL LAUNCH WEEK</h1>
+  </div>
+
+  {/* Hero Image */}
+  <div className="mb-10">
+    <img src={img402} alt="musinsa" className="w-full h-auto object-cover rounded"/>
+  </div>
+
+  {/* Product List */}
+  <div>
+    <ul className="grid grid-cols-3 gap-6">
+      {/* Item 1 */}
+      <li>
+        <div className="relative">
+          <img src={img403} alt="musinsa" 
+               className="w-full h-[150px] sm:h-[160px] md:h-[180px] lg:h-[250px] object-contain"/>
+        </div>
+        <div className="flex flex-col gap-1 mt-3">
+          <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap">JUNGSAEMMOOL</strong>
+          <p className="text-xs md:text-sm font-normal text-gray-900">Essiantial Skin nuder Global cushion</p>
+          <span className="text-sm font-normal text-gray-600">18%</span>
+          <span className="text-sm font-bold text-red-800">$26</span>
+        </div>
+      </li>
+
+      {/* Item 2 */}
+      <li>
+        <div className="relative">
+          <img src={img404} alt="musinsa" 
+               className="w-full h-[150px] sm:h-[160px] md:h-[180px] lg:h-[250px] object-contain"/>
+        </div>
+        <div className="flex flex-col gap-1 mt-3">
+          <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap">JUNGSAEMMOOL</strong>
+          <p className="text-xs md:text-sm font-normal text-gray-900">New Classic Matte Lipstick</p>
+          <span className="text-sm font-normal text-gray-600">20%</span>
+          <span className="text-sm font-bold text-red-800">$24</span>
+        </div>
+      </li>
+
+      {/* Item 3 */}
+      <li>
+        <div className="relative">
+          <img src={img405} alt="musinsa" 
+               className="w-full h-[150px] sm:h-[160px] md:h-[180px] lg:h-[250px] object-contain"/>
+        </div>
+        <div className="flex flex-col gap-1 mt-3">
+          <strong className="font-medium overflow-hidden text-ellipsis whitespace-nowrap">JUNGSAEMMOOL</strong>
+          <p className="text-xs md:text-sm font-normal text-gray-900">Essiantial Skin nuder cushion</p>
+          <span className="text-sm text-gray-600">18%</span>
+          <span className="text-sm font-bold text-red-800">$26</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </section>
+
+<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
+   <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-2xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-6">#NEW IN</h1>
-    <img src={img406} alt="musinsa" w-140 h-140 object-contain></img>
+    </div>
+    <div>
+    <img src={img406} alt="musinsa" className="w-full h-auto object-cover rounded"></img>
     </div>
 </section>
 
-<section className="mx-30">
-   <div className="mt-15 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
+   <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-6">#PICCASSO</h1>
-    <img src={img407} alt="musinsa" w-150 h-150 object-contain></img>
+    </div>
+    <div>
+    <img src={img407} alt="musinsa" className="w-full h-auto object-cover rounded"></img>
     </div>
 </section>
 
-<section className="mx-30">
-   <div className="mt-12 text-4xl font-bold tracking-wider text-[#0a0f18]">
-    <h1 className="mb-6">MONSTER SALE BEAUTY</h1>
+<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
+   <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
+    <h1 className="mb-6">#MONSTER SALE BEAUTY</h1>
+    </div>
+    <div>
     <img src={img408} alt="musinsa"></img>
+    </div>
     <div>
       <ul className="flex flex-row gap-5 mt-10">
         <li>
           <div className="relative">
             <img src={img409} alt="musinsa"></img>
           <div className="absolute bottom-2 right-2 flex justify-between item-center">
-            {/* <i className={`cursor-pointer ${
-                        favorite[798] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-                      }`}
-                      onClick={() => toggleFavorite(798, NewProduct[798])}></i> */}
           </div>
           </div>
           <div className="flex flex-col gap-1 mt-3">
@@ -1065,18 +1282,13 @@ const Beauty = ({ favorite, toggleFavorite}) => {
         <p className="text-[13px] text-gray-900">315 aegyo-sal point eyeshadow brush</p>
            <span className="text-sm text-gray-600">18%</span>
             <span className="text-sm font-sm text-red-800">$17</span>
-          
       </div>
         </li>
+
         <li>
           <div className="relative">
             <img src={img410} alt="musinsa"></img>
           <div className="absolute bottom-2 right-2 flex justify-between item-center">
-           {/* <i className={`cursor-pointer ${
-                        favorite[799] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
-                      }`}
-                      onClick={() => toggleFavorite(799, NewProduct[799])}></i> */}
-
           </div>
           </div>
           <div className="flex flex-col gap-1 mt-3">
@@ -1108,42 +1320,51 @@ const Beauty = ({ favorite, toggleFavorite}) => {
       
       </ul>
     </div>
-    </div>
 </section>
 
 <footer className="mt-20 border-t-2 border-gray-200">
-  <div className="mx-30 mt-8">
-     <div className="flex flex-row gap-7 text-gray-500 text-sm">
-    <a href="#">About MUSINSA</a>
-    <a href="#">Terms & Conditions</a>
-    <a href="#">Privacy Policy</a>
-  </div>
+  <div className="mx-6 md:mx-10 lg:mx-30 mt-8 space-y-10">
+    
+    {/* Top links */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-gray-500 text-sm">
+      <a href="#">About MUSINSA</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
 
-  <div className="flex flex-row gap-7 text-black font-bold mt-10">
-    <a href="#" className="border rounded border-black px-20 py-1">FAQ</a>
-    <a href="#" className="border rounded border-black px-20 py-1">NOTICS</a>
-  </div>
+    {/* FAQ / Notices */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-black font-bold">
+      <a href="#" className="border rounded border-black px-10 py-2 text-center">FAQ</a>
+      <a href="#" className="border rounded border-black px-10 py-2 text-center">NOTICES</a>
+    </div>
 
-  <div className="mt-15">
-    <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
-    <div className="flex flex-row gap-3 text-black font-bold mt-5">
-    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-apple text-2xl"></i> app store</a>
-    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-google-play text-2xl"></i> google play </a>
-  </div>
-  </div>
+    {/* App download */}
+    <div>
+      <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
+      <div className="flex flex-col sm:flex-row gap-3 text-black font-bold mt-5">
+        <a href="#" className="border rounded border-black px-6 py-2 flex items-center justify-center">
+          <i className="fa-brands fa-apple text-2xl mr-2"></i> App Store
+        </a>
+        <a href="#" className="border rounded border-black px-6 py-2 flex items-center justify-center">
+          <i className="fa-brands fa-google-play text-2xl mr-2"></i> Google Play
+        </a>
+      </div>
+    </div>
 
- <div className="mt-15 flex items-center justify-center 
-                w-12 h-12 rounded-full 
-                border-4 border-[#010a2e] 
-                bg-[#010a2e]">
-  <i className="fa-brands fa-instagram text-white text-2xl"></i>
-</div>
+    {/* Social icon */}
+    <div className="flex justify-centerlg:justify-start">
+      <div className="w-12 h-12 rounded-full border-4 border-[#010a2e] bg-[#010a2e] flex items-center justify-center">
+        <i className="fa-brands fa-instagram text-white text-2xl"></i>
+      </div>
+    </div>
 
-<div className="mt-15 mb-10">
-  <p className="text-gray-400 text-xs"><span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some product. In this case MUSINSA has limited liability for products, information and transactions.Please check the product detail on each product page.</p>
-</div>
+    {/* Disclaimer */}
+    <div className="mb-10">
+      <p className="text-gray-400 text-xs">
+        <span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some products. In this case MUSINSA has limited liability for products, information and transactions. Please check the product detail on each product page.
+      </p>
+    </div>
   </div>
- 
 </footer>
 
 

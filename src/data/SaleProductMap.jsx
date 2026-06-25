@@ -258,8 +258,8 @@ export const SaleMap = {
 },
 664: {
   id: 664,
-  name: "ESCAPEFROM",
-  description: "Start Denim ESCF Logo College Print Slim Fit",
+  name: "MuahMuah",
+  description: "Mrt vivid slim short sleeve summer season t shirt",
   price: 24,
   discount: "75% OFF",
   image: img33,
@@ -275,7 +275,7 @@ export const SaleMap = {
 666: {
   id: 666,
   name: "ESCAPEFROM",
-  description: "Strawberry Dot EDCF Logo Collage Print Oversize",
+  description: "Strawberry Dot EDCF Logo Collage Print Oversize shirt",
   price: 26,
   discount: "70% OFF",
   image: img35,

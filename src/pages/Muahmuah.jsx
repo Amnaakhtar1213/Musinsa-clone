@@ -244,17 +244,16 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 </div>
 
 
-<div className="flex flex-row gap-2 mx-30 mt-10 border-b pb-8 border-gray-200">
-
-<div>
-    <img src={img208} alt="muahmuah" className="w-110 h-110 object-contain"></img>
+{/* <div className="mx-6 lg:mx-30 md:mx-10 mt-10 border-b pb-8 border-gray-200">
+<div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+    <img i src={img208} alt="muahmuah" className="w-full sm:h-[400px] md:h-[600px] lg:h-[350px] object-contain" />
   </div>
 
-  <div>
+  <div className="order-1 lg:order-2 lg:w-1/3">
     <h1 className="text-4xl font-bold mb-5">MUAHMUAH</h1>
-    <p className="text-sm w-150"><span>MUAHMUAH</span>, is inspired by the sound of kiss, delivers a collection that embodies romantic, joyous and bashfull feelings.</p>
+    <p className="text-sm max-w-md"><span>MUAHMUAH</span>, is inspired by the sound of kiss, delivers a collection that embodies romantic, joyous and bashfull feelings.</p>
    </div>
-    <div>
+    <div className="order-3 lg:order-3 lg:w-1/3 flex lg:justify-end md:justify-start">
        <i
   className={`cursor-pointer text-4xl ml-12 ${
     pageFavorite ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
@@ -263,18 +262,62 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 ></i>
     </div>
     
+</div> */}
+
+<div className="mx-6 lg:mx-30 md:mx-10 mt-10 border-b pb-8 border-gray-200">
+  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+
+    {/* Image (left on lg, below brand on md/sm) */}
+    <div className="order-2 md:order-2 lg:order-1 lg:w-1/3">
+      <img 
+        src={img208} 
+        alt="muahmuah" 
+        className="w-full sm:h-[400px] md:h-[600px] lg:h-[350px] object-contain" 
+      />
+    </div>
+
+    {/* Brand + Description (middle on lg, stacked on md/sm) */}
+    <div className="order-1 lg:order-2 lg:w-1/3">
+      {/* Brand + Heart in one line */}
+      <div className="flex flex-row items-center justify-between mb-5">
+        <h1 className="text-3xl md:text-4xl font-bold">MUAHMUAH</h1>
+        <i
+          className={`cursor-pointer text-3xl md:text-4xl ${
+            pageFavorite ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
+          }`}
+          onClick={togglePageFavorite}
+        ></i>
+      </div>
+      {/* Description */}
+      <p className="text-sm md:text-base max-w-md">
+        <span>MUAHMUAH</span>, is inspired by the sound of kiss, delivers a collection that embodies romantic, joyous and bashful feelings.
+      </p>
+    </div>
+
+    {/* Heart (separate only for lg right side) */}
+    <div className="hidden lg:flex order-3 lg:order-3 lg:w-1/3 justify-end">
+      <i
+        className={`cursor-pointer text-4xl ${
+          pageFavorite ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
+        }`}
+        onClick={togglePageFavorite}
+      ></i>
+    </div>
+  </div>
 </div>
 
-    <div className="mx-30 mt-10">
-      <div className="text-4xl font-bold text-center mb-10">
-        <h1>MUAHMUAH TOP SELLING ITEMS</h1>
-      </div>
-          </div>
+<div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                font-bold text-[#0a0f18] max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none">
+  <h1 className="break-words">MUAHMUAH TOP SELLING ITEMS</h1>
+</div>
 
-<section className="mt-15 mx-30">
-  <div className="text-4xl font-bold text-center tracking-wider text-[#0a0f18]">
-    <h1 className="mb-8"># Trending now</h1>
-  </div>
+<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
+    <h1 className="mb-8 text-center"># Trending now</h1>
+  </div >
        <img src={img155} alt="SCALLYWANG"></img>
   <div>
     <ul className="flex flex-row gap-4 mt-10">
@@ -358,8 +401,10 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
 
 
-<section className="mt-20 mx-30">
-  <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-12">[MUAHMUAH] GLOBAL EXCLUSIVE: SUMMER 2026 T-SHIRTS</h1>
   </div>
        <img src={img145} alt="SCALLYWANG"></img>
@@ -442,8 +487,10 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
 
 
-<section className="mt-20 mx-30">
-  <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-12"># NEW IN: LACE, SHRRING ITEMS</h1>
   </div>
        <img src={img140} alt="SCALLYWANG"></img>
@@ -526,8 +573,10 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
 
 
-<section className="mt-20 mx-30">
-  <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-12">MUSINSA STANDARD</h1>
   </div>
   <div>
@@ -614,12 +663,15 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 </section>
 
 
-<section className="mt-20 mx-30">
-  <div className=" text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-12">UP-TO 83% OFF VOCATION-READY PICKS</h1>
   </div>
   <div>
-    <img src={img125} alt="pants"></img>
+    <img src={img125} alt="pants" className="
+      w-full sm:w-full sm:h-auto md:h-[600px] lg:h-[700px] object-cover rounded"></img>
   </div>
   <div>
     <ul className="flex flex-row gap-4 mt-10">
@@ -702,7 +754,7 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 </section>
 
 
-<section className="mt-35 mx-30">
+{/* <section className="mt-20 mx-6 lg:mx-30 md:mx-20">
   <div className="items-center text-center">
     <h1 className="text-5xl mb-15">MORE TO EXPLORE</h1>
     <div className="flex flex-row gap-6">
@@ -720,6 +772,48 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
       </div>
     </div>
   </div>
+</section> */}
+
+
+
+<section className="mt-10">
+    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+  <h2 className="text-center">MORE TO EXPLORE</h2>
+</div>
+<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
+  <ul className=" flex snap-x snap-mandatory gap-6
+  sm:flex-nowrap md:flex-nowrap
+  lg:grid lg:grid-cols-3 lg:gap-6">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+      <div>
+        <img src={img205} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <span className="font-medium md:text-lg sm:text-lg">DARISAL</span>
+      </div>
+    </li>
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+      <div className="relative">
+        <img src={img206} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+        <span className="font-medium md:text-lg sm:text-lg">DRESSES CHOSSEN BY HAN SO-HEE</span>
+      </div>
+    </li>
+
+    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+      <div className="relative">
+        <img src={img207} alt="SCALLYWANG"  className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+      </div>
+      <div className="flex flex-col gap-1 mt-3">
+          <span className="font-medium md:text-lg sm:text-lg">MUSINSA STANDARD</span>
+      </div>
+    </li>
+  </ul>
+</div>
+   
 </section>
 
 
