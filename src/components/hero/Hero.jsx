@@ -632,7 +632,7 @@ useEffect(() => {
 
 
  <section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+  <div className="mx-6 md:mx-20 lg:mx-30 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
     <h2>LIMITED TIME OFFER: #48 Hours Left</h2>
@@ -643,9 +643,9 @@ useEffect(() => {
    <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
   <div className="relative">
     <img 
-      src={img27} 
+       src={img27} 
       alt="SCALLYWANG" 
-      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" 
+      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[290px] object-cover rounded" 
     />
     <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
       <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
@@ -674,7 +674,7 @@ useEffect(() => {
     <img 
       src={img28} 
       alt="SCALLYWANG" 
-      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" 
+      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[290px] object-cover rounded" 
     />
     <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
       <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
@@ -703,7 +703,7 @@ useEffect(() => {
     <img 
       src={img29} 
       alt="SCALLYWANG" 
-      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[250px] object-cover rounded" 
+      className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[290px] object-cover rounded" 
     />
     <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
       <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
@@ -727,12 +727,12 @@ useEffect(() => {
   </div>
   </li>
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[220px]">
   <div className="relative">
     <img 
       src={img30} 
       alt="SCALLYWANG" 
-      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded" 
+      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[290px] object-cover rounded" 
     />
     <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
       <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
@@ -748,7 +748,7 @@ useEffect(() => {
   </div>
   <div className="flex flex-col gap-1 mt-2">
     <strong className="font-medium text-sm md:text-xs sm:text-[11px] lg:text-base">SCALLYWANG</strong>
-    <p className="text-xs md:text-[11px] sm:text-[10px] lg:text-sm text-black">
+    <p className="font-medium text-sm md:text-xs sm:text-[11px] lg:text-base">
       Grese letter printing on plain black shirt
     </p>
     <span className="text-gray-600 text-xs md:text-[11px] sm:text-[10px] lg:text-sm">30% OFF</span>
@@ -756,12 +756,12 @@ useEffect(() => {
   </div>
 </li>
 
-   <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+   <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[220px]">
   <div className="relative">
     <img 
       src={img31} 
       alt="SCALLYWANG" 
-      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded" 
+      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[290px] object-cover rounded" 
     />
     <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
       <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
@@ -785,12 +785,12 @@ useEffect(() => {
   </div>
   </li>
 
-   <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+   <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[220px]">
   <div className="relative">
     <img 
       src={img32} 
       alt="SCALLYWANG" 
-      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded" 
+      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[290px] object-cover rounded" 
     />
     <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
       <span className="bg-black text-white px-1 text-xs md:text-[10px] sm:text-[9px] lg:text-sm">
