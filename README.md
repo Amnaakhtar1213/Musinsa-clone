@@ -19,8 +19,19 @@ This project demonstrates dynamic product rendering, interactive favorites and c
    - Cart count displayed in the header.
 - **Routing**: Category pages (Fashion, Beauty, New, Snap, Accessories, Home) managed with React Router.
 - **Scalability**: Product data stored in JSON files for easy expansion and maintenance.
-- **Brand Page**: Brand like (e.g., Muahmuah) has its own dedicated page with description, hero image, and a page‑level heart icon that can toggle favorites for all products in that brand too and also have a seprate toggle heart for each product.
-  
+- **Brand Page**: Each brand (e.g., Muahmuah) has its own dedicated page with description, hero image, and a page‑level heart icon that can toggle favorites for all products in that brand.
+   - Individual product hearts toggle independently.
+   - Page‑level heart can toggle all products at once.
+- **User Dropdown Menu**:
+   - Sign in/out functionality with localStorage persistence.
+   - Profile, Orders (linked to Cart page), Wishlist (linked to Wishlist page), and Settings options.
+- **Search System**:
+   - Responsive search bar with icon toggle on small screens.
+   - Smooth slide‑down animation for mobile search input.
+   - Navigates to `/search?query=...` with filtered product results.
+- **Wishlist Badge**:
+   - Heart icon in header with red dot indicator when favorites exist.
+   - Responsive positioning so the badge stays anchored to the icon.
 ---
 
 ## Tech Stack 🛠️ 

@@ -236,16 +236,18 @@ import { ShoesMap } from '../data/ShoesMap.jsx'
 const Shoes = ({ favorite, toggleFavorite }) => {
   return (
 <div> 
-<section className="mt-35">
- <div className="mx-30 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mt-40">
+ <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
   <h2>MUSINSA FUR SHOES: TOP SELLERS</h2>
 </div>
 
-<div className="mx-30 mt-4">
-  <ul className="flex flex-row gap-4 mt-10">
-    <li >
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4 md:gap-4">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img95} alt="SCALLYWANG"></img>
+        <img src={img95} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[738] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -259,9 +261,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$23</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img96} alt="SCALLYWANG"></img>
+        <img src={img96} alt="SCALLYWANG"  className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
          <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[739] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -275,9 +277,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-lg font-bold text-red-800">$25</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img97} alt="SCALLYWANG"></img>
+        <img src={img97} alt="SCALLYWANG"  className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[740] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -291,9 +293,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$39</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img98} alt="SCALLYWANG"></img>
+        <img src={img98} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[741] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -307,9 +309,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$23</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img99} alt="SCALLYWANG"></img>
+        <img src={img99} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2 flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[742] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -323,9 +325,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$50</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img100} alt="SCALLYWANG"></img>
+        <img src={img100} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[743] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -344,11 +346,11 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 </section> 
 
 <section className="mt-10">
-<div className="mx-30 mt-6">
-  <ul className="flex flex-row gap-4 mt-15 ">
-    <li >
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4 md:gap-10">
+    <li className="flex-shrink-0 w-[250px] md:w-[250px] sm:w-[250px] lg:w-[270px]">
       <div className="relative">
-        <img src={img350} alt="SCALLYWANG" className="w-200 h-100 object-contain"></img>
+        <img src={img350} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[200px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-6 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[744] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -362,9 +364,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$73</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[250px] md:w-[160px] sm:w-[250px] lg:w-[270px]">
       <div className="relative">
-        <img src={img351} alt="SCALLYWANG" className="w-200 h-95 object-contain"></img>
+        <img src={img351} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
          <div className="absolute bottom-4 right-4  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[745] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -378,9 +380,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$45</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[250px] md:w-[160px] sm:w-[250px] lg:w-[270px]">
       <div className="relative">
-        <img src={img352} alt="SCALLYWANG" className="w-200 h-100 object-contain"></img>
+        <img src={img352} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-6 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[746] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -394,9 +396,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$39</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[250px] md:w-[160px] sm:w-[250px] lg:w-[270px]">
       <div className="relative">
-        <img src={img353} alt="SCALLYWANG" className="w-200 h-100 object-contain"></img>
+        <img src={img353} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-6 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[747] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -434,15 +436,17 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 
 
 <section className="mt-10">
-<div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
   <h2>MUSINSA LEATHER BOOTS</h2>
 </div>
 
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
-    <li >
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4">
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img89} alt="SCALLYWANG"></img>
+        <img src={img89} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[748] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -456,9 +460,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$70</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img90} alt="SCALLYWANG"></img>
+        <img src={img90} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[749] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
@@ -472,9 +476,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$71</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img91} alt="SCALLYWANG"></img>
+        <img src={img91} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[750] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
@@ -488,9 +492,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-600">$39</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img92} alt="SCALLYWANG"></img>
+        <img src={img92} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[751] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -504,9 +508,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$79</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img93} alt="SCALLYWANG"></img>
+        <img src={img93} alt="SCALLYWANG"  className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2 flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[752] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -520,9 +524,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$44</span>
       </div>
     </li>
-    <li>
+    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img94} alt="SCALLYWANG"></img>
+        <img src={img94} alt="SCALLYWANG"  className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[753] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
@@ -542,9 +546,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 
 
 <section className="mt-10">
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
-    <li >
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4">
+    <li>
       <div className="relative">
         <img src={img355} alt="SCALLYWANG"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
@@ -634,12 +638,14 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 
 
 <section className="mt-20">
-  <div className="mx-30 mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD: HIGH HEELS AND PUMPS</h2>
 </div>
 
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4">
     <li >
       <div className="relative">
         <img src={img101} alt="SCALLYWANG"></img> 
@@ -741,8 +747,10 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20 mx-30">
-  <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mx-6 lg:mx-30 md:mx-20 mt-15">
+  <div className="mx-6 md:mx-20 lg:mx-30 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-12">J-INFLUENCER'S SUMMER PICKS</h1>
   </div>
        <img src={img150} alt="SCALLYWANG"></img>
@@ -823,8 +831,10 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 </div>
 </section>
 
-<section className="mt-20 mx-30">
-  <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
+<section className="mx-6 lg:mx-30 md:mx-20 mt-8">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18]">
     <h1 className="mb-12">MUSINSA STANDARD</h1>
   </div>
        <img src={img160} alt="SCALLYWANG"></img>
@@ -905,39 +915,50 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 </section>
 
 
+
 <footer className="mt-20 border-t-2 border-gray-200">
-  <div className="mx-30 mt-8">
-     <div className="flex flex-row gap-7 text-gray-500 text-sm">
-    <a href="#">About MUSINSA</a>
-    <a href="#">Terms & Conditions</a>
-    <a href="#">Privacy Policy</a>
-  </div>
+  <div className="mx-6 md:mx-10 lg:mx-30 mt-8 space-y-10">
+    
+    {/* Top links */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-gray-500 text-sm">
+      <a href="#">About MUSINSA</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
 
-  <div className="flex flex-row gap-7 text-black font-bold mt-10">
-    <a href="#" className="border rounded border-black px-20 py-1">FAQ</a>
-    <a href="#" className="border rounded border-black px-20 py-1">NOTICS</a>
-  </div>
+    {/* FAQ / Notices */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-black font-bold">
+      <a href="#" className="border rounded border-black px-10 py-2 text-center">FAQ</a>
+      <a href="#" className="border rounded border-black px-10 py-2 text-center">NOTICES</a>
+    </div>
 
-  <div className="mt-15">
-    <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
-    <div className="flex flex-row gap-3 text-black font-bold mt-5">
-    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-apple text-2xl"></i> app store</a>
-    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-google-play text-2xl"></i> google play </a>
-  </div>
-  </div>
+    {/* App download */}
+    <div>
+      <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
+      <div className="flex flex-col sm:flex-row gap-3 text-black font-bold mt-5">
+        <a href="#" className="border rounded border-black px-6 py-2 flex items-center justify-center">
+          <i className="fa-brands fa-apple text-2xl mr-2"></i> App Store
+        </a>
+        <a href="#" className="border rounded border-black px-6 py-2 flex items-center justify-center">
+          <i className="fa-brands fa-google-play text-2xl mr-2"></i> Google Play
+        </a>
+      </div>
+    </div>
 
- <div className="mt-15 flex items-center justify-center 
-                w-12 h-12 rounded-full 
-                border-4 border-[#010a2e] 
-                bg-[#010a2e]">
-  <i className="fa-brands fa-instagram text-white text-2xl"></i>
-</div>
+    {/* Social icon */}
+    <div className="flex justify-centerlg:justify-start">
+      <div className="w-12 h-12 rounded-full border-4 border-[#010a2e] bg-[#010a2e] flex items-center justify-center">
+        <i className="fa-brands fa-instagram text-white text-2xl"></i>
+      </div>
+    </div>
 
-<div className="mt-15 mb-10">
-  <p className="text-gray-400 text-xs"><span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some product. In this case MUSINSA has limited liability for products, information and transactions.Please check the product detail on each product page.</p>
-</div>
+    {/* Disclaimer */}
+    <div className="mb-10">
+      <p className="text-gray-400 text-xs">
+        <span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some products. In this case MUSINSA has limited liability for products, information and transactions. Please check the product detail on each product page.
+      </p>
+    </div>
   </div>
- 
 </footer>
 
 

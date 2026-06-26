@@ -247,12 +247,14 @@ const Sports = ({ favorite, toggleFavorite }) => {
   return (
     <div>
       
-<section className="mt-35">
-<div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+<section className="mt-40">
+<div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                font-bold tracking-wider text-[#0a0f18]">
   <h2>MUSINSA STANDARD SPORTS</h2>
 </div>
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-8 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-6 ">
     <li >
       <div className="relative">
         <img src={img360} alt="SCALLYWANG"></img>
@@ -342,11 +344,13 @@ const Sports = ({ favorite, toggleFavorite }) => {
 </section> 
 
  <section className="mt-10">
-  <div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                font-bold tracking-wider text-[#0a0f18]">
   <h2># SPORT SKIRTS</h2>
 </div>
- <div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+ <div className="mx-8 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4 ">
     <li >
        <div className="relative">
         <img src={img365} alt="SCALLYWANG"></img>
@@ -437,11 +441,13 @@ const Sports = ({ favorite, toggleFavorite }) => {
  </section> 
 
 <section className="mt-10">
- <div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+ <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                font-bold tracking-wider text-[#0a0f18]">
   <h2># SPORTS SHOES</h2>
 </div>
-<div className="mx-30 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-8 lg:mx-30 md:mx-20 mt-8">
+  <ul className="flex flex-row gap-4 ">
     <li >
       <div className="relative">
         <img src={img370} alt="SCALLYWANG"></img>
@@ -531,10 +537,12 @@ const Sports = ({ favorite, toggleFavorite }) => {
 </section>  
 
  <section className="mt-10">
- <div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+ <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                font-bold tracking-wider text-[#0a0f18]">
   <h2># SPORT GOODS</h2>
 </div>
-<div className="mx-30 mt-8">
+<div className="mx-8 lg:mx-30 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 mt-15 ">
     <li >
       <div className="relative">
@@ -625,10 +633,12 @@ const Sports = ({ favorite, toggleFavorite }) => {
 </section> 
 
  <section className="mt-10">
- <div className="mx-30 mt-6 text-4xl font-bold tracking-wider text-center text-[#0a0f18]">
+ <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                font-bold tracking-wider text-[#0a0f18]">
   <h2># SPORT CAPS</h2>
 </div>
-<div className="mx-30 mt-8">
+<div className="mx-8 lg:mx-30 md:mx-20 mt-8">
   <ul className="flex flex-row gap-4 mt-15 ">
     <li >
       <div className="relative">
@@ -719,20 +729,22 @@ const Sports = ({ favorite, toggleFavorite }) => {
 </div>
 </section>
 
-  <section className="mt-25 mx-30">
+  <section className="mx-8 lg:mx-30 md:mx-20 mt-8">
     <div className="items-center text-center">
-      <h1 className="text-5xl mb-15">MORE TO EXPLORE</h1>
-      <div className="flex flex-row gap-6">
-        <div>
-          <img src={img385} alt="musinsa" />
+      <h1 className="mx-6 md:mx-20 lg:mx-30 mt-8 
+                text-3xl sm:text-3xl md:text-3xl lg:text-4xl 
+                font-bold tracking-wider text-[#0a0f18]">MORE TO EXPLORE</h1>
+      <div className="flex flex-row gap-6 mt-8">
+        <div className="flex-shrink-0 w-[450px] sm:w-[450px] md:w-[500px] lg:w-[420px] snap-center">
+          <img src={img385} alt="musinsa" className="w-full h-[480px] sm:h-[500px] md:h-[570px] lg:h-[500px] object-cover rounded"/>
           <p className="text-left mt-4 text-2xl">MUSINSA STANDARD</p>
         </div>
-        <div>
-          <img src={img386} alt="musinsa" />
+        <div className="flex-shrink-0 w-[450px] sm:w-[450px] md:w-[500px] lg:w-[420px] snap-center">
+          <img src={img386} alt="musinsa" className="w-full h-[480px] sm:h-[480px] md:h-[570px] lg:h-[500px] object-cover rounded" />
           <p className="text-left mt-4 text-2xl">RIETI</p>
         </div>
-        <div>
-          <img src={img387} alt="musinsa" />
+        <div className="flex-shrink-0 w-[450px] sm:w-[450px] md:w-[500px] lg:w-[420px] snap-center">
+          <img src={img387} alt="musinsa" className="w-full h-[480px] sm:h-[480px] md:h-[570px] lg:h-[500px] object-cover rounded"/>
           <p className="text-left mt-4 text-2xl">RAVER</p>
         </div>
       </div>
@@ -741,38 +753,48 @@ const Sports = ({ favorite, toggleFavorite }) => {
 
 
 <footer className="mt-20 border-t-2 border-gray-200">
-  <div className="mx-30 mt-8">
-     <div className="flex flex-row gap-7 text-gray-500 text-sm">
-    <a href="#">About MUSINSA</a>
-    <a href="#">Terms & Conditions</a>
-    <a href="#">Privacy Policy</a>
-  </div>
+  <div className="mx-6 md:mx-10 lg:mx-30 mt-8 space-y-10">
+    
+    {/* Top links */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-gray-500 text-sm">
+      <a href="#">About MUSINSA</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
 
-  <div className="flex flex-row gap-7 text-black font-bold mt-10">
-    <a href="#" className="border rounded border-black px-20 py-1">FAQ</a>
-    <a href="#" className="border rounded border-black px-20 py-1">NOTICS</a>
-  </div>
+    {/* FAQ / Notices */}
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-7 text-black font-bold">
+      <a href="#" className="border rounded border-black px-10 py-2 text-center">FAQ</a>
+      <a href="#" className="border rounded border-black px-10 py-2 text-center">NOTICES</a>
+    </div>
 
-  <div className="mt-15">
-    <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
-    <div className="flex flex-row gap-3 text-black font-bold mt-5">
-    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-apple text-2xl"></i> app store</a>
-    <a href="#" className="border rounded border-black rounded px-6 py-2 items-center"><i className="fa-brands fa-google-play text-2xl"></i> google play </a>
-  </div>
-  </div>
+    {/* App download */}
+    <div>
+      <p className="font-bold text-lg text-[#071757]">Download the MUSINSA app</p>
+      <div className="flex flex-col sm:flex-row gap-3 text-black font-bold mt-5">
+        <a href="#" className="border rounded border-black px-6 py-2 flex items-center justify-center">
+          <i className="fa-brands fa-apple text-2xl mr-2"></i> App Store
+        </a>
+        <a href="#" className="border rounded border-black px-6 py-2 flex items-center justify-center">
+          <i className="fa-brands fa-google-play text-2xl mr-2"></i> Google Play
+        </a>
+      </div>
+    </div>
 
- <div className="mt-15 flex items-center justify-center 
-                w-12 h-12 rounded-full 
-                border-4 border-[#010a2e] 
-                bg-[#010a2e]">
-  <i className="fa-brands fa-instagram text-white text-2xl"></i>
-</div>
+    {/* Social icon */}
+    <div className="flex justify-centerlg:justify-start">
+      <div className="w-12 h-12 rounded-full border-4 border-[#010a2e] bg-[#010a2e] flex items-center justify-center">
+        <i className="fa-brands fa-instagram text-white text-2xl"></i>
+      </div>
+    </div>
 
-<div className="mt-15 mb-10">
-  <p className="text-gray-400 text-xs"><span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some product. In this case MUSINSA has limited liability for products, information and transactions.Please check the product detail on each product page.</p>
-</div>
+    {/* Disclaimer */}
+    <div className="mb-10">
+      <p className="text-gray-400 text-xs">
+        <span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some products. In this case MUSINSA has limited liability for products, information and transactions. Please check the product detail on each product page.
+      </p>
+    </div>
   </div>
- 
 </footer>
 
 

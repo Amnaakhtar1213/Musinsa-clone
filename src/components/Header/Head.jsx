@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
+const [showSearch, setShowSearch] = useState(false);
   const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -53,18 +54,27 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
   return (
      <header className="fixed top-0 left-0 bg-white z-50 w-full px-4 sm:px-6 md:px-12 lg:px-30 py-3">
       <div className="grid grid-cols-3 items-center w-full px-4">
-
         <div  className="relative w-full max-w-md">
-        <i className="fa-brands fa-sistrix absolute left-3 top-1/2 transform -translate-y-1/2 text-black text-base"></i>
-       <form onSubmit={handleSearch}>
+        <button
+        type="button"
+        onClick={() => setShowSearch(!showSearch)}
+        className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black text-base"
+      >
+        <i className="fa-brands fa-sistrix"></i>
+      </button>
+
+{(showSearch || window.innerWidth >= 1024) && (
+    <form onSubmit={handleSearch}>
       <input
         type="text"
         placeholder="Search..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="hidden lg:block w-full pl-10 pr-3 py-2 border-none bg-gray-100 rounded-sm focus:outline-none text-base text-gray-600"
+        className="w-full pl-10 pr-3 py-2 border-none bg-gray-100 rounded-sm focus:outline-none text-base text-gray-600"
       />
     </form>
+  )}
+
       </div>
 
       <div className="flex justify-center flex-shrink-0 mx-4 sm:justify-center md:justify-center lg:justify-center lg:mr-18">
@@ -99,7 +109,7 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
             )}
           </div>
 
-      <div  className="hidden lg:block">
+      <div  className="hidden lg:block relative">
         <Link to="/wishlist">
          <i className="fa-regular fa-heart"></i>
         {favoriteCount > 0 && (
@@ -130,7 +140,7 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
   </div>
 
 {isUserOpen && (
-  <div className="absolute top-full right-0 mt-2 w-72 bg-white shadow-lg rounded p-4 z-50">
+  <div className="absolute top-16 right-0 mt-0 w-70 bg-white shadow-lg rounded p-4 z-50">
     {!user ? (
       // SIGN IN BUTTON
       <button
@@ -154,12 +164,18 @@ const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
             <i className="fa-regular fa-id-card"></i>
             My Profile
           </li>
-          <li className="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded cursor-pointer">
-             <i className="fa-solid fa-box"></i> Orders
-          </li>
-          <li className="hover:bg-gray-100 px-3 flex items-center gap-2 py-2 rounded cursor-pointer">
-            <i className="fa-regular fa-heart"></i> Wishlist
-          </li>
+            <Link to="/cart">
+    <li className="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded cursor-pointer">
+      <i className="fa-solid fa-box"></i>
+      Orders
+    </li>
+  </Link>
+          <Link to="/wishlist">
+    <li className="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded cursor-pointer">
+      <i className="fa-regular fa-heart"></i>
+      Wishlist
+    </li>
+  </Link>
           <li className="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded cursor-pointer">
              <i className="fa-solid fa-gear"></i> Settings
           </li>

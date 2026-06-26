@@ -45,79 +45,89 @@ const Cart = ({ cart, removeFromCart, favorite, toggleFavorite }) => {
   return (
 <>
  {/* <Header cart={cart} /> */}
-    <section className="mt-40 mx-40">
-      <h2 className="text-4xl font-bold text-center">My Shopping Bag 🛒</h2>
 
-      {cart.length === 0 ? (
-        <p className="text-gray-400 font-bold mt-50 text-center text-3xl ">Your cart is empty</p>
-      ) : (
-        <div className="flex flex-col gap-4 mt-15">
-          {cart.map((item) => (
-            <div key={item.id} className="flex gap-10 border-b pb-8 items-start">
-              {/* Left: Big Product Image */}
-              <img
-                src={item.image}
-                alt={item.name}
-                className="h-[450px] w-[450px] object-contain"
-              />
+<section className="mt-40 px-4 sm:px-6 md:px-10 lg:px-40">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">
+    My Shopping Bag 🛒
+  </h2>
 
-              {/* Right: Product Details */}
-              <div className="flex flex-col gap-4 w-full ml-40 mt-10">
-                <strong className="text-xl">{item.name}</strong>
-                <p className="text-gray-700">{item.description}</p>
-                <span className="text-red-800 font-bold text-lg">
-                  ${item.price}
-                </span>
+  {cart.length === 0 ? (
+    <p className="text-gray-400 font-bold mt-12 text-center text-xl sm:text-2xl md:text-3xl">
+      Your cart is empty
+    </p>
+  ) : (
+    <div className="flex flex-col gap-8 mt-10">
+      {cart.map((item) => (
+        <div
+          key={item.id}
+          className="flex flex-col md:flex-row gap-6 border-b pb-8 items-center md:items-start"
+        >
+          {/* Left: Product Image */}
+          <img
+            src={item.image}
+            alt={item.name}
+            className="w-full sm:w-[300px] md:w-[350px] lg:w-[450px] h-auto object-contain"
+          />
 
-                {/* Delivery Info */}
-                <div className="mt-4 bg-gray-100 p-4 rounded">
-                  <p><strong>Taxes:</strong> Included in price</p>
-                  <p><strong>Estimated Delivery:</strong> 3–5 business days</p>
-                  <p><strong>Delivery Information:</strong> Standard shipping</p>
-                  <p><strong>Departure:</strong> Shipping from Korea</p>
-                </div>
+          {/* Right: Product Details */}
+          <div className="flex flex-col gap-4 w-full md:ml-10 lg:ml-20 mt-6 md:mt-0">
+            <strong className="text-lg sm:text-xl">{item.name}</strong>
+            <p className="text-gray-700 text-sm sm:text-base">{item.description}</p>
+            <span className="text-red-800 font-bold text-base sm:text-lg">
+              ${item.price}
+            </span>
 
-                {/* Remove Button */}
-                <button
-                  onClick={() => removeFromCart(item.id)}
-                  className="mt-2 py-2 px-4 bg-red-600 text-white rounded hover:bg-red-700 w-fit"
-                >
-                  Remove from Cart
-                </button>
-              </div>
+            {/* Delivery Info */}
+            <div className="mt-4 bg-gray-100 p-4 rounded text-sm sm:text-base">
+              <p><strong>Taxes:</strong> Included in price</p>
+              <p><strong>Estimated Delivery:</strong> 3–5 business days</p>
+              <p><strong>Delivery Information:</strong> Standard shipping</p>
+              <p><strong>Departure:</strong> Shipping from Korea</p>
             </div>
-          ))}
 
-          {/* Total + Confirm Button */}
-          <div className="text-right mr-10">
-            <p className="text-lg font-semibold">
-              Total: <span className="text-red-800">${totalPrice}</span>
-            </p>
+            {/* Remove Button */}
             <button
-              onClick={handleConfirmOrder}
-              className="mt-4 py-2 px-6 bg-green-700 text-white rounded hover:bg-green-800"
+              onClick={() => removeFromCart(item.id)}
+              className="mt-2 py-2 px-4 bg-red-600 text-white rounded hover:bg-red-700 w-fit"
             >
-              Confirm Order
+              Remove from Cart
             </button>
           </div>
         </div>
-      )}
+      ))}
 
-      {/* Order Confirmation Popup */}
-      {orderConfirmed && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50  backdrop-blur-md">
-          <div className="bg-white p-6 rounded shadow-lg text-center w-100 h-50">
-            <h3 className="text-xl font-bold text-green-70 mt-5">
-              ✅ Your order is confirmed!
-            </h3>
-            <p className="mt-2">🎉🎉🎉</p>
-            <p className="text-gray-700 mt-5">
-              Just wait a little bit while we process it.
-            </p>
-          </div>
-        </div>
-      )}
-    </section>
+      {/* Total + Confirm Button */}
+      <div className="text-right mr-0 md:mr-10">
+        <p className="text-base sm:text-lg font-semibold">
+          Total: <span className="text-red-800">${totalPrice}</span>
+        </p>
+        <button
+          onClick={handleConfirmOrder}
+          className="mt-4 py-2 px-6 bg-green-700 text-white rounded hover:bg-green-800"
+        >
+          Confirm Order
+        </button>
+      </div>
+    </div>
+  )}
+
+  {/* Order Confirmation Popup */}
+  {orderConfirmed && (
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-md">
+      <div className="bg-white p-6 rounded shadow-lg text-center max-w-sm sm:max-w-md">
+        <h3 className="text-lg sm:text-xl font-bold text-green-700 mt-2">
+          ✅ Your order is confirmed!
+        </h3>
+        <p className="mt-2">🎉🎉🎉</p>
+        <p className="text-gray-700 mt-4">
+          Just wait a little bit while we process it.
+        </p>
+      </div>
+    </div>
+  )}
+</section>
+
+
 </>
 
     
