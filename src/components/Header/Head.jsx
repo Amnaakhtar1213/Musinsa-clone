@@ -109,7 +109,7 @@ const [showSearch, setShowSearch] = useState(false);
             )}
           </div>
 
-      <div  className="hidden lg:block relative">
+      <div  className=" relative">
         <Link to="/wishlist">
          <i className="fa-regular fa-heart"></i>
         {favoriteCount > 0 && (
@@ -306,13 +306,15 @@ const [showSearch, setShowSearch] = useState(false);
 
 {isOpen && (
   <div  style={{ transitionDelay: "500ms" }}
-   className={`md:fixed md:inset-x-0 md:top-30 lg:absolute lg:left-0 lg:top-30
+  className={`md:fixed md:inset-x-0 md:top-30 lg:absolute lg:left-0 lg:top-30
               bg-white shadow-md border-t border-gray-300
               transition-transform transition-opacity duration-300 ease-in-out
               w-full
+              md:h-screen sm:h-screen max-h-screen overflow-y-auto
               ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full pointer-events-none"}`}
+
 >
-    <ul className="flex flex-row gap-12 text-xs px-32 py-6">
+    <ul className="flex flex-col lg:flex-row text-sm px-20 md:flex-row md:gap-12 gap-15 py-10 sm:px-20 lg:px-45 overflow-y-auto h-full">
       <div className="flex flex-col gap-4 ">
       <h2 className="font-bold text-sm">CLOTHING</h2>
       <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >Top</Link></li>
