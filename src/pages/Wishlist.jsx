@@ -117,8 +117,8 @@ const Wishlist = ({ wishlist, favorite, toggleFavorite, addToCart }) => {
     //   </div>
     // </section>
 
-<section className="mt-40">
-  <div className=" mx-30 mt-8 
+<section className="mt-30 md:mt-40 lg:mt-40">
+  <div className=" mx-30 
   text-2xl sm:text-3xl md:text-4xl 
   font-bold tracking-wider text-[#0a0f18] 
   text-center md:text-left
@@ -128,7 +128,7 @@ const Wishlist = ({ wishlist, favorite, toggleFavorite, addToCart }) => {
     </h2>
   </div>
 
-  <div className="mt-15">
+  <div className="mt-10">
     {wishlist.length === 0 ? (
       <p className="text-gray-500 mt-12 text-center">No Items in Wishlist</p>
     ) : (

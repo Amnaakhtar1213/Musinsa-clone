@@ -504,9 +504,9 @@ useEffect(() => {
 }, [currentIndex, itemPerPage]);
 
    return (
-    <div className="pt-35">
+    <div className="relative mx-3 md:mx-10">
 
-      <div className="flex items-center justify-center h-10 bg-gray-100">
+      <div className="flex items-center justify-center h-10 bg-gray-100 mt-15 lg:mt-35 md:mt-32">
         <p>Start shopping on our APP and get 15% OFF | WLCMAPP</p>
       </div>
 
@@ -526,7 +526,7 @@ useEffect(() => {
      <button
           onClick={prevSlide}
           disabled={currentIndex === 0}
-          className="absolute top-1/2 -translate-y-1/2 z-50
+          className="absolute top-1/2 -translate-y-1/2 z-10
       left-2 sm:-left-6 md:-left-6 lg:left-10
       text-gray-600 text-lg rounded-full bg-white
       px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2
@@ -538,7 +538,7 @@ useEffect(() => {
        <button
           onClick={nextSlide}
           disabled={currentIndex + itemPerPage >= images.length}
-          className="absolute top-1/2 -translate-y-1/2 z-50
+          className="absolute top-1/2 -translate-y-1/2 z-10
       right-2 sm:-right-6 md:-right-6 lg:right-10
       text-gray-600 text-lg rounded-full bg-white
       px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2

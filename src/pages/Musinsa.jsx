@@ -219,10 +219,10 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
   <h2>MUSINSA STANDARD: Weekly Special</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-10 mt-8">
-  <ul className="flex snap-x snap-mandatory gap-6
+<div className="mt-8">
+  <ul className="mx-10 lg:mx-20 md:mx-10 flex snap-x snap-mandatory gap-8 lg:gap-4
   sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6">
+  lg:grid lg:grid-cols-3 ">
     <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div>
         <img src={img43} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"></img>
@@ -261,7 +261,7 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
+<section className="mt-30 md:mt-40 lg:mt-40 mx-6 lg:mx-30 md:mx-20">
   <div className="mx-6 md:mx-20 lg:mx-30 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">

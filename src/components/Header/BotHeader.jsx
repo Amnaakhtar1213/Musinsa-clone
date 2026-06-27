@@ -1,36 +1,51 @@
-// import { Link } from "react-router-dom";
-// import React, { useState, useEffect } from 'react'
+import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react'
+import Dropdown from "./Dropdown"; 
 
-// const BottomHeader = () => {
-//   return (
-//     <div className="fixed bottom-0 left-0 w-full bg-white shadow-md border-t 
-//                     flex justify-around items-center py-2 
-//                     sm:flex md:flex lg:hidden z-50">
-//       <Link to="/" className="flex flex-col items-center text-gray-600 hover:text-black">
-//         <i className="fa-solid fa-house"></i>
-//         <span className="text-xs">Home</span>
-//       </Link>
+const BottomHeader = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    
+  return (
+    <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 
+                    flex justify-evenly items-center py-2 
+                    sm:flex md:hidden lg:hidden z-50">
 
-//       <Link to="/cart" className="flex flex-col items-center text-gray-600 hover:text-black">
-//         <i className="fa-solid fa-cart-shopping"></i>
-//         <span className="text-xs">Cart</span>
-//       </Link>
+  <div className="relative">
+    <button 
+      className="flex flex-col items-center text-gray-600 hover:text-black"
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      <i className="fa-solid fa-bars text-lg"></i>
+      <span className="text-xs font-bold">Category</span>
+    </button>
 
-//       <Link to="/orders" className="flex flex-col items-center text-gray-600 hover:text-black">
-//         <i className="fa-solid fa-box"></i>
-//         <span className="text-xs">Orders</span>
-//       </Link>
+    {/* Reuse dropdown */}
+    <Dropdown isOpen={isOpen} setIsOpen={setIsOpen} position="bottom" />
+  </div>
 
-//       <Link to="/wishlist" className="flex flex-col items-center text-gray-600 hover:text-black">
-//         <i className="fa-regular fa-heart"></i>
-//         <span className="text-xs">Wishlist</span>
-//       </Link>
 
-//       <Link to="/profile" className="flex flex-col items-center text-gray-600 hover:text-black">
-//         <i className="fa-solid fa-user"></i>
-//         <span className="text-xs">Profile</span>
-//       </Link>
-//     </div>
-//   );
-// }
-// export default BottomHeader;
+      <Link to="/" className="flex flex-col items-center text-gray-600 hover:text-black">
+        <i className="fa-solid fa-house"></i>
+        <span className="text-xs">Home</span>
+      </Link>
+
+      <Link to="/cart" className="flex flex-col items-center text-gray-600 hover:text-black">
+        <i className="fa-solid fa-cart-shopping"></i>
+        <span className="text-xs">Cart</span>
+      </Link>
+
+      <Link to="/fashion" className="flex flex-col items-center text-gray-600 hover:text-black">
+        <i className="fa-solid fa-box"></i>
+        <span className="text-xs">Fashion</span>
+      </Link>
+
+      <Link to="/wishlist" className="flex flex-col items-center text-gray-600 hover:text-black">
+        <i className="fa-regular fa-heart"></i>
+        <span className="text-xs">Wishlist</span>
+      </Link>
+
+     
+    </div>
+  );
+}
+export default BottomHeader;

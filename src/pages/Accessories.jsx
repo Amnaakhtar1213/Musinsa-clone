@@ -333,7 +333,7 @@ const Accessories = ({ favorite, toggleFavorite }) => {
         </div>
       </section> */}
       
-      <section className="mt-40">
+      <section className="mt-30 md:mt-40 lg:mt-40">
         <div className="mx-6 md:mx-20 lg:mx-30 mt-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0a0f18]">
         <h2># KIDS BAGS</h2>
       </div>

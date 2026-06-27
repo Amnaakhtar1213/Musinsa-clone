@@ -26,7 +26,7 @@ import Cart from './pages/Cart.jsx'
 import Wishlist from './pages/Wishlist.jsx'
 import Search from './pages/Search.jsx'
 
-// import BottomHeader from "./BotHeader.jsx";
+ import BottomHeader from "./components/Header/BotHeader.jsx";
 
 function App() { 
   const [user, setUser] = useState(null);
@@ -138,7 +138,7 @@ const removeFromCart = (id) => {
           <Route path="/Wishlist" element={<Wishlist wishlist={wishlist} favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} />} />
           <Route path="/search" element={<Search favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} /> }/>
      </Routes>
-         {/* <BottomHeader favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} /> */}
+          <BottomHeader favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} />
     </Router>
   )
 }

@@ -239,7 +239,7 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
   return (
     <>
-<div className="mt-32  bg-gray-100 p-3 text-center">
+<div className="  bg-gray-100 p-3 text-center mt-30">
   <span className="text-base">Official online store for leading korean brands</span>
 </div>
 

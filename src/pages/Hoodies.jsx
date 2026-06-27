@@ -233,7 +233,7 @@ import { HoodieProduct } from '../data/HoodieProductMap.jsx'
 
 const Hoodies = ({ favorite, toggleFavorite }) => {
   return (
-    <section className="mt-40 text-center">
+    <section className="mt-30 md:mt-40 lg:mt-40 text-center">
         <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">

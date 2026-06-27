@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import './Head.css'
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
+import Dropdown from "./Dropdown.jsx";
 
 
 const Header = ({ favoriteCount, cart, user, wishlist, setUser }) => {
@@ -52,8 +52,9 @@ const [showSearch, setShowSearch] = useState(false);
   }
 
   return (
-     <header className="fixed top-0 left-0 bg-white z-50 w-full px-4 sm:px-6 md:px-12 lg:px-30 py-3">
-      <div className="grid grid-cols-3 items-center w-full px-4">
+     <header className="fixed top-0 left-0 z-50 w-full h-[120px] bg-white px-4 md:px-6 lg:px-20 sm:px-4 py-5">
+
+      <div className="grid grid-cols-3 items-center w-full">
         <div  className="relative w-full max-w-md">
         <button
         type="button"
@@ -203,17 +204,19 @@ const [showSearch, setShowSearch] = useState(false);
       </div>
       
 
-<nav className="w-full py-5 flex items-center gap-8">
+<nav className=" w-full bg-white z-50 hidden md:flex lg:flex mt-4">
 
-<div className="md:text-gray-600 md:text-lg flex flex-col items-center justify-end h-12">
+  <ul className="flex items-center gap-6 md:gap-8 lg:gap-12 
+                 text-sm md:text-[15px] lg:text-base font-medium lg:font-bold">
+
+<div className="md:text-gray-600 md:text-lg relative">
 
    <button className=" flex flex-row gap-3 mt-4 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
           <i className="fa-solid fa-bars text-lg font-normal"></i>
            <h2 className="text-sm font-bold">CATEGORY</h2>
         </button>
+         <Dropdown isOpen={isOpen} setIsOpen={setIsOpen} position="header" />
 </div>
-
-  <ul className="hidden md:flex items-center lg:gap-12 md:gap-6 md:text-[15px] md:font-normal lg:font-bold">
 
        <li className="flex flex-col items-center justify-end h-12">
         <div className="md:text-gray-600">
@@ -229,7 +232,7 @@ const [showSearch, setShowSearch] = useState(false);
 
        <li className="flex flex-col items-center justify-end h-12">
         <div className="flex flex-col items-center space-y-1 md:text-gray-600">
-          <span className="text-[#308bac] text-[10px] md:text-sm md:font-semibold">MUSINSA EDITION</span>
+          <span className="text-[#308bac] text-[10px] md:text-xs md:font-semibold">MUSINSA EDITION</span>
           <NavLink to="/muahmuah"  className={({ isActive }) =>
            isActive  ? "text-black underline" // active: black text + underline
       : "text-gray-600 hover:text-black hover:underline"
@@ -303,19 +306,18 @@ const [showSearch, setShowSearch] = useState(false);
        </li>
 
        </ul>
-
+{/* 
 {isOpen && (
   <div  style={{ transitionDelay: "500ms" }}
   className={`md:fixed md:inset-x-0 md:top-30 lg:absolute lg:left-0 lg:top-30
               bg-white shadow-md border-t border-gray-300
               transition-transform transition-opacity duration-300 ease-in-out
-              w-full
-              md:h-screen sm:h-screen max-h-screen overflow-y-auto
+              w-full h-[500px] md:h-[]
               ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full pointer-events-none"}`}
 
 >
-    <ul className="flex flex-col lg:flex-row text-sm px-20 md:flex-row md:gap-12 gap-15 py-10 sm:px-20 lg:px-45 overflow-y-auto h-full">
-      <div className="flex flex-col gap-4 ">
+    <ul className="flex flex-col lg:flex-row text-sm px-20 md:flex-row md:gap-10 lg:gap-20 py-10 sm:px-20 lg:px-40">
+      <div className="flex flex-col md:gap-3 lg:gap-4">
       <h2 className="font-bold text-sm">CLOTHING</h2>
       <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >Top</Link></li>
       <li><Link to="/shirts" className="text-gray-700" onClick={() => setIsOpen(false)} >outerwear</Link></li>
@@ -330,7 +332,7 @@ const [showSearch, setShowSearch] = useState(false);
       <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Track pants & Joggers</Link></li>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col md:gap-3 lg:gap-4">
       <h2 className="font-bold text-sm">BAGS</h2>
       <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Shoulder Bags</Link></li>
       <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Bagpacks</Link></li>
@@ -345,7 +347,7 @@ const [showSearch, setShowSearch] = useState(false);
       <li><Link to="/bags" className="text-gray-700" onClick={() => setIsOpen(false)} >Bags Accessories</Link></li>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col md:gap-3 lg:gap-4">
       <h2 className="font-bold text-sm">ACCESSORIES</h2>
       <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Belt</Link></li>
       <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Caps & Bags</Link></li>
@@ -360,7 +362,7 @@ const [showSearch, setShowSearch] = useState(false);
       <li><Link to="/accessories" className="text-gray-700" onClick={() => setIsOpen(false)} >Pets</Link></li>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col md:gap-3 lg:gap-4">
       <h2 className="font-bold text-sm">SHOES</h2>
       <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Sneakers</Link></li>
       <li><Link to="/shoes" className="text-gray-700" onClick={() => setIsOpen(false)} >Loafers</Link></li>
@@ -373,7 +375,7 @@ const [showSearch, setShowSearch] = useState(false);
       <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Track pants & Joggers</Link></li>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col md:gap-3 lg:gap-4">
       <h2 className="font-bold text-sm">ACTIVE</h2>
       <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport Tops</Link></li>
       <li><Link to="/pants" className="text-gray-700" onClick={() => setIsOpen(false)} >Sport pants</Link></li>
@@ -388,7 +390,7 @@ const [showSearch, setShowSearch] = useState(false);
       <li><Link to="/sports" className="text-gray-700" onClick={() => setIsOpen(false)} ></Link>Sport</li>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col md:gap-3 lg:gap-4">
       <h2 className="font-bold text-sm">BEAUTY</h2>
       <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Skincare</Link></li>
       <li><Link to="/beauty" className="text-gray-700" onClick={() => setIsOpen(false)} >Facial Mask</Link></li>
@@ -402,7 +404,7 @@ const [showSearch, setShowSearch] = useState(false);
       
     </ul>
   </div>
-)}
+)} */}
 
     </nav>
     </header>

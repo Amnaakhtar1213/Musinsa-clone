@@ -214,7 +214,7 @@ const Sale = ({ favorite, toggleFavorite }) => {
   return (
     <div>
       
-<section className="mt-40">
+<section className="mt-30 md:mt-40 lg:mt-40">
   <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">

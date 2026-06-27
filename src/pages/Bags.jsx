@@ -267,14 +267,14 @@ import { BagProductMap } from '../data/BagProductMap.jsx'
 
 const Bags = ({ favorite, toggleFavorite }) => {
   return (
-    <div className="mx-6 lg:mx-30 md:mx-20 mt-40">
+    <div className="mx-6 lg:mx-30 md:mx-20 mt-30 md:mt-40 lg:mt-40">
       <div className="mx-6 md:mx-20 lg:mx-30 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
-                  font-bold text-[#0a0f18]">
+                  font-bold text-[#0a0f18] text-center">
         <h1><i class="fa-regular fa-heart"></i> MUSINSA STANDARD BAGS <i class="fa-regular fa-heart"></i></h1>
       </div>
 
-<section className="">
+<section className="mt-10">
   {/* <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
     <h1 className="mb-12"># LIVE BOLT: NEW BAGS</h1>
   </div> */}
