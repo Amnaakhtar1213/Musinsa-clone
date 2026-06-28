@@ -133,7 +133,7 @@ export default function Search({ favorite, toggleFavorite, addToCart }) {
               addToCart(product);
               navigate("/cart");
             }}
-            className="mt-2 bg-blue-600 text-white py-1 px-3 rounded hover:bg-blue-700 text-xs sm:text-sm"
+            className="mt-2 bg-blue-600 text-white py-3 lg:py-1 md:py-1 px-3 rounded hover:bg-blue-700 text-xs sm:text-sm"
           >
             Add to Bag
           </button>

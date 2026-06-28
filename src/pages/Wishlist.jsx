@@ -117,7 +117,7 @@ const Wishlist = ({ wishlist, favorite, toggleFavorite, addToCart }) => {
     //   </div>
     // </section>
 
-<section className="mt-30 md:mt-40 lg:mt-40">
+<section className="mt-30 pb-25 md:mt-40 lg:mt-40">
   <div className=" mx-30 
   text-2xl sm:text-3xl md:text-4xl 
   font-bold tracking-wider text-[#0a0f18] 
