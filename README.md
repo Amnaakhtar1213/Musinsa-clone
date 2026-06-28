@@ -50,7 +50,7 @@ This project demonstrates dynamic product rendering, interactive favorites and c
 
 ## SCREENSHOTS 📸
 
-- [Click here for *musinsa navbar dropdown* page screenshot](./src/assets/hero/ss-4.png)
+- [Click here for *musinsa navbar dropdown* screenshot](./src/assets/hero/ss-4.png)
 - [Click here for *musinsa home* page screenshot](./src/assets/hero/ss-1.png)
 - [Click here for *musinsa wishlist* page screenshot](./src/assets/hero/ss-2.png)
 - [Click here for *musinsa cart* page screenshot](./src/assets/hero/ss-3.png)
