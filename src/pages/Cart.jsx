@@ -46,7 +46,7 @@ const Cart = ({ cart, removeFromCart, favorite, toggleFavorite }) => {
 <>
  {/* <Header cart={cart} /> */}
 
-<section className="mt-30 md:mt-40 lg:mt-40 px-4 sm:px-6 md:px-10 lg:px-40">
+<section className="mt-30 md:mt-40 lg:mt-40 px-4 sm:px-6 md:px-10 lg:px-40 pb-24">
   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center">
     My Shopping Bag 🛒
   </h2>
