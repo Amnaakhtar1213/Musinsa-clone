@@ -267,9 +267,9 @@ import { BagProductMap } from '../data/BagProductMap.jsx'
 
 const Bags = ({ favorite, toggleFavorite }) => {
   return (
-    <div className="mx-6 lg:mx-30 md:mx-20 mt-30 md:mt-40 lg:mt-40">
-      <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+    <div className="mx-2 lg:mx-20 md:mx-10 mt-30 md:mt-40 lg:mt-40 relative overflow-x-hidden">
+      <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18] text-center">
         <h1><i class="fa-regular fa-heart"></i> MUSINSA STANDARD BAGS <i class="fa-regular fa-heart"></i></h1>
       </div>
@@ -278,9 +278,13 @@ const Bags = ({ favorite, toggleFavorite }) => {
   {/* <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
     <h1 className="mb-12"># LIVE BOLT: NEW BAGS</h1>
   </div> */}
-       <img src={img165} alt="SCALLYWANG"></img>
+        <div className="mb-6">
+           <img src={img165} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
+         </div>
   <div>
-    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img166} alt="SCALLYWANG"></img>
@@ -356,15 +360,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </section>
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-20 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2># SHOULDER BAGS</h2>
 </div>
 
-<div className="mt-8 ">
-  <ul className="flex flex-row gap-8 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar ">
     <li >
       <div className="relative">
         <img src={img264} alt="SCALLYWANG"></img>
@@ -438,14 +444,16 @@ const Bags = ({ favorite, toggleFavorite }) => {
 
 
 <section className="mt-10">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># BAGPACK</h2>
 </div>
 
-<div className="mt-8">
-  <ul className="flex flex-row gap-6 md:gap-2 sm:gap-1">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img268} alt="SCALLYWANG"  className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -535,16 +543,18 @@ const Bags = ({ favorite, toggleFavorite }) => {
 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># KIDS BAGS</h2>
 </div>
 
-<div className="lg:mx-2 mt-8">
-  <ul className="flex flex-row gap-4 md:gap-4 sm:gap-1">
-    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[210px]">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[200px]">
       <div className="relative">
         <img src={img77} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[270px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center px-2">
@@ -560,7 +570,7 @@ const Bags = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$137</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[200px]">
       <div className="relative">
         <img src={img78} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[270px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
@@ -577,7 +587,7 @@ const Bags = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$42</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[200px]">
       <div className="relative">
         <img src={img79} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[270px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
@@ -593,7 +603,7 @@ const Bags = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$72</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[200px]">
       <div className="relative">
         <img src={img80} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[270px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
@@ -609,7 +619,7 @@ const Bags = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-black-800">$40</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[200px]">
       <div className="relative">
         <img src={img81} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[270px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
@@ -626,7 +636,7 @@ const Bags = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$68</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[200px]">
       <div className="relative">
         <img src={img82} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[270px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
@@ -650,15 +660,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </div>
 </section> 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># TOTES</h2>
 </div>
 
-<div className="mt-8 mx-5 ">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-12 lg:overflow-x-visible no-scrollbar ">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img273} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -746,15 +758,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </div>
 </section> 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># CANVAS BAGS</h2>
 </div>
 
-<div className="mt-8 mx-5">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-12 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img278} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -847,15 +861,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># TRAVEL BAGS</h2>
 </div>
 
-<div className="mt-8 mx-5">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img283} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -948,15 +964,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># BELT BAGS</h2>
 </div>
 
-<div className="mx-5 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img288} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -1051,15 +1069,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># WALLETS / POUCHES</h2>
 </div>
 
-<div className="mx-5 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar ">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img294} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -1148,15 +1168,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># BAGS ACCESSORIES</h2>
 </div>
 
-<div className="mx-5 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar ">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img298} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -1242,15 +1264,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># CLUTCHES</h2>
 </div>
 
-<div className="mx-5 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img303} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -1339,15 +1363,17 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-6 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># SPORTS BAGS</h2>
 </div>
 
-<div className="mx-5 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-6 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[140px] lg:w-[240px]">
       <div className="relative">
         <img src={img308} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[150px] md:h-[260px] lg:h-[300px] object-cover rounded"></img>
@@ -1456,15 +1482,15 @@ const Bags = ({ favorite, toggleFavorite }) => {
 </section> */}
 
 <section className="mt-10">
-    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+    <div className="mx-2 md:mx-10 lg:mx-6 mt-8 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2 className="text-center">MORE TO EXPLORE</h2>
 </div>
-<div  className="mx-6 lg:mx-6 md:mx-10 mt-8">
-  <ul className=" flex snap-x snap-mandatory gap-4
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-4">
+<div  className="mx-2 lg:mx-6 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[350px] md:w-[500px] lg:w-[400px] snap-center">
       <div>
         <img src={img309} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[480px] object-cover rounded"/>

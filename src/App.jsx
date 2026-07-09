@@ -114,13 +114,14 @@ const removeFromCart = (id) => {
 
    return (
     <Router basename="/Musinsa-clone">
-      <Header favoriteCount={favoriteCount} cart={cart} wishlist={wishlist} user={user} setUser={setUser} open={open} setOpen={setOpen} />
+      <Header favoriteCount={favoriteCount} cart={cart} wishlist={wishlist} user={user} setUser={setUser} open={open} setOpen={setOpen}/>
       <Routes>
           <Route path="/" element={<Hero favorite={favorite} toggleFavorite={toggleFavorite} />} />
           <Route path="/muahmuah" element={<Muahmuah favorite={favorite} toggleFavorite={toggleFavorite} setFavorite={setFavorite} />} />
-          <Route path="/beauty" element={<Beauty favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+         <Route path="/beauty" element={<Beauty favorite={favorite} toggleFavorite={toggleFavorite}/>} /> 
+         
           <Route path="/musinsa" element={<Musinsa favorite={favorite} toggleFavorite={toggleFavorite}/>} />
-          <Route path="/fashion" element={<Fashion favorite={favorite} toggleFavorite={toggleFavorite}/>} />
+         <Route path="/fashion" element={<Fashion favorite={favorite} toggleFavorite={toggleFavorite}/>} /> 
           <Route path="/members" element={<Members favorite={favorite} toggleFavorite={toggleFavorite}/>} />
           <Route path="/new" element={<New favorite={favorite} toggleFavorite={toggleFavorite}/>} /> 
           <Route path="/sale" element={<Sale favorite={favorite} toggleFavorite={toggleFavorite}/>} />
@@ -138,7 +139,7 @@ const removeFromCart = (id) => {
           <Route path="/Wishlist" element={<Wishlist wishlist={wishlist} favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} />} />
           <Route path="/search" element={<Search favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} /> }/>
      </Routes>
-          <BottomHeader favorite={favorite} toggleFavorite={toggleFavorite} addToCart={addToCart} />
+          <BottomHeader favorite={favorite} toggleFavorite={toggleFavorite}  />
     </Router>
   )
 }

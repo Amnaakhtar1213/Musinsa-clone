@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react'
 import Dropdown from "./Dropdown"; 
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const BottomHeader = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +31,9 @@ const BottomHeader = () => {
         <span className="text-xs">Home</span>
       </Link>
 
-      <Link to="/cart" className="flex flex-col items-center text-gray-600 hover:text-black">
-        <i className="fa-solid fa-cart-shopping"></i>
-        <span className="text-xs">Cart</span>
+      <Link to="/wishlist" className="flex flex-col items-center text-gray-600 hover:text-black">
+        <i className="fa-solid fa-heart"></i>
+        <span className="text-xs">Wishlist</span>
       </Link>
 
       <Link to="/fashion" className="flex flex-col items-center text-gray-600 hover:text-black">
@@ -39,9 +41,9 @@ const BottomHeader = () => {
         <span className="text-xs">Fashion</span>
       </Link>
 
-      <Link to="/wishlist" className="flex flex-col items-center text-gray-600 hover:text-black">
-        <i className="fa-regular fa-heart"></i>
-        <span className="text-xs">Wishlist</span>
+      <Link to="/muahmuah" className="flex flex-col items-center text-gray-600 hover:text-black">
+        <i className="fa-solid fa-store"></i>
+        <span className="text-xs">#MUAHMUAH</span>
       </Link>
 
      

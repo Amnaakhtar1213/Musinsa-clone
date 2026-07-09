@@ -99,7 +99,7 @@ export default function Search({ favorite, toggleFavorite, addToCart }) {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-[500px] sm:h-[500px] md:h-[450px] lg:h-72 object-cover rounded"
+            className="w-full h-[400px] sm:h-[500px] md:h-[450px] lg:h-72 object-cover rounded"
           />
           <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center">
             {product.discount && (

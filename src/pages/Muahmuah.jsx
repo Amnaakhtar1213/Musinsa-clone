@@ -238,11 +238,8 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
   };
 
   return (
-    <>
-<div className="  bg-gray-100 p-3 text-center mt-30">
-  <span className="text-base">Official online store for leading korean brands</span>
-</div>
-
+    <div className="relative overflow-x-hidden">
+ <div className="mt-30 lg:mt-40 md:mt-40 bg-gray-100 py-2 w-full text-center">Official online store leading Korean Brands</div>
 
 {/* <div className="mx-6 lg:mx-30 md:mx-10 mt-10 border-b pb-8 border-gray-200">
 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
@@ -281,12 +278,7 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
       {/* Brand + Heart in one line */}
       <div className="flex flex-row items-center justify-between mb-5">
         <h1 className="text-3xl md:text-4xl font-bold">MUAHMUAH</h1>
-        <i
-          className={`cursor-pointer text-3xl md:text-4xl ${
-            pageFavorite ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-300"
-          }`}
-          onClick={togglePageFavorite}
-        ></i>
+       
       </div>
       {/* Description */}
       <p className="text-sm md:text-base max-w-md">
@@ -306,21 +298,25 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
   </div>
 </div>
 
-<div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
-                font-bold text-[#0a0f18] max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none">
-  <h1 className="break-words">MUAHMUAH TOP SELLING ITEMS</h1>
+<div className="mx-2 md:mx-10 lg:mx-20 
+                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold text-[#0a0f18] mt-8">
+  <h1 className="break-words text-center lg:text-center md:text-center">MUAHMUAH TOP SELLING ITEMS</h1>
 </div>
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-6 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-2xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-8 text-center"># Trending now</h1>
+    <h1 className="mb-4"># Trending now</h1>
   </div >
-       <img src={img155} alt="SCALLYWANG"></img>
+        <div className="mb-4">
+           <img src={img155} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
+         </div>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img156} alt="SCALLYWANG"></img>
@@ -401,15 +397,19 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12">[MUAHMUAH] GLOBAL EXCLUSIVE: SUMMER 2026 T-SHIRTS</h1>
+    <h1 className="mb-4">[MUAHMUAH] GLOBAL EXCLUSIVE: SUMMER 2026 T-SHIRTS</h1>
   </div>
-       <img src={img145} alt="SCALLYWANG"></img>
+       <div className="mb-4">
+          <img src={img145} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
+        </div>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollba">
       <li>
         <div className="relative">
         <img src={img146} alt="SCALLYWANG"></img>
@@ -487,15 +487,19 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12"># NEW IN: LACE, SHRRING ITEMS</h1>
+    <h1 className="mb-8"># NEW IN: LACE, SHRRING ITEMS</h1>
   </div>
-       <img src={img140} alt="SCALLYWANG"></img>
+        <div className="mb-4">
+           <img src={img140} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
+         </div>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img141} alt="SCALLYWANG"></img>
@@ -573,17 +577,19 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12">MUSINSA STANDARD</h1>
+    <h1 className="mb-8">MUSINSA STANDARD</h1>
   </div>
+  <div  className="mb-4">
+   <img src={img135} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
+    </div>
   <div>
-    <img src={img135} alt="pants"></img>
-  </div>
-  <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img136} alt="SCALLYWANG"></img>
@@ -663,18 +669,19 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 </section>
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-6 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12">UP-TO 83% OFF VOCATION-READY PICKS</h1>
+    <h1 className="mb-8">UP-TO 83% OFF VOCATION-READY PICKS</h1>
   </div>
+  <div className="mb-4">
+      <img src={img125} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
+    </div>
   <div>
-    <img src={img125} alt="pants" className="
-      w-full sm:w-full sm:h-auto md:h-[600px] lg:h-[700px] object-cover rounded"></img>
-  </div>
-  <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
          <div className="relative">
         <img src={img126} alt="SCALLYWANG"></img>
@@ -777,7 +784,7 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
 
 <section className="mt-10">
-    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+    <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2 className="text-center">MORE TO EXPLORE</h2>
@@ -852,7 +859,7 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
  
 </footer>
 
-    </>
+    </div>
   );
 };
 

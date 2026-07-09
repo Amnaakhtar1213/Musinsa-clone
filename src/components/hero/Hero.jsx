@@ -398,6 +398,11 @@ import img385 from "../../assets/line8/k-46.webp";
 import img386 from "../../assets/line8/k-47.webp";
 import img387 from "../../assets/line8/k-48.webp";
 import img800 from "../../assets/line1/12.jpg";
+import img801 from "../../assets/hero/121.webp";
+import img802 from "../../assets/hero/122.webp";
+import img803 from "../../assets/hero/123.webp";
+import img804 from "../../assets/hero/124.webp";
+
 
 
 import { HomeMap } from '../../data/HomeMap.jsx'
@@ -504,10 +509,8 @@ useEffect(() => {
 }, [currentIndex, itemPerPage]);
 
    return (
-    <div className="relative mx-3 md:mx-10">
-
-      <div className="flex items-center justify-center h-10 bg-gray-100 mt-15 lg:mt-35 md:mt-32">
-        <p>Start shopping on our APP and get 15% OFF | WLCMAPP</p>
+    <div className="relative overflow-x-hidden">
+      <div className="mt-30 lg:mt-40 md:mt-40 bg-gray-100 py-2 w-full text-center">Official online store leading Korean Brands    
       </div>
 
  <div className="mx-3 md:mx-10 relative">
@@ -551,9 +554,10 @@ useEffect(() => {
 
 
 
-<div className="mx-10 mt-5 flex flex-row gap-3 items-center 
-                lg:justify-center lg:flex-wrap 
-                md:justify-start sm:justify-start ">
+<div className="mx-4 mt-5 flex flex-row gap-3 items-center
+  overflow-x-auto sm:overflow-x-auto no-scrollbar md:overflow-x-visible
+  flex-nowrap lg:flex-wrap
+  sm:justify-start md:justify-start lg:justify-center ">
       <a href="#" className="relative">
        <div className="bg-fuchsia-200 w-[150px] h-[56px] rounded mx-auto"><i className="fa-regular fa-face-smile-wink ml-15 mt-3 text-fuchsia-500"></i></div>
         <span className="mt-2 absolute bottom-1 text-xs left-5 tracking-tighter">EXCLUSIVE BEAUTY</span>
@@ -588,40 +592,42 @@ useEffect(() => {
       </a>
     </div> 
 
-<div className="mx-10 mt-8 flex flex-row gap-3 
-                lg:justify-center lg:flex-wrap 
-                md:justify-start sm:justify-start ">
-  <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+<div className="mx-4 mt-8 flex flex-row gap-3
+  overflow-x-auto flex-nowrap no-scrollbar
+  sm:overflow-x-auto md:overflow-x-visible
+  lg:justify-center lg:flex-wrap
+  sm:justify-start md:justify-start">
+  <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[160px] h-[50px]">
   <a href="#" className="flex flex-row items-center w-full">
     <img src={img22} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">Best 20 brands</span>
   </a>
 </div>
- <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+ <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[160px] h-[50px]">
   <a href="#" className="flex flex-row items-center w-full">
     <img src={img23} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">up to 70% OFF</span>
   </a>
 </div>
- <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+ <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[160px] h-[50px]">
   <a href="#" className="flex flex-row items-center w-full">
     <img src="https://image.msscdn.net/global/images/2026/06/04/557cbdcbb2bf4c378918a847504a6d6e.png" alt="Daily Check-in" className="w-[40px] h-auto"></img>
     <span className="text-sm text-center">Daily check-in</span>
   </a>
 </div>
- <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+ <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[160px] h-[50px]">
   <a href="#" className="flex flex-row items-center w-full">
    <img src={img24} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">K-celeb picks</span>
   </a>
 </div>
- <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+ <div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[160px] h-[50px]">
   <a href="#" className="flex flex-row items-center w-full">
     <img src={img25} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">view all sales</span>
   </a>
 </div>
-<div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[200px] h-[50px]">
+<div className="flex-shrink-0 flex flex-row items-center border border-gray-300 rounded-md p-2 w-[160px] h-[50px]">
   <a href="#" className="flex flex-row items-center w-full">
     <img src={img800} alt="brand" className="w-[40px] h-auto" />
     <span className="text-sm text-center">Latest Hot Picks</span>
@@ -630,7 +636,7 @@ useEffect(() => {
 
 </div>
 
-
+{/* 
  <section className="mt-20">
   <div className="mx-6 md:mx-20 lg:mx-30 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
@@ -819,10 +825,139 @@ useEffect(() => {
 <div className="text-center mt-10">
   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
 </div>
-</section> 
+</section>  */}
 
 
 <section className="mt-20">
+  {/* Heading */}
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+    <h2>LIMITED TIME OFFER: #48 Hours Left</h2>
+  </div>   
+
+  {/* Product Grid */}
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 overflow-x-hidden">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      
+      {/* Product 1 */}
+      <li className="w-full">
+        <div className="relative">
+          <img src={img27} alt="SCALLYWANG" 
+           className="w-full h-[400px] sm:h-[160px] md:h-[260px] lg:h-[240px] object-cover rounded"/>
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-sm md:text-base">Extra 30% OFF</span>
+            <i className={`cursor-pointer text-xs md:text-sm lg:text-base ${favorite[24] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(24, HomeMap[24])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm md:text-base">SCALLYWANG</strong>
+          <p className="text-xs md:text-sm text-black">Denim pants with back side cross</p>
+          <span className="text-gray-600 text-xs md:text-sm">30% OFF</span>
+          <span className="text-xs md:text-sm font-bold text-red-800">$12</span>
+        </div>
+      </li>
+
+      {/* Product 2 */}
+      <li className="w-full">
+        <div className="relative">
+          <img src={img28} alt="SCALLYWANG" 
+         className="w-full h-[400px] sm:h-[160px] md:h-[260px] lg:h-[240px] object-cover rounded"/>
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-sm md:text-base">Extra 30% OFF</span>
+            <i className={`cursor-pointer text-xs md:text-sm lg:text-base ${favorite[25] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(25, HomeMap[25])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm md:text-base">SCALLYWANG</strong>
+          <p className="text-xs md:text-sm text-black">Summer half-sleeves yellow shirt</p>
+          <span className="text-gray-600 text-xs md:text-sm">30% OFF</span>
+          <span className="text-xs md:text-sm font-bold text-red-800">$10</span>
+        </div>
+      </li>
+
+      {/* Product 3 */}
+      <li className="w-full">
+        <div className="relative">
+          <img src={img29} alt="SCALLYWANG" 
+          className="w-full h-[400px] sm:h-[160px] md:h-[260px] lg:h-[240px] object-cover rounded"/>
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-sm md:text-base">Extra 30% OFF</span>
+            <i className={`cursor-pointer text-xs md:text-sm lg:text-base ${favorite[26] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(26, HomeMap[26])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm md:text-base">SCALLYWANG</strong>
+          <p className="text-xs md:text-sm text-black">Denim cap with adjustable strap [blue]</p>
+          <span className="text-gray-600 text-xs md:text-sm">30% OFF</span>
+          <span className="text-xs md:text-sm font-bold text-red-800">$7</span>
+        </div>
+      </li>
+
+      {/* Product 4 */}
+      <li className="w-full">
+        <div className="relative">
+          <img src={img30} alt="SCALLYWANG" 
+      className="w-full h-[400px] sm:h-[160px] md:h-[260px] lg:h-[240px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-sm md:text-base">Extra 30% OFF</span>
+            <i className={`cursor-pointer text-xs md:text-sm lg:text-base ${favorite[27] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(27, HomeMap[27])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm md:text-base">SCALLYWANG</strong>
+          <p className="text-xs md:text-sm text-black">Grese letter printing on plain black shirt</p>
+          <span className="text-gray-600 text-xs md:text-sm">30% OFF</span>
+          <span className="text-xs md:text-sm font-bold text-red-800">$17</span>
+        </div>
+      </li>
+
+      {/* Product 5 */}
+      <li className="w-full">
+        <div className="relative">
+          <img src={img31} alt="SCALLYWANG" 
+          className="w-full h-[400px] sm:h-[160px] md:h-[260px] lg:h-[240px] object-cover rounded"/>
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-sm md:text-base">Extra 30% OFF</span>
+            <i className={`cursor-pointer text-xs md:text-sm lg:text-base ${favorite[28] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(28, HomeMap[28])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm md:text-base">SCALLYWANG</strong>
+          <p className="text-xs md:text-sm text-black">Grese letter slim t-shirt best summer outfit</p>
+          <span className="text-gray-600 text-xs md:text-sm">30% OFF</span>
+          <span className="text-xs md:text-sm font-bold text-red-800">$22</span>
+        </div>
+      </li>
+
+      {/* Product 6 */}
+      <li className="w-full">
+        <div className="relative">
+          <img src={img32} alt="SCALLYWANG" 
+         className="w-full h-[400px] sm:h-[160px] md:h-[260px] lg:h-[240px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-sm md:text-base">Extra 30% OFF</span>
+            <i className={`cursor-pointer text-xs md:text-sm lg:text-base ${favorite[29] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(29, HomeMap[29])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm md:text-base">SCALLYWANG</strong>
+          <p className="text-xs md:text-sm text-black">Women slim T-shirt best for summers (5 colors)</p>
+          <span className="text-gray-600 text-xs md:text-sm">30% OFF</span>
+          <span className="text-xs md:text-sm font-bold text-red-800">$15</span>
+        </div>
+      </li>
+      </ul>
+</div>
+
+<div className="text-center mt-10">
+  <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
+</div>
+</section>
+
+
+
+{/* <section className="mt-20">
   <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
                 text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                 font-bold tracking-wider text-[#0a0f18]">
@@ -929,28 +1064,230 @@ useEffect(() => {
 <div className="text-center mt-10">
   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
 </div>
-</section> 
+</section>  */}
 
 
 <section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  {/* Heading */}
+  <div className="mx-2 md:mx-16 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+    <h2>Short-sleeve Weekly #1: Up to 75% OFF</h2>
+  </div>
+
+  {/* Product List */}
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8">
+    <ul className="
+      flex flex-row flex-nowrap gap-4 overflow-x-auto no-scrollbar
+      sm:flex-nowrap md:flex-nowrap 
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible
+    ">
+      {/* Product 1 */}
+      <li className="flex-shrink-0 w-[250px] sm:w-[150px] md:w-[200px] lg:w-full">
+        <div className="relative">
+          <img src={img33} alt="MuahMuah"
+            className="w-full h-[300px] sm:h-[160px] md:h-[250px] lg:h-[350px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deal</span>
+            <i className={`cursor-pointer ${favorite[30] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(30, HomeMap[30])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">MuahMuah</strong>
+          <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Mrt vivid slim short sleeve summer season t shirt</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">30% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$27</span>
+        </div>
+      </li>
+<li className="flex-shrink-0 w-[250px] sm:w-[150px] md:w-[200px] lg:w-full">
+        <div className="relative">
+          <img src={img34} alt="MAISON MINED"
+            className="w-full h-[300px] sm:h-[160px] md:h-[250px] lg:h-[350px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deal</span>
+            <i className={`cursor-pointer ${favorite[31] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(31, HomeMap[31])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">MAISON MINED</strong>
+          <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Dooodle heart half t white greyish blue shirt</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">75% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$32</span>
+        </div>
+      </li>
+
+      {/* Product 3 */}
+      <li className="flex-shrink-0 w-[250px] sm:w-[150px] md:w-[200px] lg:w-full">
+        <div className="relative">
+          <img src={img35} alt="ESCAPEFROM"
+            className="w-full h-[300px] sm:h-[160px] md:h-[250px] lg:h-[350px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deal</span>
+            <i className={`cursor-pointer ${favorite[32] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(32, HomeMap[32])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">ESCAPEFROM</strong>
+          <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Stawberry dot edcf logo collage print oversize shirt</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">70% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$26</span>
+        </div>
+      </li>
+
+      {/* Product 4 */}
+      <li className="flex-shrink-0 w-[250px] sm:w-[150px] md:w-[200px] lg:w-full">
+        <div className="relative">
+          <img src={img36} alt="VENHIT"
+            className="w-full h-[300px] sm:h-[160px] md:h-[250px] lg:h-[350px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deal</span>
+            <i className={`cursor-pointer ${favorite[33] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(33, HomeMap[33])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">VENHIT</strong>
+          <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">Mrt vivid slim short sleeve summer season t shirt</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">30% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$17</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  {/* CTA Button */}
+  <div className="text-center mt-10">
+    <button className="border border-black rounded text-lg px-5 py-2 text-gray-500 hover:bg-black hover:text-white transition">
+      SHOP NOW
+    </button>
+  </div>
+</section>
+
+
+
+
+
+ <section className="mt-20">
+  {/* Heading */}
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+    <h2>Signature Items: T-Shirts and Blazers</h2>
+  </div>
+
+  {/* Product List */}
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8">
+    <ul className="
+      flex flex-row flex-nowrap gap-4 overflow-x-auto no-scrollbar
+      sm:flex-nowrap md:flex-nowrap 
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible
+    ">
+      {/* Product 1 */}
+      <li className="flex-shrink-0 w-[250px] sm:w-[150px] md:w-[200px] lg:w-full">
+        <div className="relative">
+          <img src={img801} alt="MuahMuah"
+            className="w-full h-[300px] sm:h-[160px] md:h-[250px] lg:h-[350px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deal</span>
+            <i className={`cursor-pointer ${favorite[30] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(30, HomeMap[30])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">MuahMuah</strong>
+          <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">short sleeve summer season t shirt</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">30% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$27</span>
+        </div>
+      </li>
+
+      {/* Product 2 */}
+      <li className="flex-shrink-0 w-[250px] sm:w-[150px] md:w-[200px] lg:w-full">
+        <div className="relative">
+          <img src={img802} alt="MAISON MINED"
+            className="w-full h-[300px] sm:h-[160px] md:h-[250px] lg:h-[350px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deal</span>
+            <i className={`cursor-pointer ${favorite[31] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(31, HomeMap[31])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">MAISON MINED</strong>
+          <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black"> half sleeves greyish shirt</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">75% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$32</span>
+        </div>
+      </li>
+
+      {/* Product 3 */}
+      <li className="flex-shrink-0 w-[250px] sm:w-[150px] md:w-[200px] lg:w-full">
+        <div className="relative">
+          <img src={img803} alt="ESCAPEFROM"
+            className="w-full h-[300px] sm:h-[160px] md:h-[250px] lg:h-[350px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deal</span>
+            <i className={`cursor-pointer ${favorite[32] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(32, HomeMap[32])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">ESCAPEFROM</strong>
+          <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black">logo collage print oversize shirt</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">70% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$26</span>
+        </div>
+      </li>
+
+      {/* Product 4 */}
+      <li className="flex-shrink-0 w-[250px] sm:w-[150px] md:w-[200px] lg:w-full">
+        <div className="relative">
+          <img src={img804} alt="VENHIT"
+            className="w-full h-[300px] sm:h-[160px] md:h-[250px] lg:h-[350px] object-cover rounded" />
+          <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
+            <span className="bg-black text-white px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deal</span>
+            <i className={`cursor-pointer ${favorite[33] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"}`} onClick={() => toggleFavorite(33, HomeMap[33])}></i>
+          </div>
+        </div>
+        <div className="flex flex-col gap-1 mt-2">
+          <strong className="font-medium text-sm sm:text-[11px] md:text-xs lg:text-base">VENHIT</strong>
+          <p className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm text-black"> slim summer season blazer</p>
+          <span className="text-gray-600 text-xs sm:text-[10px] md:text-[11px] lg:text-sm">30% OFF</span>
+          <span className="text-xs sm:text-[10px] md:text-[11px] lg:text-sm font-bold text-red-800">$17</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  {/* CTA Button */}
+  <div className="text-center mt-10">
+    <button className="border border-black rounded text-lg px-5 py-2 text-gray-500 hover:bg-black hover:text-white transition">
+      SHOP NOW
+    </button>
+  </div>
+</section>
+
+
+
+
+
+<section className="mt-20">
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                 font-bold tracking-wider text-[#0a0f18]">
   <h2>5 Days Only: Extra 20% off Selected Items</h2>
 </div>
 
-<div className="mx-30 mt-10  bg-gray-100 p-4 text-center">
+<div className="mx-4 md:mx-10 lg:mx-20 mt-10  bg-gray-100 p-4 text-center">
   <span>End in: <strong>52:30:20</strong></span>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 ">
-<li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row flex-nowrap gap-4 overflow-x-auto no-scrollbar
+      sm:flex-nowrap md:flex-nowrap 
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-visible">
+<li className="flex-shrink-0 w-[200px] md:w-[180px] sm:w-[130px] lg:w-[200px]">
   <div className="relative">
     <img 
       src={img37} 
       alt="SCALLYWANG" 
-      className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded" 
+      className="w-full h-[250px] sm:h-[120px] md:h-[220px] lg:h-[280px] object-cover rounded" 
     />
     <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-1">
       <span className="bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">
@@ -980,9 +1317,9 @@ useEffect(() => {
   </div>
 </li>
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[200px] md:w-[180px] sm:w-[130px] lg:w-[200px]">
       <div className="relative">
-        <img src={img38} alt="SCALLYWANG"  className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img38} alt="SCALLYWANG"  className="w-full h-[250px] sm:h-[120px] md:h-[220px] lg:h-[280px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
           <span className=" bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Weekly Deals</span>
          <i className={`cursor-pointer ${
@@ -1000,9 +1337,9 @@ useEffect(() => {
     </li>
 
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[200px] md:w-[180px] sm:w-[130px] lg:w-[200px]">
       <div className="relative">
-        <img src={img39} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img39} alt="SCALLYWANG" className="w-full h-[250px] sm:h-[120px] md:h-[220px] lg:h-[280px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
           <span className=" bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Extra 20% OFF</span>
           <i className={`cursor-pointer ${
@@ -1020,9 +1357,9 @@ useEffect(() => {
     </li>
 
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[200px] md:w-[180px] sm:w-[130px] lg:w-[200px]">
       <div className="relative">
-        <img src={img40} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img40} alt="SCALLYWANG" className="w-full h-[250px] sm:h-[120px] md:h-[220px] lg:h-[280px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
           <span className="bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Extra 20% OFF</span>
          <i className={`cursor-pointer ${
@@ -1040,9 +1377,9 @@ useEffect(() => {
     </li>
 
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[200px] md:w-[180px] sm:w-[130px] lg:w-[200px]">
       <div className="relative">
-        <img src={img41} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img41} alt="SCALLYWANG" className="w-full h-[250px] sm:h-[120px] md:h-[220px] lg:h-[280px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
           <span className="bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Extra 20% OFF</span>
          <i className={`cursor-pointer ${
@@ -1060,9 +1397,9 @@ useEffect(() => {
     </li>
 
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
+    <li className="flex-shrink-0 w-[200px] md:w-[180px] sm:w-[130px] lg:w-[200px]">
       <div className="relative">
-        <img src={img42} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img42} alt="SCALLYWANG" className="w-full h-[250px] sm:h-[120px] md:h-[220px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center px-1">
           <span className="bg-black text-yellow-500 px-1 text-xs sm:text-[9px] md:text-[10px] lg:text-sm">Extra 30% OFF</span>
           <i className={`cursor-pointer ${
@@ -1088,14 +1425,16 @@ useEffect(() => {
 
 
  <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                 font-bold tracking-wider text-[#0a0f18]">
         <h2># CAPS AND HATS</h2>
       </div>
       
-      <div className="mx-8 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4 mt-12">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 mt-12 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img212} alt="SCALLYWANG"></img>
@@ -1203,14 +1542,16 @@ useEffect(() => {
 
 
 <section className="mt-10">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-6 md:mx-10 lg:mx-20 mt-8 
+                text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                 font-bold tracking-wider text-[#0a0f18]">
   <h2># SHOULDER BAGS</h2>
 </div>
 
-<div className="mx-8 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-12 ">
+<div className="mx-8 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 mt-12 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li>
       <div className="relative">
         <img src={img264} alt="SCALLYWANG"></img>
@@ -1286,18 +1627,20 @@ useEffect(() => {
 </section> 
 
 <section className="mt-16">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                 font-bold tracking-wider text-[#0a0f18]">
   <h2># TRACK PANTS/JOGGERS</h2>
 </div>
 
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-6 ">
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 mt-12 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
-        <img src={img318} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img318} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[240px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
         <i className={`cursor-pointer ${
             favorite[50] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -1314,9 +1657,9 @@ useEffect(() => {
     </li>
 
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
-        <img src={img319} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img319} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[240px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[51] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -1333,9 +1676,9 @@ useEffect(() => {
     </li>
 
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
-        <img src={img320} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img320} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[240px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[52] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -1351,9 +1694,9 @@ useEffect(() => {
     </li>
 
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
-        <img src={img321} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img321} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[240px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2 flex justify-between items-center px-2">
           <i className={`cursor-pointer ${
             favorite[53] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -1370,9 +1713,9 @@ useEffect(() => {
     </li>
 
 
-    <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[250px]">
+    <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
-        <img src={img322} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img322} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[240px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-white px-2">Extra 30% OFF</span>
           <i className={`cursor-pointer ${
@@ -1400,17 +1743,17 @@ useEffect(() => {
 
 
 <section className="mt-10">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-20 lg:mx-30 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2>MUSINSA STANDARD: Weekly Special</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-10 mt-8">
-  <ul className=" flex snap-x snap-mandatory gap-6
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6">
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+<div className="mx-2 lg:mx-30 md:mx-10 mt-6">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
       <div>
         <img src={img43} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"/>
       </div>
@@ -1419,7 +1762,7 @@ useEffect(() => {
         <span className="font-medium md:text-lg sm:text-lg">MUSINSA STARDARD WOMEN</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
       <div className="relative">
         <img src={img45} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"></img>
       </div>
@@ -1429,7 +1772,7 @@ useEffect(() => {
       </div>
     </li>
 
-    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
       <div className="relative">
         <img src={img44} alt="SCALLYWANG"  className="w-full h-auto object-cover rounded"></img>
       </div>
@@ -1448,13 +1791,15 @@ useEffect(() => {
 
 
 <section className="mt-10">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># DRESSES & SKIRTS</h2>
 </div>
-<div className="mx-8 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-6">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[250px]">
       <div className="relative">
         <img src={img335} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[250px] lg:h-[300px] object-cover rounded"></img>
@@ -1545,17 +1890,17 @@ useEffect(() => {
 </section> 
 
 
-
-
  <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
         <h2># MUFFLERS</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[150px] lg:w-[210px]">
             <div className="relative">
               <img src={img218} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[170px] md:h-[230px] lg:h-[260px] object-cover rounded"></img>
@@ -1658,14 +2003,16 @@ useEffect(() => {
 
 
 <section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2># BAGPACK</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img268} alt="SCALLYWANG"></img>
@@ -1755,14 +2102,16 @@ useEffect(() => {
 
 
 <section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD WOMEN: TOP SELLERS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar ">
     <li >
       <div className="relative">
         <img src={img47} alt="SCALLYWANG"></img>
@@ -1881,14 +2230,16 @@ useEffect(() => {
 
 
 <section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+  <div className="mx-6 md:mx-20 lg:mx-30 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>#Your Favorite Brands</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar ">
     <li >
       <div className="relative">
         <img src={img53} alt="SCALLYWANG"></img>
@@ -1996,10 +2347,12 @@ useEffect(() => {
 </section> 
 
 
-<section className="mt-12">
+<section className="mt-8">
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img59} alt="SCALLYWANG"></img>
@@ -2112,14 +2465,16 @@ useEffect(() => {
 
 
 <section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2># TRAVEL BAGS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img283} alt="SCALLYWANG"></img>
@@ -2214,14 +2569,16 @@ useEffect(() => {
 
 
   <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># JEWELRY</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4 mt-12">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img224} alt="SCALLYWANG"></img>
@@ -2324,15 +2681,17 @@ useEffect(() => {
 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>THE HOTTEST BRANDS IN SEOUL</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-col gap-4 md:flex md:flex-row 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img65} alt="SCALLYWANG"></img>     
@@ -2367,15 +2726,17 @@ useEffect(() => {
 </div>
 </section> 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2># BELT BAGS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img288} alt="SCALLYWANG"></img>
@@ -2470,14 +2831,16 @@ useEffect(() => {
 
 
 <section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA SPECIAL: Exclusive to MUSINSA</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8 ">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8 ">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img68} alt="SCALLYWANG"></img>
@@ -2590,14 +2953,16 @@ useEffect(() => {
 
 
  <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># SUNGLASSES</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4 mt-13">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img230} alt="SCALLYWANG"></img>
@@ -2699,15 +3064,17 @@ useEffect(() => {
       </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2># CLUTCHES</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img303} alt="SCALLYWANG"></img>
@@ -2796,17 +3163,17 @@ useEffect(() => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>THIS WEEK'S NEW ARRIVALS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex snap-x snap-mandatory gap-6
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div className="relative">
         <img src={img74} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[350px] md:h-[570px] lg:h-[300px] object-cover rounded"></img> 
@@ -2839,15 +3206,17 @@ useEffect(() => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2># KIDS BAGS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img77} alt="SCALLYWANG"></img>
@@ -2950,14 +3319,16 @@ useEffect(() => {
 
 
 <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># PETS ESSIANTIAL</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 sm:mx-20 mt-8">
-        <ul className="flex flex-row gap-4 mt-12">
+      <div className="mx-2 lg:mx-20 sm:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img236} alt="SCALLYWANG"></img>
@@ -3062,15 +3433,17 @@ useEffect(() => {
 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA HOODED JACKETS: TOP SELLERS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 sm:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 sm:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img83} alt="SCALLYWANG"></img>
@@ -3188,16 +3561,18 @@ useEffect(() => {
 </section> 
 
 
-<section className="mt-20">
+<section className="mt-10">
 
- <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+ <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA FUR SHOES: TOP SELLERS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">      
         <img src={img95} alt="SCALLYWANG"></img>
@@ -3299,10 +3674,12 @@ useEffect(() => {
 </section> 
 
 
-<section className="mt-6">
+<section className="mt-4">
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img89} alt="SCALLYWANG"></img>
@@ -3403,9 +3780,11 @@ useEffect(() => {
 </div>
 </section> 
 
-<section className="mt-8">
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-8">
+<section className="mt-4">
+<div className="mx-2 lg:mx-20 md:mx-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img350} alt="SCALLYWANG"></img>
@@ -3493,14 +3872,16 @@ useEffect(() => {
 
 
  <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># SOCKS</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 ">
-        <ul className="flex flex-row gap-4 mt-12">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img248} alt="SCALLYWANG"></img>
@@ -3606,14 +3987,16 @@ useEffect(() => {
 
 
  <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># BELTS</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-6">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-6">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img242} alt="SCALLYWANG"></img>
@@ -3716,15 +4099,17 @@ useEffect(() => {
 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD: HIGH HEELS AND PUMPS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
-  <ul className="flex flex-row gap-4 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img101} alt="SCALLYWANG"></img> 
@@ -3826,14 +4211,16 @@ useEffect(() => {
 </section> 
 
 <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># WATCH</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30  md:mx-20 mt-6">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-6">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img254} alt="SCALLYWANG"></img>
@@ -3936,15 +4323,17 @@ useEffect(() => {
 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD: SKINCARE & MAKEUP</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
-  <ul className="flex flex-row gap-4">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img107} alt="SCALLYWANG"></img> 
@@ -4046,10 +4435,12 @@ useEffect(() => {
 </section> 
 
 
-<section className="mt-5">
+<section className="mt-6">
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
-  <ul className="flex flex-row gap-4">
+<div className="mx-2 lg:mx-20 md:mx-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img113} alt="SCALLYWANG"></img>
@@ -4150,10 +4541,12 @@ useEffect(() => {
 </div>
 </section> 
 
-<section className="mt-5">
+<section className="mt-6">
 
-<div className="mx-6 md:mx-20 lg:mx-30 mt-6">
-  <ul className="flex flex-row gap-4">
+<div className="mx-2 md:mx-10 lg:mx-20">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img119} alt="SCALLYWANG"></img>
@@ -4260,15 +4653,15 @@ useEffect(() => {
 
 
 <section className="mt-10">
-    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+    <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2 className="text-center">EXPLORE MORE</h2>
 </div>
-<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
-  <ul className=" flex snap-x snap-mandatory gap-6
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6">
+<div  className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div>
         <img src={img309} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>
@@ -4300,13 +4693,15 @@ useEffect(() => {
 </section>
 
 <section className="mt-10">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2># SPORT SKIRTS</h2>
 </div>
- <div className="mx-6 lg:mx-30 md:mx-20 mt-6">
-  <ul className="flex flex-row gap-4 ">
+ <div className="mx-2 lg:mx-20 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
        <div className="relative">
         <img src={img365} alt="SCALLYWANG"></img>
@@ -4391,22 +4786,24 @@ useEffect(() => {
   </ul>
  </div>
 
- <div className="text-center mt-10">
+ <div className="text-center">
    <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
  </div>
  </section> 
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
-  <div className=" mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10">UP-TO 40% OFF TRENDY PANTS</h1>
+    <h1 className="mb-6">UP-TO 40% OFF TRENDY PANTS</h1>
+  </div>
+  <div className="mb-6">
+    <img src={img125} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   </div>
   <div>
-    <img src={img125} alt="pants"></img>
-  </div>
-  <div>
-    <ul className="flex flex-row gap-4 mt-6">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
          <div className="relative">
         <img src={img126} alt="SCALLYWANG"></img>
@@ -4485,17 +4882,19 @@ useEffect(() => {
 </section>
 
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10">UP-TO 83% OFF VOCATION-READY PICKS</h1>
+    <h1 className="mb-8">UP-TO 83% OFF VOCATION-READY PICKS</h1>
+  </div>
+  <div className="mb-6">
+    <img src={img130} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   </div>
   <div>
-    <img src={img130} alt="pants"></img>
-  </div>
-  <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
          <div className="relative">
         <img src={img131} alt="SCALLYWANG"></img>
@@ -4575,17 +4974,19 @@ useEffect(() => {
 </section>
 
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10">MUSINSA STANDARD</h1>
+    <h1 className="mb-6">MUSINSA STANDARD</h1>
+  </div>
+  <div className="mb-4">
+    <img src={img135} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   </div>
   <div>
-    <img src={img135} alt="pants"></img>
-  </div>
-  <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img136} alt="SCALLYWANG"></img>
@@ -4664,14 +5065,16 @@ useEffect(() => {
 </div>
 </section>
 
-<section className="mt-20">
- <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+ <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2># SPORT CAPS</h2>
 </div>
-<div className="mx-6 lg:mx-30 md:mx-20 mt-10">
-  <ul className="flex flex-row gap-4">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img380} alt="SCALLYWANG"></img>
@@ -4762,18 +5165,18 @@ useEffect(() => {
 </section>
 
 <section className="mt-10">
-    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+    <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2 className="text-center">EXPLORE MORE</h2>
 </div>
-<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
-  <ul className=" flex snap-x snap-mandatory gap-6
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6">
+<div  className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-full sm:w-full md:w-[300px] lg:w-[420px] snap-center">
       <div>
-        <img src={img322} alt="SCALLYWANG" className="w-full h-[600px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"/>
+        <img src={img322} alt="SCALLYWANG" className="w-full h-[500px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"/>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <span className="font-medium md:text-lg sm:text-lg">MUSINSA STARDARD WOMEN</span>
@@ -4781,7 +5184,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-full sm:w-full md:w-[300px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img333} alt="SCALLYWANG" className="w-full h-[600px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img333} alt="SCALLYWANG" className="w-full h-[500px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <span className="font-medium md:text-lg sm:text-lg">FANCY CLUB</span>
@@ -4790,7 +5193,7 @@ useEffect(() => {
 
     <li  className="flex-shrink-0 w-full sm:w-full md:w-[300px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img334} alt="SCALLYWANG"  className="w-full h-[600px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img334} alt="SCALLYWANG"  className="w-full h-[500px] sm:h-[700px] md:h-[500px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
           <span className="font-medium md:text-lg sm:text-lg">OPOSTROP COMMA</span>
@@ -4802,15 +5205,17 @@ useEffect(() => {
 </section>
 
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-14">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10"># NEW IN: LACE, SHRRING ITEMS</h1>
+    <h1 className="mb-6"># NEW IN: LACE, SHRRING ITEMS</h1>
   </div>
-       <img src={img140} alt="SCALLYWANG"></img>
+       <img src={img140} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img141} alt="SCALLYWANG"></img>
@@ -4881,21 +5286,23 @@ useEffect(() => {
     </ul>
   </div>
 
-  <div className="text-center mt-10">
+  <div className="text-center mt-2">
   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
 </div>
 </section>
 
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-14">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
     <h1 className="mb-10">[BUAF] GLOBAL EXCLUSIVE: SUMMER 2026 T-SHIRTS</h1>
   </div>
-       <img src={img145} alt="SCALLYWANG"></img>
+       <img src={img145} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img146} alt="SCALLYWANG"></img>
@@ -4972,15 +5379,17 @@ useEffect(() => {
 </section>
 
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10">J-INFLUENCER'S SUMMER PICKS</h1>
+    <h1 className="mb-6">J-INFLUENCER'S SUMMER PICKS</h1>
   </div>
-       <img src={img150} alt="SCALLYWANG"></img>
+       <img src={img150} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img151} alt="SCALLYWANG"></img>
@@ -5057,15 +5466,17 @@ useEffect(() => {
 </section>
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2># SPORTS BAGS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img308} alt="SCALLYWANG"></img>
@@ -5152,15 +5563,17 @@ useEffect(() => {
 </div>
 </section>
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-20 lg:mx-30
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10">YOUR'S SUMMER DAILY ACTIVE EDITS: UP TO 18% OFF</h1>
+    <h1 className="mb-6">YOUR'S SUMMER DAILY ACTIVE EDITS: UP TO 18% OFF</h1>
   </div>
-       <img src={img155} alt="SCALLYWANG"></img>
+       <img src={img155} alt="SCALLYWANG"  className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img156} alt="SCALLYWANG"></img>
@@ -5240,15 +5653,17 @@ useEffect(() => {
 </section>
 
 
-<section className="mx-6 lg:mx-30 md:mx-30 mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10">MUSINSA STANDARD</h1>
+    <h1 className="mb-6">MUSINSA STANDARD</h1>
   </div>
-       <img src={img160} alt="SCALLYWANG"></img>
+       <img src={img160} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img161} alt="SCALLYWANG"></img>
@@ -5328,15 +5743,17 @@ useEffect(() => {
 </section>
 
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10"># LIVE BOLT: NEW BAGS</h1>
+    <h1 className="mb-6"># LIVE BOLT: NEW BAGS</h1>
   </div>
-       <img src={img165} alt="SCALLYWANG"></img>
+       <img src={img165} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img166} alt="SCALLYWANG"></img>
@@ -5412,15 +5829,17 @@ useEffect(() => {
 </section>
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10">PANTS: NEW SELHOTTE TO WEAR NOW</h1>
+    <h1 className="mb-6">PANTS: NEW SELHOTTE TO WEAR NOW</h1>
   </div>
-       <img src={img170} alt="SCALLYWANG"></img>
+       <img src={img170} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img171} alt="SCALLYWANG"></img>
@@ -5496,15 +5915,17 @@ useEffect(() => {
 </div>
 </section>
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD: SKINCARE & MAKEUP</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
-  <ul className="flex flex-row gap-4">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img107} alt="SCALLYWANG"></img> 
@@ -5606,15 +6027,17 @@ useEffect(() => {
 </section> 
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10"># SUMMER TRAVEL BAGS</h1>
+    <h1 className="mb-6"># SUMMER TRAVEL BAGS</h1>
   </div>
-       <img src={img175} alt="SCALLYWANG"></img>
+       <img src={img175} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img176} alt="SCALLYWANG"></img>
@@ -5694,15 +6117,17 @@ useEffect(() => {
 
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12">DRESSSES AND SLEEVELESS STYLE: CHOOSEN BY HAN SO-HE</h1>
+    <h1 className="mb-6">DRESSSES AND SLEEVELESS STYLE: CHOOSEN BY HAN SO-HE</h1>
   </div>
-       <img src={img179} alt="SCALLYWANG"></img>
+       <img src={img179} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img180} alt="SCALLYWANG"></img>
@@ -5783,17 +6208,19 @@ useEffect(() => {
 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>TOP SELLING IN YOUR COUNTRY</h2>
 </div>
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img187} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img> 
+        <img src={img187} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img> 
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[341] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
@@ -5809,7 +6236,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img188} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img188} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 30% OFF</span>
           <i className={`cursor-pointer ${
@@ -5827,7 +6254,7 @@ useEffect(() => {
     </li>
     <li  className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img189} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img189} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[343] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -5844,7 +6271,7 @@ useEffect(() => {
     </li>
     <li  className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img190} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img190} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 30% OFF</span>
            <i className={`cursor-pointer ${
@@ -5862,7 +6289,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img191} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img191} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[345] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-gray-200"
@@ -5879,7 +6306,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img192} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img192} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className="bg-black text-white px-2">Extra 30% OFF</span>
           <i className={`cursor-pointer ${
@@ -5900,11 +6327,13 @@ useEffect(() => {
 </section> 
 
 <section className="mt-8">
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 ">
+<div className="mx-2 lg:mx-20 md:mx-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img193} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img193} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 20% OFF</span>
            <i className={`cursor-pointer ${
@@ -5922,7 +6351,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img194} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img194} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[348] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -5939,7 +6368,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img195} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img195} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[349] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -5956,7 +6385,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img196} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img196} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2 flex justify-between items-center px-2">
            <i className={`cursor-pointer ${
             favorite[350] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -5973,7 +6402,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img197} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img197} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[351] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -5990,7 +6419,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img198} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img198} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[352] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -6011,11 +6440,13 @@ useEffect(() => {
 </section> 
 
 <section className="mt-8">
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 ">
+<div className="mx-2 lg:mx-20 md:mx-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img199} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img199} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 10% OFF</span>
            <i className={`cursor-pointer ${
@@ -6033,7 +6464,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img200} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img200} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2  flex justify-between items-center">
           <span className=" bg-black text-white px-2">Extra 10% OFF</span>
            <i className={`cursor-pointer ${
@@ -6051,7 +6482,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img201} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img201} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
            <i className={`cursor-pointer ${
             favorite[355] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -6068,7 +6499,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img202} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img202} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center px-2">
           <span className="bg-black text-white px-2">Extra 10% OFF</span>
            <i className={`cursor-pointer ${
@@ -6086,7 +6517,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img203} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img203} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[357] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -6103,7 +6534,7 @@ useEffect(() => {
     </li>
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
-        <img src={img204} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
+        <img src={img204} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
         <div className="absolute bottom-2 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[358] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -6127,15 +6558,15 @@ useEffect(() => {
 </section> 
 
 <section className="mt-10">
-    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+    <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2 className="text-center">SPORT GOODS</h2>
 </div>
-<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
-  <ul className=" flex snap-x snap-mandatory gap-6
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6">
+<div  className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div>
         <img src={img385} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>
@@ -6168,15 +6599,15 @@ useEffect(() => {
 
 
 <section className="mt-10">
-    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+    <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2 className="text-center">MORE TO EXPLORE</h2>
 </div>
-<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
-  <ul className=" flex snap-x snap-mandatory gap-6
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6">
+<div  className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
       <div>
         <img src={img205} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>

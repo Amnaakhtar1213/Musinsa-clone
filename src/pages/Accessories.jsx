@@ -263,83 +263,16 @@ import { AcceProductMap } from '../data/AcceProductMap.jsx'
 
 const Accessories = ({ favorite, toggleFavorite }) => {
   return (
-    <div>
-      
-      {/* <section className="mt-20 mx-30">
-        <div className="mt-8 text-4xl font-bold tracking-wider text-[#0a0f18]">
-          <h1 className="mb-12"># LIVE BOLT: NEW BAGS</h1>
-        </div>
-             <img src={img165} alt="SCALLYWANG"></img>
-        <div>
-          <ul className="flex flex-row gap-4 mt-10">
-            <li>
-              <div className="relative">
-              <img src={img166} alt="SCALLYWANG"></img>
-              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-                <i className="fa-regular fa-heart text-white font-bold"></i>
-              </div>
-            </div>
-              <div className="flex flex-col gap-1 mt-3">
-              <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">YEOMIM</strong>
-              <p className="text-sm text-gray-900">Mini sloty bag [MINT]</p>
-                
-                  <span className="text-lg font-bold text-red-800">$123</span>
-                
-            </div>
-               
-            </li>
-            <li>
-             <div className="relative">
-              <img src={img167} alt="SCALLYWANG"></img>
-              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-                <i className="fa-regular fa-heart text-white font-bold"></i>
-              </div>
-            </div>
-              <div className="flex flex-col gap-1 mt-3">
-              <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">YEOMIM</strong>
-              <p className="text-sm text-gray-900">Sloty bag [SODA]</p>
-               <span className="text-sm font-sm text-gray-600">9%</span>
-                <span className="text-lg font-bold text-red-800">$138</span>
-            </div>
-            </li>
-            <li>
-             <div className="relative">
-              <img src={img168} alt="SCALLYWANG"></img>
-              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-                <i className="fa-regular fa-heart text-white font-bold"></i>
-              </div>
-            </div>
-              <div className="flex flex-col gap-1 mt-3">
-              <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">YEOMIM</strong>
-              <p className="text-sm text-gray-900">Ribbon gym sack blue check</p>
-                <span className="text-lg font-bold text-red-800">$43</span>
-            </div>
-            </li>
-            <li>
-              <div className="relative">
-              <img src={img169} alt="SCALLYWANG"></img>
-              <div className="absolute bottom-2 right-2  flex justify-between items-center">
-                <i className="fa-regular fa-heart text-white font-bold"></i>
-              </div>
-            </div>
-              <div className="flex flex-col gap-1 mt-3">
-              <strong className="font-bold overflow-hidden text-ellipsis whitespace-nowrap w-53">YEOMIM</strong>
-              <p className="text-sm text-gray-900">Mini pumpkin bag - butter cream</p>
-               <span className="text-sm font-sm text-gray-600">11%</span>
-                <span className="text-lg font-bold text-red-800">$45</span>
-            </div>
-            </li>
-          </ul>
-        </div>
-      </section> */}
-      
+    <div className="relative overflow-x-hidden">    
       <section className="mt-30 md:mt-40 lg:mt-40">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0a0f18]">
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 text-sm sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0a0f18]">
         <h2># KIDS BAGS</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 md:mx-10 lg:mx-20 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img77} alt="SCALLYWANG"></img>
@@ -442,12 +375,14 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 
 
        <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0a0f18]">
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 text-sm sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0a0f18]">
         <h2># CAPS AND HATS</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img212} alt="SCALLYWANG"></img>
@@ -550,12 +485,14 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 
 
        <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 text-xl sm:text-2xl md:text-3xl lg:text-4xl  font-bold text-[#0a0f18]">
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 text-sm sm:text-2xl md:text-3xl lg:text-4xl  font-bold text-[#0a0f18]">
         <h2># MUFFLERS</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img218} alt="SCALLYWANG"></img>
@@ -658,14 +595,16 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 
 
        <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># JEWELRY</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img224} alt="SCALLYWANG"></img>
@@ -768,14 +707,16 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 
 
        <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># SUNGLASSES</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img230} alt="SCALLYWANG"></img>
@@ -878,14 +819,16 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 
 
        <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># PETS ESSIANTIAL</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img236} alt="SCALLYWANG"></img>
@@ -988,14 +931,16 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 
 
        <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># BELTS</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img242} alt="SCALLYWANG"></img>
@@ -1098,14 +1043,16 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 
 
        <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># SOCKS</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4 ">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img248} alt="SCALLYWANG"></img>
@@ -1209,14 +1156,16 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 
 
       <section className="mt-10">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
         <h2># WATCH</h2>
       </div>
       
-      <div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-        <ul className="flex flex-row gap-4">
+      <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+        <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
           <li >
             <div className="relative">
               <img src={img254} alt="SCALLYWANG"></img>
@@ -1338,38 +1287,38 @@ const Accessories = ({ favorite, toggleFavorite }) => {
 </section> */}
 
 <section className="mt-10">
-    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+    <div className="mx-2 md:mx-10 lg:mx-20 mt-8 
+                  text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2 className="text-center">MORE TO EXPLORE</h2>
 </div>
-<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
-  <ul className=" flex snap-x snap-mandatory gap-6
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6">
-    <li className="flex-shrink-0 w-[400px] sm:w-[400px] md:w-[500px] lg:w-[420px] snap-center">
+<div  className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
+    <li className="flex-shrink-0 w-[350px] sm:w-[400px] md:w-[500px] lg:w-[420px] snap-center">
       <div>
-        <img src={img260} alt="SCALLYWANG" className="w-full h-[550px] sm:h-[550px] md:h-[600px] lg:h-[500px] object-cover rounded"/>
+        <img src={img260} alt="SCALLYWANG" className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[500px] object-cover rounded"/>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <span className="font-medium md:text-lg sm:text-lg">RIETI</span>
+        <span className="font-bold md:text-lg sm:text-lg text-center">RIETI</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[400px] sm:w-[400px] md:w-[400px] lg:w-[420px] snap-center">
+    <li className="flex-shrink-0 w-[350px] sm:w-[400px] md:w-[400px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img261} alt="SCALLYWANG" className="w-full h-[550px] sm:h-[550px] md:h-[600px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img261} alt="SCALLYWANG" className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-        <span className="font-medium md:text-lg sm:text-lg">SUNGLASSES CHOOSEN BY K-POP</span>
+        <span className="font-medium md:text-lg sm:text-lg text-center">SUNGLASSES CHOOSEN BY K-POP</span>
       </div>
     </li>
 
-    <li  className="flex-shrink-0 w-[400px] sm:w-[400px] md:w-[400px] lg:w-[420px] snap-center">
+    <li  className="flex-shrink-0 w-[350px] sm:w-[400px] md:w-[400px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img262} alt="SCALLYWANG"  className="w-full h-[550px] sm:h-[550px] md:h-[600px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img262} alt="SCALLYWANG"  className="w-full h-[500px] sm:h-[500px] md:h-[600px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
-          <span className="font-medium md:text-lg sm:text-lg">MUSINSA STANDARD</span>
+          <span className="font-medium text-center md:text-lg sm:text-lg ">MUSINSA STANDARD</span>
       </div>
     </li>
   </ul>
