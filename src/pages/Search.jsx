@@ -79,8 +79,8 @@ export default function Search({ favorite, toggleFavorite, addToCart }) {
     //   </ul>
     // </div>
 
-<div className="p-6 mt-30 md:mt-40 lg:mt-40">
-  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">
+<div className=" mt-20 md:mt-40 lg:mt-40 mx-4 md:mx-10 lg:mx-20">
+  <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold">
     Search Results for "{query}"
   </h2>
 
@@ -99,7 +99,7 @@ export default function Search({ favorite, toggleFavorite, addToCart }) {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-[400px] sm:h-[500px] md:h-[450px] lg:h-72 object-cover rounded"
+            className="w-full h-[350px] sm:h-[350px] md:h-[400px] lg:h-80 object-cover rounded"
           />
           <div className="absolute bottom-2 left-0 right-2 flex justify-between items-center">
             {product.discount && (

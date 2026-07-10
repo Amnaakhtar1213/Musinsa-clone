@@ -239,7 +239,7 @@ const Muahmuah = ({ favorite, toggleFavorite, setFavorite }) => {
 
   return (
     <div className="relative overflow-x-hidden">
- <div className="mt-30 lg:mt-40 md:mt-40 bg-gray-100 py-2 w-full text-center">Official online store leading Korean Brands</div>
+ <div className="mt-20 lg:mt-40 md:mt-40 bg-gray-100 py-2 w-full text-center">Official online store leading Korean Brands</div>
 
 {/* <div className="mx-6 lg:mx-30 md:mx-10 mt-10 border-b pb-8 border-gray-200">
 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">

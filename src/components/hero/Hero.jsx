@@ -510,7 +510,7 @@ useEffect(() => {
 
    return (
     <div className="relative overflow-x-hidden">
-      <div className="mt-30 lg:mt-40 md:mt-40 bg-gray-100 py-2 w-full text-center">Official online store leading Korean Brands    
+      <div className="mt-20 lg:mt-40 md:mt-40 bg-gray-100 py-2 w-full text-center">Official online store leading Korean Brands    
       </div>
 
  <div className="mx-3 md:mx-10 relative">
@@ -1067,9 +1067,9 @@ useEffect(() => {
 </section>  */}
 
 
-<section className="mt-20">
+<section className="mt-10">
   {/* Heading */}
-  <div className="mx-2 md:mx-16 lg:mx-20 mt-8 
+  <div className="mx-2 md:mx-10 lg:mx-20 
                   text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
     <h2>Short-sleeve Weekly #1: Up to 75% OFF</h2>
@@ -6608,26 +6608,26 @@ useEffect(() => {
   <ul className="flex flex-row gap-4 
       overflow-x-auto flex-nowrap snap-x snap-mandatory
       lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-[500px] lg:w-[420px] snap-center">
       <div>
-        <img src={img205} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>
+        <img src={img205} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[540px] lg:h-[500px] object-cover rounded"/>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <span className="font-medium md:text-lg sm:text-lg">DARISAL</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-[500px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img206} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img206} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[540px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <span className="font-medium md:text-lg sm:text-lg">DRESSES CHOSSEN BY HAN SO-HEE</span>
       </div>
     </li>
 
-    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li  className="flex-shrink-0 w-full sm:w-full md:w-[500px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img207} alt="SCALLYWANG"  className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img207} alt="SCALLYWANG"  className="w-full h-[400px] sm:h-[700px] md:h-[540px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
           <span className="font-medium md:text-lg sm:text-lg">MUSINSA STANDARD</span>

@@ -233,14 +233,16 @@ import { HoodieProduct } from '../data/HoodieProductMap.jsx'
 
 const Hoodies = ({ favorite, toggleFavorite }) => {
   return (
-    <section className="mt-30 md:mt-40 lg:mt-40 text-center">
-        <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+    <section className="relative overflow-x-hidden">
+        <div className="mt-20 md:mt-40 lg:mt-40 mx-2 md:mx-10 lg:mx-20 text-center 
+                  text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-        <h1>MUSINSA HOODIES</h1>
+        <h1>MUSINSA BEST HOODIES</h1>
       </div>
-     <div className="lg:mx-30 mx-10 md:mx-20 mt-8">
-       <ul className="flex flex-row gap-4 md:gap-2 sm:gap-1">
+     <div className="lg:mx-20 mx-2 md:mx-10 mt-8">
+       <ul className="flex flex-row flex-nowrap gap-4 overflow-x-auto no-scrollbar
+      sm:flex-nowrap md:flex-nowrap 
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible">
          <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
            <div className="relative">
              <img src={img220} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[290px] object-cover rounded"></img>
@@ -352,8 +354,10 @@ const Hoodies = ({ favorite, toggleFavorite }) => {
 
 
      <section className="mt-10">
-     <div className="lg:mx-30 mx-10 md:mx-20 mt-8">
-       <ul className="flex flex-row gap-4 md:gap-2 sm:gap-1">
+     <div className="lg:mx-20 mx-2 md:mx-10">
+       <ul className="flex flex-row flex-nowrap gap-4 overflow-x-auto no-scrollbar
+      sm:flex-nowrap md:flex-nowrap 
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible">
          <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
            <div className="relative">
              <img src={img208} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[290px] object-cover rounded"></img>
@@ -464,8 +468,10 @@ const Hoodies = ({ favorite, toggleFavorite }) => {
      </section> 
 
  <section className="mt-10">
-     <div className="lg:mx-30 mx-10 md:mx-20 mt-8">
-       <ul className="flex flex-row gap-4 md:gap-2 sm:gap-1">
+     <div className="lg:mx-20 mx-2 md:mx-10">
+       <ul className="flex flex-row flex-nowrap gap-4 overflow-x-auto no-scrollbar
+      sm:flex-nowrap md:flex-nowrap 
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible">
          <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
            <div className="relative">
              <img src={img199} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[290px] object-cover rounded"></img>
@@ -577,8 +583,10 @@ const Hoodies = ({ favorite, toggleFavorite }) => {
 
 
      <section className="mt-10 border-b-2 border-gray-200 pb-10">
-     <div className="lg:mx-30 mx-10 md:mx-20 mt-8">
-       <ul className="flex flex-row gap-4 md:gap-2 sm:gap-1">
+     <div className="lg:mx-20 mx-2 md:mx-10">
+       <ul className="flex flex-row flex-nowrap gap-4 overflow-x-auto no-scrollbar
+      sm:flex-nowrap md:flex-nowrap 
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-visible">
          <li className="flex-shrink-0 w-[180px] md:w-[180px] sm:w-[130px] lg:w-[220px]">
            <div className="relative">
              <img src={img214} alt="SCALLYWANG" className="w-full h-[240px] sm:h-[120px] md:h-[180px] lg:h-[290px] object-cover rounded"></img>
@@ -714,34 +722,35 @@ const Hoodies = ({ favorite, toggleFavorite }) => {
 </section> */}
 
 
-<section className="mx-6 lg:mx-20 md:mx-10 mt-8">
-  <div className="items-center text-center">
-    <h1 className="text-5xl mb-10">MORE TO EXPLORE</h1>
+<section className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-lg sm:text-2xl md:text-3xl lg:text-4xl 
+                  font-bold tracking-wider text-[#0a0f18]">
+    <h1 className="text-center">MORE TO EXPLORE</h1>
 
     <div
-      className="
-        flex gap-6 snap-x snap-mandatory
-        sm:px-5 sm:flex-nowrap
-        md:px-20 md:flex-nowrap
-        lg:px-30 lg:flex-nowrap lg:overflow-visible
+      className="mt-5
+      flex flex-row flex-nowrap gap-4 overflow-x-auto no-scrollbar
+      sm:flex-nowrap md:flex-nowrap 
+      lg:grid lg:grid-cols-3 lg:gap-10 lg:overflow-visible
       "
     >
       {/* Item 1 */}
-      <div className="flex-shrink-0 w-full sm:w-[100%] md:w-[45%] lg:w-[35%] snap-center">
-        <img src={img226} alt="musinsa" className="w-full h-[500px] object-cover rounded"/>
-        <p className="text-left mt-4 text-xl">#BUAF __ BEST CLOTHING BRAND</p>
+      <div className="flex-shrink-0 w-full sm:w-[100%] md:w-[360px] lg:w-[400px] snap-center">
+        <img src={img226} alt="musinsa" className="w-full h-[460px] sm:h-[460px] md:h-[500px] lg:h-[500px] object-cover rounded"/>
+        <p className="font-medium md:text-lg sm:text-lg mt-2">#BUAF __ BEST CLOTHING BRAND</p>
       </div>
 
       {/* Item 2 */}
-      <div className="flex-shrink-0 w-full sm:w-[100%] md:w-[45%] lg:w-[35%] snap-center">
-        <img src={img227} alt="musinsa" className="w-full h-[500px] object-cover rounded"/>
-        <p className="text-left mt-4 text-xl">Famous brand selected by K-celeb</p>
+      <div className="flex-shrink-0 w-full sm:w-[100%] md:w-[360px] lg:w-[400px] snap-center">
+        <img src={img227} alt="musinsa" className="w-full h-[460px] sm:h-[460px] md:h-[500px] lg:h-[500px] object-cover rounded"/>
+        <p className="font-medium md:text-lg sm:text-lg mt-2">Famous brand selected by K-celeb</p>
       </div>
 
       {/* Item 3 */}
-      <div className="flex-shrink-0 w-full sm:w-[100%] md:w-[45%] lg:w-[35%] snap-center">
-        <img src={img228} alt="musinsa" className="w-full h-[500px] object-cover rounded"/>
-        <p className="text-left mt-4 text-xl">MUSINSA STANDARD</p>
+      <div className="flex-shrink-0 w-full sm:w-[100%] md:w-[360px] lg:w-[400px] snap-center">
+        <img src={img228} alt="musinsa" className="w-full h-[460px] sm:h-[460px] md:h-[500px] lg:h-[500px] object-cover rounded"/>
+        <p className="font-medium md:text-lg sm:text-lg mt-2">MUSINSA STANDARD</p>
       </div>
     </div>
   </div>
@@ -786,7 +795,7 @@ const Hoodies = ({ favorite, toggleFavorite }) => {
     </div>
 
     {/* Disclaimer */}
-    <div className="mb-10">
+    <div className="mb-18">
       <p className="text-gray-400 text-xs">
         <span className="font-bold">MUSINSA CO.</span>, may not be a direct seller but only intermediary for some products. In this case MUSINSA has limited liability for products, information and transactions. Please check the product detail on each product page.
       </p>

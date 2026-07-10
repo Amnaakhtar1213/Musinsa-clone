@@ -213,37 +213,38 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
     <div>
       
 <section className="mt-40">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+  <div className="mx-2 md:mx-20 lg:mx-30 mt-8 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2>MUSINSA STANDARD: Weekly Special</h2>
 </div>
 
-<div className="mt-8">
-  <ul className="mx-10 lg:mx-20 md:mx-10 flex snap-x snap-mandatory gap-8 lg:gap-4
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 ">
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+<div className="mx-2 lg:mx-30 md:mx-10 mt-6">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
       <div>
-        <img src={img43} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"></img>
+        <img src={img43} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"/>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <p className="text-xs sm:text-[14px] md:text-[18px] lg:text-sm text-black">Cool Later and Sun Shade</p>
         <span className="font-medium md:text-lg sm:text-lg">MUSINSA STARDARD WOMEN</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
       <div className="relative">
-        <img src={img45} alt="SCALLYWANG"  className="w-full h-auto object-cover rounded"></img>
+        <img src={img45} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <p className="text-xs sm:text-[14px] md:text-[18px] lg:text-sm text-black">The Packable Collection</p>
         <span className="font-medium md:text-lg sm:text-lg">MUSINSA STANDARD</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+
+    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[400px] snap-center">
       <div className="relative">
-        <img src={img44} alt="SCALLYWANG" className="w-full h-auto object-cover rounded"></img>
+        <img src={img44} alt="SCALLYWANG"  className="w-full h-auto object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <p className="text-xs sm:text-[14px] md:text-[18px] lg:text-sm text-black">Extra 30% off Best Seller</p>
@@ -255,23 +256,25 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 <div className="text-center mt-10">
   <button className="border border-black rounded text-lg px-5 py-2 text-gray-500">SHOP NOW</button>
 </div>
-</section> 
+</section>  
 
 
 
 
 
-<section className="mt-30 md:mt-40 lg:mt-40 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-10 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-10">UP-TO 83% OFF VOCATION-READY PICKS</h1>
+    <h1 className="">UP-TO 83% OFF VOCATION-READY PICKS</h1>
   </div>
   <div>
-    <img src={img130} alt="pants"></img>
+    <img src={img130} alt="pants" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   </div>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
          <div className="relative">
         <img src={img131} alt="SCALLYWANG"></img>
@@ -350,15 +353,17 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 </div>
 </section>
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD WOMEN: TOP SELLERS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar ">
     <li >
       <div className="relative">
         <img src={img47} alt="SCALLYWANG"></img>
@@ -475,15 +480,17 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 </div>
 </section> 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA HOODED JACKETS: TOP SELLERS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img83} alt="SCALLYWANG"></img>
@@ -601,16 +608,18 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20">
+<section className="mt-10">
 
- <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+ <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA FUR SHOES: TOP SELLERS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className=" flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar ">
     <li >
       <div className="relative">
         <img src={img95} alt="SCALLYWANG"></img>
@@ -714,8 +723,10 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 
 <section className="mt-6">
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-6">
-  <ul className="flex flex-row gap-4 ">
+<div className="mx-2 lg:mx-20 md:mx-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar ">
     <li >
       <div className="relative">
         <img src={img89} alt="SCALLYWANG"></img>
@@ -821,15 +832,17 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD: HIGH HEELS AND PUMPS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 mt-15 ">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img101} alt="SCALLYWANG"></img> 
@@ -932,15 +945,17 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 
 
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12">MUSINSA STANDARD</h1>
+    <h1 className="mb-4">MUSINSA STANDARD</h1>
   </div>
-       <img src={img160} alt="SCALLYWANG"></img>
+       <img src={img160} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img161} alt="SCALLYWANG"></img>
@@ -1019,15 +1034,17 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 </div>
 </section>
 
-<section className="mt-20 mx-6 lg:mx-30 md:mx-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 
+<section className="mt-10 mx-2 lg:mx-20 md:mx-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12">SUMMER TRAVEL BAGS</h1>
+    <h1 className="mb-4">SUMMER TRAVEL BAGS</h1>
   </div>
-       <img src={img175} alt="SCALLYWANG"></img>
+       <img src={img175} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img176} alt="SCALLYWANG"></img>
@@ -1108,35 +1125,35 @@ const Musinsa = ({ favorite, toggleFavorite }) => {
 
 
 <section className="mt-10">
-    <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+    <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-[#0a0f18]">
   <h2 className="text-center">MORE TO EXPLORE</h2>
 </div>
-<div  className="mx-6 lg:mx-30 md:mx-10 mt-8">
-  <ul className=" flex snap-x snap-mandatory gap-6
-  sm:flex-nowrap md:flex-nowrap
-  lg:grid lg:grid-cols-3 lg:gap-6">
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+<div  className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-3 lg:gap-6 lg:overflow-x-visible no-scrollbar">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-[500px] lg:w-[420px] snap-center">
       <div>
-        <img src={img205} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"/>
+        <img src={img205} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[540px] lg:h-[500px] object-cover rounded"/>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <span className="font-medium md:text-lg sm:text-lg">DARISAL</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li className="flex-shrink-0 w-full sm:w-full md:w-[500px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img206} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img206} alt="SCALLYWANG" className="w-full h-[400px] sm:h-[700px] md:h-[540px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
         <span className="font-medium md:text-lg sm:text-lg">DRESSES CHOSSEN BY HAN SO-HEE</span>
       </div>
     </li>
 
-    <li  className="flex-shrink-0 w-full sm:w-full md:w-full lg:w-[420px] snap-center">
+    <li  className="flex-shrink-0 w-full sm:w-full md:w-[500px] lg:w-[420px] snap-center">
       <div className="relative">
-        <img src={img207} alt="SCALLYWANG"  className="w-full h-[400px] sm:h-[700px] md:h-[900px] lg:h-[500px] object-cover rounded"></img>
+        <img src={img207} alt="SCALLYWANG"  className="w-full h-[400px] sm:h-[700px] md:h-[540px] lg:h-[500px] object-cover rounded"></img>
       </div>
       <div className="flex flex-col gap-1 mt-3">
           <span className="font-medium md:text-lg sm:text-lg">MUSINSA STANDARD</span>

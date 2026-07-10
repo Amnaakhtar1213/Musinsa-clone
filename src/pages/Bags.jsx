@@ -267,7 +267,7 @@ import { BagProductMap } from '../data/BagProductMap.jsx'
 
 const Bags = ({ favorite, toggleFavorite }) => {
   return (
-    <div className="mx-2 lg:mx-20 md:mx-10 mt-30 md:mt-40 lg:mt-40 relative overflow-x-hidden">
+    <div className="mx-2 lg:mx-20 md:mx-10 mt-20 md:mt-40 lg:mt-40 relative overflow-x-hidden">
       <div className="mx-2 md:mx-10 lg:mx-20 
                   text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18] text-center">

@@ -275,9 +275,9 @@ const Fashion = ({ favorite, toggleFavorite }) => {
   }, [currentIndex])
 
   return (
-<div className="relative mx-2 md:mx-10 max-w-full overflow-x-hidden">
+<div className="relative mx-2 overflow-x-hidden">
 
-<div className="flex items-center justify-center text-2xl font-bold mt-30 md:mt-35 lg:mt-40 lg:text-4xl md:text-3xl">
+<div className="flex items-center justify-center text-2xl font-bold mt-20 md:mt-35 lg:mt-40 lg:text-4xl md:text-3xl">
         <h1>All About Fashion</h1>
       </div>
 

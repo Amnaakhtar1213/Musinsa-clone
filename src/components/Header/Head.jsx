@@ -52,7 +52,7 @@ const [showSearch, setShowSearch] = useState(false);
   }
 
   return (
-     <header className="fixed top-0 left-0 z-50 w-full h-[120px] bg-white px-4 md:px-6 lg:px-20 sm:px-4 py-5">
+     <header className="fixed top-0 left-0 z-50 w-full h-[60px] bg-white px-4 md:px-6 lg:px-20 sm:px-4 py-5">
 
       <div className="grid grid-cols-3 items-center w-full">
         <div  className="relative w-full max-w-md">
@@ -204,7 +204,7 @@ const [showSearch, setShowSearch] = useState(false);
       </div>
       
 
-<nav className=" w-full bg-white z-50 hidden md:flex lg:flex mt-4">
+<nav className=" w-full  z-50 hidden md:flex lg:flex bg-white pb-5">
 
   <ul className="flex items-center gap-6 md:gap-8 lg:gap-12 
                  text-sm md:text-[15px] lg:text-base font-medium lg:font-bold">
