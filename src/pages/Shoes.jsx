@@ -235,16 +235,18 @@ import { ShoesMap } from '../data/ShoesMap.jsx'
 
 const Shoes = ({ favorite, toggleFavorite }) => {
   return (
-<div> 
-<section className="mt-20 md:mt-40 lg:mt-40 relative overflow-x-hidden">
+<div className="relative overflow-x-hidden mb-10"> 
+<section className="mt-20 md:mt-40 lg:mt-40">
  <div className="mx-2 md:mx-20 lg:mx-20
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA FUR SHOES: TOP SELLERS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 md:gap-4">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-6">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
         <img src={img95} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[200px] lg:h-[240px] object-cover rounded"></img>
@@ -346,11 +348,13 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 </section> 
 
 <section className="mt-10">
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4 md:gap-10">
-    <li className="flex-shrink-0 w-[250px] md:w-[250px] sm:w-[250px] lg:w-[270px]">
+<div className="mx-2 lg:mx-20 md:mx-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
+    <li className="flex-shrink-0 w-[250px] md:w-[300px] sm:w-[250px] lg:w-[270px]">
       <div className="relative">
-        <img src={img350} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[200px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img350} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[350px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-6 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[744] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -364,9 +368,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$73</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[250px] md:w-[160px] sm:w-[250px] lg:w-[270px]">
+    <li className="flex-shrink-0 w-[250px] md:w-[300px] sm:w-[250px] lg:w-[270px]">
       <div className="relative">
-        <img src={img351} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img351} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[350px] lg:h-[300px] object-cover rounded"></img>
          <div className="absolute bottom-4 right-4  flex justify-between items-center">
          <i className={`cursor-pointer ${
             favorite[745] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -380,9 +384,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$45</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[250px] md:w-[160px] sm:w-[250px] lg:w-[270px]">
+    <li className="flex-shrink-0 w-[250px] md:w-[300px] sm:w-[250px] lg:w-[270px]">
       <div className="relative">
-        <img src={img352} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img352} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[350px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-6 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[746] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -396,9 +400,9 @@ const Shoes = ({ favorite, toggleFavorite }) => {
           <span className="text-sm font-bold text-red-800">$39</span>
       </div>
     </li>
-    <li className="flex-shrink-0 w-[250px] md:w-[160px] sm:w-[250px] lg:w-[270px]">
+    <li className="flex-shrink-0 w-[250px] md:w-[300px] sm:w-[250px] lg:w-[270px]">
       <div className="relative">
-        <img src={img353} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[170px] lg:h-[300px] object-cover rounded"></img>
+        <img src={img353} alt="SCALLYWANG" className="w-full h-[320px] sm:h-[320px] md:h-[350px] lg:h-[300px] object-cover rounded"></img>
         <div className="absolute bottom-6 right-2  flex justify-between items-center">
           <i className={`cursor-pointer ${
             favorite[747] ? "fa-solid fa-heart text-red-600" : "fa-regular fa-heart text-white"
@@ -436,14 +440,16 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 
 
 <section className="mt-10">
-<div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+<div className="mx-2 md:mx-10 lg:mx-20 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA LEATHER BOOTS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[160px] sm:w-[130px] lg:w-[210px]">
       <div className="relative">
         <img src={img89} alt="SCALLYWANG" className="w-full h-[230px] sm:h-[120px] md:h-[170px] lg:h-[240px] object-cover rounded"></img>
@@ -546,8 +552,10 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 
 
 <section className="mt-10">
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4">
+<div className="mx-2 lg:mx-20 md:mx-10">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li>
       <div className="relative">
         <img src={img355} alt="SCALLYWANG"></img>
@@ -637,15 +645,17 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mt-20">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
   <h2>MUSINSA STANDARD: HIGH HEELS AND PUMPS</h2>
 </div>
 
-<div className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <ul className="flex flex-row gap-4">
+<div className="mx-2 lg:mx-20 md:mx-10 mt-8">
+  <ul className="flex flex-row gap-4 
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-6 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li >
       <div className="relative">
         <img src={img101} alt="SCALLYWANG"></img> 
@@ -747,15 +757,17 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 </section> 
 
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-15">
-  <div className="mx-6 md:mx-20 lg:mx-30 
-                  text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
+                  text-sm sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12">J-INFLUENCER'S SUMMER PICKS</h1>
+    <h1 className="mb-6">J-INFLUENCER'S SUMMER PICKS</h1>
   </div>
-       <img src={img150} alt="SCALLYWANG"></img>
+       <img src={img150} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img151} alt="SCALLYWANG"></img>
@@ -831,15 +843,17 @@ const Shoes = ({ favorite, toggleFavorite }) => {
 </div>
 </section>
 
-<section className="mx-6 lg:mx-30 md:mx-20 mt-8">
-  <div className="mx-6 md:mx-20 lg:mx-30 mt-8 
+<section className="mx-2 lg:mx-20 md:mx-10 mt-10">
+  <div className="mx-2 md:mx-10 lg:mx-20 
                   text-xl sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">
-    <h1 className="mb-12">MUSINSA STANDARD</h1>
+    <h1 className="mb-6 text-center">MUSINSA STANDARD</h1>
   </div>
-       <img src={img160} alt="SCALLYWANG"></img>
+      <img src={img160} alt="SCALLYWANG" className="w-[350px] h-[200px] object-cover lg:w-[1400px] lg:h-[550px] lg:object-cover md:object-cover md:w-[900px] md:h-[400px]"></img>
   <div>
-    <ul className="flex flex-row gap-4 mt-10">
+    <ul className="flex flex-row gap-4 mt-8
+      overflow-x-auto flex-nowrap snap-x snap-mandatory
+      lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible no-scrollbar">
       <li>
         <div className="relative">
         <img src={img161} alt="SCALLYWANG"></img>

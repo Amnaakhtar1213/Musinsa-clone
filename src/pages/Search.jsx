@@ -79,7 +79,7 @@ export default function Search({ favorite, toggleFavorite, addToCart }) {
     //   </ul>
     // </div>
 
-<div className=" mt-20 md:mt-40 lg:mt-40 mx-4 md:mx-10 lg:mx-20">
+<div className=" mt-20 mb-20 md:mt-40 lg:mt-40 mx-4 md:mx-10 lg:mx-20">
   <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold">
     Search Results for "{query}"
   </h2>

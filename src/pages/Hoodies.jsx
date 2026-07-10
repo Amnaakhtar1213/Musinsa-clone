@@ -233,7 +233,7 @@ import { HoodieProduct } from '../data/HoodieProductMap.jsx'
 
 const Hoodies = ({ favorite, toggleFavorite }) => {
   return (
-    <section className="relative overflow-x-hidden">
+    <section className="relative overflow-x-hidden mb-10">
         <div className="mt-20 md:mt-40 lg:mt-40 mx-2 md:mx-10 lg:mx-20 text-center 
                   text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold text-[#0a0f18]">

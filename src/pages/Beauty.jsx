@@ -298,7 +298,7 @@ const Beauty = ({ favorite, toggleFavorite}) => {
   }, [currentIndex])
 
   return (
-    <div className="relative overflow-x-hidden">
+    <div className="relative mb-10 overflow-x-hidden">
       <div className="mx-2 md:mx-10 lg:mx-20 mt-20 md:mt-40 lg:mt-40 
                   text-medium sm:text-2xl md:text-3xl lg:text-4xl 
                   font-bold tracking-wider text-center text-[#0a0f18]">

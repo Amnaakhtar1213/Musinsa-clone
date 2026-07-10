@@ -275,13 +275,13 @@ const Fashion = ({ favorite, toggleFavorite }) => {
   }, [currentIndex])
 
   return (
-<div className="relative mx-2 overflow-x-hidden">
+<div className="relative mb-10 overflow-x-hidden">
 
 <div className="flex items-center justify-center text-2xl font-bold mt-20 md:mt-35 lg:mt-40 lg:text-4xl md:text-3xl">
         <h1>All About Fashion</h1>
       </div>
 
-   <div className="mx-3 md:mx-10 relative">
+   <div className="mx-2 md:mx-10 relative">
       <div className="flex justify-center gap-4 mt-4">
         {images.slice(currentIndex, currentIndex + itemPerPage).map((item, idx) => (
           <div key={idx} className="relative w-full sm:w-full md:w-full lg:w-[420px]">

@@ -211,7 +211,7 @@ import { NewProduct } from '../data/NewProductMap.jsx';
 
 const New = ({ favorite, toggleFavorite }) => {
   return (
-    <div>
+    <div className="relative overflow-x-hidden mb-10">
       
 <section className="mt-20 md:mt-40 lg:mt-40">
   <div className="mx-2 md:mx-10 lg:mx-20  

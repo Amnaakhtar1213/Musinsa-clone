@@ -210,7 +210,7 @@ import { MusinsaProduct } from '../data/MusinsaProductMap.jsx';
 
 const Musinsa = ({ favorite, toggleFavorite }) => {
   return (
-    <div>
+    <div className="relative overflow-x-hidden mb-10">
       
 <section className="mt-40">
   <div className="mx-2 md:mx-20 lg:mx-30 mt-8 

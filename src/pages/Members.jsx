@@ -273,9 +273,9 @@ const prevSlide = () => {
 }, [currentIndex])
 
   return (
-    <div>
+    <div className="relative overflow-x-hidden mb-10">
 
-<div className="mx-2 md:mx-10 relative mt-30 md:mt-40 lg:mt-40">
+<div className="mx-2 md:mx-10 mt-30 md:mt-40 lg:mt-40">
       <div className="flex justify-center gap-4 ">
         {images.slice(currentIndex, currentIndex + itemPerPage).map((item, idx) => (
           <div key={idx} className="relative w-full sm:w-full md:w-full lg:w-[420px]">

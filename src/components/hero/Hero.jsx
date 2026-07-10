@@ -1635,7 +1635,7 @@ useEffect(() => {
 
 
 <div className="mx-2 lg:mx-20 md:mx-10 mt-8">
-  <ul className="flex flex-row gap-4 mt-12 
+  <ul className="flex flex-row gap-4 
       overflow-x-auto flex-nowrap snap-x snap-mandatory
       lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-x-visible no-scrollbar">
     <li className="flex-shrink-0 w-[180px] md:w-[200px] sm:w-[130px] lg:w-[250px]">

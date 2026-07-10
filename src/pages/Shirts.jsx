@@ -348,9 +348,9 @@ import { ShirtMap } from "../data/ShirtMap.jsx"
 
 const Shirts = ({ favorite, toggleFavorite }) => {
   return (
-    <div>
+    <div className="relative overflow-x-hidden mb-10">
       
-      <section className="mt-20 md:mt-40 lg:mt-40 relative overflow-x-hidden">
+      <section className="mt-20 md:mt-40 lg:mt-40 ">
         <div className="mx-2 md:mx-10 lg:mx-20 text-sm sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0a0f18]">
         <h2>TOP SELLING IN YOUR COUNTRY </h2>
       </div>

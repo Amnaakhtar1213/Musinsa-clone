@@ -15,8 +15,8 @@ const Wishlist = ({ wishlist, favorite, toggleFavorite, addToCart }) => {
 
 
   return (
-<section className="mt-30 md:mt-40 lg:mt-40 mx-6 md:mx-10 lg:mx-20">
-  <div className=" text-medium sm:text-3xl md:text-4xl 
+<section className="mt-20 mb-20 md:mt-40 lg:mt-40 mx-6 md:mx-10 lg:mx-20">
+  <div className=" text-xl sm:text-3xl md:text-4xl 
       font-bold tracking-wider text-[#0a0f18] 
       text-center md:text-left
       flex flex-col md:flex-row md:items-center md:justify-center">
@@ -25,7 +25,7 @@ const Wishlist = ({ wishlist, favorite, toggleFavorite, addToCart }) => {
     </h2>
   </div>
 
-  <div className="mt-6">
+  <div className="mt-4">
     {wishlist.length === 0 ? (
       <p className="text-gray-500 mt-12 text-center">No Items in Wishlist</p>
     ) : (
