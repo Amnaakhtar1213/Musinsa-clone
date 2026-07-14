@@ -36,7 +36,7 @@ This project demonstrates dynamic product rendering, interactive favorites and c
 
 ## Tech Stack 🛠️ 
 
-- **Frontend**: React (Hooks, Router)
+- **Frontend**: React (Hooks, state, Router)
 - **Styling**: Tailwind CSS
 - **State Management**: React useState + localStorage persistence
 - **Data**: JSON product files for categories
